@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Admin is able to Create Loan Manually</description>
+   <name>Verify Admin is able to Create Loan Manually</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>787eb256-9966-4583-a2cb-64f3f60f0774</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a3ff780a-a8bb-4d67-9001-c571cd527516</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+</TestCaseEntity>

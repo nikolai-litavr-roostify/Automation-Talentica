@@ -1,0 +1,20 @@
+1
+00:00:00,096 --> 00:00:00,097
+1. callTestCase
+
+2
+00:00:00,393 --> 00:00:00,395
+1. com.common.util.LoginHelper.LoginWithAdmin
+
+3
+00:01:16,129 --> 00:01:16,130
+1. Statement - println(testCaseContext.getTestCaseId())
+
+4
+00:01:16,132 --> 00:01:16,134
+5. Statement - println(testCaseContext.getTestCaseStatus())
+
+5
+00:01:18,212 --> 00:01:18,214
+1. Statement - println(testSuiteContext.getTestSuiteId())
+

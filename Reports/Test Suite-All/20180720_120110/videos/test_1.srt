@@ -1,0 +1,140 @@
+1
+00:00:00,115 --> 00:00:00,116
+1. callTestCase
+
+2
+00:00:00,374 --> 00:00:00,381
+1. com.common.util.LoginHelper.LoginWithAdmin
+
+3
+00:00:20,838 --> 00:00:20,840
+5. waitForElementClickable
+
+4
+00:00:20,898 --> 00:00:20,898
+9. click
+
+5
+00:00:21,047 --> 00:00:21,049
+13. waitForElementVisible
+
+6
+00:00:21,627 --> 00:00:21,627
+17. setText
+
+7
+00:00:21,837 --> 00:00:21,837
+21. click
+
+8
+00:00:27,570 --> 00:00:27,570
+5. callTestCase
+
+9
+00:00:27,782 --> 00:00:27,783
+1. openBrowser
+
+10
+00:00:38,489 --> 00:00:38,490
+5. setText
+
+11
+00:00:38,840 --> 00:00:38,841
+9. click
+
+12
+00:00:39,208 --> 00:00:39,209
+13. waitForPageLoad
+
+13
+00:00:39,224 --> 00:00:39,225
+17. waitForElementClickable
+
+14
+00:00:40,452 --> 00:00:40,453
+21. setText
+
+15
+00:00:40,627 --> 00:00:40,627
+25. waitForElementClickable
+
+16
+00:00:40,665 --> 00:00:40,665
+29. click
+
+17
+00:00:40,977 --> 00:00:40,977
+33. waitForPageLoad
+
+18
+00:00:41,002 --> 00:00:41,002
+9. waitForElementPresent
+
+19
+00:00:44,106 --> 00:00:44,107
+13. setText
+
+20
+00:00:58,198 --> 00:00:58,202
+17. click
+
+21
+00:00:58,358 --> 00:00:58,359
+21. takeScreenshot
+
+22
+00:00:58,572 --> 00:00:58,573
+25. waitForElementVisible
+
+23
+00:00:58,648 --> 00:00:58,649
+29. click
+
+24
+00:00:58,913 --> 00:00:58,913
+33. click
+
+25
+00:01:02,328 --> 00:01:02,328
+37. switchToWindowIndex
+
+26
+00:01:02,491 --> 00:01:02,492
+41. waitForPageLoad
+
+27
+00:01:08,621 --> 00:01:08,621
+45. refresh
+
+28
+00:01:12,363 --> 00:01:12,363
+49. waitForPageLoad
+
+29
+00:01:12,381 --> 00:01:12,382
+53. callTestCase
+
+30
+00:01:12,580 --> 00:01:12,580
+1. waitForPageLoad
+
+31
+00:01:12,598 --> 00:01:12,599
+5. setText
+
+32
+00:01:44,802 --> 00:01:44,802
+1. Statement - println(testCaseContext.getTestCaseId())
+
+33
+00:01:44,804 --> 00:01:44,804
+5. Statement - println(testCaseContext.getTestCaseStatus())
+
+34
+00:01:46,982 --> 00:01:46,982
+1. Statement - println(testCaseContext.getTestCaseId())
+
+35
+00:01:46,983 --> 00:01:46,983
+5. Statement - println(testCaseContext.getTestCaseVariables())
+

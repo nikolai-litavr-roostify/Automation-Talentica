@@ -1,0 +1,7 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually),Chrome 67.0.3396.99,,2018-08-02 14:09:40,2018-08-02 14:09:56,16.452s,FAILED
+,,,,,,
+Test Cases/Loan Submission/Lender Submit Loan Application on behalf of Borrower (Add Loan Manually),Chrome 67.0.3396.99,,2018-08-02 14:09:40,2018-08-02 14:09:46,6.147s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 67.0.3396.99,,2018-08-02 14:09:40,2018-08-02 14:09:40,0.051s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-02 14:09:41,2018-08-02 14:09:44,3.479s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 67.0.3396.99,,2018-08-02 14:09:44,2018-08-02 14:09:44,0.017s,PASSED

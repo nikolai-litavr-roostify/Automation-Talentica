@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Test Suite-Borrower Submit Loan Application (Copy Referral URL)" time="42" tests="0" failures="1" errors="0">
+   <testsuite name="Test Suite-Borrower Submit Loan Application (Copy Referral URL)" tests="0" failures="1" errors="0" time="42" timestamp="2018-08-07 15:50:05" hostname="KalyaniK - KALYANIK.talentica-all.com" id="Test Suites/Test Suite-Borrower Submit Loan Application (Copy Referral URL)">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180807_155001"/>
+         <property name="logFiles" value="D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180807_155001\\execution0.log"/>
+         <property name="attachments" value="D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180807_155001\\1533637228104.png, D:\\copylinkscreenshot1.png, D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180807_155001\\1533637229252.png"/>
+         <property name="hostName" value="KalyaniK - KALYANIK.talentica-all.com"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="5.4.1.1"/>
+         <property name="browser" value="Chrome 67.0.3396.99"/>
+         <property name="hostAddress" value="172.19.19.84"/>
+         <property name="sessionId" value="3b5966f3d709ff8dc0f23df9a9efb2d6"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL)" classname="Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL)" status="FAILED">
+         <failure type="FAILED" message="Unable to verify match between actual text 'Kaly11 Testenv' and expected text 'Kaly11 testenv' using regular expression (Root cause: Actual text 'Kaly11 Testenv' and expected text 'Kaly11 testenv' are not matched using regular expression)"/>
+         <system-out><![CDATA[2018-08-07 15:50:05 - [TEST_CASE][FAILED] - Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL): Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL) FAILED because (of) Unable to verify match between actual text 'Kaly11 Testenv' and expected text 'Kaly11 testenv' using regular expression (Root cause: Actual text 'Kaly11 Testenv' and expected text 'Kaly11 testenv' are not matched using regular expression)
+
+2018-08-07 15:50:05 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: Invoke 'com.kms.katalon.core.annotation.BeforeTestCase' method: 'TestListeners.sampleBeforeTestCase(...)' completed.
+
+2018-08-07 15:50:05 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseId()): null
+
+2018-08-07 15:50:05 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseVariables()): Invoke 'com.kms.katalon.core.annotation.BeforeTestCase' method: 'TestListeners.sampleBeforeTestCase(...)' completed.
+
+2018-08-07 15:50:06 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Admin Dashboard/Verify Admin is able to Copy Referral Link' successfully
+
+2018-08-07 15:50:06 - [TEST_CASE][PASSED] - Test Cases/Admin Dashboard/Verify Admin is able to Copy Referral Link: Test Cases/Admin Dashboard/Verify Admin is able to Copy Referral Link
+
+2018-08-07 15:50:06 - [TEST_STEP][PASSED] - com.common.util.LoginHelper.LoginWithAdmin: com.common.util.LoginHelper.LoginWithAdmin is PASSED
+
+2018-08-07 15:50:20 - [MESSAGE][PASSED] - Browser is opened with url: 'https://test.roostify.com/'
+
+2018-08-07 15:50:20 - [MESSAGE][PASSED] - Current window maximized
+
+2018-08-07 15:50:20 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-07 15:50:20 - [MESSAGE][PASSED] - Text 'kkachhi+admin@roostify.com' is set on object 'Object Repository/Common/Sign In/input_useremail'
+
+2018-08-07 15:50:21 - [MESSAGE][PASSED] - Text 'Kal@3333' is set on object 'Object Repository/Common/Sign In/input_userpassword'
+
+2018-08-07 15:50:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/Sign In/button_Sign in' is clicked on
+
+2018-08-07 15:50:28 - [MESSAGE][WARNING] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Common/Sign In/div_Login_Popup' located by 'By.xpath: //div[@id = 'tutorial-borrower' and (text() = concat('
+
+Application portal tutorial overlay
+
+
+
+
+
+✕
+
+Now, for some homework!
+
+
+
+This space provides a secure way to:
+
+  Complete critical tasks, like signing and providing documents
+  Get updates about your loan’s progress
+  
+Communicate with your mortgage team and other folks you invite to participate
+
+
+Together with your team, you’ll be moving your loan closer to the finish line.
+Don’t worry, you’ll be notified by email of activity while you’re away.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+Add Your Documents Online
+
+
+
+
+The Tasks tab tells you what information or action we still need from you.
+This is where you' , "'" , 'll provide the documents we need to process your loan, and sign important documents from us.
+
+
+Click on a task to get started, and follow the directions to upload your documents.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+Stay Up-to-Date
+
+
+
+
+As your loan progresses through the key stages, you' , "'" , 'll see the latest activity posted in your Stream.
+
+
+You can comment on activities, post a question or add another person like your Realtor to the transaction.
+To add people, just click Invite a Collaborator.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+We' , "'" , 're Here to Help
+
+
+
+
+Your mortgage team can help answer questions you have along the way.
+Use the Stream and the Chat to get in touch with us at any time.
+We' , "'" , 're looking forward to working with you!
+
+
+
+
+
+Done
+
+
+
+
+
+') or . = concat('
+
+Application portal tutorial overlay
+
+
+
+
+
+✕
+
+Now, for some homework!
+
+
+
+This space provides a secure way to:
+
+  Complete critical tasks, like signing and providing documents
+  Get updates about your loan’s progress
+  
+Communicate with your mortgage team and other folks you invite to participate
+
+
+Together with your team, you’ll be moving your loan closer to the finish line.
+Don’t worry, you’ll be notified by email of activity while you’re away.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+Add Your Documents Online
+
+
+
+
+The Tasks tab tells you what information or action we still need from you.
+This is where you' , "'" , 'll provide the documents we need to process your loan, and sign important documents from us.
+
+
+Click on a task to get started, and follow the directions to upload your documents.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+Stay Up-to-Date
+
+
+
+
+As your loan progresses through the key stages, you' , "'" , 'll see the latest activity posted in your Stream.
+
+
+You can comment on activities, post a question or add another person like your Realtor to the transaction.
+To add people, just click Invite a Collaborator.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+We' , "'" , 're Here to Help
+
+
+
+
+Your mortgage team can help answer questions you have along the way.
+Use the Stream and the Chat to get in touch with us at any time.
+We' , "'" , 're looking forward to working with you!
+
+
+
+
+
+Done
+
+
+
+
+
+'))]' not found
+[[ATTACHMENT|D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180807_155001\\1533637228104.png]]
+
+2018-08-07 15:50:28 - [MESSAGE][PASSED] - Object 'Object Repository/Common/Sign In/text_Dashboard Name' is present
+
+2018-08-07 15:50:28 - [MESSAGE][PASSED] - Object 'Object Repository/Common/Sign In/text_Dashboard Name' is present
+
+2018-08-07 15:50:28 - [MESSAGE][PASSED] - com.common.util.LoginHelper.LoginWithAdmin is PASSED
+
+2018-08-07 15:50:28 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Dashboard/Copy Referral Link/tab_Copy Referral Link' is clicked on
+
+2018-08-07 15:50:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Dashboard/Copy Referral Link/tab_Copy Referral Link' is clicked on
+
+2018-08-07 15:50:28 - [TEST_STEP][PASSED] - takeScreenshot: Taking screenshot successfully
+
+2018-08-07 15:50:29 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|D:\\copylinkscreenshot1.png]]
+
+2018-08-07 15:50:29 - [TEST_STEP][PASSED] - Statement - url = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getAttribute(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Admin Dashboard/Copy Referral Link/copy_Referral_url), "Value"): Attribute 'Value' of object 'Object Repository/Admin Dashboard/Copy Referral Link/copy_Referral_url' is: 'http://test.roostify.com/l/kkachhiadmin/roostify'
+
+2018-08-07 15:50:29 - [MESSAGE][PASSED] - Attribute 'Value' of object 'Object Repository/Admin Dashboard/Copy Referral Link/copy_Referral_url' is: 'http://test.roostify.com/l/kkachhiadmin/roostify'
+
+2018-08-07 15:50:29 - [TEST_STEP][PASSED] - Statement - out.println(url): null
+
+2018-08-07 15:50:29 - [TEST_STEP][PASSED] - takeScreenshot: Taking screenshot successfully
+
+2018-08-07 15:50:29 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180807_155001\\1533637229252.png]]
+
+2018-08-07 15:50:29 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Admin Dashboard/Copy Referral Link/button_Close' is clickable
+
+2018-08-07 15:50:29 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Dashboard/Copy Referral Link/button_Close' is clickable
+
+2018-08-07 15:50:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Dashboard/Copy Referral Link/button_Close' is clicked on
+
+2018-08-07 15:50:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Dashboard/Copy Referral Link/button_Close' is clicked on
+
+2018-08-07 15:50:29 - [TEST_STEP][PASSED] - com.common.util.refreshBrowser.refreshPage: Refresh successfully
+
+2018-08-07 15:50:31 - [MESSAGE][PASSED] - Refresh successfully
+
+2018-08-07 15:50:31 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Common/Sign Out' successfully
+
+2018-08-07 15:50:31 - [TEST_CASE][PASSED] - Test Cases/Common/Sign Out: Test Cases/Common/Sign Out
+
+2018-08-07 15:50:31 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Admin Settings/Admin settings dropdown/Top_User name' is clickable
+
+2018-08-07 15:50:31 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Settings/Admin settings dropdown/Top_User name' is clickable
+
+2018-08-07 15:50:31 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Settings/Admin settings dropdown/Top_User name' is clicked on
+
+2018-08-07 15:50:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Settings/Admin settings dropdown/Top_User name' is clicked on
+
+2018-08-07 15:50:31 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Common/Sign Out/a_Sign Out' is clicked on
+
+2018-08-07 15:50:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/Sign Out/a_Sign Out' is clicked on
+
+2018-08-07 15:50:36 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/Sign Out' successfully
+
+2018-08-07 15:50:36 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test.roostify.com/l/kkachhiadmin/roostify' successfully
+
+2018-08-07 15:50:37 - [MESSAGE][PASSED] - Navigate to 'http://test.roostify.com/l/kkachhiadmin/roostify' successfully
+
+2018-08-07 15:50:37 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-07 15:50:37 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-07 15:50:37 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin Dashboard/Verify Admin is able to Copy Referral Link' successfully
+
+2018-08-07 15:50:37 - [TEST_STEP][FAILED] - callTestCase: Unable to call Test Case with id 'Test Cases/Common/Sign Up' (Root cause: Call Test Case 'Test Cases/Common/Sign Up' failed)
+
+2018-08-07 15:50:37 - [TEST_CASE][FAILED] - Test Cases/Common/Sign Up: Test Cases/Common/Sign Up FAILED because (of) Unable to verify match between actual text 'Kaly11 Testenv' and expected text 'Kaly11 testenv' using regular expression (Root cause: Actual text 'Kaly11 Testenv' and expected text 'Kaly11 testenv' are not matched using regular expression)
+
+2018-08-07 15:50:38 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-07 15:50:38 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-07 15:50:38 - [TEST_STEP][PASSED] - setText: Text 'Kaly11' is set on object 'Object Repository/Common/Sign Up/input_userfirst_name'
+
+2018-08-07 15:50:38 - [MESSAGE][PASSED] - Text 'Kaly11' is set on object 'Object Repository/Common/Sign Up/input_userfirst_name'
+
+2018-08-07 15:50:38 - [TEST_STEP][PASSED] - setText: Text 'testenv' is set on object 'Object Repository/Common/Sign Up/input_userlast_name'
+
+2018-08-07 15:50:38 - [MESSAGE][PASSED] - Text 'testenv' is set on object 'Object Repository/Common/Sign Up/input_userlast_name'
+
+2018-08-07 15:50:38 - [TEST_STEP][PASSED] - setText: Text 'kkachhi+test11@roostify.com' is set on object 'Object Repository/Common/Sign Up/input_User email'
+
+2018-08-07 15:50:38 - [MESSAGE][PASSED] - Text 'kkachhi+test11@roostify.com' is set on object 'Object Repository/Common/Sign Up/input_User email'
+
+2018-08-07 15:50:38 - [TEST_STEP][PASSED] - setText: Text 'Kal@3333' is set on object 'Object Repository/Common/Sign Up/input_userpassword'
+
+2018-08-07 15:50:39 - [MESSAGE][PASSED] - Text 'Kal@3333' is set on object 'Object Repository/Common/Sign Up/input_userpassword'
+
+2018-08-07 15:50:39 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Common/Sign Up/input_TermsnConditions_check' is clicked on
+
+2018-08-07 15:50:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/Sign Up/input_TermsnConditions_check' is clicked on
+
+2018-08-07 15:50:39 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Common/Sign Up/button_Start Application' is clicked on
+
+2018-08-07 15:50:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/Sign Up/button_Start Application' is clicked on
+
+2018-08-07 15:50:44 - [TEST_STEP][PASSED] - Statement - dashboardName = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Common/Sign In/text_Dashboard Name)): Text of object 'Object Repository/Common/Sign In/text_Dashboard Name' is: 'Kaly11 Testenv'
+
+2018-08-07 15:50:44 - [MESSAGE][PASSED] - Text of object 'Object Repository/Common/Sign In/text_Dashboard Name' is: 'Kaly11 Testenv'
+
+2018-08-07 15:50:44 - [TEST_STEP][PASSED] - Statement - fullName = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.concatenate([FirstName, " ", LastName], STOP_ON_FAILURE): Concatenated string array: '['Kaly11',' ','testenv']' into 'Kaly11 testenv'
+
+2018-08-07 15:50:44 - [MESSAGE][PASSED] - Concatenated string array: '['Kaly11',' ','testenv']' into 'Kaly11 testenv'
+
+2018-08-07 15:50:44 - [TEST_STEP][FAILED] - verifyMatch: Unable to verify match between actual text 'Kaly11 Testenv' and expected text 'Kaly11 testenv' using regular expression (Root cause: Actual text 'Kaly11 Testenv' and expected text 'Kaly11 testenv' are not matched using regular expression)
+
+2018-08-07 15:50:44 - [MESSAGE][FAILED] - Unable to verify match between actual text 'Kaly11 Testenv' and expected text 'Kaly11 testenv' using regular expression (Root cause: Actual text 'Kaly11 Testenv' and expected text 'Kaly11 testenv' are not matched using regular expression)
+
+2018-08-07 15:50:44 - [MESSAGE][FAILED] - Unable to call Test Case with id 'Test Cases/Common/Sign Up' (Root cause: Call Test Case 'Test Cases/Common/Sign Up' failed)
+
+2018-08-07 15:50:44 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'TestListeners.sampleAfterTestCase(...)' completed.
+
+2018-08-07 15:50:44 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseId()): null
+
+2018-08-07 15:50:44 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseStatus()): Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'TestListeners.sampleAfterTestCase(...)' completed.]]></system-out>
+         <system-err><![CDATA[2018-08-07 15:50:05 - [TEST_CASE][FAILED] - Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL): Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL) FAILED because (of) Unable to verify match between actual text 'Kaly11 Testenv' and expected text 'Kaly11 testenv' using regular expression (Root cause: Actual text 'Kaly11 Testenv' and expected text 'Kaly11 testenv' are not matched using regular expression)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-08-07 15:50:05 - [TEST_SUITE][FAILED] - Test Suite-Borrower Submit Loan Application (Copy Referral URL): Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL) FAILED because (of) Unable to verify match between actual text 'Kaly11 Testenv' and expected text 'Kaly11 testenv' using regular expression (Root cause: Actual text 'Kaly11 Testenv' and expected text 'Kaly11 testenv' are not matched using regular expression)]]></system-out>
+      <system-err><![CDATA[2018-08-07 15:50:05 - [TEST_SUITE][FAILED] - Test Suite-Borrower Submit Loan Application (Copy Referral URL): Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL) FAILED because (of) Unable to verify match between actual text 'Kaly11 Testenv' and expected text 'Kaly11 testenv' using regular expression (Root cause: Actual text 'Kaly11 Testenv' and expected text 'Kaly11 testenv' are not matched using regular expression)]]></system-err>
+   </testsuite>
+</testsuites>

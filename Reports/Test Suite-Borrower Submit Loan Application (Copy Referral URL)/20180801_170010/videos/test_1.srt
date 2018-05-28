@@ -1,0 +1,292 @@
+1
+00:00:00,096 --> 00:00:00,097
+1. callTestCase
+
+2
+00:00:00,375 --> 00:00:00,378
+1. com.common.util.LoginHelper.LoginWithAdmin
+
+3
+00:00:17,105 --> 00:00:17,106
+5. click
+
+4
+00:00:17,204 --> 00:00:17,205
+9. takeScreenshot
+
+5
+00:00:17,563 --> 00:00:17,566
+13. Statement - url = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getAttribute(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Admin Dashboard/Copy Referral Link/copy_Referral_url), "Value")
+
+6
+00:00:17,621 --> 00:00:17,622
+17. Statement - out.println(url)
+
+7
+00:00:17,628 --> 00:00:17,629
+21. takeScreenshot
+
+8
+00:00:17,936 --> 00:00:17,936
+25. waitForElementClickable
+
+9
+00:00:17,986 --> 00:00:17,987
+29. click
+
+10
+00:00:18,049 --> 00:00:18,050
+33. com.common.util.refreshBrowser.refreshPage
+
+11
+00:00:22,565 --> 00:00:22,566
+37. callTestCase
+
+12
+00:00:22,714 --> 00:00:22,716
+1. waitForElementClickable
+
+13
+00:00:22,812 --> 00:00:22,813
+5. click
+
+14
+00:00:22,998 --> 00:00:22,999
+9. click
+
+15
+00:00:26,986 --> 00:00:26,987
+41. navigateToUrl
+
+16
+00:00:29,826 --> 00:00:29,827
+45. waitForPageLoad
+
+17
+00:00:29,836 --> 00:00:29,837
+5. callTestCase
+
+18
+00:00:30,026 --> 00:00:30,026
+1. waitForPageLoad
+
+19
+00:00:30,032 --> 00:00:30,032
+5. setText
+
+20
+00:00:30,145 --> 00:00:30,148
+9. setText
+
+21
+00:00:30,259 --> 00:00:30,259
+13. setText
+
+22
+00:00:30,508 --> 00:00:30,509
+17. setText
+
+23
+00:00:30,636 --> 00:00:30,637
+21. click
+
+24
+00:00:30,710 --> 00:00:30,710
+25. click
+
+25
+00:00:41,713 --> 00:00:41,714
+29. Statement - dashboardName = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Common/Sign In/text_Dashboard Name))
+
+26
+00:00:41,791 --> 00:00:41,792
+33. Statement - fullName = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.concatenate([FirstName, " ", LastName], STOP_ON_FAILURE)
+
+27
+00:00:41,799 --> 00:00:41,799
+37. verifyMatch
+
+28
+00:00:41,806 --> 00:00:41,806
+9. callTestCase
+
+29
+00:00:42,000 --> 00:00:42,001
+1. click
+
+30
+00:00:42,112 --> 00:00:42,112
+5. click
+
+31
+00:00:45,256 --> 00:00:45,256
+9. setText
+
+32
+00:00:46,934 --> 00:00:46,934
+13. click
+
+33
+00:00:47,014 --> 00:00:47,014
+17. selectOptionByValue
+
+34
+00:00:49,831 --> 00:00:49,831
+21. selectOptionByValue
+
+35
+00:00:50,191 --> 00:00:50,192
+25. selectOptionByValue
+
+36
+00:00:51,046 --> 00:00:51,047
+29. click
+
+37
+00:00:51,139 --> 00:00:51,139
+33. waitForPageLoad
+
+38
+00:00:51,151 --> 00:00:51,152
+37. setText
+
+39
+00:00:53,430 --> 00:00:53,431
+41. setText
+
+40
+00:00:53,607 --> 00:00:53,607
+45. selectOptionByValue
+
+41
+00:00:54,365 --> 00:00:54,365
+49. setText
+
+42
+00:00:54,483 --> 00:00:54,483
+53. selectOptionByValue
+
+43
+00:00:54,753 --> 00:00:54,754
+57. selectOptionByValue
+
+44
+00:00:55,294 --> 00:00:55,295
+61. click
+
+45
+00:00:55,372 --> 00:00:55,373
+65. click
+
+46
+00:00:55,468 --> 00:00:55,468
+69. click
+
+47
+00:00:58,101 --> 00:00:58,101
+73. click
+
+48
+00:00:58,179 --> 00:00:58,179
+77. click
+
+49
+00:01:00,310 --> 00:01:00,311
+81. click
+
+50
+00:01:00,390 --> 00:01:00,391
+85. waitForPageLoad
+
+51
+00:01:00,397 --> 00:01:00,397
+89. waitForElementClickable
+
+52
+00:01:03,485 --> 00:01:03,485
+13. callTestCase
+
+53
+00:01:03,663 --> 00:01:03,664
+1. click
+
+54
+00:01:03,820 --> 00:01:03,821
+5. click
+
+55
+00:01:03,924 --> 00:01:03,925
+9. waitForPageLoad
+
+56
+00:01:03,933 --> 00:01:03,934
+13. click
+
+57
+00:01:30,024 --> 00:01:30,024
+17. click
+
+58
+00:01:30,109 --> 00:01:30,109
+21. waitForPageLoad
+
+59
+00:01:30,117 --> 00:01:30,118
+25. click
+
+60
+00:01:32,230 --> 00:01:32,230
+29. click
+
+61
+00:01:32,314 --> 00:01:32,315
+33. selectOptionByValue
+
+62
+00:01:34,791 --> 00:01:34,791
+37. setText
+
+63
+00:01:34,940 --> 00:01:34,940
+41. waitForElementPresent
+
+64
+00:01:34,966 --> 00:01:34,966
+45. selectOptionByValue
+
+65
+00:01:35,313 --> 00:01:35,314
+17. callTestCase
+
+66
+00:01:35,523 --> 00:01:35,524
+1. click
+
+67
+00:01:35,629 --> 00:01:35,629
+5. waitForPageLoad
+
+68
+00:01:35,647 --> 00:01:35,648
+9. click
+
+69
+00:01:35,733 --> 00:01:35,734
+13. click
+
+70
+00:02:06,667 --> 00:02:06,667
+21. callTestCase
+
+71
+00:02:06,807 --> 00:02:06,807
+1. click
+
+72
+00:02:06,940 --> 00:02:06,940
+5. click
+
+73
+00:02:07,012 --> 00:02:07,013
+9. click
+

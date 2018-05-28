@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+   <description>Project Roostify Core</description>
+   <name>RoostifyCore</name>
+   <tag></tag>
+   <UUID>04556dbf-ffb5-496c-a035-fc30ee7c5f7f</UUID>
+   <migratedVersion>5.4.0</migratedVersion>
+   <pageLoadTimeout>0</pageLoadTimeout>
+</Project>

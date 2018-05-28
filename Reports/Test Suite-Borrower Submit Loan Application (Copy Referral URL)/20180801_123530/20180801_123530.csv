@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Test Suite-Borrower Submit Loan Application (Copy Referral URL),Chrome 67.0.3396.99,,2018-08-01 12:35:32,2018-08-01 12:39:07,3m - 34.532s,FAILED
+,,,,,,
+Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL),Chrome 67.0.3396.99,,2018-08-01 12:35:33,2018-08-01 12:39:06,3m - 33.232s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 67.0.3396.99,,2018-08-01 12:35:33,2018-08-01 12:35:33,0.008s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 12:35:33,2018-08-01 12:35:54,21.023s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 12:35:54,2018-08-01 12:36:11,16.482s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 12:36:11,2018-08-01 12:36:27,16.162s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 12:36:27,2018-08-01 12:37:38,1m - 10.914s,FAILED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 12:37:38,2018-08-01 12:37:57,19.597s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 12:37:57,2018-08-01 12:38:07,9.845s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 12:38:07,2018-08-01 12:38:14,6.506s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 12:38:14,2018-08-01 12:38:45,31.685s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 12:38:45,2018-08-01 12:38:47,2.075s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 12:38:47,2018-08-01 12:39:04,16.401s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 67.0.3396.99,,2018-08-01 12:39:04,2018-08-01 12:39:04,0.003s,PASSED

@@ -1,0 +1,7 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Test Suite-Borrower Submit Loan Application (Copy Referral URL),Chrome 67.0.3396.99,,2018-08-01 12:55:00,2018-08-01 12:55:42,42.260s,FAILED
+,,,,,,
+Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL),Chrome 67.0.3396.99,,2018-08-01 12:55:00,2018-08-01 12:55:41,41.100s,FAILED
+Start listener action : sampleBeforeTestCase,Chrome 67.0.3396.99,,2018-08-01 12:55:00,2018-08-01 12:55:00,0.014s,PASSED
+callTestCase,Chrome 67.0.3396.99,,2018-08-01 12:55:00,2018-08-01 12:55:39,38.664s,FAILED
+Start listener action : sampleAfterTestCase,Chrome 67.0.3396.99,,2018-08-01 12:55:39,2018-08-01 12:55:39,0.007s,PASSED

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Admin is able to Invite Borrower</description>
+   <name>Verify Admin is able to Invite Borrower</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f30121ac-c31a-4214-b34e-fb00cc7ef1a4</testCaseGuid>
+</TestCaseEntity>

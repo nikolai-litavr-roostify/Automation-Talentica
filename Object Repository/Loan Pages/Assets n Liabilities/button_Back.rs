@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Back</name>
+   <tag></tag>
+   <elementGuidId>8668ce44-3a67-4733-aa6c-53b441538ca9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;loan_application_form&quot;)/div[@class=&quot;active step&quot;]/div[@class=&quot;active substep&quot;]/div[@class=&quot;forward-back&quot;]/button[@class=&quot;js--btn-back btn btn--secondary substep-nav&quot;][count(. | //button[@type = 'button' and (text() = 'Back' or . = 'Back')]) = count(//button[@type = 'button' and (text() = 'Back' or . = 'Back')])]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>js--btn-back btn btn--secondary substep-nav</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Back</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;loan_application_form&quot;)/div[@class=&quot;active step&quot;]/div[@class=&quot;active substep&quot;]/div[@class=&quot;forward-back&quot;]/button[@class=&quot;js--btn-back btn btn--secondary substep-nav&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

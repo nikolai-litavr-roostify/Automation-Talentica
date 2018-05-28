@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Test Suite-Borrower Submit Loan Application (Copy Referral URL)" time="79" tests="0" failures="1" errors="0">
+   <testsuite name="Test Suite-Borrower Submit Loan Application (Copy Referral URL)" tests="0" failures="1" errors="0" time="79" timestamp="2018-07-30 15:17:27" hostname="KalyaniK - KALYANIK.talentica-all.com" id="Test Suites/Test Suite-Borrower Submit Loan Application (Copy Referral URL)">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180730_151725"/>
+         <property name="logFiles" value="D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180730_151725\\execution0.log"/>
+         <property name="attachments" value="D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180730_151725\\1532944113058.png, D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180730_151725\\1532944123625.png, D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180730_151725\\1532944123898.png"/>
+         <property name="hostName" value="KalyaniK - KALYANIK.talentica-all.com"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="5.4.1.1"/>
+         <property name="browser" value="Chrome 67.0.3396.99"/>
+         <property name="hostAddress" value="172.19.19.84"/>
+         <property name="sessionId" value="d1ff9f5b28062c3be9a2c6715e2ee517"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL)" classname="Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL)" status="FAILED">
+         <failure type="FAILED" message="Unable to verify object 'Object Repository/Common/Sign In/text_Dashboard Name' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Common/Sign In/text_Dashboard Name' located by 'By.xpath: html/body/div[6]/div/div/ul/li/a/span' not found)"/>
+         <system-out><![CDATA[2018-07-30 15:17:27 - [TEST_CASE][FAILED] - Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL): Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL) FAILED because (of) Unable to verify object 'Object Repository/Common/Sign In/text_Dashboard Name' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Common/Sign In/text_Dashboard Name' located by 'By.xpath: html/body/div[6]/div/div/ul/li/a/span' not found)
+
+2018-07-30 15:17:27 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: Invoke 'com.kms.katalon.core.annotation.BeforeTestCase' method: 'TestListeners.sampleBeforeTestCase(...)' completed.
+
+2018-07-30 15:17:27 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseId()): null
+
+2018-07-30 15:17:27 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseVariables()): Invoke 'com.kms.katalon.core.annotation.BeforeTestCase' method: 'TestListeners.sampleBeforeTestCase(...)' completed.
+
+2018-07-30 15:17:28 - [TEST_STEP][FAILED] - callTestCase: Unable to call Test Case with id 'Test Cases/Admin Dashboard/Verify Admin is able to Copy Referral Link' (Root cause: Call Test Case 'Test Cases/Admin Dashboard/Verify Admin is able to Copy Referral Link' failed)
+
+2018-07-30 15:17:28 - [TEST_CASE][FAILED] - Test Cases/Admin Dashboard/Verify Admin is able to Copy Referral Link: Test Cases/Admin Dashboard/Verify Admin is able to Copy Referral Link FAILED because (of) Unable to verify object 'Object Repository/Common/Sign In/text_Dashboard Name' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Common/Sign In/text_Dashboard Name' located by 'By.xpath: html/body/div[6]/div/div/ul/li/a/span' not found)
+
+2018-07-30 15:17:28 - [TEST_STEP][FAILED] - com.common.util.LoginHelper.LoginWithAdmin: Unable to verify object 'Object Repository/Common/Sign In/text_Dashboard Name' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Common/Sign In/text_Dashboard Name' located by 'By.xpath: html/body/div[6]/div/div/ul/li/a/span' not found)
+
+2018-07-30 15:18:26 - [MESSAGE][PASSED] - Browser is opened with url: 'https://roostify-bow-pilot.herokuapp.com/users/sign_in?a=roostify'
+
+2018-07-30 15:18:26 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-30 15:18:26 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-07-30 15:18:26 - [MESSAGE][PASSED] - Text 'kkachhi@roostify.com' is set on object 'Object Repository/Common/Sign In/input_useremail'
+
+2018-07-30 15:18:26 - [MESSAGE][PASSED] - Text 'Kal@3333' is set on object 'Object Repository/Common/Sign In/input_userpassword'
+
+2018-07-30 15:18:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/Sign In/button_Sign in' is clicked on
+
+2018-07-30 15:18:33 - [MESSAGE][WARNING] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Common/Sign In/div_Login_Popup' located by 'By.xpath: //div[@id = 'tutorial-borrower' and (text() = concat('
+
+Application portal tutorial overlay
+
+
+
+
+
+✕
+
+Now, for some homework!
+
+
+
+This space provides a secure way to:
+
+  Complete critical tasks, like signing and providing documents
+  Get updates about your loan’s progress
+  
+Communicate with your mortgage team and other folks you invite to participate
+
+
+Together with your team, you’ll be moving your loan closer to the finish line.
+Don’t worry, you’ll be notified by email of activity while you’re away.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+Add Your Documents Online
+
+
+
+
+The Tasks tab tells you what information or action we still need from you.
+This is where you' , "'" , 'll provide the documents we need to process your loan, and sign important documents from us.
+
+
+Click on a task to get started, and follow the directions to upload your documents.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+Stay Up-to-Date
+
+
+
+
+As your loan progresses through the key stages, you' , "'" , 'll see the latest activity posted in your Stream.
+
+
+You can comment on activities, post a question or add another person like your Realtor to the transaction.
+To add people, just click Invite a Collaborator.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+We' , "'" , 're Here to Help
+
+
+
+
+Your mortgage team can help answer questions you have along the way.
+Use the Stream and the Chat to get in touch with us at any time.
+We' , "'" , 're looking forward to working with you!
+
+
+
+
+
+Done
+
+
+
+
+
+') or . = concat('
+
+Application portal tutorial overlay
+
+
+
+
+
+✕
+
+Now, for some homework!
+
+
+
+This space provides a secure way to:
+
+  Complete critical tasks, like signing and providing documents
+  Get updates about your loan’s progress
+  
+Communicate with your mortgage team and other folks you invite to participate
+
+
+Together with your team, you’ll be moving your loan closer to the finish line.
+Don’t worry, you’ll be notified by email of activity while you’re away.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+Add Your Documents Online
+
+
+
+
+The Tasks tab tells you what information or action we still need from you.
+This is where you' , "'" , 'll provide the documents we need to process your loan, and sign important documents from us.
+
+
+Click on a task to get started, and follow the directions to upload your documents.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+Stay Up-to-Date
+
+
+
+
+As your loan progresses through the key stages, you' , "'" , 'll see the latest activity posted in your Stream.
+
+
+You can comment on activities, post a question or add another person like your Realtor to the transaction.
+To add people, just click Invite a Collaborator.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+We' , "'" , 're Here to Help
+
+
+
+
+Your mortgage team can help answer questions you have along the way.
+Use the Stream and the Chat to get in touch with us at any time.
+We' , "'" , 're looking forward to working with you!
+
+
+
+
+
+Done
+
+
+
+
+
+'))]' not found
+[[ATTACHMENT|D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180730_151725\\1532944113058.png]]
+
+2018-07-30 15:18:38 - [MESSAGE][WARNING] - Object 'Object Repository/Common/Sign In/text_Dashboard Name' is not present after 5 second(s)
+
+2018-07-30 15:18:43 - [MESSAGE][FAILED] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Common/Sign In/text_Dashboard Name' located by 'By.xpath: html/body/div[6]/div/div/ul/li/a/span' not found
+[[ATTACHMENT|D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180730_151725\\1532944123625.png]]
+
+2018-07-30 15:18:44 - [MESSAGE][FAILED] - Unable to verify object 'Object Repository/Common/Sign In/text_Dashboard Name' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Common/Sign In/text_Dashboard Name' located by 'By.xpath: html/body/div[6]/div/div/ul/li/a/span' not found)
+[[ATTACHMENT|D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180730_151725\\1532944123898.png]]
+
+2018-07-30 15:18:44 - [MESSAGE][FAILED] - Unable to verify object 'Object Repository/Common/Sign In/text_Dashboard Name' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Common/Sign In/text_Dashboard Name' located by 'By.xpath: html/body/div[6]/div/div/ul/li/a/span' not found)
+
+2018-07-30 15:18:44 - [MESSAGE][FAILED] - Unable to call Test Case with id 'Test Cases/Admin Dashboard/Verify Admin is able to Copy Referral Link' (Root cause: Call Test Case 'Test Cases/Admin Dashboard/Verify Admin is able to Copy Referral Link' failed)
+
+2018-07-30 15:18:44 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'TestListeners.sampleAfterTestCase(...)' completed.
+
+2018-07-30 15:18:44 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseId()): null
+
+2018-07-30 15:18:44 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseStatus()): Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'TestListeners.sampleAfterTestCase(...)' completed.]]></system-out>
+         <system-err><![CDATA[2018-07-30 15:17:27 - [TEST_CASE][FAILED] - Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL): Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL) FAILED because (of) Unable to verify object 'Object Repository/Common/Sign In/text_Dashboard Name' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Common/Sign In/text_Dashboard Name' located by 'By.xpath: html/body/div[6]/div/div/ul/li/a/span' not found)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-07-30 15:17:27 - [TEST_SUITE][FAILED] - Test Suite-Borrower Submit Loan Application (Copy Referral URL): Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL) FAILED because (of) Unable to verify object 'Object Repository/Common/Sign In/text_Dashboard Name' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Common/Sign In/text_Dashboard Name' located by 'By.xpath: html/body/div[6]/div/div/ul/li/a/span' not found)]]></system-out>
+      <system-err><![CDATA[2018-07-30 15:17:27 - [TEST_SUITE][FAILED] - Test Suite-Borrower Submit Loan Application (Copy Referral URL): Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL) FAILED because (of) Unable to verify object 'Object Repository/Common/Sign In/text_Dashboard Name' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Common/Sign In/text_Dashboard Name' located by 'By.xpath: html/body/div[6]/div/div/ul/li/a/span' not found)]]></system-err>
+   </testsuite>
+</testsuites>

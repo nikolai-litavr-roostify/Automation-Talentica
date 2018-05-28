@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Test Suite-Borrower Submit Loan Application (Copy Referral URL)" time="180" tests="0" failures="1" errors="0">
+   <testsuite name="Test Suite-Borrower Submit Loan Application (Copy Referral URL)" tests="0" failures="1" errors="0" time="180" timestamp="2018-08-07 15:56:10" hostname="KalyaniK - KALYANIK.talentica-all.com" id="Test Suites/Test Suite-Borrower Submit Loan Application (Copy Referral URL)">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180807_155608"/>
+         <property name="logFiles" value="D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180807_155608\\execution0.log"/>
+         <property name="attachments" value="D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180807_155608\\1533637586239.png, D:\\copylinkscreenshot1.png, D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180807_155608\\1533637587206.png, D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180807_155608\\1533637639417.png, D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180807_155608\\1533637729309.png"/>
+         <property name="hostName" value="KalyaniK - KALYANIK.talentica-all.com"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="5.4.1.1"/>
+         <property name="browser" value="Chrome 67.0.3396.99"/>
+         <property name="hostAddress" value="172.19.19.84"/>
+         <property name="sessionId" value="d8722167af0097baacd83e2d8e545814"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL)" classname="Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL)" status="FAILED">
+         <failure type="FAILED" message="Unable to select option by value '001' of object 'Object Repository/Loan Pages/Loan Details/select_Country_Targetmarket'  using regular expression (Root cause: No option matched.)"/>
+         <system-out><![CDATA[2018-08-07 15:56:10 - [TEST_CASE][FAILED] - Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL): Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL) FAILED because (of) Unable to select option by value '001' of object 'Object Repository/Loan Pages/Loan Details/select_Country_Targetmarket'  using regular expression (Root cause: No option matched.)
+
+2018-08-07 15:56:11 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: Invoke 'com.kms.katalon.core.annotation.BeforeTestCase' method: 'TestListeners.sampleBeforeTestCase(...)' completed.
+
+2018-08-07 15:56:11 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseId()): null
+
+2018-08-07 15:56:11 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseVariables()): Invoke 'com.kms.katalon.core.annotation.BeforeTestCase' method: 'TestListeners.sampleBeforeTestCase(...)' completed.
+
+2018-08-07 15:56:11 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Admin Dashboard/Verify Admin is able to Copy Referral Link' successfully
+
+2018-08-07 15:56:11 - [TEST_CASE][PASSED] - Test Cases/Admin Dashboard/Verify Admin is able to Copy Referral Link: Test Cases/Admin Dashboard/Verify Admin is able to Copy Referral Link
+
+2018-08-07 15:56:11 - [TEST_STEP][PASSED] - com.common.util.LoginHelper.LoginWithAdmin: com.common.util.LoginHelper.LoginWithAdmin is PASSED
+
+2018-08-07 15:56:19 - [MESSAGE][PASSED] - Browser is opened with url: 'https://test.roostify.com/'
+
+2018-08-07 15:56:19 - [MESSAGE][PASSED] - Current window maximized
+
+2018-08-07 15:56:19 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-07 15:56:20 - [MESSAGE][PASSED] - Text 'kkachhi+admin@roostify.com' is set on object 'Object Repository/Common/Sign In/input_useremail'
+
+2018-08-07 15:56:20 - [MESSAGE][PASSED] - Text 'Kal@3333' is set on object 'Object Repository/Common/Sign In/input_userpassword'
+
+2018-08-07 15:56:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/Sign In/button_Sign in' is clicked on
+
+2018-08-07 15:56:26 - [MESSAGE][WARNING] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Common/Sign In/div_Login_Popup' located by 'By.xpath: //div[@id = 'tutorial-borrower' and (text() = concat('
+
+Application portal tutorial overlay
+
+
+
+
+
+✕
+
+Now, for some homework!
+
+
+
+This space provides a secure way to:
+
+  Complete critical tasks, like signing and providing documents
+  Get updates about your loan’s progress
+  
+Communicate with your mortgage team and other folks you invite to participate
+
+
+Together with your team, you’ll be moving your loan closer to the finish line.
+Don’t worry, you’ll be notified by email of activity while you’re away.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+Add Your Documents Online
+
+
+
+
+The Tasks tab tells you what information or action we still need from you.
+This is where you' , "'" , 'll provide the documents we need to process your loan, and sign important documents from us.
+
+
+Click on a task to get started, and follow the directions to upload your documents.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+Stay Up-to-Date
+
+
+
+
+As your loan progresses through the key stages, you' , "'" , 'll see the latest activity posted in your Stream.
+
+
+You can comment on activities, post a question or add another person like your Realtor to the transaction.
+To add people, just click Invite a Collaborator.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+We' , "'" , 're Here to Help
+
+
+
+
+Your mortgage team can help answer questions you have along the way.
+Use the Stream and the Chat to get in touch with us at any time.
+We' , "'" , 're looking forward to working with you!
+
+
+
+
+
+Done
+
+
+
+
+
+') or . = concat('
+
+Application portal tutorial overlay
+
+
+
+
+
+✕
+
+Now, for some homework!
+
+
+
+This space provides a secure way to:
+
+  Complete critical tasks, like signing and providing documents
+  Get updates about your loan’s progress
+  
+Communicate with your mortgage team and other folks you invite to participate
+
+
+Together with your team, you’ll be moving your loan closer to the finish line.
+Don’t worry, you’ll be notified by email of activity while you’re away.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+Add Your Documents Online
+
+
+
+
+The Tasks tab tells you what information or action we still need from you.
+This is where you' , "'" , 'll provide the documents we need to process your loan, and sign important documents from us.
+
+
+Click on a task to get started, and follow the directions to upload your documents.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+Stay Up-to-Date
+
+
+
+
+As your loan progresses through the key stages, you' , "'" , 'll see the latest activity posted in your Stream.
+
+
+You can comment on activities, post a question or add another person like your Realtor to the transaction.
+To add people, just click Invite a Collaborator.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+We' , "'" , 're Here to Help
+
+
+
+
+Your mortgage team can help answer questions you have along the way.
+Use the Stream and the Chat to get in touch with us at any time.
+We' , "'" , 're looking forward to working with you!
+
+
+
+
+
+Done
+
+
+
+
+
+'))]' not found
+[[ATTACHMENT|D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180807_155608\\1533637586239.png]]
+
+2018-08-07 15:56:26 - [MESSAGE][PASSED] - Object 'Object Repository/Common/Sign In/text_Dashboard Name' is present
+
+2018-08-07 15:56:26 - [MESSAGE][PASSED] - Object 'Object Repository/Common/Sign In/text_Dashboard Name' is present
+
+2018-08-07 15:56:26 - [MESSAGE][PASSED] - com.common.util.LoginHelper.LoginWithAdmin is PASSED
+
+2018-08-07 15:56:26 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Dashboard/Copy Referral Link/tab_Copy Referral Link' is clicked on
+
+2018-08-07 15:56:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Dashboard/Copy Referral Link/tab_Copy Referral Link' is clicked on
+
+2018-08-07 15:56:26 - [TEST_STEP][PASSED] - takeScreenshot: Taking screenshot successfully
+
+2018-08-07 15:56:27 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|D:\\copylinkscreenshot1.png]]
+
+2018-08-07 15:56:27 - [TEST_STEP][PASSED] - Statement - url = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getAttribute(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Admin Dashboard/Copy Referral Link/copy_Referral_url), "Value"): Attribute 'Value' of object 'Object Repository/Admin Dashboard/Copy Referral Link/copy_Referral_url' is: 'http://test.roostify.com/l/kkachhiadmin/roostify'
+
+2018-08-07 15:56:27 - [MESSAGE][PASSED] - Attribute 'Value' of object 'Object Repository/Admin Dashboard/Copy Referral Link/copy_Referral_url' is: 'http://test.roostify.com/l/kkachhiadmin/roostify'
+
+2018-08-07 15:56:27 - [TEST_STEP][PASSED] - Statement - out.println(url): null
+
+2018-08-07 15:56:27 - [TEST_STEP][PASSED] - takeScreenshot: Taking screenshot successfully
+
+2018-08-07 15:56:27 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180807_155608\\1533637587206.png]]
+
+2018-08-07 15:56:27 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Admin Dashboard/Copy Referral Link/button_Close' is clickable
+
+2018-08-07 15:56:27 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Dashboard/Copy Referral Link/button_Close' is clickable
+
+2018-08-07 15:56:27 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Dashboard/Copy Referral Link/button_Close' is clicked on
+
+2018-08-07 15:56:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Dashboard/Copy Referral Link/button_Close' is clicked on
+
+2018-08-07 15:56:27 - [TEST_STEP][PASSED] - com.common.util.refreshBrowser.refreshPage: Refresh successfully
+
+2018-08-07 15:56:29 - [MESSAGE][PASSED] - Refresh successfully
+
+2018-08-07 15:56:29 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Common/Sign Out' successfully
+
+2018-08-07 15:56:29 - [TEST_CASE][PASSED] - Test Cases/Common/Sign Out: Test Cases/Common/Sign Out
+
+2018-08-07 15:56:29 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Admin Settings/Admin settings dropdown/Top_User name' is clickable
+
+2018-08-07 15:56:29 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Settings/Admin settings dropdown/Top_User name' is clickable
+
+2018-08-07 15:56:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Settings/Admin settings dropdown/Top_User name' is clicked on
+
+2018-08-07 15:56:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Settings/Admin settings dropdown/Top_User name' is clicked on
+
+2018-08-07 15:56:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Common/Sign Out/a_Sign Out' is clicked on
+
+2018-08-07 15:56:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/Sign Out/a_Sign Out' is clicked on
+
+2018-08-07 15:56:33 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/Sign Out' successfully
+
+2018-08-07 15:56:33 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test.roostify.com/l/kkachhiadmin/roostify' successfully
+
+2018-08-07 15:56:34 - [MESSAGE][PASSED] - Navigate to 'http://test.roostify.com/l/kkachhiadmin/roostify' successfully
+
+2018-08-07 15:56:34 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-07 15:56:34 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-07 15:56:34 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin Dashboard/Verify Admin is able to Copy Referral Link' successfully
+
+2018-08-07 15:56:34 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Common/Sign Up' successfully
+
+2018-08-07 15:56:34 - [TEST_CASE][PASSED] - Test Cases/Common/Sign Up: Test Cases/Common/Sign Up
+
+2018-08-07 15:56:34 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-07 15:56:34 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-07 15:56:34 - [TEST_STEP][PASSED] - setText: Text 'Kaly12' is set on object 'Object Repository/Common/Sign Up/input_userfirst_name'
+
+2018-08-07 15:56:34 - [MESSAGE][PASSED] - Text 'Kaly12' is set on object 'Object Repository/Common/Sign Up/input_userfirst_name'
+
+2018-08-07 15:56:34 - [TEST_STEP][PASSED] - setText: Text 'testenv' is set on object 'Object Repository/Common/Sign Up/input_userlast_name'
+
+2018-08-07 15:56:35 - [MESSAGE][PASSED] - Text 'testenv' is set on object 'Object Repository/Common/Sign Up/input_userlast_name'
+
+2018-08-07 15:56:35 - [TEST_STEP][PASSED] - setText: Text 'kkachhi+test12@roostify.com' is set on object 'Object Repository/Common/Sign Up/input_User email'
+
+2018-08-07 15:56:35 - [MESSAGE][PASSED] - Text 'kkachhi+test12@roostify.com' is set on object 'Object Repository/Common/Sign Up/input_User email'
+
+2018-08-07 15:56:35 - [TEST_STEP][PASSED] - setText: Text 'Kal@3333' is set on object 'Object Repository/Common/Sign Up/input_userpassword'
+
+2018-08-07 15:56:35 - [MESSAGE][PASSED] - Text 'Kal@3333' is set on object 'Object Repository/Common/Sign Up/input_userpassword'
+
+2018-08-07 15:56:35 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Common/Sign Up/input_TermsnConditions_check' is clicked on
+
+2018-08-07 15:56:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/Sign Up/input_TermsnConditions_check' is clicked on
+
+2018-08-07 15:56:35 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Common/Sign Up/button_Start Application' is clicked on
+
+2018-08-07 15:56:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/Sign Up/button_Start Application' is clicked on
+
+2018-08-07 15:56:40 - [TEST_STEP][PASSED] - Statement - dashboardName = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Common/Sign In/text_Dashboard Name)): Text of object 'Object Repository/Common/Sign In/text_Dashboard Name' is: 'Kaly12 Testenv'
+
+2018-08-07 15:56:40 - [MESSAGE][PASSED] - Text of object 'Object Repository/Common/Sign In/text_Dashboard Name' is: 'Kaly12 Testenv'
+
+2018-08-07 15:56:40 - [TEST_STEP][PASSED] - Statement - fullName = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.concatenate([FirstName, " ", LastName], STOP_ON_FAILURE): Concatenated string array: '['Kaly12',' ','testenv']' into 'Kaly12 testenv'
+
+2018-08-07 15:56:40 - [MESSAGE][PASSED] - Concatenated string array: '['Kaly12',' ','testenv']' into 'Kaly12 testenv'
+
+2018-08-07 15:56:40 - [TEST_STEP][NOT_RUN] - verifyMatch: NOT_RUN: verifyMatch
+
+2018-08-07 15:56:40 - [MESSAGE][NOT_RUN] - NOT_RUN: verifyMatch
+
+2018-08-07 15:56:40 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common/Sign Up' successfully
+
+2018-08-07 15:56:40 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Loan Pages/Borrower Details' successfully
+
+2018-08-07 15:56:40 - [TEST_CASE][PASSED] - Test Cases/Loan Pages/Borrower Details: Test Cases/Loan Pages/Borrower Details
+
+2018-08-07 15:56:40 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Borrower Details/button_Continue' is clicked on
+
+2018-08-07 15:56:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Borrower Details/button_Continue' is clicked on
+
+2018-08-07 15:56:41 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Borrower Details/button_Next' is clicked on
+
+2018-08-07 15:56:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Borrower Details/button_Next' is clicked on
+
+2018-08-07 15:56:42 - [TEST_STEP][PASSED] - setText: Text '3456789324' is set on object 'Object Repository/Loan Pages/Borrower Details/input_Primary_Phone'
+
+2018-08-07 15:56:46 - [MESSAGE][PASSED] - Text '3456789324' is set on object 'Object Repository/Loan Pages/Borrower Details/input_Primary_Phone'
+
+2018-08-07 15:56:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Borrower Details/button_Next' is clicked on
+
+2018-08-07 15:56:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Borrower Details/button_Next' is clicked on
+
+2018-08-07 15:56:46 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value '10' are selected in object 'Object Repository/Loan Pages/Borrower Details/select_Birth_Month'  using regular expression
+
+2018-08-07 15:56:48 - [MESSAGE][PASSED] - All options with value '10' are selected in object 'Object Repository/Loan Pages/Borrower Details/select_Birth_Month'  using regular expression
+
+2018-08-07 15:56:48 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value '6' are selected in object 'Object Repository/Loan Pages/Borrower Details/select_Birth_Date'  using regular expression
+
+2018-08-07 15:56:48 - [MESSAGE][PASSED] - All options with value '6' are selected in object 'Object Repository/Loan Pages/Borrower Details/select_Birth_Date'  using regular expression
+
+2018-08-07 15:56:48 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value '1990' are selected in object 'Object Repository/Loan Pages/Borrower Details/select_Birth_Year'  using regular expression
+
+2018-08-07 15:56:49 - [MESSAGE][PASSED] - All options with value '1990' are selected in object 'Object Repository/Loan Pages/Borrower Details/select_Birth_Year'  using regular expression
+
+2018-08-07 15:56:49 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Borrower Details/button_Next' is clicked on
+
+2018-08-07 15:56:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Borrower Details/button_Next' is clicked on
+
+2018-08-07 15:56:50 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-07 15:56:50 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-07 15:56:50 - [TEST_STEP][PASSED] - setText: Text '452 Holly Lane  Hopewell' is set on object 'Object Repository/Loan Pages/Borrower Details/input_Address1'
+
+2018-08-07 15:56:51 - [MESSAGE][PASSED] - Text '452 Holly Lane  Hopewell' is set on object 'Object Repository/Loan Pages/Borrower Details/input_Address1'
+
+2018-08-07 15:56:51 - [TEST_STEP][PASSED] - setText: Text 'Hopewell' is set on object 'Object Repository/Loan Pages/Borrower Details/input_Address2'
+
+2018-08-07 15:56:52 - [MESSAGE][PASSED] - Text 'Hopewell' is set on object 'Object Repository/Loan Pages/Borrower Details/input_Address2'
+
+2018-08-07 15:56:52 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value 'VT' are selected in object 'Object Repository/Loan Pages/Borrower Details/select_State'  using regular expression
+
+2018-08-07 15:56:52 - [MESSAGE][PASSED] - All options with value 'VT' are selected in object 'Object Repository/Loan Pages/Borrower Details/select_State'  using regular expression
+
+2018-08-07 15:56:52 - [TEST_STEP][PASSED] - setText: Text '23860' is set on object 'Object Repository/Loan Pages/Borrower Details/input_Zipcode'
+
+2018-08-07 15:56:53 - [MESSAGE][PASSED] - Text '23860' is set on object 'Object Repository/Loan Pages/Borrower Details/input_Zipcode'
+
+2018-08-07 15:56:53 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value '9' are selected in object 'Object Repository/Loan Pages/Borrower Details/select_Month_Starting_from'  using regular expression
+
+2018-08-07 15:56:53 - [MESSAGE][PASSED] - All options with value '9' are selected in object 'Object Repository/Loan Pages/Borrower Details/select_Month_Starting_from'  using regular expression
+
+2018-08-07 15:56:53 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value '2016' are selected in object 'Object Repository/Loan Pages/Borrower Details/select_Year_Starting_from'  using regular expression
+
+2018-08-07 15:56:54 - [MESSAGE][PASSED] - All options with value '2016' are selected in object 'Object Repository/Loan Pages/Borrower Details/select_Year_Starting_from'  using regular expression
+
+2018-08-07 15:56:54 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Borrower Details/button_Yes' is clicked on
+
+2018-08-07 15:56:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Borrower Details/button_Yes' is clicked on
+
+2018-08-07 15:56:54 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Borrower Details/button_Next' is clicked on
+
+2018-08-07 15:56:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Borrower Details/button_Next' is clicked on
+
+2018-08-07 15:56:54 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Borrower Details/checkbox_other_mailing_address' is clicked on
+
+2018-08-07 15:56:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Borrower Details/checkbox_other_mailing_address' is clicked on
+
+2018-08-07 15:56:55 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Borrower Details/button_Next' is clicked on
+
+2018-08-07 15:56:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Borrower Details/button_Next' is clicked on
+
+2018-08-07 15:56:55 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Borrower Details/checkbox_has_coborrower' is clicked on
+
+2018-08-07 15:56:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Borrower Details/checkbox_has_coborrower' is clicked on
+
+2018-08-07 15:56:56 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Borrower Details/button_Next' is clicked on
+
+2018-08-07 15:56:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Borrower Details/button_Next' is clicked on
+
+2018-08-07 15:56:56 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-07 15:56:56 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-07 15:56:56 - [TEST_STEP][PASSED] - waitForElementClickable: Web element with id: 'Object Repository/Loan Pages/Borrower Details/button_Back' located by 'By.xpath: .//*[@id='loan_application_form']/div[4]/div[7]/div[2]/button[1]' not found
+
+2018-08-07 15:56:59 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Loan Pages/Borrower Details/button_Back' located by 'By.xpath: .//*[@id='loan_application_form']/div[4]/div[7]/div[2]/button[1]' not found
+
+2018-08-07 15:56:59 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Loan Pages/Borrower Details' successfully
+
+2018-08-07 15:56:59 - [TEST_STEP][FAILED] - callTestCase: Unable to call Test Case with id 'Test Cases/Loan Pages/Loan Details' (Root cause: Call Test Case 'Test Cases/Loan Pages/Loan Details' failed)
+
+2018-08-07 15:56:59 - [TEST_CASE][FAILED] - Test Cases/Loan Pages/Loan Details: Test Cases/Loan Pages/Loan Details FAILED because (of) Unable to select option by value '001' of object 'Object Repository/Loan Pages/Loan Details/select_Country_Targetmarket'  using regular expression (Root cause: No option matched.)
+
+2018-08-07 15:57:00 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Loan Details/Loan Tab' is clicked on
+
+2018-08-07 15:57:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Loan Details/Loan Tab' is clicked on
+
+2018-08-07 15:57:00 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Loan Details/button_Next' is clicked on
+
+2018-08-07 15:57:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Loan Details/button_Next' is clicked on
+
+2018-08-07 15:57:00 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-07 15:57:00 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-07 15:57:00 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Loan Details/input_home_purchase_checkbox' is clicked on
+
+2018-08-07 15:57:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Loan Details/input_home_purchase_checkbox' is clicked on
+
+2018-08-07 15:57:15 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Loan Details/button_Next' is clicked on
+
+2018-08-07 15:57:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Loan Details/button_Next' is clicked on
+
+2018-08-07 15:57:15 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-07 15:57:16 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-07 15:57:16 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Loan Details/input_loan_application_lead_st' is clicked on
+
+2018-08-07 15:57:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Loan Details/input_loan_application_lead_st' is clicked on
+
+2018-08-07 15:57:17 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Loan Details/button_Next (1)' is clicked on
+
+2018-08-07 15:57:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Loan Details/button_Next (1)' is clicked on
+
+2018-08-07 15:57:17 - [TEST_STEP][PASSED] - selectOptionByValue: No option matched.
+
+2018-08-07 15:57:19 - [MESSAGE][WARNING] - No option matched.
+
+2018-08-07 15:57:19 - [TEST_STEP][PASSED] - setText: Text 'vegas' is set on object 'Object Repository/Loan Pages/Loan Details/input_loan_City'
+
+2018-08-07 15:57:19 - [MESSAGE][PASSED] - Text 'vegas' is set on object 'Object Repository/Loan Pages/Loan Details/input_loan_City'
+
+2018-08-07 15:57:19 - [TEST_STEP][PASSED] - waitForElementPresent: Object 'Object Repository/Loan Pages/Loan Details/select_Country_Targetmarket' is present
+
+2018-08-07 15:57:19 - [MESSAGE][PASSED] - Object 'Object Repository/Loan Pages/Loan Details/select_Country_Targetmarket' is present
+
+2018-08-07 15:57:19 - [TEST_STEP][FAILED] - selectOptionByValue: Unable to select option by value '001' of object 'Object Repository/Loan Pages/Loan Details/select_Country_Targetmarket'  using regular expression (Root cause: No option matched.)
+
+2018-08-07 15:57:19 - [MESSAGE][FAILED] - No option matched.
+
+2018-08-07 15:57:19 - [MESSAGE][FAILED] - Unable to select option by value '001' of object 'Object Repository/Loan Pages/Loan Details/select_Country_Targetmarket'  using regular expression (Root cause: No option matched.)
+[[ATTACHMENT|D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180807_155608\\1533637639417.png]]
+
+2018-08-07 15:57:19 - [MESSAGE][FAILED] - Unable to call Test Case with id 'Test Cases/Loan Pages/Loan Details' (Root cause: Call Test Case 'Test Cases/Loan Pages/Loan Details' failed)
+
+2018-08-07 15:57:19 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Loan Pages/Employment Details' successfully
+
+2018-08-07 15:57:19 - [TEST_CASE][PASSED] - Test Cases/Loan Pages/Employment Details: Test Cases/Loan Pages/Employment Details
+
+2018-08-07 15:57:19 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/Employment Tab' is clicked on
+
+2018-08-07 15:57:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/Employment Tab' is clicked on
+
+2018-08-07 15:57:20 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-07 15:57:20 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-07 15:57:20 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_Next' is clicked on
+
+2018-08-07 15:57:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_Next' is clicked on
+
+2018-08-07 15:57:20 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/input_loan_application_b_recen' is clicked on
+
+2018-08-07 15:57:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/input_loan_application_b_recen' is clicked on
+
+2018-08-07 15:57:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_Next' is clicked on
+
+2018-08-07 15:57:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_Next' is clicked on
+
+2018-08-07 15:57:29 - [TEST_STEP][PASSED] - setText: Text 'Google' is set on object 'Object Repository/Loan Pages/Employment Details/input_loan_applicationb_employ'
+
+2018-08-07 15:57:31 - [MESSAGE][PASSED] - Text 'Google' is set on object 'Object Repository/Loan Pages/Employment Details/input_loan_applicationb_employ'
+
+2018-08-07 15:57:31 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_No' is clicked on
+
+2018-08-07 15:57:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_No' is clicked on
+
+2018-08-07 15:57:31 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_No_1' is clicked on
+
+2018-08-07 15:57:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_No_1' is clicked on
+
+2018-08-07 15:57:31 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_Salary' is clicked on
+
+2018-08-07 15:57:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_Salary' is clicked on
+
+2018-08-07 15:57:31 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value '2' are selected in object 'Object Repository/Loan Pages/Employment Details/select_MonthJanuaryFebruaryMar'  using regular expression
+
+2018-08-07 15:57:31 - [MESSAGE][PASSED] - All options with value '2' are selected in object 'Object Repository/Loan Pages/Employment Details/select_MonthJanuaryFebruaryMar'  using regular expression
+
+2018-08-07 15:57:31 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value '2009' are selected in object 'Object Repository/Loan Pages/Employment Details/select_Year2018201720162015201'  using regular expression
+
+2018-08-07 15:57:32 - [MESSAGE][PASSED] - All options with value '2009' are selected in object 'Object Repository/Loan Pages/Employment Details/select_Year2018201720162015201'  using regular expression
+
+2018-08-07 15:57:32 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_Yes' is clicked on
+
+2018-08-07 15:57:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_Yes' is clicked on
+
+2018-08-07 15:57:32 - [TEST_STEP][PASSED] - setText: Text 'Engineer' is set on object 'Object Repository/Loan Pages/Employment Details/input_loan_applicationb_employ_1 (1)'
+
+2018-08-07 15:57:32 - [MESSAGE][PASSED] - Text 'Engineer' is set on object 'Object Repository/Loan Pages/Employment Details/input_loan_applicationb_employ_1 (1)'
+
+2018-08-07 15:57:32 - [TEST_STEP][PASSED] - setText: Text 'NY' is set on object 'Object Repository/Loan Pages/Employment Details/input_loan_applicationb_employ_2 (1)'
+
+2018-08-07 15:57:32 - [MESSAGE][PASSED] - Text 'NY' is set on object 'Object Repository/Loan Pages/Employment Details/input_loan_applicationb_employ_2 (1)'
+
+2018-08-07 15:57:32 - [TEST_STEP][PASSED] - setText: Text '4567' is set on object 'Object Repository/Loan Pages/Employment Details/input_loan_applicationb_employ_3 (1)'
+
+2018-08-07 15:57:33 - [MESSAGE][PASSED] - Text '4567' is set on object 'Object Repository/Loan Pages/Employment Details/input_loan_applicationb_employ_3 (1)'
+
+2018-08-07 15:57:33 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-08-07 15:57:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-08-07 15:57:33 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-07 15:57:33 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-07 15:57:33 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Loan Pages/Employment Details/button_Back' is clickable
+
+2018-08-07 15:57:34 - [MESSAGE][PASSED] - Object 'Object Repository/Loan Pages/Employment Details/button_Back' is clickable
+
+2018-08-07 15:57:34 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Loan Pages/Employment Details' successfully
+
+2018-08-07 15:57:34 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Loan Pages/Assets n Liabilities' successfully
+
+2018-08-07 15:57:34 - [TEST_CASE][PASSED] - Test Cases/Loan Pages/Assets n Liabilities: Test Cases/Loan Pages/Assets n Liabilities
+
+2018-08-07 15:57:34 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Assets n Liabilities/Assets n Liabilites Tab' is clicked on
+
+2018-08-07 15:57:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Assets n Liabilities/Assets n Liabilites Tab' is clicked on
+
+2018-08-07 15:57:35 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-08-07 15:57:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-08-07 15:57:36 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Assets n Liabilities/input_loan_application_b_curre' is clicked on
+
+2018-08-07 15:57:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Assets n Liabilities/input_loan_application_b_curre' is clicked on
+
+2018-08-07 15:57:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-08-07 15:57:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-08-07 15:57:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Assets n Liabilities/input_loan_application_b_recen_1' is clicked on
+
+2018-08-07 15:57:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Assets n Liabilities/input_loan_application_b_recen_1' is clicked on
+
+2018-08-07 15:57:38 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-08-07 15:57:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-08-07 15:57:38 - [TEST_STEP][PASSED] - setText: Text 'Admac' is set on object 'Object Repository/Loan Pages/Assets n Liabilities/input_loan_applicationb_assets'
+
+2018-08-07 15:57:56 - [MESSAGE][PASSED] - Text 'Admac' is set on object 'Object Repository/Loan Pages/Assets n Liabilities/input_loan_applicationb_assets'
+
+2018-08-07 15:57:56 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value 'stock' are selected in object 'Object Repository/Loan Pages/Assets n Liabilities/select_Savings AccountChecking'  using regular expression
+
+2018-08-07 15:57:57 - [MESSAGE][PASSED] - All options with value 'stock' are selected in object 'Object Repository/Loan Pages/Assets n Liabilities/select_Savings AccountChecking'  using regular expression
+
+2018-08-07 15:57:57 - [TEST_STEP][PASSED] - doubleClick: Object: 'Object Repository/Loan Pages/Assets n Liabilities/input_loan_applicationb_assets_1' is double clicked on
+
+2018-08-07 15:57:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Assets n Liabilities/input_loan_applicationb_assets_1' is double clicked on
+
+2018-08-07 15:57:57 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-08-07 15:57:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-08-07 15:57:57 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Assets n Liabilities/input_loan_application_b_ongoi' is clicked on
+
+2018-08-07 15:57:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Assets n Liabilities/input_loan_application_b_ongoi' is clicked on
+
+2018-08-07 15:57:58 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-08-07 15:57:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-08-07 15:57:58 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-07 15:57:58 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-07 15:57:58 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Loan Pages/Assets n Liabilities/button_Back' is clickable
+
+2018-08-07 15:57:59 - [MESSAGE][PASSED] - Object 'Object Repository/Loan Pages/Assets n Liabilities/button_Back' is clickable
+
+2018-08-07 15:57:59 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Loan Pages/Assets n Liabilities' successfully
+
+2018-08-07 15:57:59 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Loan Pages/Income Details' successfully
+
+2018-08-07 15:57:59 - [TEST_CASE][PASSED] - Test Cases/Loan Pages/Income Details: Test Cases/Loan Pages/Income Details
+
+2018-08-07 15:57:59 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Income Details/Income Tab' is clicked on
+
+2018-08-07 15:57:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Income Details/Income Tab' is clicked on
+
+2018-08-07 15:57:59 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Income Details/button_Next' is clicked on
+
+2018-08-07 15:58:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Income Details/button_Next' is clicked on
+
+2018-08-07 15:58:01 - [TEST_STEP][PASSED] - setText: Text '55500' is set on object 'Object Repository/Loan Pages/Income Details/input_loan_applicationb_employ'
+
+2018-08-07 15:58:02 - [MESSAGE][PASSED] - Text '55500' is set on object 'Object Repository/Loan Pages/Income Details/input_loan_applicationb_employ'
+
+2018-08-07 15:58:02 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Income Details/button_Next' is clicked on
+
+2018-08-07 15:58:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Income Details/button_Next' is clicked on
+
+2018-08-07 15:58:02 - [TEST_STEP][PASSED] - setText: Text '5555' is set on object 'Object Repository/Loan Pages/Income Details/input_loan_applicationb_income'
+
+2018-08-07 15:58:04 - [MESSAGE][PASSED] - Text '5555' is set on object 'Object Repository/Loan Pages/Income Details/input_loan_applicationb_income'
+
+2018-08-07 15:58:04 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Income Details/button_Next' is clicked on
+
+2018-08-07 15:58:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Income Details/button_Next' is clicked on
+
+2018-08-07 15:58:04 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-07 15:58:04 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-07 15:58:04 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Loan Pages/Income Details/button_Back' is clickable
+
+2018-08-07 15:58:05 - [MESSAGE][PASSED] - Object 'Object Repository/Loan Pages/Income Details/button_Back' is clickable
+
+2018-08-07 15:58:05 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Loan Pages/Income Details' successfully
+
+2018-08-07 15:58:05 - [TEST_STEP][FAILED] - callTestCase: Unable to call Test Case with id 'Test Cases/Loan Pages/Declarations' (Root cause: Call Test Case 'Test Cases/Loan Pages/Declarations' failed)
+
+2018-08-07 15:58:05 - [TEST_CASE][FAILED] - Test Cases/Loan Pages/Declarations: Test Cases/Loan Pages/Declarations FAILED because (of) Unable to click on object 'Object Repository/Loan Pages/Declaration/input_loan_application_b_allow' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_allow' located by 'By.xpath: //input[@id = 'loan_application_b_allow_credit_false' and @type = 'checkbox' and @checked = 'checked']' not found)
+
+2018-08-07 15:58:05 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/Declaration Tab' is clicked on
+
+2018-08-07 15:58:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/Declaration Tab' is clicked on
+
+2018-08-07 15:58:05 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-08-07 15:58:05 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-07 15:58:05 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-08-07 15:58:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-08-07 15:58:06 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_citiz' is clicked on
+
+2018-08-07 15:58:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_citiz' is clicked on
+
+2018-08-07 15:58:07 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-08-07 15:58:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-08-07 15:58:07 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_No' is clicked on
+
+2018-08-07 15:58:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_No' is clicked on
+
+2018-08-07 15:58:09 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_No_1' is clicked on
+
+2018-08-07 15:58:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_No_1' is clicked on
+
+2018-08-07 15:58:09 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_No_2' is clicked on
+
+2018-08-07 15:58:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_No_2' is clicked on
+
+2018-08-07 15:58:09 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_No_3' is clicked on
+
+2018-08-07 15:58:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_No_3' is clicked on
+
+2018-08-07 15:58:09 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-08-07 15:58:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-08-07 15:58:09 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_No_4' is clicked on
+
+2018-08-07 15:58:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_No_4' is clicked on
+
+2018-08-07 15:58:11 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_No_5' is clicked on
+
+2018-08-07 15:58:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_No_5' is clicked on
+
+2018-08-07 15:58:12 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_No_6' is clicked on
+
+2018-08-07 15:58:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_No_6' is clicked on
+
+2018-08-07 15:58:12 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_No_7' is clicked on
+
+2018-08-07 15:58:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_No_7' is clicked on
+
+2018-08-07 15:58:12 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-08-07 15:58:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-08-07 15:58:12 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_hmda_' is clicked on
+
+2018-08-07 15:58:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_hmda_' is clicked on
+
+2018-08-07 15:58:13 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_hmda__1' is clicked on
+
+2018-08-07 15:58:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_hmda__1' is clicked on
+
+2018-08-07 15:58:14 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_hmda__2' is clicked on
+
+2018-08-07 15:58:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_hmda__2' is clicked on
+
+2018-08-07 15:58:14 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-08-07 15:58:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-08-07 15:58:14 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/input_loan_applicationp1_b_ssn' is clicked on
+
+2018-08-07 15:58:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/input_loan_applicationp1_b_ssn' is clicked on
+
+2018-08-07 15:58:18 - [TEST_STEP][PASSED] - setText: Text '991' is set on object 'Object Repository/Loan Pages/Declaration/input_loan_applicationp1_b_ssn'
+
+2018-08-07 15:58:18 - [MESSAGE][PASSED] - Text '991' is set on object 'Object Repository/Loan Pages/Declaration/input_loan_applicationp1_b_ssn'
+
+2018-08-07 15:58:18 - [TEST_STEP][PASSED] - setText: Text '91' is set on object 'Object Repository/Loan Pages/Declaration/input_loan_applicationp2_b_ssn'
+
+2018-08-07 15:58:18 - [MESSAGE][PASSED] - Text '91' is set on object 'Object Repository/Loan Pages/Declaration/input_loan_applicationp2_b_ssn'
+
+2018-08-07 15:58:18 - [TEST_STEP][PASSED] - setText: Text '991' is set on object 'Object Repository/Loan Pages/Declaration/input_loan_applicationp3_b_ssn'
+
+2018-08-07 15:58:18 - [MESSAGE][PASSED] - Text '991' is set on object 'Object Repository/Loan Pages/Declaration/input_loan_applicationp3_b_ssn'
+
+2018-08-07 15:58:18 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-08-07 15:58:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-08-07 15:58:18 - [TEST_STEP][FAILED] - click: Unable to click on object 'Object Repository/Loan Pages/Declaration/input_loan_application_b_allow' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_allow' located by 'By.xpath: //input[@id = 'loan_application_b_allow_credit_false' and @type = 'checkbox' and @checked = 'checked']' not found)
+
+2018-08-07 15:58:49 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Loan Pages/Declaration/input_loan_application_b_allow' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_allow' located by 'By.xpath: //input[@id = 'loan_application_b_allow_credit_false' and @type = 'checkbox' and @checked = 'checked']' not found)
+[[ATTACHMENT|D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Borrower Submit Loan Application (Copy Referral URL)\\20180807_155608\\1533637729309.png]]
+
+2018-08-07 15:58:49 - [MESSAGE][FAILED] - Unable to call Test Case with id 'Test Cases/Loan Pages/Declarations' (Root cause: Call Test Case 'Test Cases/Loan Pages/Declarations' failed)
+
+2018-08-07 15:58:49 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Loan Pages/Application Release' successfully
+
+2018-08-07 15:58:49 - [TEST_CASE][PASSED] - Test Cases/Loan Pages/Application Release: Test Cases/Loan Pages/Application Release
+
+2018-08-07 15:58:49 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Application Release/Application Release Tab' is clicked on
+
+2018-08-07 15:58:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Application Release/Application Release Tab' is clicked on
+
+2018-08-07 15:58:49 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Application Release/button_Skip Warnings and Submit' is clicked on
+
+2018-08-07 15:58:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Application Release/button_Skip Warnings and Submit' is clicked on
+
+2018-08-07 15:58:51 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Loan Pages/Application Release' successfully
+
+2018-08-07 15:58:51 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Loan Pages/Econsent page' successfully
+
+2018-08-07 15:58:51 - [TEST_CASE][PASSED] - Test Cases/Loan Pages/Econsent page: Test Cases/Loan Pages/Econsent page
+
+2018-08-07 15:58:51 - [TEST_STEP][PASSED] - waitForElementPresent: Object 'Object Repository/Loan Pages/Econsent/header_EconsentTerms' is not present after 5 second(s)
+
+2018-08-07 15:58:57 - [MESSAGE][WARNING] - Object 'Object Repository/Loan Pages/Econsent/header_EconsentTerms' is not present after 5 second(s)
+
+2018-08-07 15:58:57 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Econsent/checkbox_Terms' is clicked on
+
+2018-08-07 15:59:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Econsent/checkbox_Terms' is clicked on
+
+2018-08-07 15:59:02 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Econsent/button_ConsentYes' is clicked on
+
+2018-08-07 15:59:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Econsent/button_ConsentYes' is clicked on
+
+2018-08-07 15:59:07 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Econsent/frame_Tutorial-borrower' is clicked on
+
+2018-08-07 15:59:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Econsent/frame_Tutorial-borrower' is clicked on
+
+2018-08-07 15:59:08 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Econsent/button_close' is clicked on
+
+2018-08-07 15:59:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Econsent/button_close' is clicked on
+
+2018-08-07 15:59:08 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Loan Pages/Econsent page' successfully
+
+2018-08-07 15:59:08 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'TestListeners.sampleAfterTestCase(...)' completed.
+
+2018-08-07 15:59:08 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseId()): null
+
+2018-08-07 15:59:08 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseStatus()): Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'TestListeners.sampleAfterTestCase(...)' completed.]]></system-out>
+         <system-err><![CDATA[2018-08-07 15:56:10 - [TEST_CASE][FAILED] - Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL): Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL) FAILED because (of) Unable to select option by value '001' of object 'Object Repository/Loan Pages/Loan Details/select_Country_Targetmarket'  using regular expression (Root cause: No option matched.)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-08-07 15:56:10 - [TEST_SUITE][FAILED] - Test Suite-Borrower Submit Loan Application (Copy Referral URL): Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL) FAILED because (of) Unable to select option by value '001' of object 'Object Repository/Loan Pages/Loan Details/select_Country_Targetmarket'  using regular expression (Root cause: No option matched.)]]></system-out>
+      <system-err><![CDATA[2018-08-07 15:56:10 - [TEST_SUITE][FAILED] - Test Suite-Borrower Submit Loan Application (Copy Referral URL): Test Cases/Loan Submission/Borrower Submit Loan Application (Copy Referral URL) FAILED because (of) Unable to select option by value '001' of object 'Object Repository/Loan Pages/Loan Details/select_Country_Targetmarket'  using regular expression (Root cause: No option matched.)]]></system-err>
+   </testsuite>
+</testsuites>

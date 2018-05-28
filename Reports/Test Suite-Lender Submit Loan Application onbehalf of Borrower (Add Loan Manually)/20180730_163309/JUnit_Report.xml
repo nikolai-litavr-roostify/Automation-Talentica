@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)" time="168" tests="0" failures="1" errors="0">
+   <testsuite name="Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)" tests="0" failures="1" errors="0" time="168" timestamp="2018-07-30 16:33:10" hostname="KalyaniK - KALYANIK.talentica-all.com" id="Test Suites/Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)\\20180730_163309"/>
+         <property name="logFiles" value="D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)\\20180730_163309\\execution0.log"/>
+         <property name="attachments" value="D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)\\20180730_163309\\1532948605186.png, D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)\\20180730_163309\\1532948642983.png, D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)\\20180730_163309\\1532948676067.png, D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)\\20180730_163309\\1532948740842.png, D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)\\20180730_163309\\1532948746275.png, D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)\\20180730_163309\\1532948746539.png"/>
+         <property name="hostName" value="KalyaniK - KALYANIK.talentica-all.com"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="5.4.1.1"/>
+         <property name="browser" value="Chrome 67.0.3396.99"/>
+         <property name="hostAddress" value="172.19.19.84"/>
+         <property name="sessionId" value="48fb17f621baf74d3e31c5894333f460"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/Loan Submission/Lender Submit Loan Application on behalf of Borrower (Add Loan Manually)" classname="Test Cases/Loan Submission/Lender Submit Loan Application on behalf of Borrower (Add Loan Manually)" status="FAILED">
+         <failure type="FAILED" message="Unable to select option by value '1990' of object 'Object Repository/Loan Pages/Borrower Details/select_Birth_Year'  using regular expression (Root cause: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'KALYANIK', ip: '172.19.19.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\kalyanik\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 48fb17f621baf74d3e31c5894333f460)"/>
+         <system-out><![CDATA[2018-07-30 16:33:11 - [TEST_CASE][FAILED] - Test Cases/Loan Submission/Lender Submit Loan Application on behalf of Borrower (Add Loan Manually): Test Cases/Loan Submission/Lender Submit Loan Application on behalf of Borrower (Add Loan Manually) FAILED because (of) Unable to select option by value '1990' of object 'Object Repository/Loan Pages/Borrower Details/select_Birth_Year'  using regular expression (Root cause: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'KALYANIK', ip: '172.19.19.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\kalyanik\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 48fb17f621baf74d3e31c5894333f460)
+
+2018-07-30 16:33:11 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: Invoke 'com.kms.katalon.core.annotation.BeforeTestCase' method: 'TestListeners.sampleBeforeTestCase(...)' completed.
+
+2018-07-30 16:33:11 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseId()): null
+
+2018-07-30 16:33:11 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseVariables()): Invoke 'com.kms.katalon.core.annotation.BeforeTestCase' method: 'TestListeners.sampleBeforeTestCase(...)' completed.
+
+2018-07-30 16:33:11 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Admin Dashboard/Verify Admin is able to Create Loan Manually' successfully
+
+2018-07-30 16:33:11 - [TEST_CASE][PASSED] - Test Cases/Admin Dashboard/Verify Admin is able to Create Loan Manually: Test Cases/Admin Dashboard/Verify Admin is able to Create Loan Manually
+
+2018-07-30 16:33:12 - [TEST_STEP][PASSED] - com.common.util.LoginHelper.LoginWithAdmin: com.common.util.LoginHelper.LoginWithAdmin is PASSED
+
+2018-07-30 16:33:18 - [MESSAGE][PASSED] - Browser is opened with url: 'https://roostify-bow-pilot.herokuapp.com/users/sign_in?a=roostify'
+
+2018-07-30 16:33:18 - [MESSAGE][PASSED] - Current window maximized
+
+2018-07-30 16:33:18 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-07-30 16:33:19 - [MESSAGE][PASSED] - Text 'kkachhi+admin@roostify.com' is set on object 'Object Repository/Common/Sign In/input_useremail'
+
+2018-07-30 16:33:19 - [MESSAGE][PASSED] - Text 'Kal@3333' is set on object 'Object Repository/Common/Sign In/input_userpassword'
+
+2018-07-30 16:33:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Common/Sign In/button_Sign in' is clicked on
+
+2018-07-30 16:33:25 - [MESSAGE][WARNING] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Common/Sign In/div_Login_Popup' located by 'By.xpath: //div[@id = 'tutorial-borrower' and (text() = concat('
+
+Application portal tutorial overlay
+
+
+
+
+
+✕
+
+Now, for some homework!
+
+
+
+This space provides a secure way to:
+
+  Complete critical tasks, like signing and providing documents
+  Get updates about your loan’s progress
+  
+Communicate with your mortgage team and other folks you invite to participate
+
+
+Together with your team, you’ll be moving your loan closer to the finish line.
+Don’t worry, you’ll be notified by email of activity while you’re away.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+Add Your Documents Online
+
+
+
+
+The Tasks tab tells you what information or action we still need from you.
+This is where you' , "'" , 'll provide the documents we need to process your loan, and sign important documents from us.
+
+
+Click on a task to get started, and follow the directions to upload your documents.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+Stay Up-to-Date
+
+
+
+
+As your loan progresses through the key stages, you' , "'" , 'll see the latest activity posted in your Stream.
+
+
+You can comment on activities, post a question or add another person like your Realtor to the transaction.
+To add people, just click Invite a Collaborator.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+We' , "'" , 're Here to Help
+
+
+
+
+Your mortgage team can help answer questions you have along the way.
+Use the Stream and the Chat to get in touch with us at any time.
+We' , "'" , 're looking forward to working with you!
+
+
+
+
+
+Done
+
+
+
+
+
+') or . = concat('
+
+Application portal tutorial overlay
+
+
+
+
+
+✕
+
+Now, for some homework!
+
+
+
+This space provides a secure way to:
+
+  Complete critical tasks, like signing and providing documents
+  Get updates about your loan’s progress
+  
+Communicate with your mortgage team and other folks you invite to participate
+
+
+Together with your team, you’ll be moving your loan closer to the finish line.
+Don’t worry, you’ll be notified by email of activity while you’re away.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+Add Your Documents Online
+
+
+
+
+The Tasks tab tells you what information or action we still need from you.
+This is where you' , "'" , 'll provide the documents we need to process your loan, and sign important documents from us.
+
+
+Click on a task to get started, and follow the directions to upload your documents.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+Stay Up-to-Date
+
+
+
+
+As your loan progresses through the key stages, you' , "'" , 'll see the latest activity posted in your Stream.
+
+
+You can comment on activities, post a question or add another person like your Realtor to the transaction.
+To add people, just click Invite a Collaborator.
+
+
+
+
+
+Next
+
+
+
+
+
+
+
+✕
+
+We' , "'" , 're Here to Help
+
+
+
+
+Your mortgage team can help answer questions you have along the way.
+Use the Stream and the Chat to get in touch with us at any time.
+We' , "'" , 're looking forward to working with you!
+
+
+
+
+
+Done
+
+
+
+
+
+'))]' not found
+[[ATTACHMENT|D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)\\20180730_163309\\1532948605186.png]]
+
+2018-07-30 16:33:25 - [MESSAGE][PASSED] - Object 'Object Repository/Common/Sign In/text_Dashboard Name' is present
+
+2018-07-30 16:33:25 - [MESSAGE][PASSED] - Object 'Object Repository/Common/Sign In/text_Dashboard Name' is present
+
+2018-07-30 16:33:25 - [MESSAGE][PASSED] - com.common.util.LoginHelper.LoginWithAdmin is PASSED
+
+2018-07-30 16:33:25 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Dashboard/Create Loan Manually/tab_Add Loan Manually' is clicked on
+
+2018-07-30 16:33:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Dashboard/Create Loan Manually/tab_Add Loan Manually' is clicked on
+
+2018-07-30 16:33:25 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Admin Dashboard/Create Loan Manually/input_email' is visible
+
+2018-07-30 16:33:26 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Dashboard/Create Loan Manually/input_email' is visible
+
+2018-07-30 16:33:26 - [TEST_STEP][PASSED] - setText: Text 'kkachhi+test3@roostify.com' is set on object 'Object Repository/Admin Dashboard/Create Loan Manually/input_email'
+
+2018-07-30 16:33:26 - [MESSAGE][PASSED] - Text 'kkachhi+test3@roostify.com' is set on object 'Object Repository/Admin Dashboard/Create Loan Manually/input_email'
+
+2018-07-30 16:33:26 - [TEST_STEP][PASSED] - setText: Text 'Kaly3' is set on object 'Object Repository/Admin Dashboard/Create Loan Manually/input_first_name'
+
+2018-07-30 16:33:26 - [MESSAGE][PASSED] - Text 'Kaly3' is set on object 'Object Repository/Admin Dashboard/Create Loan Manually/input_first_name'
+
+2018-07-30 16:33:26 - [TEST_STEP][PASSED] - setText: Text 'Kachhi' is set on object 'Object Repository/Admin Dashboard/Create Loan Manually/input_last_name'
+
+2018-07-30 16:33:26 - [MESSAGE][PASSED] - Text 'Kachhi' is set on object 'Object Repository/Admin Dashboard/Create Loan Manually/input_last_name'
+
+2018-07-30 16:33:26 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Admin Dashboard/Create Loan Manually/button_create' is visible
+
+2018-07-30 16:33:26 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Dashboard/Create Loan Manually/button_create' is visible
+
+2018-07-30 16:33:26 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Dashboard/Create Loan Manually/button_create' is clicked on
+
+2018-07-30 16:33:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Dashboard/Create Loan Manually/button_create' is clicked on
+
+2018-07-30 16:33:26 - [TEST_STEP][PASSED] - verifyElementPresent: Object 'Object Repository/Admin Dashboard/Create Loan Manually/msg_Loan created successfully' is present
+
+2018-07-30 16:33:26 - [MESSAGE][PASSED] - Object 'Object Repository/Admin Dashboard/Create Loan Manually/msg_Loan created successfully' is present
+
+2018-07-30 16:33:26 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-07-30 16:33:26 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-07-30 16:33:26 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin Dashboard/Verify Admin is able to Create Loan Manually' successfully
+
+2018-07-30 16:33:26 - [TEST_STEP][PASSED] - refresh: Refresh successfully
+
+2018-07-30 16:33:28 - [MESSAGE][PASSED] - Refresh successfully
+
+2018-07-30 16:33:28 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-07-30 16:33:28 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-07-30 16:33:28 - [TEST_STEP][PASSED] - waitForElementClickable: Web element with id: 'Object Repository/Admin Dashboard/icon-ContinueOnBehalfOfBorrower' located by 'By.xpath: html/body/div[9]/div/div[2]/div/div[2]/div/div[8]/form/table/tbody/tr[1]/td[5]/a[2]/i' not found
+
+2018-07-30 16:33:31 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Admin Dashboard/icon-ContinueOnBehalfOfBorrower' located by 'By.xpath: html/body/div[9]/div/div[2]/div/div[2]/div/div[8]/form/table/tbody/tr[1]/td[5]/a[2]/i' not found
+
+2018-07-30 16:33:31 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Admin Dashboard/icon-ContinueOnBehalfOfBorrower' is clicked on
+
+2018-07-30 16:33:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Admin Dashboard/icon-ContinueOnBehalfOfBorrower' is clicked on
+
+2018-07-30 16:33:59 - [TEST_STEP][FAILED] - callTestCase: Unable to call Test Case with id 'Test Cases/Loan Pages/Borrower Details' (Root cause: Call Test Case 'Test Cases/Loan Pages/Borrower Details' failed)
+
+2018-07-30 16:33:59 - [TEST_CASE][FAILED] - Test Cases/Loan Pages/Borrower Details: Test Cases/Loan Pages/Borrower Details FAILED because (of) Unable to select option by value '1990' of object 'Object Repository/Loan Pages/Borrower Details/select_Birth_Year'  using regular expression (Root cause: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'KALYANIK', ip: '172.19.19.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\kalyanik\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 48fb17f621baf74d3e31c5894333f460)
+
+2018-07-30 16:33:59 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Borrower Details/button_Continue' is clicked on
+
+2018-07-30 16:33:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Borrower Details/button_Continue' is clicked on
+
+2018-07-30 16:33:59 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Borrower Details/button_Next' is clicked on
+
+2018-07-30 16:34:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Borrower Details/button_Next' is clicked on
+
+2018-07-30 16:34:01 - [TEST_STEP][PASSED] - setText: Text '3456789324' is set on object 'Object Repository/Loan Pages/Borrower Details/input_Primary_Phone'
+
+2018-07-30 16:34:01 - [MESSAGE][PASSED] - Text '3456789324' is set on object 'Object Repository/Loan Pages/Borrower Details/input_Primary_Phone'
+
+2018-07-30 16:34:01 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Borrower Details/button_Next' is clicked on
+
+2018-07-30 16:34:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Borrower Details/button_Next' is clicked on
+
+2018-07-30 16:34:01 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value '10' are selected in object 'Object Repository/Loan Pages/Borrower Details/select_Birth_Month'  using regular expression
+
+2018-07-30 16:34:01 - [MESSAGE][PASSED] - All options with value '10' are selected in object 'Object Repository/Loan Pages/Borrower Details/select_Birth_Month'  using regular expression
+
+2018-07-30 16:34:01 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value '6' are selected in object 'Object Repository/Loan Pages/Borrower Details/select_Birth_Date'  using regular expression
+
+2018-07-30 16:34:02 - [MESSAGE][PASSED] - All options with value '6' are selected in object 'Object Repository/Loan Pages/Borrower Details/select_Birth_Date'  using regular expression
+
+2018-07-30 16:34:02 - [TEST_STEP][FAILED] - selectOptionByValue: Unable to select option by value '1990' of object 'Object Repository/Loan Pages/Borrower Details/select_Birth_Year'  using regular expression (Root cause: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'KALYANIK', ip: '172.19.19.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\kalyanik\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 48fb17f621baf74d3e31c5894333f460)
+
+2018-07-30 16:34:03 - [MESSAGE][FAILED] - Unable to select option by value '1990' of object 'Object Repository/Loan Pages/Borrower Details/select_Birth_Year'  using regular expression (Root cause: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'KALYANIK', ip: '172.19.19.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\kalyanik\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 48fb17f621baf74d3e31c5894333f460)
+[[ATTACHMENT|D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)\\20180730_163309\\1532948642983.png]]
+
+2018-07-30 16:34:03 - [MESSAGE][FAILED] - Unable to call Test Case with id 'Test Cases/Loan Pages/Borrower Details' (Root cause: Call Test Case 'Test Cases/Loan Pages/Borrower Details' failed)
+
+2018-07-30 16:34:03 - [TEST_STEP][FAILED] - callTestCase: Unable to call Test Case with id 'Test Cases/Loan Pages/Loan Details' (Root cause: Call Test Case 'Test Cases/Loan Pages/Loan Details' failed)
+
+2018-07-30 16:34:03 - [TEST_CASE][FAILED] - Test Cases/Loan Pages/Loan Details: Test Cases/Loan Pages/Loan Details FAILED because (of) Unable to click on object 'Object Repository/Loan Pages/Loan Details/input_loan_application_lead_st' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Loan Pages/Loan Details/input_loan_application_lead_st' located by 'By.xpath: //input[@id = 'loan_application_lead_stage_browsing' and @type = 'checkbox']' not found)
+
+2018-07-30 16:34:03 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Loan Details/Loan Tab' is clicked on
+
+2018-07-30 16:34:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Loan Details/Loan Tab' is clicked on
+
+2018-07-30 16:34:03 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Loan Details/button_Next' is clicked on
+
+2018-07-30 16:34:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Loan Details/button_Next' is clicked on
+
+2018-07-30 16:34:05 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-07-30 16:34:05 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-07-30 16:34:05 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Loan Details/input_home_purchase_checkbox' is clicked on
+
+2018-07-30 16:34:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Loan Details/input_home_purchase_checkbox' is clicked on
+
+2018-07-30 16:34:05 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Loan Details/button_Next' is clicked on
+
+2018-07-30 16:34:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Loan Details/button_Next' is clicked on
+
+2018-07-30 16:34:05 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-07-30 16:34:05 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-07-30 16:34:05 - [TEST_STEP][FAILED] - click: Unable to click on object 'Object Repository/Loan Pages/Loan Details/input_loan_application_lead_st' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Loan Pages/Loan Details/input_loan_application_lead_st' located by 'By.xpath: //input[@id = 'loan_application_lead_stage_browsing' and @type = 'checkbox']' not found)
+
+2018-07-30 16:34:36 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Loan Pages/Loan Details/input_loan_application_lead_st' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Loan Pages/Loan Details/input_loan_application_lead_st' located by 'By.xpath: //input[@id = 'loan_application_lead_stage_browsing' and @type = 'checkbox']' not found)
+[[ATTACHMENT|D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)\\20180730_163309\\1532948676067.png]]
+
+2018-07-30 16:34:36 - [MESSAGE][FAILED] - Unable to call Test Case with id 'Test Cases/Loan Pages/Loan Details' (Root cause: Call Test Case 'Test Cases/Loan Pages/Loan Details' failed)
+
+2018-07-30 16:34:36 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Loan Pages/Employment Details' successfully
+
+2018-07-30 16:34:36 - [TEST_CASE][PASSED] - Test Cases/Loan Pages/Employment Details: Test Cases/Loan Pages/Employment Details
+
+2018-07-30 16:34:36 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/Employment Tab' is clicked on
+
+2018-07-30 16:34:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/Employment Tab' is clicked on
+
+2018-07-30 16:34:36 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-07-30 16:34:36 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-07-30 16:34:36 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_Next' is clicked on
+
+2018-07-30 16:34:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_Next' is clicked on
+
+2018-07-30 16:34:37 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/input_loan_application_b_recen' is clicked on
+
+2018-07-30 16:34:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/input_loan_application_b_recen' is clicked on
+
+2018-07-30 16:34:38 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_Next' is clicked on
+
+2018-07-30 16:34:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_Next' is clicked on
+
+2018-07-30 16:34:38 - [TEST_STEP][PASSED] - setText: Text 'Google' is set on object 'Object Repository/Loan Pages/Employment Details/input_loan_applicationb_employ'
+
+2018-07-30 16:34:39 - [MESSAGE][PASSED] - Text 'Google' is set on object 'Object Repository/Loan Pages/Employment Details/input_loan_applicationb_employ'
+
+2018-07-30 16:34:39 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_No' is clicked on
+
+2018-07-30 16:34:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_No' is clicked on
+
+2018-07-30 16:34:40 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_No_1' is clicked on
+
+2018-07-30 16:34:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_No_1' is clicked on
+
+2018-07-30 16:34:40 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_Salary' is clicked on
+
+2018-07-30 16:34:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_Salary' is clicked on
+
+2018-07-30 16:34:40 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value '2' are selected in object 'Object Repository/Loan Pages/Employment Details/select_MonthJanuaryFebruaryMar'  using regular expression
+
+2018-07-30 16:34:40 - [MESSAGE][PASSED] - All options with value '2' are selected in object 'Object Repository/Loan Pages/Employment Details/select_MonthJanuaryFebruaryMar'  using regular expression
+
+2018-07-30 16:34:40 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value '2009' are selected in object 'Object Repository/Loan Pages/Employment Details/select_Year2018201720162015201'  using regular expression
+
+2018-07-30 16:34:41 - [MESSAGE][PASSED] - All options with value '2009' are selected in object 'Object Repository/Loan Pages/Employment Details/select_Year2018201720162015201'  using regular expression
+
+2018-07-30 16:34:41 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_Yes' is clicked on
+
+2018-07-30 16:34:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_Yes' is clicked on
+
+2018-07-30 16:34:41 - [TEST_STEP][PASSED] - setText: Text 'Engineer' is set on object 'Object Repository/Loan Pages/Employment Details/input_loan_applicationb_employ_1 (1)'
+
+2018-07-30 16:34:41 - [MESSAGE][PASSED] - Text 'Engineer' is set on object 'Object Repository/Loan Pages/Employment Details/input_loan_applicationb_employ_1 (1)'
+
+2018-07-30 16:34:41 - [TEST_STEP][PASSED] - setText: Text 'NY' is set on object 'Object Repository/Loan Pages/Employment Details/input_loan_applicationb_employ_2 (1)'
+
+2018-07-30 16:34:41 - [MESSAGE][PASSED] - Text 'NY' is set on object 'Object Repository/Loan Pages/Employment Details/input_loan_applicationb_employ_2 (1)'
+
+2018-07-30 16:34:41 - [TEST_STEP][PASSED] - setText: Text '4567' is set on object 'Object Repository/Loan Pages/Employment Details/input_loan_applicationb_employ_3 (1)'
+
+2018-07-30 16:34:41 - [MESSAGE][PASSED] - Text '4567' is set on object 'Object Repository/Loan Pages/Employment Details/input_loan_applicationb_employ_3 (1)'
+
+2018-07-30 16:34:41 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-07-30 16:34:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-07-30 16:34:41 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-07-30 16:34:41 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-07-30 16:34:41 - [TEST_STEP][PASSED] - waitForElementClickable: Web element with id: 'Object Repository/Loan Pages/Employment Details/button_Back' located by 'By.xpath: .//*[@id='loan_application_form']/div[7]/div[4]/div[2]/button[1]' not found
+
+2018-07-30 16:34:44 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Loan Pages/Employment Details/button_Back' located by 'By.xpath: .//*[@id='loan_application_form']/div[7]/div[4]/div[2]/button[1]' not found
+
+2018-07-30 16:34:44 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Loan Pages/Employment Details' successfully
+
+2018-07-30 16:34:44 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Loan Pages/Assets n Liabilities' successfully
+
+2018-07-30 16:34:45 - [TEST_CASE][PASSED] - Test Cases/Loan Pages/Assets n Liabilities: Test Cases/Loan Pages/Assets n Liabilities
+
+2018-07-30 16:34:45 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Assets n Liabilities/Assets n Liabilites Tab' is clicked on
+
+2018-07-30 16:34:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Assets n Liabilities/Assets n Liabilites Tab' is clicked on
+
+2018-07-30 16:34:45 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-07-30 16:34:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-07-30 16:34:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Assets n Liabilities/input_loan_application_b_curre' is clicked on
+
+2018-07-30 16:34:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Assets n Liabilities/input_loan_application_b_curre' is clicked on
+
+2018-07-30 16:34:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-07-30 16:34:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-07-30 16:34:47 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Assets n Liabilities/input_loan_application_b_recen_1' is clicked on
+
+2018-07-30 16:34:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Assets n Liabilities/input_loan_application_b_recen_1' is clicked on
+
+2018-07-30 16:34:48 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-07-30 16:34:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-07-30 16:34:48 - [TEST_STEP][PASSED] - setText: Text 'Admac' is set on object 'Object Repository/Loan Pages/Assets n Liabilities/input_loan_applicationb_assets'
+
+2018-07-30 16:34:50 - [MESSAGE][PASSED] - Text 'Admac' is set on object 'Object Repository/Loan Pages/Assets n Liabilities/input_loan_applicationb_assets'
+
+2018-07-30 16:34:50 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value 'stock' are selected in object 'Object Repository/Loan Pages/Assets n Liabilities/select_Savings AccountChecking'  using regular expression
+
+2018-07-30 16:34:50 - [MESSAGE][PASSED] - All options with value 'stock' are selected in object 'Object Repository/Loan Pages/Assets n Liabilities/select_Savings AccountChecking'  using regular expression
+
+2018-07-30 16:34:50 - [TEST_STEP][PASSED] - doubleClick: Object: 'Object Repository/Loan Pages/Assets n Liabilities/input_loan_applicationb_assets_1' is double clicked on
+
+2018-07-30 16:34:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Assets n Liabilities/input_loan_applicationb_assets_1' is double clicked on
+
+2018-07-30 16:34:50 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-07-30 16:34:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-07-30 16:34:50 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Assets n Liabilities/input_loan_application_b_ongoi' is clicked on
+
+2018-07-30 16:34:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Assets n Liabilities/input_loan_application_b_ongoi' is clicked on
+
+2018-07-30 16:34:52 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-07-30 16:34:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Employment Details/button_Next (1)' is clicked on
+
+2018-07-30 16:34:52 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-07-30 16:34:52 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-07-30 16:34:52 - [TEST_STEP][PASSED] - waitForElementClickable: Object 'Object Repository/Loan Pages/Assets n Liabilities/button_Back' is clickable
+
+2018-07-30 16:34:53 - [MESSAGE][PASSED] - Object 'Object Repository/Loan Pages/Assets n Liabilities/button_Back' is clickable
+
+2018-07-30 16:34:53 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Loan Pages/Assets n Liabilities' successfully
+
+2018-07-30 16:34:53 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Loan Pages/Income Details' successfully
+
+2018-07-30 16:34:53 - [TEST_CASE][PASSED] - Test Cases/Loan Pages/Income Details: Test Cases/Loan Pages/Income Details
+
+2018-07-30 16:34:54 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Income Details/Income Tab' is clicked on
+
+2018-07-30 16:34:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Income Details/Income Tab' is clicked on
+
+2018-07-30 16:34:54 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Income Details/button_Next' is clicked on
+
+2018-07-30 16:34:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Income Details/button_Next' is clicked on
+
+2018-07-30 16:34:55 - [TEST_STEP][PASSED] - setText: Text '55500' is set on object 'Object Repository/Loan Pages/Income Details/input_loan_applicationb_employ'
+
+2018-07-30 16:34:55 - [MESSAGE][PASSED] - Text '55500' is set on object 'Object Repository/Loan Pages/Income Details/input_loan_applicationb_employ'
+
+2018-07-30 16:34:55 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Income Details/button_Next' is clicked on
+
+2018-07-30 16:34:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Income Details/button_Next' is clicked on
+
+2018-07-30 16:34:55 - [TEST_STEP][PASSED] - setText: Text '5555' is set on object 'Object Repository/Loan Pages/Income Details/input_loan_applicationb_income'
+
+2018-07-30 16:34:57 - [MESSAGE][PASSED] - Text '5555' is set on object 'Object Repository/Loan Pages/Income Details/input_loan_applicationb_income'
+
+2018-07-30 16:34:57 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Income Details/button_Next' is clicked on
+
+2018-07-30 16:34:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Income Details/button_Next' is clicked on
+
+2018-07-30 16:34:57 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-07-30 16:34:57 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-07-30 16:34:57 - [TEST_STEP][PASSED] - waitForElementClickable: Web element with id: 'Object Repository/Loan Pages/Income Details/button_Back' located by 'By.xpath: .//*[@id='loan_application_form']/div[9]/div[4]/div/button[1]' not found
+
+2018-07-30 16:35:00 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Loan Pages/Income Details/button_Back' located by 'By.xpath: .//*[@id='loan_application_form']/div[9]/div[4]/div/button[1]' not found
+
+2018-07-30 16:35:00 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Loan Pages/Income Details' successfully
+
+2018-07-30 16:35:00 - [TEST_STEP][FAILED] - callTestCase: Unable to call Test Case with id 'Test Cases/Loan Pages/Declarations' (Root cause: Call Test Case 'Test Cases/Loan Pages/Declarations' failed)
+
+2018-07-30 16:35:00 - [TEST_CASE][FAILED] - Test Cases/Loan Pages/Declarations: Test Cases/Loan Pages/Declarations FAILED because (of) Unable to click on object 'Object Repository/Loan Pages/Declaration/input_loan_application_b_estim' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_estim' located by 'By.xpath: //input[@id = 'loan_application_b_estimated_credit_excellent' and @type = 'checkbox']' not found)
+
+2018-07-30 16:35:00 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/Declaration Tab' is clicked on
+
+2018-07-30 16:35:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/Declaration Tab' is clicked on
+
+2018-07-30 16:35:00 - [TEST_STEP][PASSED] - waitForPageLoad: Wait for page load successfully
+
+2018-07-30 16:35:00 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-07-30 16:35:00 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-07-30 16:35:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-07-30 16:35:02 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_citiz' is clicked on
+
+2018-07-30 16:35:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_citiz' is clicked on
+
+2018-07-30 16:35:02 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-07-30 16:35:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-07-30 16:35:02 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_No' is clicked on
+
+2018-07-30 16:35:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_No' is clicked on
+
+2018-07-30 16:35:03 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_No_1' is clicked on
+
+2018-07-30 16:35:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_No_1' is clicked on
+
+2018-07-30 16:35:04 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_No_2' is clicked on
+
+2018-07-30 16:35:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_No_2' is clicked on
+
+2018-07-30 16:35:04 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_No_3' is clicked on
+
+2018-07-30 16:35:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_No_3' is clicked on
+
+2018-07-30 16:35:04 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-07-30 16:35:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-07-30 16:35:04 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_No_4' is clicked on
+
+2018-07-30 16:35:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_No_4' is clicked on
+
+2018-07-30 16:35:04 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_No_5' is clicked on
+
+2018-07-30 16:35:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_No_5' is clicked on
+
+2018-07-30 16:35:04 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_No_6' is clicked on
+
+2018-07-30 16:35:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_No_6' is clicked on
+
+2018-07-30 16:35:04 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_No_7' is clicked on
+
+2018-07-30 16:35:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_No_7' is clicked on
+
+2018-07-30 16:35:04 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-07-30 16:35:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-07-30 16:35:04 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_hmda_' is clicked on
+
+2018-07-30 16:35:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_hmda_' is clicked on
+
+2018-07-30 16:35:06 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_hmda__1' is clicked on
+
+2018-07-30 16:35:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_hmda__1' is clicked on
+
+2018-07-30 16:35:06 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_hmda__2' is clicked on
+
+2018-07-30 16:35:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_hmda__2' is clicked on
+
+2018-07-30 16:35:06 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-07-30 16:35:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-07-30 16:35:06 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/input_loan_applicationp1_b_ssn' is clicked on
+
+2018-07-30 16:35:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/input_loan_applicationp1_b_ssn' is clicked on
+
+2018-07-30 16:35:08 - [TEST_STEP][PASSED] - setText: Text '991' is set on object 'Object Repository/Loan Pages/Declaration/input_loan_applicationp1_b_ssn'
+
+2018-07-30 16:35:08 - [MESSAGE][PASSED] - Text '991' is set on object 'Object Repository/Loan Pages/Declaration/input_loan_applicationp1_b_ssn'
+
+2018-07-30 16:35:08 - [TEST_STEP][PASSED] - setText: Text '91' is set on object 'Object Repository/Loan Pages/Declaration/input_loan_applicationp2_b_ssn'
+
+2018-07-30 16:35:08 - [MESSAGE][PASSED] - Text '91' is set on object 'Object Repository/Loan Pages/Declaration/input_loan_applicationp2_b_ssn'
+
+2018-07-30 16:35:08 - [TEST_STEP][PASSED] - setText: Text '991' is set on object 'Object Repository/Loan Pages/Declaration/input_loan_applicationp3_b_ssn'
+
+2018-07-30 16:35:08 - [MESSAGE][PASSED] - Text '991' is set on object 'Object Repository/Loan Pages/Declaration/input_loan_applicationp3_b_ssn'
+
+2018-07-30 16:35:08 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-07-30 16:35:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-07-30 16:35:08 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_allow' is clicked on
+
+2018-07-30 16:35:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_allow' is clicked on
+
+2018-07-30 16:35:10 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-07-30 16:35:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Declaration/button_Next' is clicked on
+
+2018-07-30 16:35:10 - [TEST_STEP][FAILED] - click: Unable to click on object 'Object Repository/Loan Pages/Declaration/input_loan_application_b_estim' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_estim' located by 'By.xpath: //input[@id = 'loan_application_b_estimated_credit_excellent' and @type = 'checkbox']' not found)
+
+2018-07-30 16:35:41 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Loan Pages/Declaration/input_loan_application_b_estim' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Loan Pages/Declaration/input_loan_application_b_estim' located by 'By.xpath: //input[@id = 'loan_application_b_estimated_credit_excellent' and @type = 'checkbox']' not found)
+[[ATTACHMENT|D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)\\20180730_163309\\1532948740842.png]]
+
+2018-07-30 16:35:41 - [MESSAGE][FAILED] - Unable to call Test Case with id 'Test Cases/Loan Pages/Declarations' (Root cause: Call Test Case 'Test Cases/Loan Pages/Declarations' failed)
+
+2018-07-30 16:35:41 - [TEST_STEP][PASSED] - callTestCase: Call Test Case 'Test Cases/Loan Pages/Application Release' successfully
+
+2018-07-30 16:35:41 - [TEST_CASE][PASSED] - Test Cases/Loan Pages/Application Release: Test Cases/Loan Pages/Application Release
+
+2018-07-30 16:35:41 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Application Release/Application Release Tab' is clicked on
+
+2018-07-30 16:35:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Application Release/Application Release Tab' is clicked on
+
+2018-07-30 16:35:41 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Loan Pages/Application Release/button_Skip Warnings and Submit' is clicked on
+
+2018-07-30 16:35:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Loan Pages/Application Release/button_Skip Warnings and Submit' is clicked on
+
+2018-07-30 16:35:43 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Loan Pages/Application Release' successfully
+
+2018-07-30 16:35:43 - [TEST_STEP][FAILED] - verifyElementPresent: Unable to verify object 'Object Repository/Loan Pages/Application Release/msg_Loan Submitted' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Loan Pages/Application Release/msg_Loan Submitted' located by 'By.xpath: .//*[@id='dashboard_controller']/center/div/p' not found)
+
+2018-07-30 16:35:46 - [MESSAGE][FAILED] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Loan Pages/Application Release/msg_Loan Submitted' located by 'By.xpath: .//*[@id='dashboard_controller']/center/div/p' not found
+[[ATTACHMENT|D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)\\20180730_163309\\1532948746275.png]]
+
+2018-07-30 16:35:46 - [MESSAGE][FAILED] - Unable to verify object 'Object Repository/Loan Pages/Application Release/msg_Loan Submitted' is present (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Loan Pages/Application Release/msg_Loan Submitted' located by 'By.xpath: .//*[@id='dashboard_controller']/center/div/p' not found)
+[[ATTACHMENT|D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)\\20180730_163309\\1532948746539.png]]
+
+2018-07-30 16:35:46 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'TestListeners.sampleAfterTestCase(...)' completed.
+
+2018-07-30 16:35:46 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseId()): null
+
+2018-07-30 16:35:46 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseStatus()): Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'TestListeners.sampleAfterTestCase(...)' completed.]]></system-out>
+         <system-err><![CDATA[2018-07-30 16:33:11 - [TEST_CASE][FAILED] - Test Cases/Loan Submission/Lender Submit Loan Application on behalf of Borrower (Add Loan Manually): Test Cases/Loan Submission/Lender Submit Loan Application on behalf of Borrower (Add Loan Manually) FAILED because (of) Unable to select option by value '1990' of object 'Object Repository/Loan Pages/Borrower Details/select_Birth_Year'  using regular expression (Root cause: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'KALYANIK', ip: '172.19.19.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\kalyanik\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 48fb17f621baf74d3e31c5894333f460)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-07-30 16:33:10 - [TEST_SUITE][FAILED] - Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually): Test Cases/Loan Submission/Lender Submit Loan Application on behalf of Borrower (Add Loan Manually) FAILED because (of) Unable to select option by value '1990' of object 'Object Repository/Loan Pages/Borrower Details/select_Birth_Year'  using regular expression (Root cause: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'KALYANIK', ip: '172.19.19.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\kalyanik\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 48fb17f621baf74d3e31c5894333f460)]]></system-out>
+      <system-err><![CDATA[2018-07-30 16:33:10 - [TEST_SUITE][FAILED] - Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually): Test Cases/Loan Submission/Lender Submit Loan Application on behalf of Borrower (Add Loan Manually) FAILED because (of) Unable to select option by value '1990' of object 'Object Repository/Loan Pages/Borrower Details/select_Birth_Year'  using regular expression (Root cause: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'KALYANIK', ip: '172.19.19.84', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\kalyanik\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: 48fb17f621baf74d3e31c5894333f460)]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,92 @@
+1
+00:00:00,117 --> 00:00:00,117
+1. callTestCase
+
+2
+00:00:00,306 --> 00:00:00,307
+1. com.common.util.LoginHelper.LoginWithAdmin
+
+3
+00:00:22,440 --> 00:00:22,441
+5. click
+
+4
+00:00:22,586 --> 00:00:22,587
+9. takeScreenshot
+
+5
+00:00:22,588 --> 00:00:22,589
+13. Statement - url = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getAttribute(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Admin Dashboard/Copy Referral Link/copy_Referral_url), "Value")
+
+6
+00:00:22,638 --> 00:00:22,639
+17. Statement - out.println(url)
+
+7
+00:00:22,647 --> 00:00:22,647
+21. takeScreenshot
+
+8
+00:00:22,819 --> 00:00:22,820
+25. waitForElementClickable
+
+9
+00:00:22,871 --> 00:00:22,871
+29. click
+
+10
+00:00:22,987 --> 00:00:22,988
+33. refresh
+
+11
+00:00:28,906 --> 00:00:28,907
+37. callTestCase
+
+12
+00:00:29,088 --> 00:00:29,089
+1. waitForElementClickable
+
+13
+00:00:29,315 --> 00:00:29,316
+5. click
+
+14
+00:00:29,481 --> 00:00:29,483
+9. click
+
+15
+00:00:29,635 --> 00:00:29,636
+41. navigateToUrl
+
+16
+00:00:29,690 --> 00:00:29,691
+45. waitForPageLoad
+
+17
+00:00:34,835 --> 00:00:34,836
+5. callTestCase
+
+18
+00:00:34,900 --> 00:00:34,901
+1. waitForPageLoad
+
+19
+00:00:35,086 --> 00:00:35,087
+5. setText
+
+20
+00:01:06,839 --> 00:01:06,839
+1. Statement - println(testCaseContext.getTestCaseId())
+
+21
+00:01:06,839 --> 00:01:06,840
+5. Statement - println(testCaseContext.getTestCaseStatus())
+
+22
+00:01:08,913 --> 00:01:08,913
+1. Statement - println(testCaseContext.getTestCaseId())
+
+23
+00:01:08,914 --> 00:01:08,914
+5. Statement - println(testCaseContext.getTestCaseVariables())
+

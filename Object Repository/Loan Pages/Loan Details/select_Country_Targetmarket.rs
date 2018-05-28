@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_Country_Targetmarket</name>
+   <tag></tag>
+   <elementGuidId>844ef742-f9f9-4ff2-9858-7b7a7df7a676</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>.//*[@id='loan_application_subject_property_attributes_0_county_fips']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>.//*[@id='loan_application_subject_property_attributes_0_county_fips']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>.//*[@id='loan_application_subject_property_attributes_0_county_fips']</value>
+   </webElementProperties>
+</WebElementEntity>

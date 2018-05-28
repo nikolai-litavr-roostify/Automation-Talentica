@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)" time="16" tests="0" failures="1" errors="0">
+   <testsuite name="Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)" tests="0" failures="1" errors="0" time="16" timestamp="2018-08-02 14:09:40" hostname="KalyaniK - KALYANIK.talentica-all.com" id="Test Suites/Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)\\20180802_140938"/>
+         <property name="logFiles" value="D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)\\20180802_140938\\execution0.log"/>
+         <property name="attachments" value="D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)\\20180802_140938\\1533199184387.png"/>
+         <property name="hostName" value="KalyaniK - KALYANIK.talentica-all.com"/>
+         <property name="os" value="Windows 7 64bit"/>
+         <property name="katalonVersion" value="5.4.1.1"/>
+         <property name="browser" value="Chrome 67.0.3396.99"/>
+         <property name="hostAddress" value="172.19.19.84"/>
+         <property name="sessionId" value="fe0eafb0726f0713b276982292c3a433"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 7"/>
+      </properties>
+      <testcase name="Test Cases/Loan Submission/Lender Submit Loan Application on behalf of Borrower (Add Loan Manually)" classname="Test Cases/Loan Submission/Lender Submit Loan Application on behalf of Borrower (Add Loan Manually)" status="FAILED">
+         <failure type="FAILED" message="Unable to set text 'null' of object 'Object Repository/Common/Sign In/input_useremail' (Root cause: java.lang.IllegalArgumentException: Text is null)"/>
+         <system-out><![CDATA[2018-08-02 14:09:40 - [TEST_CASE][FAILED] - Test Cases/Loan Submission/Lender Submit Loan Application on behalf of Borrower (Add Loan Manually): Test Cases/Loan Submission/Lender Submit Loan Application on behalf of Borrower (Add Loan Manually) FAILED because (of) Unable to set text 'null' of object 'Object Repository/Common/Sign In/input_useremail' (Root cause: java.lang.IllegalArgumentException: Text is null)
+
+2018-08-02 14:09:40 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: Invoke 'com.kms.katalon.core.annotation.BeforeTestCase' method: 'TestListeners.sampleBeforeTestCase(...)' completed.
+
+2018-08-02 14:09:40 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseId()): null
+
+2018-08-02 14:09:40 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseVariables()): Invoke 'com.kms.katalon.core.annotation.BeforeTestCase' method: 'TestListeners.sampleBeforeTestCase(...)' completed.
+
+2018-08-02 14:09:41 - [TEST_STEP][FAILED] - callTestCase: Unable to call Test Case with id 'Test Cases/Admin Dashboard/Verify Admin is able to Create Loan Manually' (Root cause: Call Test Case 'Test Cases/Admin Dashboard/Verify Admin is able to Create Loan Manually' failed)
+
+2018-08-02 14:09:41 - [TEST_CASE][FAILED] - Test Cases/Admin Dashboard/Verify Admin is able to Create Loan Manually: Test Cases/Admin Dashboard/Verify Admin is able to Create Loan Manually FAILED because (of) Unable to set text 'null' of object 'Object Repository/Common/Sign In/input_useremail' (Root cause: java.lang.IllegalArgumentException: Text is null)
+
+2018-08-02 14:09:41 - [TEST_STEP][FAILED] - com.common.util.LoginHelper.LoginWithAdmin: Unable to set text 'null' of object 'Object Repository/Common/Sign In/input_useremail' (Root cause: java.lang.IllegalArgumentException: Text is null)
+
+2018-08-02 14:09:44 - [MESSAGE][PASSED] - Browser is opened with url: 'null'
+
+2018-08-02 14:09:44 - [MESSAGE][PASSED] - Current window maximized
+
+2018-08-02 14:09:44 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2018-08-02 14:09:44 - [MESSAGE][FAILED] - Unable to set text 'null' of object 'Object Repository/Common/Sign In/input_useremail' (Root cause: java.lang.IllegalArgumentException: Text is null)
+[[ATTACHMENT|D:\\1_Roostify\\Automation\\Roo_Core\\Reports\\Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually)\\20180802_140938\\1533199184387.png]]
+
+2018-08-02 14:09:44 - [MESSAGE][FAILED] - Unable to set text 'null' of object 'Object Repository/Common/Sign In/input_useremail' (Root cause: java.lang.IllegalArgumentException: Text is null)
+
+2018-08-02 14:09:44 - [MESSAGE][FAILED] - Unable to call Test Case with id 'Test Cases/Admin Dashboard/Verify Admin is able to Create Loan Manually' (Root cause: Call Test Case 'Test Cases/Admin Dashboard/Verify Admin is able to Create Loan Manually' failed)
+
+2018-08-02 14:09:44 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'TestListeners.sampleAfterTestCase(...)' completed.
+
+2018-08-02 14:09:44 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseId()): null
+
+2018-08-02 14:09:44 - [TEST_STEP][PASSED] - Statement - println(testCaseContext.getTestCaseStatus()): Invoke 'com.kms.katalon.core.annotation.AfterTestCase' method: 'TestListeners.sampleAfterTestCase(...)' completed.]]></system-out>
+         <system-err><![CDATA[2018-08-02 14:09:40 - [TEST_CASE][FAILED] - Test Cases/Loan Submission/Lender Submit Loan Application on behalf of Borrower (Add Loan Manually): Test Cases/Loan Submission/Lender Submit Loan Application on behalf of Borrower (Add Loan Manually) FAILED because (of) Unable to set text 'null' of object 'Object Repository/Common/Sign In/input_useremail' (Root cause: java.lang.IllegalArgumentException: Text is null)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-08-02 14:09:40 - [TEST_SUITE][FAILED] - Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually): Test Cases/Loan Submission/Lender Submit Loan Application on behalf of Borrower (Add Loan Manually) FAILED because (of) Unable to set text 'null' of object 'Object Repository/Common/Sign In/input_useremail' (Root cause: java.lang.IllegalArgumentException: Text is null)]]></system-out>
+      <system-err><![CDATA[2018-08-02 14:09:40 - [TEST_SUITE][FAILED] - Test Suite-Lender Submit Loan Application onbehalf of Borrower (Add Loan Manually): Test Cases/Loan Submission/Lender Submit Loan Application on behalf of Borrower (Add Loan Manually) FAILED because (of) Unable to set text 'null' of object 'Object Repository/Common/Sign In/input_useremail' (Root cause: java.lang.IllegalArgumentException: Text is null)]]></system-err>
+   </testsuite>
+</testsuites>

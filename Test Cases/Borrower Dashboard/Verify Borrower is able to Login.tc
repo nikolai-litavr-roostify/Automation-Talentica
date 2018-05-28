@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Borrower is able to Login</description>
+   <name>Verify Borrower is able to Login</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bbe1f0d1-cbc4-4e8c-b62f-c88c6ba4dcde</testCaseGuid>
+   <variable>
+      <defaultValue>'kkachhi+test2@roostify.com'</defaultValue>
+      <description></description>
+      <id>939b252a-30d3-4b8f-93d7-637f9ae85341</id>
+      <masked>false</masked>
+      <name>varEmail</name>
+   </variable>
+   <variable>
+      <defaultValue>'Kal@3333'</defaultValue>
+      <description></description>
+      <id>3f557203-c552-4808-81e5-7a1b8866170d</id>
+      <masked>false</masked>
+      <name>varPassword</name>
+   </variable>
+   <variable>
+      <defaultValue>'Kaly1'</defaultValue>
+      <description></description>
+      <id>2a00e6bb-0698-48cd-a58a-4d8d27a7748b</id>
+      <masked>false</masked>
+      <name>varFname</name>
+   </variable>
+   <variable>
+      <defaultValue>'Kachhi'</defaultValue>
+      <description></description>
+      <id>23f55887-6685-4376-8dae-5eb046788f5a</id>
+      <masked>false</masked>
+      <name>varLname</name>
+   </variable>
+</TestCaseEntity>
