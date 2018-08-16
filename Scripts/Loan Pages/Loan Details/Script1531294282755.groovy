@@ -56,9 +56,9 @@ WebUI.click(findTestObject('Loan Pages/Loan Details/button_Next (1)'))
 
 WebUI.waitForPageLoad(2)
 
-WebUI.click(findTestObject('Loan Pages/Loan Details/input_real estate agent check'), FailureHandling.OPTIONAL)
+not_run: WebUI.click(findTestObject('Loan Pages/Loan Details/input_real estate agent check'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Loan Pages/Loan Details/button_Next (1)'), FailureHandling.OPTIONAL)
+not_run: WebUI.click(findTestObject('Loan Pages/Loan Details/button_Next (1)'), FailureHandling.OPTIONAL)
 
 WebUI.setText(findTestObject('Loan Pages/Loan Details/input_Down Payment Percentage (1)'), '5', FailureHandling.OPTIONAL)
 

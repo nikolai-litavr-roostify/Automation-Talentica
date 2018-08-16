@@ -6,12 +6,12 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'maldanese+bow@roostify.com'</initValue>
+      <initValue>'kkachhi+admin@roostify.com'</initValue>
       <name>AdminEmail</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Kiev2015'</initValue>
+      <initValue>'Kal@3333'</initValue>
       <name>Password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -26,7 +26,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://roostify-bow.herokuapp.com/'</initValue>
+      <initValue>'https://dev.roostify.com'</initValue>
       <name>BaseURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

@@ -40,6 +40,8 @@ WebUI.waitForElementClickable(findTestObject('Admin Dashboard/Copy Referral Link
 
 WebUI.click(findTestObject('Admin Dashboard/Copy Referral Link/button_Close'), FailureHandling.STOP_ON_FAILURE)
 
+WebUI.refresh()
+
 CustomKeywords.'com.common.util.refreshBrowser.refreshPage'()
 
 WebUI.callTestCase(findTestCase('Common/Sign Out'), [:], FailureHandling.STOP_ON_FAILURE)

@@ -24,7 +24,7 @@ WebUI.callTestCase(findTestCase('Admin Dashboard/Verify Admin is able to Create 
         , ('FirstName') : GlobalVariable.Borrower3FirstName, ('LastName') : GlobalVariable.Borrower3LastName], 
     FailureHandling.STOP_ON_FAILURE)
 
-//WebUI.refresh()
+WebUI.refresh()
 CustomKeywords.'com.common.util.refreshBrowser.refreshPage'()
 
 WebUI.waitForPageLoad(3)
