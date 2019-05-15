@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="25" passed="25">
+  <reporter-output>
+  </reporter-output>
+  <suite name="All Test Suite" duration-ms="34770" started-at="2019-05-10T05:08:43Z" finished-at="2019-05-10T05:09:18Z">
+    <groups>
+    </groups>
+    <test name="C:/Users/KrishnaA/RestAssuredMaven/src/test/java/accCheck/accountCheck.java" duration-ms="34770" started-at="2019-05-10T05:08:43Z" finished-at="2019-05-10T05:09:18Z">
+      <class name="accCheck.accountCheck">
+        <test-method status="PASS" signature="getData()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="getData" is-config="true" duration-ms="9" started-at="2019-05-10T05:08:43Z" finished-at="2019-05-10T05:08:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="accCheck_Invalid_Zip_Code()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Invalid_Zip_Code" duration-ms="3025" started-at="2019-05-10T05:08:43Z" finished-at="2019-05-10T05:08:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Invalid_Zip_Code -->
+        <test-method status="PASS" signature="accCheck_Invalid_account_id()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Invalid_account_id" duration-ms="1330" started-at="2019-05-10T05:08:46Z" finished-at="2019-05-10T05:08:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Invalid_account_id -->
+        <test-method status="PASS" signature="accCheck_Invalid_customer_id()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Invalid_customer_id" duration-ms="1273" started-at="2019-05-10T05:08:47Z" finished-at="2019-05-10T05:08:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Invalid_customer_id -->
+        <test-method status="PASS" signature="accCheck_Invalid_email_address1()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Invalid_email_address1" duration-ms="1203" started-at="2019-05-10T05:08:49Z" finished-at="2019-05-10T05:08:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Invalid_email_address1 -->
+        <test-method status="PASS" signature="accCheck_Invalid_email_address2()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Invalid_email_address2" duration-ms="1189" started-at="2019-05-10T05:08:50Z" finished-at="2019-05-10T05:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Invalid_email_address2 -->
+        <test-method status="PASS" signature="accCheck_Invalid_email_address3()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Invalid_email_address3" duration-ms="1200" started-at="2019-05-10T05:08:51Z" finished-at="2019-05-10T05:08:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Invalid_email_address3 -->
+        <test-method status="PASS" signature="accCheck_Invalid_email_address4()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Invalid_email_address4" duration-ms="1185" started-at="2019-05-10T05:08:52Z" finished-at="2019-05-10T05:08:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Invalid_email_address4 -->
+        <test-method status="PASS" signature="accCheck_Invalid_email_address5()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Invalid_email_address5" duration-ms="1187" started-at="2019-05-10T05:08:53Z" finished-at="2019-05-10T05:08:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Invalid_email_address5 -->
+        <test-method status="PASS" signature="accCheck_Invalid_verification_type()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Invalid_verification_type" duration-ms="1265" started-at="2019-05-10T05:08:54Z" finished-at="2019-05-10T05:08:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Invalid_verification_type -->
+        <test-method status="PASS" signature="accCheck_Null_Address_line_1()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Null_Address_line_1" duration-ms="2069" started-at="2019-05-10T05:08:56Z" finished-at="2019-05-10T05:08:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Null_Address_line_1 -->
+        <test-method status="PASS" signature="accCheck_Null_First_Name()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Null_First_Name" duration-ms="1578" started-at="2019-05-10T05:08:58Z" finished-at="2019-05-10T05:08:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Null_First_Name -->
+        <test-method status="PASS" signature="accCheck_Null_Last_Name()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Null_Last_Name" duration-ms="1599" started-at="2019-05-10T05:08:59Z" finished-at="2019-05-10T05:09:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Null_Last_Name -->
+        <test-method status="PASS" signature="accCheck_Null_SSN()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Null_SSN" duration-ms="1248" started-at="2019-05-10T05:09:01Z" finished-at="2019-05-10T05:09:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Null_SSN -->
+        <test-method status="PASS" signature="accCheck_Null_Zip_Code()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Null_Zip_Code" duration-ms="1606" started-at="2019-05-10T05:09:02Z" finished-at="2019-05-10T05:09:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Null_Zip_Code -->
+        <test-method status="PASS" signature="accCheck_Null_account_id()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Null_account_id" duration-ms="1173" started-at="2019-05-10T05:09:04Z" finished-at="2019-05-10T05:09:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Null_account_id -->
+        <test-method status="PASS" signature="accCheck_Null_cust_id_and_ac_id()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Null_cust_id_and_ac_id" duration-ms="1182" started-at="2019-05-10T05:09:05Z" finished-at="2019-05-10T05:09:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Null_cust_id_and_ac_id -->
+        <test-method status="PASS" signature="accCheck_Null_customer_id()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Null_customer_id" duration-ms="1174" started-at="2019-05-10T05:09:06Z" finished-at="2019-05-10T05:09:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Null_customer_id -->
+        <test-method status="PASS" signature="accCheck_Null_email_address()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Null_email_address" duration-ms="1186" started-at="2019-05-10T05:09:07Z" finished-at="2019-05-10T05:09:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Null_email_address -->
+        <test-method status="PASS" signature="accCheck_Null_first_name_last_name_ssn_email_verification_type()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Null_first_name_last_name_ssn_email_verification_type" duration-ms="1174" started-at="2019-05-10T05:09:09Z" finished-at="2019-05-10T05:09:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Null_first_name_last_name_ssn_email_verification_type -->
+        <test-method status="PASS" signature="accCheck_Null_verification_type()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Null_verification_type" duration-ms="1184" started-at="2019-05-10T05:09:10Z" finished-at="2019-05-10T05:09:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Null_verification_type -->
+        <test-method status="PASS" signature="accCheck_SSN_greater_than_9_digits()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_SSN_greater_than_9_digits" duration-ms="1169" started-at="2019-05-10T05:09:11Z" finished-at="2019-05-10T05:09:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_SSN_greater_than_9_digits -->
+        <test-method status="PASS" signature="accCheck_SSN_less_than_9_digits()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_SSN_less_than_9_digits" duration-ms="1186" started-at="2019-05-10T05:09:12Z" finished-at="2019-05-10T05:09:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_SSN_less_than_9_digits -->
+        <test-method status="PASS" signature="accCheck_Valild_AccountChek_Flow_with_all_parameters()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Valild_AccountChek_Flow_with_all_parameters" duration-ms="1603" started-at="2019-05-10T05:09:13Z" finished-at="2019-05-10T05:09:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Valild_AccountChek_Flow_with_all_parameters -->
+        <test-method status="PASS" signature="accCheck_Valild_AccountChek_Flow_with_only_mandatory_parameters()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_Valild_AccountChek_Flow_with_only_mandatory_parameters" duration-ms="1574" started-at="2019-05-10T05:09:15Z" finished-at="2019-05-10T05:09:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_Valild_AccountChek_Flow_with_only_mandatory_parameters -->
+        <test-method status="PASS" signature="accCheck_zip_code_less_than_5_digits_ssn_less_than_9_null_fist_and_last_name_invalid_email()[pri:0, instance:accCheck.accountCheck@6d78f375]" name="accCheck_zip_code_less_than_5_digits_ssn_less_than_9_null_fist_and_last_name_invalid_email" duration-ms="1168" started-at="2019-05-10T05:09:16Z" finished-at="2019-05-10T05:09:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accCheck_zip_code_less_than_5_digits_ssn_less_than_9_null_fist_and_last_name_invalid_email -->
+      </class> <!-- accCheck.accountCheck -->
+    </test> <!-- C:/Users/KrishnaA/RestAssuredMaven/src/test/java/accCheck/accountCheck.java -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

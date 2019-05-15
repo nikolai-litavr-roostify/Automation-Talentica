@@ -1,0 +1,7 @@
+"17:45:52.623 [main] roostify.Demo.main(Demo.java:14)level roostify.Demo.main(Demo.java:14)logger{36} - Object is Presentsg
+""17:45:52.625 [main] roostify.Demo.main(Demo.java:16)level roostify.Demo.main(Demo.java:16)logger{36} - Object is not presentsg
+""17:45:52.625 [main] roostify.Demo.main(Demo.java:17)level roostify.Demo.main(Demo.java:17)logger{36} - This is fatalsg
+""2019-04-04 17:47:02.214 [main] roostify.Demo.main(Demo.java:14)level roostify.Demo.main(Demo.java:14)logger{36} - Object is Present 
+""2019-04-04 17:47:02.216 [main] roostify.Demo.main(Demo.java:16)level roostify.Demo.main(Demo.java:16)logger{36} - Object is not present 
+""2019-04-04 17:47:02.216 [main] roostify.Demo.main(Demo.java:17)level roostify.Demo.main(Demo.java:17)logger{36} - This is fatal 
+"
