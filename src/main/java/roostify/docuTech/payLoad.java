@@ -1,4 +1,4 @@
 package roostify.docuTech;
 
-public class payLoad {
+public class PayLoad {
 }

@@ -4,8 +4,8 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import roostify.plaid.payLoad;
-import roostify.reusableMethods;
+import roostify.plaid.PayLoad;
+import roostify.ReusableMethods;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -15,7 +15,7 @@ import static io.restassured.RestAssured.given;
 
 
 
-public class plaidTests {
+public class PlaidTests {
     Properties prop = new Properties();
 
     @BeforeTest
@@ -32,8 +32,8 @@ public class plaidTests {
         RestAssured.baseURI = prop.getProperty("AccCheckHOST");
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
-                        .body(payLoad.getPostData()).when().post().then().assertThat().statusCode(200).extract().response();
-        JsonPath js = reusableMethods.rawToJson(res);
+                        .body(PayLoad.getPostData()).when().post().then().assertThat().statusCode(200).extract().response();
+        JsonPath js = ReusableMethods.rawToJson(res);
        String srclink = js.get("links[0].resource_location");
         System.out.println(srclink);
 

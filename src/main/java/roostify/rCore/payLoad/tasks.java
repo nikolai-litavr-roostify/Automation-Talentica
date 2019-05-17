@@ -1,6 +1,6 @@
 package roostify.rCore.payLoad;
 
-public class tasks {
+public class Tasks {
 
     public static String getTaskCreationData(String loanId){
 

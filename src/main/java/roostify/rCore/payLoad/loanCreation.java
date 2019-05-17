@@ -2,16 +2,16 @@ package roostify.rCore.payLoad;
 
 import java.io.IOException;
 
-public class loanCreation {
+public class LoanCreation {
 
     public static String getLoancreationData() throws IOException {
 
-        // dataDriven d = new dataDriven();
+        // DataDriven d = new DataDriven();
         // String Sheetname = "AccountCheck";
         //ArrayList data = d.getData(Sheetname, Scenarioname);
 
 
-        String b= "{\n" +
+      /*  String b= "{\n" +
                 "  \"reference_id\": \"uayst67qw54r67\",\n" +
                 "  \"lender_email\": \"kasegaonkar+admin2@roostify.com\",\n" +
                 "  \"loan_type\": \"Conventional\",\n" +
@@ -48,7 +48,15 @@ public class loanCreation {
                 "  \"submitted_at\": \"2018-02-12T19:11:11Z\",\n" +
                 "  \"b_owned_property_title\": 2\n" +
                 "  \n" +
-                "}";
+                "}";*/
+
+      String b = "{\n" +
+              "  \"reference_id\": \"824188418\",\n" +
+              "  \"application_type\": \"purchase\",\n" +
+              "  \"amortization_term\": \"30\",\n" +
+              "  \"loan_amount\": 2000000,\n" +
+              "  \"down_payment\": 40000\n" +
+              "}";
 
         return b;
 

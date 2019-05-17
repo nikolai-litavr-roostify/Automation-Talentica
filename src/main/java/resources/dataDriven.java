@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class dataDriven {
+public class DataDriven {
 
     public ArrayList<String> getData(String sheetName,String testcaseName)throws IOException
     {

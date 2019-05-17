@@ -5,10 +5,10 @@
         <listener class-name="resources.ExtentReporterNG"/>
         <listener class-name="base.TestListener"/>
     </listeners>
-    <test verbose="2" preserve-order="true" name="C:/Users/KrishnaA/RestAssuredMaven/src/test/java/accCheck/accountCheck.java">
+    <test verbose="2" preserve-order="true" name="Test">
         <classes>
 
-            <class name="accCheck.accountCheck"></class>
+            <class name="rCore.RCoreTests"></class>
         </classes>
     </test>
 </suite>

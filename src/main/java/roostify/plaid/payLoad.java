@@ -1,13 +1,13 @@
 package roostify.plaid;
-import resources.dataDriven;
+import resources.DataDriven;
 
 import java.io.IOException;
-import java.util.ArrayList;
-public class payLoad {
+
+public class PayLoad {
 
     public static String getPostData() throws IOException {
 
-        dataDriven d = new dataDriven();
+        DataDriven d = new DataDriven();
         String Sheetname = "AccountCheck";
         //ArrayList data = d.getData(Sheetname, Scenarioname);
 

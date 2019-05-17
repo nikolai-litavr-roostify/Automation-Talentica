@@ -1,18 +1,19 @@
 package roostify.accCheck;
 
-import resources.dataDriven;
+import resources.DataDriven;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 
-public class payLoad {
+public class PayLoad {
 
-    public static String getPostData(String Scenarioname) throws IOException {
 
-        dataDriven d=new dataDriven();
+    public static String  getPostData(String Scenarioname) throws IOException {
+
+        DataDriven d=new DataDriven();
         String Sheetname = "AccountCheck";
         ArrayList data=d.getData(Sheetname,Scenarioname);
+
       /*  HashMap<String, Object> mainmap = new HashMap<String, Object>();
         HashMap<String, Object> vrmap = new HashMap<String, Object>();
         HashMap<String, Object> vrmapsub = new HashMap<String, Object>();
@@ -92,7 +93,7 @@ String v = "Krishna"+a;*/
     }
 
     public static int getExpected(String Scenarioname) throws IOException {
-        dataDriven d=new dataDriven();
+        DataDriven d=new DataDriven();
         String Sheetname = "AccountCheck";
         ArrayList data=d.getData(Sheetname,Scenarioname);
         Object expected = data.get(18);
