@@ -1,10 +1,14 @@
 package accCheck;
 
+import base.TestListener;
+import io.qameta.allure.*;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import roostify.accCheck.AccCheckPortalPage;
 import roostify.accCheck.PayLoad;
@@ -17,6 +21,9 @@ import java.util.Properties;
 
 import static io.restassured.RestAssured.given;
 
+@Listeners({TestListener.class})
+@Epic("Account Check Regression")
+@Feature("Verify Account Check functionality")
 public class AccountCheck extends Base {
 
     private Properties prop = new Properties();
@@ -28,13 +35,14 @@ public class AccountCheck extends Base {
         FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//Enviornment.properties");
         prop.load(fis);
         RestAssured.baseURI = prop.getProperty("AccCheckHOST");
-
     }
 
-    @Test
+    @Test(priority = 0, description = "Valid scenario with all parameters")
+    @Severity(SeverityLevel.BLOCKER)
+    @Story("Account check flow with valid scenario")
     public void accCheck_Valild_AccountChek_Flow_with_all_parameters() throws IOException {
         String Scenarioname="Valild_AccountChek_Flow_with_all_parameters";
-       // ExtentTestManager.getTest().log(Status.INFO, "Hey im in Base test1 1");
+//      ExtentTestManager.getTest().log(Status.INFO, "Hey im in Base test1 1");
 
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
@@ -48,21 +56,31 @@ public class AccountCheck extends Base {
         driver.navigate().to(srclink);
         AccCheckPortalPage acp = new AccCheckPortalPage(driver);
         acp.loginToDagBank(Scenarioname);
-
+        acp.clickShareAccounts();
+        acp.validateSuccessMessage();
     }
 
 
     @Test
     public void accCheck_Valild_AccountChek_Flow_with_only_mandatory_parameters() throws IOException {
-
         String Scenarioname="Valild_AccountChek_Flow_with_only_mandatory_parameters";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
                         .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
         JsonPath js = ReusableMethods.rawToJson(res);
         String data = js.get("links[0].resource_data");
-
-
+        String srclink = ReusableMethods.getSrcLink(data);
+        System.out.println(srclink);
+        Base b = new Base();
+        WebDriver driver= b.initialzeDriver();
+        driver.navigate().to(srclink);
+        AccCheckPortalPage acp = new AccCheckPortalPage(driver);
+        acp.loginToDagBank(Scenarioname);
+        acp.waitForShareAccounts();
+        acp.clickAddAnotherAcclnk();
+        acp.loginToDagSiteBank();
+        acp.clickShareAccounts();
+        acp.validateSuccessMessage();
     }
 
 

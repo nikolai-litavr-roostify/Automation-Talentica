@@ -1,0 +1,251 @@
+[ {
+  "uid" : "1a4cbe3c60ff7ef2",
+  "name" : "accCheck_Null_verification_type",
+  "time" : {
+    "start" : 1558345950684,
+    "stop" : 1558345951848,
+    "duration" : 1164
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1e3c5bd9f48cafcf",
+  "name" : "accCheck_Null_First_Name",
+  "time" : {
+    "start" : 1558345937949,
+    "stop" : 1558345939740,
+    "duration" : 1791
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e73a959bd0255642",
+  "name" : "accCheck_Null_Address_line_1",
+  "time" : {
+    "start" : 1558345935536,
+    "stop" : 1558345937947,
+    "duration" : 2411
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "52b7444a697a5aae",
+  "name" : "accCheck_SSN_greater_than_9_digits",
+  "time" : {
+    "start" : 1558345951871,
+    "stop" : 1558345953068,
+    "duration" : 1197
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "430fb39c4b7e3d04",
+  "name" : "accCheck_Invalid_account_id",
+  "time" : {
+    "start" : 1558345925459,
+    "stop" : 1558345926789,
+    "duration" : 1330
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "70bcfd657d5811ff",
+  "name" : "accCheck_Null_account_id",
+  "time" : {
+    "start" : 1558345944670,
+    "stop" : 1558345945927,
+    "duration" : 1257
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e39a87c334d308d0",
+  "name" : "accCheck_Invalid_verification_type",
+  "time" : {
+    "start" : 1558345934229,
+    "stop" : 1558345935529,
+    "duration" : 1300
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6da80026da0d814a",
+  "name" : "accCheck_Valild_AccountChek_Flow_with_only_mandatory_parameters",
+  "time" : {
+    "start" : 1558346026408,
+    "stop" : 1558346028180,
+    "duration" : 1772
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2fdf7cd43a54f4cb",
+  "name" : "accCheck_Invalid_email_address4",
+  "time" : {
+    "start" : 1558345931838,
+    "stop" : 1558345933025,
+    "duration" : 1187
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b56f76d7a63cf2e1",
+  "name" : "accCheck_Invalid_customer_id",
+  "time" : {
+    "start" : 1558345926792,
+    "stop" : 1558345928152,
+    "duration" : 1360
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6685db2377823295",
+  "name" : "accCheck_zip_code_less_than_5_digits_ssn_less_than_9_null_fist_and_last_name_invalid_email",
+  "time" : {
+    "start" : 1558346028182,
+    "stop" : 1558346029349,
+    "duration" : 1167
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6fcdcd195efeddb1",
+  "name" : "accCheck_Null_SSN",
+  "time" : {
+    "start" : 1558345941483,
+    "stop" : 1558345942871,
+    "duration" : 1388
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7de2958d5f0527dc",
+  "name" : "accCheck_Invalid_email_address2",
+  "time" : {
+    "start" : 1558345929335,
+    "stop" : 1558345930519,
+    "duration" : 1184
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ff683b7a8bbd6da3",
+  "name" : "accCheck_Null_cust_id_and_ac_id",
+  "time" : {
+    "start" : 1558345945930,
+    "stop" : 1558345947132,
+    "duration" : 1202
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4acf6380547355f4",
+  "name" : "accCheck_Invalid_Zip_Code",
+  "time" : {
+    "start" : 1558345921927,
+    "stop" : 1558345925375,
+    "duration" : 3448
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "85129f97f8a6282f",
+  "name" : "accCheck_Null_first_name_last_name_ssn_email_verification_type",
+  "time" : {
+    "start" : 1558345949503,
+    "stop" : 1558345950681,
+    "duration" : 1178
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "67af954060bae079",
+  "name" : "accCheck_Invalid_email_address1",
+  "time" : {
+    "start" : 1558345928155,
+    "stop" : 1558345929331,
+    "duration" : 1176
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "910a7dc5a2608d0d",
+  "name" : "accCheck_SSN_less_than_9_digits",
+  "time" : {
+    "start" : 1558345953071,
+    "stop" : 1558345954272,
+    "duration" : 1201
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "66ba85a01200372a",
+  "name" : "accCheck_Invalid_email_address3",
+  "time" : {
+    "start" : 1558345930521,
+    "stop" : 1558345931836,
+    "duration" : 1315
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a149e72e7ed41fc0",
+  "name" : "accCheck_Invalid_email_address5",
+  "time" : {
+    "start" : 1558345933027,
+    "stop" : 1558345934223,
+    "duration" : 1196
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "58487a699d944e78",
+  "name" : "accCheck_Null_email_address",
+  "time" : {
+    "start" : 1558345948352,
+    "stop" : 1558345949500,
+    "duration" : 1148
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8c30c35d38d23449",
+  "name" : "Valid scenario with all parameters",
+  "time" : {
+    "start" : 1558345954275,
+    "stop" : 1558346026404,
+    "duration" : 72129
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "ae4534163223fbb0",
+  "name" : "accCheck_Null_Zip_Code",
+  "time" : {
+    "start" : 1558345942875,
+    "stop" : 1558345944668,
+    "duration" : 1793
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7473d85378ba944e",
+  "name" : "accCheck_Null_customer_id",
+  "time" : {
+    "start" : 1558345947135,
+    "stop" : 1558345948350,
+    "duration" : 1215
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b73a4e79b679e77b",
+  "name" : "accCheck_Null_Last_Name",
+  "time" : {
+    "start" : 1558345939743,
+    "stop" : 1558345941480,
+    "duration" : 1737
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

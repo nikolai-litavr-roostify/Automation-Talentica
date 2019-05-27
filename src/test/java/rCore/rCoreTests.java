@@ -1,5 +1,9 @@
 package rCore;
 
+import base.ExtentTestManager;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import io.restassured.RestAssured;
 import io.restassured.authentication.PreemptiveBasicAuthScheme;
 import io.restassured.path.json.JsonPath;

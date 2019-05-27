@@ -1,11 +1,13 @@
 package roostify.accCheck;
 
+import io.qameta.allure.Step;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -16,130 +18,143 @@ import roostify.base.*;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class AccCheckPortalPage {
+public class AccCheckPortalPage extends Base {
     private static Logger log = LogManager.getLogger(Demo.class.getName());
     public WebDriver driver;
     String User = "";
     String Password = "";
+    String User2 = "";
+    String Password2 = "";
     Base b = new Base();
 
 
     public AccCheckPortalPage(WebDriver driver) {
-        this.driver = driver;
+        this.driver=driver;
+        PageFactory.initElements(driver, this);
     }
 
-    By searchBox = By.xpath("//*[@id='search']");
-    By lblDagBank = By.xpath("(//*[contains(text(),'DagBank')])[1]");
-    //By login =By.xpath("//*[@id='LOGIN']");
-    By Username =By.xpath("//*[@id='LOGIN']");
-    By password = By.xpath("//*[@id='PASSWORD1']");
-    By btnSubmit =By.xpath("//*[@class='btn btn-blue']");
-    By txtSuccessMessage = By.xpath("//*[contains(text(),'Great! Your accounts have been')]");
-    By btnShareAccounts = By.xpath("//button[@class='btn btn-blue btn-block'][not(@disabled)]");
-    By txtShare2Accounts = By.xpath("//*[contains(text(),'Share 2 Accounts')]");
+    @FindBy(xpath = "//*[@id='search']")
+    WebElement searchBox;
+
+    @FindBy(xpath = "(//*[contains(text(),'DagBank')])[1]")
+    WebElement lblDagBank;
+
+    @FindBy(xpath = "(//*[contains(text(),'Dag Site')])[1]")
+    WebElement lblDagSiteBank;
+
+    @FindBy(xpath = "//*[@id='LOGIN']")
+    WebElement username;
+
+    @FindBy(xpath = "(//*[@id='PASSWORD1'])|(//*[@id='PASSWORD'])")
+    WebElement password;
+
+    @FindBy(xpath = "//*[@class='btn btn-blue']")
+    WebElement btnSubmit;
+
+    @FindBy(xpath = "(//*[contains(text(),'Great! Your accounts have been')])|(//*[contains(text(),'Your accounts have been submitted for review')])")
+    WebElement txtSuccessMessage;
+
+    @FindBy(xpath = "//button[@class='btn btn-blue btn-block'][not(@disabled)]")
+    WebElement btnShareAccounts;
 
 
-
-    public WebElement SearchBox(){
-        return driver.findElement(searchBox);
-    }
-    public WebElement LblDagBank(){
-        return driver.findElement(lblDagBank);
-    }
-    public WebElement Username(){
-        return driver.findElement(Username);
-    }
-    public WebElement Password(){
-        return driver.findElement(password);
-    }
-    public WebElement BtnSubmit(){
-        return driver.findElement(btnSubmit);
-    }
-    public WebElement btnShareAccounts(){
-        return driver.findElement(btnShareAccounts);
-    }
-
-    public WebElement txtSuccessMessage(){
-        return driver.findElement(txtSuccessMessage);
-    }
-    public WebElement txtShare2Accounts(){
-        return driver.findElement(txtShare2Accounts);
-    }
+    @FindBy(xpath = "//*[@id=\"account-review-table\"]/tbody/tr[1]/td[1]/div/label/span[1]")
+    WebElement chkboxAccount1;
 
 
+    @FindBy(xpath = "//*[@id=\"account-review-table\"]/tbody/tr[2]/td[1]/div/label/span[1]")
+    WebElement chkboxAccount2;
+
+    @FindBy(xpath = "//*[@class='add-fi']")
+    WebElement lnkAddAnotherAccount;
 
 
-
-    public void sendTxtToSeachBox() throws IOException {
-        String search = "Dagbank";
-        SearchBox().sendKeys(search);
+    public void sendTxtToSeachBox(String search) throws IOException {
+        searchBox.sendKeys(search);
         log.info("Bank Name Send");
         b.captureScreenMethod();
     }
 
-    public void clickBankName(){
-        LblDagBank().click();
+    public void clickDagBankName(){
+        WebDriverWait wait=new WebDriverWait(driver, 120);
+        wait.until(ExpectedConditions.visibilityOf(lblDagBank));
+        lblDagBank.click();
+    }
+    public void clickDagSiteBankName(){
+        WebDriverWait wait=new WebDriverWait(driver, 120);
+        wait.until(ExpectedConditions.presenceOfElementLocated((By) lblDagSiteBank));
+        lblDagSiteBank.click();
     }
 
-    public void sendUsername() throws IOException {
-        if(Username().isDisplayed())
+    public void clickAddAnotherAcclnk()
+    {
+        lnkAddAnotherAccount.click();
+    }
+
+
+    @Step("Login Step with Username")
+    public void sendUsername(String user) throws IOException {
+        if(username.isDisplayed())
         {
-            Username().sendKeys(User);
+            username.sendKeys(user);
             b.captureScreenMethod();
         }
     }
-
-    public void sendPassword(){
-        if(Password().isDisplayed())
+    @Step("Login Step with Password")
+    public void sendPassword(String pass){
+        if(password.isDisplayed())
         {
-            Password().sendKeys(Password);
+            password.sendKeys(pass);
         }
     }
 
     public void clickSubmitButton() throws IOException {
-        if(BtnSubmit().isDisplayed())
+        if(btnSubmit.isDisplayed())
         {
-            BtnSubmit().click();
+            btnSubmit.click();
             b.captureScreenMethod();
         }
     }
 
     public void clickShareAccounts() throws IOException {
-        btnShareAccounts().click();
+        WebDriverWait wait=new WebDriverWait(driver, 120);
+        wait.until(ExpectedConditions.visibilityOf(btnShareAccounts));
+        btnShareAccounts.click();
         b.captureScreenMethod();
 
     }
 
     public void validateSuccessMessage() throws IOException {
-            Assert.assertTrue(txtSuccessMessage().isDisplayed());
+        WebDriverWait wait=new WebDriverWait(driver, 120);
+        wait.until(ExpectedConditions.visibilityOf(txtSuccessMessage));
+            Assert.assertTrue(txtSuccessMessage.isDisplayed());
             System.out.println("Test Successfully Passed");
             b.captureScreenMethod();
-
+    }
+    public void waitForShareAccounts() {
+        WebDriverWait wait=new WebDriverWait(driver, 120);
+        wait.until(ExpectedConditions.visibilityOf(btnShareAccounts));
     }
 
-
     public void loginToDagBank(String Scenarioname) throws IOException {
-        sendTxtToSeachBox();
-        clickBankName();
+        sendTxtToSeachBox("DagBank");
+        clickDagBankName();
         getLoginData(Scenarioname);
         WebElement iframe = driver.findElement(By.xpath("//iframe"));
         driver.switchTo().frame(iframe);
-        //int x = driver.findElements(By.xpath("//iframe")).size();
-//       System.out.println(x);
-
-        //driver.switchTo().frame(0);
-        sendUsername();
-        sendPassword();
+        sendUsername(User);
+        sendPassword(Password);
         clickSubmitButton();
-        WebDriverWait wait=new WebDriverWait(driver, 120);
-        wait.until(ExpectedConditions.presenceOfElementLocated(btnShareAccounts));
-        /*if(!btnShareAccounts().isDisplayed())
-        {
-            log.error("Element not displayed");
-        }*/
-        clickShareAccounts();
-        wait.until(ExpectedConditions.presenceOfElementLocated(txtSuccessMessage));
-        validateSuccessMessage();
+    }
+
+    public void loginToDagSiteBank() throws IOException {
+        sendTxtToSeachBox("Dagsite");
+        clickDagSiteBankName();
+        WebElement iframe = driver.findElement(By.xpath("//iframe"));
+        driver.switchTo().frame(iframe);
+        sendUsername(User2);
+        sendPassword(Password2);
+        clickSubmitButton();
     }
 
     public void getLoginData(String Scenarioname) throws IOException {
@@ -147,12 +162,8 @@ public class AccCheckPortalPage {
         String Sheetname = "AccountCheck";
         ArrayList data=d.getData(Sheetname,Scenarioname);
         User= (String) data.get(19);
-        System.out.println(User);
         Password=(String) data.get(20);
-        System.out.println(Password);
-
+        User2=(String) data.get(21);
+        Password2=(String) data.get(22);
     }
-
-
 }
-

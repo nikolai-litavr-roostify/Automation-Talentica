@@ -1,0 +1,105 @@
+{
+  "uid" : "6685db2377823295",
+  "name" : "accCheck_zip_code_less_than_5_digits_ssn_less_than_9_null_fist_and_last_name_invalid_email",
+  "fullName" : "accCheck.AccountCheck.accCheck_zip_code_less_than_5_digits_ssn_less_than_9_null_fist_and_last_name_invalid_email",
+  "historyId" : "e6853f2461829c4dd41e692c67b57d86",
+  "time" : {
+    "start" : 1558346028182,
+    "stop" : 1558346029349,
+    "duration" : 1167
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getData",
+    "time" : {
+      "start" : 1558345921267,
+      "stop" : 1558345921832,
+      "duration" : 565
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "accCheck.AccountCheck"
+  }, {
+    "name" : "testClass",
+    "value" : "accCheck.AccountCheck"
+  }, {
+    "name" : "testMethod",
+    "value" : "accCheck_zip_code_less_than_5_digits_ssn_less_than_9_null_fist_and_last_name_invalid_email"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "accCheck.AccountCheck"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "4080@KrishnaA-Desk.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ac2d60da816fd1de",
+      "status" : "passed",
+      "time" : {
+        "start" : 1558344832027,
+        "stop" : 1558344833217,
+        "duration" : 1190
+      }
+    }, {
+      "uid" : "2814ce5234f29aaf",
+      "status" : "failed",
+      "statusDetails" : "1 expectation failed.\nExpected status code <400> but was <503>.\n",
+      "time" : {
+        "start" : 1558342882282,
+        "stop" : 1558342883436,
+        "duration" : 1154
+      }
+    }, {
+      "uid" : "e35cf80d2e6812b6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1558337136834,
+        "stop" : 1558337138001,
+        "duration" : 1167
+      }
+    }, {
+      "uid" : "6f8b62a3f898a85e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1558327684602,
+        "stop" : 1558327685919,
+        "duration" : 1317
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6685db2377823295.json",
+  "parameterValues" : [ ]
+}

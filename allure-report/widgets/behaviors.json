@@ -1,0 +1,15 @@
+{
+  "total" : 25,
+  "items" : [ {
+    "uid" : "1975143bc42d92d44b736b9c49dc6f2c",
+    "name" : "Account check flow with valid scenario",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

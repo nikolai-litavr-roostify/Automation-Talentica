@@ -1,6 +1,10 @@
 package base;
 
 import com.aventstack.extentreports.Status;
+import io.qameta.allure.Attachment;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -26,12 +30,28 @@ public class TestListener implements ITestListener {
     public void onTestSuccess(ITestResult result) {
         System.out.println("*** Executed " + result.getMethod().getMethodName() + " test successfully...");
         ExtentTestManager.getTest().log(Status.PASS, "Test passed");
+       /* ITestContext context = result.getTestContext();
+        WebDriver driver = (WebDriver) context.getAttribute("driver");
+
+        byte[] b=saveFailureScreenShot(driver);saveSuccessScreenShot(driver);*/
     }
+   /* @Attachment
+    public byte[] saveSuccessScreenShot(WebDriver driver) {
+        return ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+    }*/
 
     public void onTestFailure(ITestResult result) {
         System.out.println("*** Test execution " + result.getMethod().getMethodName() + " failed...");
         ExtentTestManager.getTest().log(Status.FAIL, "Test Failed");
+       /* ITestContext context = result.getTestContext();
+        WebDriver driver = (WebDriver) context.getAttribute("driver");
+
+        byte[] b=saveFailureScreenShot(driver);*/
     }
+   /* @Attachment
+    public byte[] saveFailureScreenShot(WebDriver driver) {
+        return ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+    }*/
 
     public void onTestSkipped(ITestResult result) {
         System.out.println("*** Test " + result.getMethod().getMethodName() + " skipped...");
