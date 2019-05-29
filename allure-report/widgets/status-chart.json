@@ -1,250 +1,520 @@
 [ {
-  "uid" : "1a4cbe3c60ff7ef2",
-  "name" : "accCheck_Null_verification_type",
+  "uid" : "d3a789de5854a8c3",
+  "name" : "Invalid_customer_id",
   "time" : {
-    "start" : 1558345950684,
-    "stop" : 1558345951848,
-    "duration" : 1164
+    "start" : 1559127773874,
+    "stop" : 1559127775160,
+    "duration" : 1286
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "1e3c5bd9f48cafcf",
-  "name" : "accCheck_Null_First_Name",
+  "uid" : "ecafae5225da162d",
+  "name" : "Invalid_email_address1",
   "time" : {
-    "start" : 1558345937949,
-    "stop" : 1558345939740,
-    "duration" : 1791
+    "start" : 1559127775162,
+    "stop" : 1559127776375,
+    "duration" : 1213
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e73a959bd0255642",
-  "name" : "accCheck_Null_Address_line_1",
+  "uid" : "1c3ffd5c5bcda31",
+  "name" : "Null_Address_line_1",
   "time" : {
-    "start" : 1558345935536,
-    "stop" : 1558345937947,
-    "duration" : 2411
+    "start" : 1559127782526,
+    "stop" : 1559127783823,
+    "duration" : 1297
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "52b7444a697a5aae",
-  "name" : "accCheck_SSN_greater_than_9_digits",
+  "uid" : "63bba16b570b2ecd",
+  "name" : "Null_email_address",
   "time" : {
-    "start" : 1558345951871,
-    "stop" : 1558345953068,
-    "duration" : 1197
+    "start" : 1559127792394,
+    "stop" : 1559127793648,
+    "duration" : 1254
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "430fb39c4b7e3d04",
-  "name" : "accCheck_Invalid_account_id",
+  "uid" : "b2922ab04403e4d5",
+  "name" : "Invalid_email_address2",
   "time" : {
-    "start" : 1558345925459,
-    "stop" : 1558345926789,
-    "duration" : 1330
+    "start" : 1559127776377,
+    "stop" : 1559127777594,
+    "duration" : 1217
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "70bcfd657d5811ff",
-  "name" : "accCheck_Null_account_id",
+  "uid" : "b7c1972f56e22785",
+  "name" : "Null cust id and ac id",
   "time" : {
-    "start" : 1558345944670,
-    "stop" : 1558345945927,
-    "duration" : 1257
+    "start" : 1559128999604,
+    "stop" : 1559129000856,
+    "duration" : 1252
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e39a87c334d308d0",
-  "name" : "accCheck_Invalid_verification_type",
+  "uid" : "b72579a9156964e",
+  "name" : "Invalid email address3",
   "time" : {
-    "start" : 1558345934229,
-    "stop" : 1558345935529,
-    "duration" : 1300
+    "start" : 1559129012145,
+    "stop" : 1559129013363,
+    "duration" : 1218
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "6da80026da0d814a",
-  "name" : "accCheck_Valild_AccountChek_Flow_with_only_mandatory_parameters",
+  "uid" : "5dd728917b5814ee",
+  "name" : "Invalid_email_address4",
   "time" : {
-    "start" : 1558346026408,
-    "stop" : 1558346028180,
-    "duration" : 1772
+    "start" : 1559127778831,
+    "stop" : 1559127780039,
+    "duration" : 1208
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "2fdf7cd43a54f4cb",
-  "name" : "accCheck_Invalid_email_address4",
+  "uid" : "3b7baf4314304740",
+  "name" : "Null customer id",
   "time" : {
-    "start" : 1558345931838,
-    "stop" : 1558345933025,
-    "duration" : 1187
+    "start" : 1559129000858,
+    "stop" : 1559129002092,
+    "duration" : 1234
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "b56f76d7a63cf2e1",
-  "name" : "accCheck_Invalid_customer_id",
+  "uid" : "6fa0b9047c32dcb6",
+  "name" : "testPlaid",
   "time" : {
-    "start" : 1558345926792,
-    "stop" : 1558345928152,
-    "duration" : 1360
+    "start" : 1559126070951,
+    "stop" : 1559126104013,
+    "duration" : 33062
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "6685db2377823295",
-  "name" : "accCheck_zip_code_less_than_5_digits_ssn_less_than_9_null_fist_and_last_name_invalid_email",
+  "uid" : "8ef7d9aee0502054",
+  "name" : "SSN greater than 9 digits",
   "time" : {
-    "start" : 1558346028182,
-    "stop" : 1558346029349,
-    "duration" : 1167
+    "start" : 1559129017097,
+    "stop" : 1559129018304,
+    "duration" : 1207
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "6fcdcd195efeddb1",
-  "name" : "accCheck_Null_SSN",
+  "uid" : "f2589b089c797442",
+  "name" : "Null verification type",
   "time" : {
-    "start" : 1558345941483,
-    "stop" : 1558345942871,
-    "duration" : 1388
+    "start" : 1559129004545,
+    "stop" : 1559129005761,
+    "duration" : 1216
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "7de2958d5f0527dc",
-  "name" : "accCheck_Invalid_email_address2",
+  "uid" : "9bb4b121be3cda3f",
+  "name" : "Invalid customer id",
   "time" : {
-    "start" : 1558345929335,
-    "stop" : 1558345930519,
+    "start" : 1559129008384,
+    "stop" : 1559129009689,
+    "duration" : 1305
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6143792cef0322e6",
+  "name" : "Valid scenario with all parameters",
+  "time" : {
+    "start" : 1559128757871,
+    "stop" : 1559128830078,
+    "duration" : 72207
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "21508a81f2114e9c",
+  "name" : "zip code less than 5 digits ssn less than 9 null fist and last name invalid email",
+  "time" : {
+    "start" : 1559129019493,
+    "stop" : 1559129020677,
     "duration" : 1184
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ff683b7a8bbd6da3",
-  "name" : "accCheck_Null_cust_id_and_ac_id",
+  "uid" : "dae66659a7fcff43",
+  "name" : "Null first name last name ssn email verification type",
   "time" : {
-    "start" : 1558345945930,
-    "stop" : 1558345947132,
-    "duration" : 1202
+    "start" : 1559129003322,
+    "stop" : 1559129004543,
+    "duration" : 1221
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "4acf6380547355f4",
-  "name" : "accCheck_Invalid_Zip_Code",
+  "uid" : "46d3545801e16bde",
+  "name" : "SSN less than 9 digits",
   "time" : {
-    "start" : 1558345921927,
-    "stop" : 1558345925375,
-    "duration" : 3448
+    "start" : 1559129018307,
+    "stop" : 1559129019491,
+    "duration" : 1184
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "85129f97f8a6282f",
-  "name" : "accCheck_Null_first_name_last_name_ssn_email_verification_type",
+  "uid" : "d533bbf701556efb",
+  "name" : "Null email address",
   "time" : {
-    "start" : 1558345949503,
-    "stop" : 1558345950681,
-    "duration" : 1178
+    "start" : 1559129002094,
+    "stop" : 1559129003319,
+    "duration" : 1225
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "67af954060bae079",
-  "name" : "accCheck_Invalid_email_address1",
+  "uid" : "927e1ee26184dde4",
+  "name" : "Invalid Zip Code",
   "time" : {
-    "start" : 1558345928155,
-    "stop" : 1558345929331,
-    "duration" : 1176
+    "start" : 1559129005765,
+    "stop" : 1559129007054,
+    "duration" : 1289
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "910a7dc5a2608d0d",
-  "name" : "accCheck_SSN_less_than_9_digits",
+  "uid" : "898f0db1c5d6658d",
+  "name" : "Null_customer_id",
   "time" : {
-    "start" : 1558345953071,
-    "stop" : 1558345954272,
+    "start" : 1559127791207,
+    "stop" : 1559127792391,
+    "duration" : 1184
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c73415b03a8ad358",
+  "name" : "Valild_Plaid_Flow_with_only_mandatory_parameters",
+  "time" : {
+    "start" : 1559127799954,
+    "stop" : 1559127801220,
+    "duration" : 1266
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6a19e2a85728ea1d",
+  "name" : "Invalid email address2",
+  "time" : {
+    "start" : 1559129010930,
+    "stop" : 1559129012142,
+    "duration" : 1212
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d16f3a602e8df6a2",
+  "name" : "Null_SSN",
+  "time" : {
+    "start" : 1559127786224,
+    "stop" : 1559127787508,
+    "duration" : 1284
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b9b90cac3019155f",
+  "name" : "Invalid verification type",
+  "time" : {
+    "start" : 1559129015795,
+    "stop" : 1559129017094,
+    "duration" : 1299
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a8fb8cfc2d41935",
+  "name" : "Invalid_email_address3",
+  "time" : {
+    "start" : 1559127777596,
+    "stop" : 1559127778827,
+    "duration" : 1231
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "722ca2ebff8e07e6",
+  "name" : "Invalid account id",
+  "time" : {
+    "start" : 1559129007059,
+    "stop" : 1559129008381,
+    "duration" : 1322
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4b4f85da1d5a6c0f",
+  "name" : "Valild AccountChek Flow with only mandatory parameters",
+  "time" : {
+    "start" : 1559128830228,
+    "stop" : 1559128904678,
+    "duration" : 74450
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "d467b9e9767cf2ad",
+  "name" : "zip_code_less_than_5_digits_ssn_less_than_9_null_fist_and_last_name_invalid_email",
+  "time" : {
+    "start" : 1559127801222,
+    "stop" : 1559127802403,
+    "duration" : 1181
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b9005e69116411a",
+  "name" : "Null_First_Name",
+  "time" : {
+    "start" : 1559127783825,
+    "stop" : 1559127785028,
+    "duration" : 1203
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "56f64fc18110f80e",
+  "name" : "Null_cust_id_and_ac_id",
+  "time" : {
+    "start" : 1559127789995,
+    "stop" : 1559127791205,
+    "duration" : 1210
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ebc4ddd5f0f4e847",
+  "name" : "Null_verification_type",
+  "time" : {
+    "start" : 1559127794841,
+    "stop" : 1559127796025,
+    "duration" : 1184
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "897b1f253eb65101",
+  "name" : "Null Last Name",
+  "time" : {
+    "start" : 1559128912099,
+    "stop" : 1559128914889,
+    "duration" : 2790
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d670099c1a6c37bb",
+  "name" : "Invalid email address5",
+  "time" : {
+    "start" : 1559129014605,
+    "stop" : 1559129015792,
+    "duration" : 1187
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "27657df37d909721",
+  "name" : "Invalid email address4",
+  "time" : {
+    "start" : 1559129013365,
+    "stop" : 1559129014601,
+    "duration" : 1236
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f635daedfed80fc9",
+  "name" : "Null First Name",
+  "time" : {
+    "start" : 1559128909315,
+    "stop" : 1559128912096,
+    "duration" : 2781
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7dc4abd3a12f5ebc",
+  "name" : "Invalid_cust_id_ac_id",
+  "time" : {
+    "start" : 1559127772574,
+    "stop" : 1559127773871,
+    "duration" : 1297
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "92db13b59f4452d5",
+  "name" : "Null account id",
+  "time" : {
+    "start" : 1559128998122,
+    "stop" : 1559128999601,
+    "duration" : 1479
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a8d31960b68b0a35",
+  "name" : "Null_first_name_last_name_ssn",
+  "time" : {
+    "start" : 1559127793650,
+    "stop" : 1559127794839,
+    "duration" : 1189
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "77302196b5507b1d",
+  "name" : "Invalid email address1",
+  "time" : {
+    "start" : 1559129009691,
+    "stop" : 1559129010927,
+    "duration" : 1236
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "562f3615a0c38d3e",
+  "name" : "SSN_greater_than_9_digits",
+  "time" : {
+    "start" : 1559127796027,
+    "stop" : 1559127797212,
+    "duration" : 1185
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "608377664f42b0d1",
+  "name" : "Invalid_account_id",
+  "time" : {
+    "start" : 1559127771213,
+    "stop" : 1559127772571,
+    "duration" : 1358
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "830e36e9d86bffd7",
+  "name" : "Valild_Plaid_Flow_with_all_parameters",
+  "time" : {
+    "start" : 1559127798398,
+    "stop" : 1559127799952,
+    "duration" : 1554
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cebdb13b8bbbbc1b",
+  "name" : "Null_Last_Name",
+  "time" : {
+    "start" : 1559127785030,
+    "stop" : 1559127786222,
+    "duration" : 1192
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3dde672a431e1420",
+  "name" : "Null_account_id",
+  "time" : {
+    "start" : 1559127788782,
+    "stop" : 1559127789992,
+    "duration" : 1210
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "746e12d69b16a492",
+  "name" : "Null SSN",
+  "time" : {
+    "start" : 1559128914892,
+    "stop" : 1559128916205,
+    "duration" : 1313
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bc2060e5122e955a",
+  "name" : "Invalid_email_address5",
+  "time" : {
+    "start" : 1559127780042,
+    "stop" : 1559127781243,
     "duration" : 1201
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "66ba85a01200372a",
-  "name" : "accCheck_Invalid_email_address3",
+  "uid" : "a547c3ad5ea5071e",
+  "name" : "Invalid_Zip_Code",
   "time" : {
-    "start" : 1558345930521,
-    "stop" : 1558345931836,
-    "duration" : 1315
+    "start" : 1559127768386,
+    "stop" : 1559127771148,
+    "duration" : 2762
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "a149e72e7ed41fc0",
-  "name" : "accCheck_Invalid_email_address5",
+  "uid" : "22ebb78b4818b316",
+  "name" : "SSN_less_than_9_digits",
   "time" : {
-    "start" : 1558345933027,
-    "stop" : 1558345934223,
-    "duration" : 1196
+    "start" : 1559127797214,
+    "stop" : 1559127798394,
+    "duration" : 1180
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "58487a699d944e78",
-  "name" : "accCheck_Null_email_address",
+  "uid" : "883296cce9136e6d",
+  "name" : "Null Address line 1",
   "time" : {
-    "start" : 1558345948352,
-    "stop" : 1558345949500,
-    "duration" : 1148
+    "start" : 1559128904686,
+    "stop" : 1559128909312,
+    "duration" : 4626
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "8c30c35d38d23449",
-  "name" : "Valid scenario with all parameters",
+  "uid" : "53fa687407e2d61d",
+  "name" : "Invalid_verification_type",
   "time" : {
-    "start" : 1558345954275,
-    "stop" : 1558346026404,
-    "duration" : 72129
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "ae4534163223fbb0",
-  "name" : "accCheck_Null_Zip_Code",
-  "time" : {
-    "start" : 1558345942875,
-    "stop" : 1558345944668,
-    "duration" : 1793
+    "start" : 1559127781245,
+    "stop" : 1559127782523,
+    "duration" : 1278
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "7473d85378ba944e",
-  "name" : "accCheck_Null_customer_id",
+  "uid" : "a9a0af51d8887c50",
+  "name" : "Null Zip Code",
   "time" : {
-    "start" : 1558345947135,
-    "stop" : 1558345948350,
-    "duration" : 1215
+    "start" : 1559128916208,
+    "stop" : 1559128998100,
+    "duration" : 81892
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "b73a4e79b679e77b",
-  "name" : "accCheck_Null_Last_Name",
+  "uid" : "8e0c4f1c680a694e",
+  "name" : "Null_Zip_Code",
   "time" : {
-    "start" : 1558345939743,
-    "stop" : 1558345941480,
-    "duration" : 1737
+    "start" : 1559127787510,
+    "stop" : 1559127788779,
+    "duration" : 1269
   },
   "status" : "passed",
   "severity" : "normal"

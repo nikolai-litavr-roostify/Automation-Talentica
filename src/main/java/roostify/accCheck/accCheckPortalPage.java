@@ -1,5 +1,6 @@
 package roostify.accCheck;
 
+import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -68,24 +69,27 @@ public class AccCheckPortalPage extends Base {
     @FindBy(xpath = "//*[@class='add-fi']")
     WebElement lnkAddAnotherAccount;
 
-
+    @Step("Sent name of Bank to SearchBox ")
     public void sendTxtToSeachBox(String search) throws IOException {
         searchBox.sendKeys(search);
         log.info("Bank Name Send");
         b.captureScreenMethod();
     }
 
+    @Step("Click Dag Bank ")
     public void clickDagBankName(){
         WebDriverWait wait=new WebDriverWait(driver, 120);
         wait.until(ExpectedConditions.visibilityOf(lblDagBank));
         lblDagBank.click();
     }
+    @Step("Click DagSite Bank ")
     public void clickDagSiteBankName(){
         WebDriverWait wait=new WebDriverWait(driver, 120);
-        wait.until(ExpectedConditions.presenceOfElementLocated((By) lblDagSiteBank));
+        wait.until(ExpectedConditions.visibilityOf(lblDagSiteBank));
         lblDagSiteBank.click();
     }
 
+    @Step("Click Add Another Account link")
     public void clickAddAnotherAcclnk()
     {
         lnkAddAnotherAccount.click();
@@ -108,6 +112,7 @@ public class AccCheckPortalPage extends Base {
         }
     }
 
+    @Step("Click Submit Button")
     public void clickSubmitButton() throws IOException {
         if(btnSubmit.isDisplayed())
         {
@@ -124,18 +129,20 @@ public class AccCheckPortalPage extends Base {
 
     }
 
+    @Step("Validate Submit Message")
     public void validateSuccessMessage() throws IOException {
         WebDriverWait wait=new WebDriverWait(driver, 120);
         wait.until(ExpectedConditions.visibilityOf(txtSuccessMessage));
             Assert.assertTrue(txtSuccessMessage.isDisplayed());
             System.out.println("Test Successfully Passed");
             b.captureScreenMethod();
+            driver.close();
     }
     public void waitForShareAccounts() {
         WebDriverWait wait=new WebDriverWait(driver, 120);
         wait.until(ExpectedConditions.visibilityOf(btnShareAccounts));
     }
-
+    @Step("Login to DagBank")
     public void loginToDagBank(String Scenarioname) throws IOException {
         sendTxtToSeachBox("DagBank");
         clickDagBankName();
@@ -146,7 +153,7 @@ public class AccCheckPortalPage extends Base {
         sendPassword(Password);
         clickSubmitButton();
     }
-
+    @Step("Login to DagSite Bank")
     public void loginToDagSiteBank() throws IOException {
         sendTxtToSeachBox("Dagsite");
         clickDagSiteBankName();
@@ -166,4 +173,17 @@ public class AccCheckPortalPage extends Base {
         User2=(String) data.get(21);
         Password2=(String) data.get(22);
     }
+
+    @Step("Uncheck First data")
+    public void uncheckFirstAccount()
+    {
+        chkboxAccount1.click();
+    }
+
+    @Step("Uncheck Second data")
+    public void uncheckSecondAccount()
+    {
+        chkboxAccount2.click();
+    }
+
 }

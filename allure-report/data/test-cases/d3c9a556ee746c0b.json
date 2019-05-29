@@ -1,0 +1,70 @@
+{
+  "uid" : "d3c9a556ee746c0b",
+  "name" : "accCheck_Invalid_email_address3",
+  "fullName" : "accCheck.AccountCheck.accCheck_Invalid_email_address3",
+  "historyId" : "c97362d95d350e99c68090526b5aed1d",
+  "time" : {
+    "start" : 1558344621486,
+    "stop" : 1558344622719,
+    "duration" : 1233
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getData",
+    "time" : {
+      "start" : 1558344612350,
+      "stop" : 1558344612902,
+      "duration" : 552
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "accCheck.AccountCheck"
+  }, {
+    "name" : "testClass",
+    "value" : "accCheck.AccountCheck"
+  }, {
+    "name" : "testMethod",
+    "value" : "accCheck_Invalid_email_address3"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "accCheck.AccountCheck"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "7728@KrishnaA-Desk.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d3c9a556ee746c0b.json",
+  "parameterValues" : [ ]
+}

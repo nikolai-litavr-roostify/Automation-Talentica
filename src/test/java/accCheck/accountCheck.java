@@ -1,12 +1,11 @@
 package accCheck;
 
-import base.TestListener;
+import listener.TestListener;
 import io.qameta.allure.*;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -14,8 +13,7 @@ import roostify.accCheck.AccCheckPortalPage;
 import roostify.accCheck.PayLoad;
 import roostify.base.Base;
 import roostify.ReusableMethods;
-
-import java.io.FileInputStream;
+import utilities.ReadConfig;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -32,15 +30,15 @@ public class AccountCheck extends Base {
     public void getData() throws IOException {
 
 
-        FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//Enviornment.properties");
-        prop.load(fis);
-        RestAssured.baseURI = prop.getProperty("AccCheckHOST");
+       // FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//Enviornment.properties");
+        //prop.load(fis);
+        RestAssured.baseURI = (String) ReadConfig.getVerificationServiceHost();
     }
 
     @Test(priority = 0, description = "Valid scenario with all parameters")
     @Severity(SeverityLevel.BLOCKER)
     @Story("Account check flow with valid scenario")
-    public void accCheck_Valild_AccountChek_Flow_with_all_parameters() throws IOException {
+    public void accCheck_Valild_AccountChek_Flow_with_all_parameters() throws IOException, InterruptedException {
         String Scenarioname="Valild_AccountChek_Flow_with_all_parameters";
 //      ExtentTestManager.getTest().log(Status.INFO, "Hey im in Base test1 1");
 
@@ -61,8 +59,10 @@ public class AccountCheck extends Base {
     }
 
 
-    @Test
-    public void accCheck_Valild_AccountChek_Flow_with_only_mandatory_parameters() throws IOException {
+    @Test(priority = 0, description = "Valild AccountChek Flow with only mandatory parameters")
+    @Severity(SeverityLevel.BLOCKER)
+    @Story("Account check flow with valid scenario")
+    public void accCheck_Valild_AccountChek_Flow_with_only_mandatory_parameters() throws IOException, InterruptedException {
         String Scenarioname="Valild_AccountChek_Flow_with_only_mandatory_parameters";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
@@ -84,7 +84,9 @@ public class AccountCheck extends Base {
     }
 
 
-    @Test
+    @Test(priority = 1, description = "Null Zip Code")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Null Parameters")
     public void accCheck_Null_Zip_Code() throws IOException {
 
         String Scenarioname="Null_Zip_Code";
@@ -93,11 +95,24 @@ public class AccountCheck extends Base {
                         .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
         JsonPath js = ReusableMethods.rawToJson(res);
         String data = js.get("links[0].resource_data");
+        String srclink = ReusableMethods.getSrcLink(data);
+        System.out.println(srclink);
+        Base b = new Base();
+        WebDriver driver= b.initialzeDriver();
+        driver.navigate().to(srclink);
+        AccCheckPortalPage acp = new AccCheckPortalPage(driver);
+        acp.loginToDagBank(Scenarioname);
+        acp.waitForShareAccounts();
+        acp.uncheckFirstAccount();
+        acp.clickShareAccounts();
+        acp.validateSuccessMessage();
 
 
     }
 
-    @Test
+    @Test(priority = 1, description = "Null Address line 1")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Null Parameters")
     public void accCheck_Null_Address_line_1() throws IOException {
 
         String Scenarioname="Null_Address_line_1";
@@ -110,7 +125,9 @@ public class AccountCheck extends Base {
 
     }
 
-    @Test
+    @Test(priority = 1, description = "Null Last Name")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Null Parameters")
     public void accCheck_Null_Last_Name() throws IOException {
 
         String Scenarioname="Null_Last_Name";
@@ -123,7 +140,9 @@ public class AccountCheck extends Base {
 
     }
 
-    @Test
+    @Test(priority = 1, description = "Null SSN")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Null Parameters")
     public void accCheck_Null_SSN() throws IOException {
 
         String Scenarioname="Null_SSN";
@@ -133,7 +152,9 @@ public class AccountCheck extends Base {
 
     }
 
-    @Test
+    @Test(priority = 1, description = "Null email address")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Null Parameters")
     public void accCheck_Null_email_address() throws IOException {
 
         String Scenarioname="Null_email_address";
@@ -143,7 +164,9 @@ public class AccountCheck extends Base {
 
     }
 
-    @Test
+    @Test(priority = 1, description = "Null First Name")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Null Parameters")
     public void accCheck_Null_First_Name() throws IOException {
 
         String Scenarioname="Null_First_Name";
@@ -155,7 +178,9 @@ public class AccountCheck extends Base {
 
 
 
-    @Test
+    @Test(priority = 2, description = "SSN less than 9 digits")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Invalid Scenarios")
     public void accCheck_SSN_less_than_9_digits() throws IOException {
 
         String Scenarioname="SSN_less_than_9_digits";
@@ -165,7 +190,9 @@ public class AccountCheck extends Base {
 
     }
 
-    @Test
+    @Test(priority = 2, description = "SSN greater than 9 digits")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Invalid Scenarios")
     public void accCheck_SSN_greater_than_9_digits() throws IOException {
 
         String Scenarioname="SSN_greater_than_9_digits";
@@ -175,7 +202,9 @@ public class AccountCheck extends Base {
 
     }
 
-    @Test
+    @Test(priority = 2, description = "Invalid email address1")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Invalid Scenarios")
     public void accCheck_Invalid_email_address1() throws IOException {
 
         String Scenarioname="Invalid_email_address1";
@@ -184,7 +213,9 @@ public class AccountCheck extends Base {
                         .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
 
     }
-    @Test
+    @Test(priority = 2, description = "Invalid email address2")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Invalid Scenarios")
     public void accCheck_Invalid_email_address2() throws IOException {
 
         String Scenarioname="Invalid_email_address2";
@@ -194,7 +225,9 @@ public class AccountCheck extends Base {
 
     }
 
-    @Test
+    @Test(priority = 2, description = "Invalid email address3")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Invalid Scenarios")
     public void accCheck_Invalid_email_address3() throws IOException {
 
         String Scenarioname="Invalid_email_address3";
@@ -204,7 +237,9 @@ public class AccountCheck extends Base {
 
     }
 
-    @Test
+    @Test(priority = 2, description = "Invalid email address4")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Invalid Scenarios")
     public void accCheck_Invalid_email_address4() throws IOException {
 
         String Scenarioname="Invalid_email_address4";
@@ -214,7 +249,9 @@ public class AccountCheck extends Base {
 
     }
 
-    @Test
+    @Test(priority = 2, description = "Invalid email address5")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Invalid Scenarios")
     public void accCheck_Invalid_email_address5() throws IOException {
 
         String Scenarioname="Invalid_email_address5";
@@ -224,7 +261,9 @@ public class AccountCheck extends Base {
 
     }
 
-    @Test
+    @Test(priority = 2, description = "Invalid Zip Code")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Invalid Scenarios")
     public void accCheck_Invalid_Zip_Code() throws IOException {
 
         String Scenarioname="Invalid_Zip_Code";
@@ -234,7 +273,9 @@ public class AccountCheck extends Base {
 
     }
 
-    @Test
+    @Test(priority = 2, description = "Invalid customer id")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Invalid Scenarios")
     public void accCheck_Invalid_customer_id() throws IOException {
 
         String Scenarioname="Invalid_customer_id";
@@ -244,7 +285,9 @@ public class AccountCheck extends Base {
 
     }
 
-    @Test
+    @Test(priority = 2, description = "Invalid account id")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Invalid Scenarios")
     public void accCheck_Invalid_account_id() throws IOException {
 
         String Scenarioname="Invalid_account_id";
@@ -254,7 +297,9 @@ public class AccountCheck extends Base {
 
     }
 
-    @Test
+    @Test(priority = 1, description = "Null customer id")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Null Parameters")
     public void accCheck_Null_customer_id() throws IOException {
 
         String Scenarioname="Null_customer_id";
@@ -264,7 +309,9 @@ public class AccountCheck extends Base {
 
     }
 
-    @Test
+    @Test(priority = 1, description = "Null account id")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Null Parameters")
     public void accCheck_Null_account_id() throws IOException {
 
         String Scenarioname="Null_account_id";
@@ -274,7 +321,9 @@ public class AccountCheck extends Base {
 
     }
 
-    @Test
+    @Test(priority = 2, description = "Invalid verification type")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Invalid Scenarios")
     public void accCheck_Invalid_verification_type() throws IOException {
 
         String Scenarioname="Invalid_verification_type";
@@ -284,7 +333,9 @@ public class AccountCheck extends Base {
 
     }
 
-    @Test
+    @Test(priority = 1, description = "Null verification type")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Null Parameters")
     public void accCheck_Null_verification_type() throws IOException {
 
         String Scenarioname="Null_verification_type";
@@ -294,7 +345,9 @@ public class AccountCheck extends Base {
 
     }
 
-    @Test
+    @Test(priority = 1, description = "Null first name last name ssn email verification type")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Null Parameters")
     public void accCheck_Null_first_name_last_name_ssn_email_verification_type() throws IOException {
 
         String Scenarioname="Null_first_name_last_name_ssn_email_verification_type";
@@ -304,7 +357,9 @@ public class AccountCheck extends Base {
 
     }
 
-    @Test
+    @Test(priority = 2, description = "zip code less than 5 digits ssn less than 9 null fist and last name invalid email")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Invalid Scenarios")
     public void accCheck_zip_code_less_than_5_digits_ssn_less_than_9_null_fist_and_last_name_invalid_email() throws IOException {
 
         String Scenarioname="zip_code_less_than_5_digits_ssn_less_than_9_null_fist_and_last_name_invalid_email";
@@ -314,7 +369,9 @@ public class AccountCheck extends Base {
 
     }
 
-    @Test
+    @Test(priority = 1, description = "Null cust id and ac id")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("Account check flow with Null Parameters")
     public void accCheck_Null_cust_id_and_ac_id() throws IOException {
 
         String Scenarioname="Null_cust_id_and_ac_id";

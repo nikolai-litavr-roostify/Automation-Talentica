@@ -1,0 +1,72 @@
+{
+  "uid" : "d467b9e9767cf2ad",
+  "name" : "zip_code_less_than_5_digits_ssn_less_than_9_null_fist_and_last_name_invalid_email",
+  "fullName" : "plaid.PlaidTests.zip_code_less_than_5_digits_ssn_less_than_9_null_fist_and_last_name_invalid_email",
+  "historyId" : "9b6238b9474efc0c0ac6d233aa830647",
+  "time" : {
+    "start" : 1559127801222,
+    "stop" : 1559127802403,
+    "duration" : 1181
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getData",
+    "time" : {
+      "start" : 1559127768036,
+      "stop" : 1559127768331,
+      "duration" : 295
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "plaid.PlaidTests"
+  }, {
+    "name" : "testClass",
+    "value" : "plaid.PlaidTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "zip_code_less_than_5_digits_ssn_less_than_9_null_fist_and_last_name_invalid_email"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "RestAssuredMaven"
+  }, {
+    "name" : "subSuite",
+    "value" : "plaid.PlaidTests"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "15536@KrishnaA-Desk.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d467b9e9767cf2ad.json",
+  "parameterValues" : [ ]
+}

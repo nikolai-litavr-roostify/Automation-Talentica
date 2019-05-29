@@ -1,8 +1,8 @@
 {
-  "total" : 25,
+  "total" : 28,
   "items" : [ {
-    "uid" : "1975143bc42d92d44b736b9c49dc6f2c",
-    "name" : "Account check flow with valid scenario",
+    "uid" : "fb7cc5ab86545c6775ad2a801dc77615",
+    "name" : "Account Check Regression",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

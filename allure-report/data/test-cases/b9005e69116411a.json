@@ -1,0 +1,72 @@
+{
+  "uid" : "b9005e69116411a",
+  "name" : "Null_First_Name",
+  "fullName" : "plaid.PlaidTests.Null_First_Name",
+  "historyId" : "e938ac1ee4caa3211d2780e3e9573cb4",
+  "time" : {
+    "start" : 1559127783825,
+    "stop" : 1559127785028,
+    "duration" : 1203
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getData",
+    "time" : {
+      "start" : 1559127768036,
+      "stop" : 1559127768331,
+      "duration" : 295
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "plaid.PlaidTests"
+  }, {
+    "name" : "testClass",
+    "value" : "plaid.PlaidTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "Null_First_Name"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "RestAssuredMaven"
+  }, {
+    "name" : "subSuite",
+    "value" : "plaid.PlaidTests"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "15536@KrishnaA-Desk.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b9005e69116411a.json",
+  "parameterValues" : [ ]
+}

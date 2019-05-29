@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <listeners>
         <listener class-name="resources.ExtentReporterNG"/>
-        <listener class-name="base.TestListener"/>
+        <listener class-name="listener.TestListener"/>
     </listeners>
     <test verbose="2" preserve-order="true" name="Test">
         <classes>

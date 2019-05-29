@@ -1,3 +1,5 @@
 "Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
-"","","","0","0","24","0","0"
-"","","Account check flow with valid scenario","0","0","1","0","0"
+"","","","0","0","27","0","0"
+"Account Check Regression","Verify Account Check functionality","Account check flow with Null Parameters","0","0","11","0","0"
+"Account Check Regression","Verify Account Check functionality","Account check flow with Invalid Scenarios","0","0","12","0","0"
+"Account Check Regression","Verify Account Check functionality","Account check flow with valid scenario","0","0","2","0","0"

@@ -2,43 +2,54 @@ package roostify.plaid;
 import resources.DataDriven;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class PayLoad {
 
-    public static String getPostData() throws IOException {
+    public static String getPostData(String Scenarioname) throws IOException {
 
         DataDriven d = new DataDriven();
-        String Sheetname = "AccountCheck";
-        //ArrayList data = d.getData(Sheetname, Scenarioname);
+        String Sheetname = "Plaid";
+        ArrayList data = d.getData(Sheetname, Scenarioname);
 
 
         String b= "{\n" +
-                "  \"verification_type\": \"ASSET_VERIFICATION\",\n" +
-                "  \"customer_id\": \"839e7e29-3d7f-4aa5-9ae7-94d6d4f1ec7d\",\n" +
-                "  \"account_id\": \"PLAID\",\n" +
-                "  \"reference_id\": \"10203040\",\n" +
-                "  \"callback_url\": \"https://acme-lending.com/redirectHandler\",\n" +
-                "  \"notification_url\": \"https://webhook.site/1fbd6c48-f1ee-4783-bbb2-20181fe71d47\",\n" +
+                "  \"verification_type\": "+data.get(1)+",\n" +
+                "  \"customer_id\": "+data.get(2)+",\n" +
+                "  \"account_id\": "+data.get(3)+",\n" +
+                "  \"reference_id\": "+data.get(4)+",\n" +
+                "  \"callback_url\": "+data.get(5)+",\n" +
+                "  \"notification_url\": "+data.get(6)+",\n" +
                 "  \"borrower_info\": {\n" +
-                "    \"first_name\": \"Tester\",\n" +
-                "    \"last_name\": \"Testing\",\n" +
-                "    \"given_name\": \"string\",\n" +
-                "    \"user_name\": \"string\",\n" +
-                "    \"email\": \"test@test.com\",\n" +
+                "    \"first_name\": "+data.get(7)+",\n" +
+                "    \"last_name\": "+data.get(8)+",\n" +
+                "    \"given_name\": "+data.get(11)+",\n" +
+                "    \"user_name\": "+data.get(12)+",\n" +
+                "    \"email\": "+data.get(9)+",\n" +
                 "    \"phone\": \"1415555555\",\n" +
-                "    \"ssn\": 123456789,\n" +
+                "    \"ssn\": "+data.get(10)+",\n" +
                 "    \"address\": {\n" +
-                "      \"address_line1\": \"address 123\",\n" +
+                "      \"address_line1\": "+data.get(13)+",\n" +
                 "      \"address_line2\": null,\n" +
                 "      \"city\": \"Salt Lake\",\n" +
                 "      \"state\": \"UT\",\n" +
-                "      \"zip_code\": \"84101\"\n" +
+                "      \"zip_code\": "+data.get(14)+"\n" +
                 "    },\n" +
                 "    \"dob\":\"12/03/1994\"\n" +
                 "  }\n" +
                 "}";
 
         return b;
+
+    }
+
+    public static int getExpected(String Scenarioname) throws IOException {
+        DataDriven d=new DataDriven();
+        String Sheetname = "Plaid";
+        ArrayList data=d.getData(Sheetname,Scenarioname);
+        Object expected = data.get(15);
+        int exp = Integer.parseInt((String) expected);
+        return exp;
 
     }
 

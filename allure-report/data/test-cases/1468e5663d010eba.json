@@ -1,0 +1,76 @@
+{
+  "uid" : "1468e5663d010eba",
+  "name" : "accCheck_Null_SSN",
+  "fullName" : "accCheck.AccountCheck.accCheck_Null_SSN",
+  "historyId" : "fb8da60d07aec95c91ef8c4c45468a61",
+  "time" : {
+    "start" : 1558527185454,
+    "stop" : 1558527186759,
+    "duration" : 1305
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getData",
+    "time" : {
+      "start" : 1558527166272,
+      "stop" : 1558527166637,
+      "duration" : 365
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "accCheck.AccountCheck"
+  }, {
+    "name" : "testClass",
+    "value" : "accCheck.AccountCheck"
+  }, {
+    "name" : "testMethod",
+    "value" : "accCheck_Null_SSN"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "accCheck.AccountCheck"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "9880@KrishnaA-Desk.main(1)"
+  }, {
+    "name" : "epic",
+    "value" : "Account Check Regression"
+  }, {
+    "name" : "feature",
+    "value" : "Verify Account Check functionality"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1468e5663d010eba.json",
+  "parameterValues" : [ ]
+}

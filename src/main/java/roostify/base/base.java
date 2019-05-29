@@ -5,61 +5,72 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import utilities.ReadConfig;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class Base {
     public static WebDriver driver;
     public String filePath="";
+    ReadConfig rc = new ReadConfig();
 
    /* public Base() {
         this.filePath = createTestRunFolder();
     }*/
 
-    public Properties initializeprop() {
-        Properties prop = new Properties();
-        FileInputStream fis1;
 
-        try {
-            fis1 = new FileInputStream("src\\main\\java\\Resources\\data.properties");
-            prop.load(fis1);
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        return prop;
-    }
-
-    public WebDriver initialzeDriver() throws IOException {
+    public WebDriver initialzeDriver(){
         //WebDriver driver = null;
-        Properties prop = new Properties();
-        FileInputStream fis;
-        try {
-            fis = new FileInputStream(System.getProperty("user.dir") + "//Enviornment.properties");
-            prop.load(fis);
-            String browsername = "Chrome";
-                    //prop.getProperty("browser");
-
-            if (browsername.equals("Chrome")) {
-                System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//chromedriver.exe");
-                //WebDriverManager.getInstance(CHROME).setup();
-                driver = new ChromeDriver();
-                driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-                driver.manage().window().maximize();
-
-            }
-
+        //Properties prop = new Properties();
+       // FileInputStream fis;
+        String testBrowser = ReadConfig.getBrowser();
+        if(testBrowser.equalsIgnoreCase("chrome"))
+        {
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +ReadConfig.getChromePath());
+            driver = new ChromeDriver();
 
         }
-        catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+
+        else if(testBrowser.equalsIgnoreCase("firefox"))
+        {
+            System.setProperty("webdriver.gecko.driver",  System.getProperty("user.dir") +ReadConfig.getFirefoxPath());
+            driver = new FirefoxDriver();
         }
+
+        else if(testBrowser.equalsIgnoreCase("ie"))
+        {
+            System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + ReadConfig.getInternetExplorerPath());
+            driver = new InternetExplorerDriver();
+        }
+
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
+
+
+//        try {
+//            String testBrowser = rc.getBrowser();
+//                    //prop.getProperty("browser");
+//
+//            if (browsername.equals("Chrome")) {
+//                System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//chromedriver.exe");
+//                //WebDriverManager.getInstance(CHROME).setup();
+//                driver = new ChromeDriver();
+//                driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//                driver.manage().window().maximize();
+//
+//            }
+//
+//        }
+//        catch (IOException e) {
+//            // TODO Auto-generated catch block
+//            e.printStackTrace();
+//        }
 
       // this.filePath=createTestRunFolder();
        // System.out.println(this.filePath);

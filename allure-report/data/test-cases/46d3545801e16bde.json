@@ -1,0 +1,149 @@
+{
+  "uid" : "46d3545801e16bde",
+  "name" : "SSN less than 9 digits",
+  "fullName" : "accCheck.AccountCheck.accCheck_SSN_less_than_9_digits",
+  "historyId" : "7236b4e9830cae2e1916cd69c67a3239",
+  "time" : {
+    "start" : 1559129018307,
+    "stop" : 1559129019491,
+    "duration" : 1184
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getData",
+    "time" : {
+      "start" : 1559128756844,
+      "stop" : 1559128757387,
+      "duration" : 543
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "accCheck.AccountCheck"
+  }, {
+    "name" : "testClass",
+    "value" : "accCheck.AccountCheck"
+  }, {
+    "name" : "testMethod",
+    "value" : "accCheck_SSN_less_than_9_digits"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "accCheck.AccountCheck"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "4848@KrishnaA-Desk.main(1)"
+  }, {
+    "name" : "epic",
+    "value" : "Account Check Regression"
+  }, {
+    "name" : "feature",
+    "value" : "Verify Account Check functionality"
+  }, {
+    "name" : "story",
+    "value" : "Account check flow with Invalid Scenarios"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "4b5433746c250f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1559038123595,
+        "stop" : 1559038124793,
+        "duration" : 1198
+      }
+    }, {
+      "uid" : "646c39403e1d48c7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1558527197071,
+        "stop" : 1558527198270,
+        "duration" : 1199
+      }
+    }, {
+      "uid" : "1960d723731bfd38",
+      "status" : "passed",
+      "time" : {
+        "start" : 1558350256371,
+        "stop" : 1558350257600,
+        "duration" : 1229
+      }
+    }, {
+      "uid" : "8115ed9339f9a7ce",
+      "status" : "passed",
+      "time" : {
+        "start" : 1558345953071,
+        "stop" : 1558345954272,
+        "duration" : 1201
+      }
+    }, {
+      "uid" : "b658d48118c320d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1558344644120,
+        "stop" : 1558344645333,
+        "duration" : 1213
+      }
+    }, {
+      "uid" : "d0675c66b91f6f76",
+      "status" : "failed",
+      "statusDetails" : "1 expectation failed.\nExpected status code <400> but was <503>.\n",
+      "time" : {
+        "start" : 1558342878629,
+        "stop" : 1558342879873,
+        "duration" : 1244
+      }
+    }, {
+      "uid" : "78c6287a8225e41b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1558336950000,
+        "stop" : 1558336951175,
+        "duration" : 1175
+      }
+    }, {
+      "uid" : "ef39eb86bf98f793",
+      "status" : "passed",
+      "time" : {
+        "start" : 1558327655173,
+        "stop" : 1558327656363,
+        "duration" : 1190
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "46d3545801e16bde.json",
+  "parameterValues" : [ ]
+}
