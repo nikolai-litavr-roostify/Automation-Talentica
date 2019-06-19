@@ -1,0 +1,329 @@
+{
+  "uid" : "5e9b981582e1e9c0",
+  "name" : "Valild Plaid Flow with all parameters",
+  "fullName" : "plaid.PlaidTests.Valild_Plaid_Flow_with_all_parameters",
+  "historyId" : "687ed9a3d9875b15d66cda4e6fc3cf96",
+  "time" : {
+    "start" : 1560243515334,
+    "stop" : 1560243555014,
+    "duration" : 39680
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getHostURL",
+    "time" : {
+      "start" : 1560243384057,
+      "stop" : 1560243384759,
+      "duration" : 702
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "getHostURL",
+    "time" : {
+      "start" : 1560243384759,
+      "stop" : 1560243384759,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Login to Plaid",
+      "time" : {
+        "start" : 1560243522708,
+        "stop" : 1560243552870,
+        "duration" : 30162
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click Continue Button ",
+        "time" : {
+          "start" : 1560243522741,
+          "stop" : 1560243524061,
+          "duration" : 1320
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Click CitiBank logo ",
+        "time" : {
+          "start" : 1560243524061,
+          "stop" : 1560243524185,
+          "duration" : 124
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Login Step with Username",
+        "time" : {
+          "start" : 1560243524220,
+          "stop" : 1560243524482,
+          "duration" : 262
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "user",
+          "value" : "user_good"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Login Step with Password",
+        "time" : {
+          "start" : 1560243524483,
+          "stop" : 1560243524990,
+          "duration" : 507
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "pass",
+          "value" : "pass_good"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Click Submit Button",
+        "time" : {
+          "start" : 1560243524991,
+          "stop" : 1560243525095,
+          "duration" : 104
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Click Plaid Checking Account ",
+        "time" : {
+          "start" : 1560243528095,
+          "stop" : 1560243530020,
+          "duration" : 1925
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Click Plaid Saving Account ",
+        "time" : {
+          "start" : 1560243533020,
+          "stop" : 1560243533095,
+          "duration" : 75
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Click Plaid CD Account ",
+        "time" : {
+          "start" : 1560243533095,
+          "stop" : 1560243533197,
+          "duration" : 102
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Click Continue Button ",
+        "time" : {
+          "start" : 1560243533197,
+          "stop" : 1560243533274,
+          "duration" : 77
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Click Allow Button",
+        "time" : {
+          "start" : 1560243536274,
+          "stop" : 1560243536368,
+          "duration" : 94
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Click Submit Button",
+        "time" : {
+          "start" : 1560243539371,
+          "stop" : 1560243539434,
+          "duration" : 63
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Validate Submit Message",
+        "time" : {
+          "start" : 1560243539435,
+          "stop" : 1560243540804,
+          "duration" : 1369
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Close Success Alert",
+        "time" : {
+          "start" : 1560243540804,
+          "stop" : 1560243552870,
+          "duration" : 12066
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Scenarioname",
+        "value" : "Valild Plaid Flow with all parameters"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 13,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 14,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "plaid.PlaidTests"
+  }, {
+    "name" : "testClass",
+    "value" : "plaid.PlaidTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "Valild_Plaid_Flow_with_all_parameters"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "plaid.PlaidTests"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "14556@KrishnaA-Desk.main(1)"
+  }, {
+    "name" : "epic",
+    "value" : "Plaid Regression"
+  }, {
+    "name" : "feature",
+    "value" : "Verify Plaid functionality"
+  }, {
+    "name" : "story",
+    "value" : "Plaid flow with valid scenario"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5e9b981582e1e9c0.json",
+  "parameterValues" : [ ]
+}

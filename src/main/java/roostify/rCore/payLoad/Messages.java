@@ -10,7 +10,7 @@ public class Messages {
     public static String getCreateMessageData(String loanId) throws IOException {
         Properties prop = new Properties();
 
-        FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//Enviornment.properties");
+        FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//Configurations//config.properties");
         prop.load(fis);
         String adminid= prop.getProperty("adminid");
 

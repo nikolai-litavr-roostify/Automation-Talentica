@@ -41,13 +41,13 @@ public class ReadConfig {
         return InternetExplorerPath;
     }
 
-    public String getUsername()
+    public static String getUsername()
     {
         String Username = pro.getProperty("Username");
         return  Username;
     }
 
-    public String getPassword()
+    public static String getPassword()
     {
         String Password = pro.getProperty("Password");
         return  Password;
@@ -65,7 +65,7 @@ public class ReadConfig {
         return  VerificationServiceHost;
     }
 
-    public String getRCoreHost()
+    public static String getRCoreHost()
     {
         String RCoreHost = pro.getProperty("RCoreHost");
         return  RCoreHost;

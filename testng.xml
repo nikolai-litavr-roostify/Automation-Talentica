@@ -7,8 +7,8 @@
     </listeners>
     <test verbose="2" preserve-order="true" name="Test">
         <classes>
-
-            <class name="accCheck.AccountCheck"></class>
+            <class name="accCheck.AccountCheckTests"></class>
+            <class name="plaid.PlaidTests"></class>
         </classes>
     </test>
 </suite>

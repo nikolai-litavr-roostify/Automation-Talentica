@@ -1,6 +1,17 @@
 {
-  "total" : 28,
+  "total" : 2,
   "items" : [ {
+    "uid" : "3c45c562357ae90494cf437ed16a5578",
+    "name" : "Plaid Regression",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
     "uid" : "fb7cc5ab86545c6775ad2a801dc77615",
     "name" : "Account Check Regression",
     "statistic" : {

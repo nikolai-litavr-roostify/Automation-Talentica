@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [All Test Suite]">
+  <listeners>
+    <listener class-name="resources.ExtentReporterNG"/>
+    <listener class-name="listener.TestListener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Test(failed)">
+    <classes>
+      <class name="accCheck.AccountCheckTests">
+        <methods>
+          <include name="accCheck_Null_Zip_Code"/>
+          <include name="accCheck_Valild_AccountChek_Flow_with_all_parameters"/>
+          <include name="accCheck_Valild_AccountChek_Flow_with_only_mandatory_parameters"/>
+          <include name="getHostURL"/>
+        </methods>
+      </class> <!-- accCheck.AccountCheckTests -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

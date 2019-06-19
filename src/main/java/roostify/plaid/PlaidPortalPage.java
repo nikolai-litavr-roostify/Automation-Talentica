@@ -1,8 +1,6 @@
 package roostify.plaid;
 
 import io.qameta.allure.Step;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,16 +10,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import resources.DataDriven;
-import roostify.Demo;
 import roostify.base.Base;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 public class PlaidPortalPage extends Base {
 
-    private static Logger log = LogManager.getLogger(Demo.class.getName());
+
     public WebDriver driver;
     String User = "";
     String Password = "";
@@ -46,6 +42,9 @@ public class PlaidPortalPage extends Base {
 
     @FindBy(xpath = "(//div[@class='Logo Logo--citi Logo--is-light-background'])|(//*[@class='Logo Logo--citi'])")
     WebElement logoCitiBank;
+
+    @FindBy(xpath = "((//*[@class='InstitutionSearchExperimentalResult__brand-logo'])[1]) | (//div[@class='Logo Logo--chase Logo--is-light-background'])")
+    WebElement logoChase;
 
     @FindBy(xpath = "//*[@id='username']")
     WebElement username;
@@ -83,7 +82,7 @@ public class PlaidPortalPage extends Base {
     @FindBy(xpath = "//*[@class='Button'][contains(text(),'Allow')]")
     WebElement btnAllow;
 
-    @FindBy(xpath = "//input[@class='btn btn--secondary c-plaid-btn js-plaid-accountbtn']")
+    @FindBy(xpath = "//form[@id='launchform']//input[@class='btn btn--secondary c-plaid-btn js-plaid-accountbtn']")
     WebElement btnAddAnotherAccount;
 
     @FindBy(xpath = "//*[@class='alert c-alert--success c-alert c-alert--floating alert fade show']")
@@ -100,9 +99,21 @@ public class PlaidPortalPage extends Base {
         logoCitiBank.click();
     }
 
+    @Step("Click Chase logo ")
+    public void clickChase(){
+        WebDriverWait wait=new WebDriverWait(driver, 60);
+        wait.until(ExpectedConditions.visibilityOf(logoChase));
+        logoChase.click();
+    }
+
     @Step("Click Continue Button ")
     public void clickContinue(){
         btnContinue.click();
+    }
+
+    @Step("Click Add another account Button ")
+    public void clickAddAnotherAccount(){
+        btnAddAnotherAccount.click();
     }
 
     @Step("Login Step with Username")
@@ -141,7 +152,11 @@ public class PlaidPortalPage extends Base {
         if(alertCloseIcon.isDisplayed())
         {
             alertCloseIcon.click();
-            driver.close();
+            sleep();
+            sleep();
+            sleep();
+            sleep();
+
         }
     }
 
@@ -201,16 +216,19 @@ public class PlaidPortalPage extends Base {
 
     @Step("Validate Submit Message")
     public void validateSuccessMessage() throws IOException {
+        driver.switchTo().parentFrame();
+        clickSubmitButton();
         WebDriverWait wait=new WebDriverWait(driver, 120);
         wait.until(ExpectedConditions.visibilityOf(alertSuccess));
         Assert.assertTrue(alertSuccess.isDisplayed());
         System.out.println("Test Successfully Passed");
         b.captureScreenMethod();
+        closeSuccessAlert();
     }
 
 
     @Step("Login to Plaid")
-    public void loginToPlaid(String Scenarioname) throws IOException {
+    public void loginToCitiBank(String Scenarioname) throws IOException {
 
         //driver.switchTo().frame(iframe);
         WebElement iframe = driver.findElement(By.xpath("//iframe"));
@@ -221,28 +239,15 @@ public class PlaidPortalPage extends Base {
         sendUsername(User);
         sendPassword(Password);
         clickSubmitButton();
-        //waitForSelectAccoutPage();
-        //driver.switchTo().frame(iframe1);
-       // List<WebElement> al = new ArrayList<WebElement>(driver.findElements(By.xpath("//iframe")));
-       // System.out.println(al.size());
-      //  System.out.println(al.get(0));
-       // driver.switchTo().parentFrame();
-
-       // WebElement iframe2 = driver.findElement(By.xpath("//iframe"));
-       // driver.switchTo().frame(iframe2);
         sleep();
         clickCheckingAccount();
         sleep();
         clickSavingAccount();
-        sleep();
+        clickCDAccount();
         clickContinue();
         sleep();
         clickAllowButton();
         sleep();
-        driver.switchTo().parentFrame();
-        clickSubmitButton();
-        validateSuccessMessage();
-        closeSuccessAlert();
     }
 
     public void getLoginData(String Scenarioname) throws IOException {
@@ -251,8 +256,26 @@ public class PlaidPortalPage extends Base {
         ArrayList data=d.getData(Sheetname,Scenarioname);
         User= (String) data.get(16);
         Password=(String) data.get(17);
-        //User2=(String) data.get(21);
-       // Password2=(String) data.get(22);
+    }
+
+    public void loginToChase() throws IOException {
+        driver.switchTo().parentFrame();
+        clickAddAnotherAccount();
+
+        WebElement iframe = driver.findElement(By.xpath("//iframe[@id='plaid-link-iframe-2']"));
+        driver.switchTo().frame(iframe);
+        clickContinue();
+        clickChase();
+        sendUsername(User);
+        sendPassword(Password);
+        clickSubmitButton();
+        sleep();
+        clickCDAccount();
+        sleep();
+        clickContinue();
+        sleep();
+        clickAllowButton();
+        sleep();
     }
 
 }

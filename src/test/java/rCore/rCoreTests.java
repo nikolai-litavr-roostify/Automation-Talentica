@@ -6,7 +6,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import roostify.ReusableMethods;
+import resources.ReusableMethods;
 import roostify.rCore.payLoad.*;
 
 import java.io.FileInputStream;
@@ -27,7 +27,7 @@ public class RCoreTests {
     public void getData() throws IOException, InterruptedException {
 
 
-        FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//Enviornment.properties");
+        FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//Configurations//config.properties");
         prop.load(fis);
         PreemptiveBasicAuthScheme authScheme = new PreemptiveBasicAuthScheme();
         authScheme.setUserName(prop.getProperty("Username"));
@@ -53,7 +53,7 @@ public class RCoreTests {
     public void getTaskList()
     {
         Response res =
-                given().header("Content-Type", "application/json").get("Tasks?loan_application_id="+loanId+"").then().assertThat().statusCode(200).extract().response();
+                given().header("Content-Type", "application/json").get("tasks?loan_application_id="+loanId+"").then().assertThat().statusCode(200).extract().response();
         JsonPath js = ReusableMethods.rawToJson(res);
         int taskCount = js.get("id.size");
         System.out.println(taskCount);
@@ -65,7 +65,7 @@ public class RCoreTests {
     {
         Response res =
                 given().header("Content-Type", "application/json")
-                        .body(Tasks.getTaskCreationData("7358827891815459")).when().post("tasks").then().assertThat().statusCode(200).extract().response();
+                        .body(Tasks.getTaskCreationData(loanId)).when().post("tasks").then().assertThat().statusCode(200).extract().response();
         JsonPath js = ReusableMethods.rawToJson(res);
         taskId= js.get("id");
         System.out.println("Task Id :-"+taskId);
@@ -146,7 +146,7 @@ public class RCoreTests {
         System.out.println("Total Message count:-"+messagesCount);
     }
 
-    @Test(priority = 5)
+  /*  @Test(priority = 5)
     public void retrieveMessage()
     {
         Response res =
@@ -154,7 +154,7 @@ public class RCoreTests {
 
         JsonPath js = ReusableMethods.rawToJson(res);
         System.out.println("Message Content:-"+js.get("content"));
-    }
+    }*/
 
 
     @Test(priority = 6)
@@ -184,13 +184,13 @@ public class RCoreTests {
 
     }
 
-    @Test(priority = 5)
+   /* @Test(priority = 5)
     public void createStatusUpdate() throws IOException {
         Response res =
                 given().header("Content-Type", "application/json")
                         .body(StatusUpdate.getStatusUpdateData(loanId)).when().post("status_updates").then().assertThat().statusCode(200).extract().response();
         JsonPath js = ReusableMethods.rawToJson(res);
         System.out.println((char[]) js.get("id"));
-    }
+    }*/
 
 }

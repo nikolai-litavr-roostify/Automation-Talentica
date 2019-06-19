@@ -1,0 +1,227 @@
+{
+  "uid" : "c60e4bf7d4182e98",
+  "name" : "Valid scenario with all parameters",
+  "fullName" : "accCheck.AccountCheckTests.accCheck_Valild_AccountChek_Flow_with_all_parameters",
+  "historyId" : "13d7d064790e6d6f0911c548d2960c11",
+  "time" : {
+    "start" : 1560243384988,
+    "stop" : 1560243445145,
+    "duration" : 60157
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getHostURL",
+    "time" : {
+      "start" : 1560243384057,
+      "stop" : 1560243384759,
+      "duration" : 702
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "getHostURL",
+    "time" : {
+      "start" : 1560243384759,
+      "stop" : 1560243384759,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Login to DagBank",
+      "time" : {
+        "start" : 1560243400152,
+        "stop" : 1560243408819,
+        "duration" : 8667
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Sent name of Bank to SearchBox ",
+        "time" : {
+          "start" : 1560243400153,
+          "stop" : 1560243400675,
+          "duration" : 522
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "search",
+          "value" : "DagBank"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Click Dag Bank ",
+        "time" : {
+          "start" : 1560243400675,
+          "stop" : 1560243401773,
+          "duration" : 1098
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Login Step with Username",
+        "time" : {
+          "start" : 1560243405122,
+          "stop" : 1560243405524,
+          "duration" : 402
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "user",
+          "value" : "Account.bank1"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Login Step with Password",
+        "time" : {
+          "start" : 1560243405524,
+          "stop" : 1560243405586,
+          "duration" : 62
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "pass",
+          "value" : "bank1"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Click Submit Button",
+        "time" : {
+          "start" : 1560243405586,
+          "stop" : 1560243408819,
+          "duration" : 3233
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Scenarioname",
+        "value" : "Valild_AccountChek_Flow_with_all_parameters"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 5,
+      "hasContent" : true
+    }, {
+      "name" : "Validate Submit Message",
+      "time" : {
+        "start" : 1560243442209,
+        "stop" : 1560243443820,
+        "duration" : 1611
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "accCheck.AccountCheckTests"
+  }, {
+    "name" : "testClass",
+    "value" : "accCheck.AccountCheckTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "accCheck_Valild_AccountChek_Flow_with_all_parameters"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "accCheck.AccountCheckTests"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "14556@KrishnaA-Desk.main(1)"
+  }, {
+    "name" : "epic",
+    "value" : "Account Check Regression"
+  }, {
+    "name" : "feature",
+    "value" : "Verify Account Check functionality"
+  }, {
+    "name" : "story",
+    "value" : "Account check flow with valid scenario"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c60e4bf7d4182e98.json",
+  "parameterValues" : [ ]
+}

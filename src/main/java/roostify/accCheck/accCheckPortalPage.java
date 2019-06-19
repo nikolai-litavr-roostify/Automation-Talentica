@@ -1,9 +1,7 @@
 package roostify.accCheck;
 
-import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,14 +11,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import resources.DataDriven;
-import roostify.Demo;
 import roostify.base.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
 public class AccCheckPortalPage extends Base {
-    private static Logger log = LogManager.getLogger(Demo.class.getName());
+  //  private static Logger log = LogManager.getLogger(Demo.class.getName());
     public WebDriver driver;
     String User = "";
     String Password = "";
@@ -72,7 +69,6 @@ public class AccCheckPortalPage extends Base {
     @Step("Sent name of Bank to SearchBox ")
     public void sendTxtToSeachBox(String search) throws IOException {
         searchBox.sendKeys(search);
-        log.info("Bank Name Send");
         b.captureScreenMethod();
     }
 
@@ -121,12 +117,22 @@ public class AccCheckPortalPage extends Base {
         }
     }
 
+    @Step("Click Share Accounts Button")
     public void clickShareAccounts() throws IOException {
         WebDriverWait wait=new WebDriverWait(driver, 120);
         wait.until(ExpectedConditions.visibilityOf(btnShareAccounts));
         btnShareAccounts.click();
         b.captureScreenMethod();
 
+    }
+
+    public static void sleep()
+    {
+        try {
+            Thread.sleep(3000);
+        } catch(InterruptedException e) {
+            System.out.println("got interrupted!");
+        }
     }
 
     @Step("Validate Submit Message")
@@ -137,6 +143,8 @@ public class AccCheckPortalPage extends Base {
             System.out.println("Test Successfully Passed");
             b.captureScreenMethod();
             driver.close();
+
+
     }
     public void waitForShareAccounts() {
         WebDriverWait wait=new WebDriverWait(driver, 120);

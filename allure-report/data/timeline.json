@@ -4,693 +4,685 @@
   "children" : [ {
     "name" : "KrishnaA-Desk",
     "children" : [ {
-      "name" : "15536@KrishnaA-Desk.main(1)",
+      "name" : "14556@KrishnaA-Desk.main(1)",
       "children" : [ {
-        "name" : "Invalid_customer_id",
-        "uid" : "d3a789de5854a8c3",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
+        "name" : "Invalid email address1",
+        "uid" : "780a8251cf7918cb",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
         "status" : "passed",
         "time" : {
-          "start" : 1559127773874,
-          "stop" : 1559127775160,
-          "duration" : 1286
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Invalid_email_address1",
-        "uid" : "ecafae5225da162d",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127775162,
-          "stop" : 1559127776375,
-          "duration" : 1213
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Null_Address_line_1",
-        "uid" : "1c3ffd5c5bcda31",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127782526,
-          "stop" : 1559127783823,
-          "duration" : 1297
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Null_email_address",
-        "uid" : "63bba16b570b2ecd",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127792394,
-          "stop" : 1559127793648,
-          "duration" : 1254
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Invalid_email_address2",
-        "uid" : "b2922ab04403e4d5",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127776377,
-          "stop" : 1559127777594,
-          "duration" : 1217
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Invalid_email_address4",
-        "uid" : "5dd728917b5814ee",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127778831,
-          "stop" : 1559127780039,
-          "duration" : 1208
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Null_customer_id",
-        "uid" : "898f0db1c5d6658d",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127791207,
-          "stop" : 1559127792391,
-          "duration" : 1184
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Valild_Plaid_Flow_with_only_mandatory_parameters",
-        "uid" : "c73415b03a8ad358",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127799954,
-          "stop" : 1559127801220,
-          "duration" : 1266
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Null_SSN",
-        "uid" : "d16f3a602e8df6a2",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127786224,
-          "stop" : 1559127787508,
-          "duration" : 1284
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Invalid_email_address3",
-        "uid" : "4a8fb8cfc2d41935",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127777596,
-          "stop" : 1559127778827,
-          "duration" : 1231
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "zip_code_less_than_5_digits_ssn_less_than_9_null_fist_and_last_name_invalid_email",
-        "uid" : "d467b9e9767cf2ad",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127801222,
-          "stop" : 1559127802403,
-          "duration" : 1181
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Null_First_Name",
-        "uid" : "b9005e69116411a",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127783825,
-          "stop" : 1559127785028,
-          "duration" : 1203
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Null_cust_id_and_ac_id",
-        "uid" : "56f64fc18110f80e",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127789995,
-          "stop" : 1559127791205,
-          "duration" : 1210
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Null_verification_type",
-        "uid" : "ebc4ddd5f0f4e847",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127794841,
-          "stop" : 1559127796025,
-          "duration" : 1184
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Invalid_cust_id_ac_id",
-        "uid" : "7dc4abd3a12f5ebc",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127772574,
-          "stop" : 1559127773871,
-          "duration" : 1297
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Null_first_name_last_name_ssn",
-        "uid" : "a8d31960b68b0a35",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127793650,
-          "stop" : 1559127794839,
-          "duration" : 1189
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "SSN_greater_than_9_digits",
-        "uid" : "562f3615a0c38d3e",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127796027,
-          "stop" : 1559127797212,
-          "duration" : 1185
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Invalid_account_id",
-        "uid" : "608377664f42b0d1",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127771213,
-          "stop" : 1559127772571,
-          "duration" : 1358
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Valild_Plaid_Flow_with_all_parameters",
-        "uid" : "830e36e9d86bffd7",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127798398,
-          "stop" : 1559127799952,
-          "duration" : 1554
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Null_Last_Name",
-        "uid" : "cebdb13b8bbbbc1b",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127785030,
-          "stop" : 1559127786222,
-          "duration" : 1192
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Null_account_id",
-        "uid" : "3dde672a431e1420",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127788782,
-          "stop" : 1559127789992,
-          "duration" : 1210
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Invalid_email_address5",
-        "uid" : "bc2060e5122e955a",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127780042,
-          "stop" : 1559127781243,
-          "duration" : 1201
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Invalid_Zip_Code",
-        "uid" : "a547c3ad5ea5071e",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127768386,
-          "stop" : 1559127771148,
-          "duration" : 2762
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "SSN_less_than_9_digits",
-        "uid" : "22ebb78b4818b316",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127797214,
-          "stop" : 1559127798394,
-          "duration" : 1180
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Invalid_verification_type",
-        "uid" : "53fa687407e2d61d",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127781245,
-          "stop" : 1559127782523,
-          "duration" : 1278
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Null_Zip_Code",
-        "uid" : "8e0c4f1c680a694e",
-        "parentUid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559127787510,
-          "stop" : 1559127788779,
-          "duration" : 1269
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "e079cfe0d6eeb8a2a28fe4f008b9fa9d"
-    }, {
-      "name" : "4848@KrishnaA-Desk.main(1)",
-      "children" : [ {
-        "name" : "Null cust id and ac id",
-        "uid" : "b7c1972f56e22785",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559128999604,
-          "stop" : 1559129000856,
-          "duration" : 1252
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Invalid email address3",
-        "uid" : "b72579a9156964e",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559129012145,
-          "stop" : 1559129013363,
-          "duration" : 1218
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Null customer id",
-        "uid" : "3b7baf4314304740",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559129000858,
-          "stop" : 1559129002092,
-          "duration" : 1234
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "SSN greater than 9 digits",
-        "uid" : "8ef7d9aee0502054",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559129017097,
-          "stop" : 1559129018304,
-          "duration" : 1207
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Null verification type",
-        "uid" : "f2589b089c797442",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559129004545,
-          "stop" : 1559129005761,
-          "duration" : 1216
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Invalid customer id",
-        "uid" : "9bb4b121be3cda3f",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559129008384,
-          "stop" : 1559129009689,
-          "duration" : 1305
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Valid scenario with all parameters",
-        "uid" : "6143792cef0322e6",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559128757871,
-          "stop" : 1559128830078,
-          "duration" : 72207
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "zip code less than 5 digits ssn less than 9 null fist and last name invalid email",
-        "uid" : "21508a81f2114e9c",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559129019493,
-          "stop" : 1559129020677,
-          "duration" : 1184
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Null first name last name ssn email verification type",
-        "uid" : "dae66659a7fcff43",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559129003322,
-          "stop" : 1559129004543,
-          "duration" : 1221
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "SSN less than 9 digits",
-        "uid" : "46d3545801e16bde",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559129018307,
-          "stop" : 1559129019491,
-          "duration" : 1184
+          "start" : 1560243660460,
+          "stop" : 1560243661679,
+          "duration" : 1219
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Null email address",
-        "uid" : "d533bbf701556efb",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
+        "uid" : "9edae6668469f0dd",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
         "status" : "passed",
         "time" : {
-          "start" : 1559129002094,
-          "stop" : 1559129003319,
-          "duration" : 1225
+          "start" : 1560243638229,
+          "stop" : 1560243639461,
+          "duration" : 1232
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Invalid Zip Code",
-        "uid" : "927e1ee26184dde4",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
+        "name" : "zip code less than 5 digits ssn less than 9 null fist and last name invalid email",
+        "uid" : "164a8775b2beee82",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
         "status" : "passed",
         "time" : {
-          "start" : 1559129005765,
-          "stop" : 1559129007054,
-          "duration" : 1289
+          "start" : 1560243664128,
+          "stop" : 1560243665293,
+          "duration" : 1165
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Invalid email address2",
-        "uid" : "6a19e2a85728ea1d",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
+        "name" : "Null Customer Id",
+        "uid" : "9b14cfbd9e94ce5a",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
         "status" : "passed",
         "time" : {
-          "start" : 1559129010930,
-          "stop" : 1559129012142,
-          "duration" : 1212
+          "start" : 1560243648124,
+          "stop" : 1560243649287,
+          "duration" : 1163
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Null cust id and ac id",
+        "uid" : "3331bc8649180268",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243556448,
+          "stop" : 1560243557644,
+          "duration" : 1196
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Invalid verification type",
-        "uid" : "b9b90cac3019155f",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
+        "uid" : "11deddaca426d044",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
         "status" : "passed",
         "time" : {
-          "start" : 1559129015795,
-          "stop" : 1559129017094,
-          "duration" : 1299
+          "start" : 1560243653030,
+          "stop" : 1560243654313,
+          "duration" : 1283
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Invalid account id",
-        "uid" : "722ca2ebff8e07e6",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
+        "name" : "Invalid email address2",
+        "uid" : "31f40de0f5cb799c",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
         "status" : "passed",
         "time" : {
-          "start" : 1559129007059,
-          "stop" : 1559129008381,
-          "duration" : 1322
+          "start" : 1560243674226,
+          "stop" : 1560243675428,
+          "duration" : 1202
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Valild AccountChek Flow with only mandatory parameters",
-        "uid" : "4b4f85da1d5a6c0f",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
+        "name" : "SSN less than 9 digits",
+        "uid" : "206d96794c4e2e21",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
         "status" : "passed",
         "time" : {
-          "start" : 1559128830228,
-          "stop" : 1559128904678,
-          "duration" : 74450
+          "start" : 1560243662891,
+          "stop" : 1560243664124,
+          "duration" : 1233
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Null Last Name",
-        "uid" : "897b1f253eb65101",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
+        "name" : "Invalid Zip Code, SSN, Email, Null first and last name",
+        "uid" : "22580b002eba4ac0",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
         "status" : "passed",
         "time" : {
-          "start" : 1559128912099,
-          "stop" : 1559128914889,
-          "duration" : 2790
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Invalid email address5",
-        "uid" : "d670099c1a6c37bb",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559129014605,
-          "stop" : 1559129015792,
-          "duration" : 1187
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Invalid email address4",
-        "uid" : "27657df37d909721",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559129013365,
-          "stop" : 1559129014601,
-          "duration" : 1236
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Null First Name",
-        "uid" : "f635daedfed80fc9",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559128909315,
-          "stop" : 1559128912096,
-          "duration" : 2781
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Null account id",
-        "uid" : "92db13b59f4452d5",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559128998122,
-          "stop" : 1559128999601,
-          "duration" : 1479
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Invalid email address1",
-        "uid" : "77302196b5507b1d",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559129009691,
-          "stop" : 1559129010927,
-          "duration" : 1236
+          "start" : 1560243682765,
+          "stop" : 1560243683920,
+          "duration" : 1155
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Null SSN",
-        "uid" : "746e12d69b16a492",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
+        "uid" : "eedea20024e1b385",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
         "status" : "passed",
         "time" : {
-          "start" : 1559128914892,
-          "stop" : 1559128916205,
-          "duration" : 1313
+          "start" : 1560243643167,
+          "stop" : 1560243644461,
+          "duration" : 1294
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Null Address line 1",
-        "uid" : "883296cce9136e6d",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
+        "name" : "SSN less than 9 digits",
+        "uid" : "4d15a3e2b7b3e17f",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
         "status" : "passed",
         "time" : {
-          "start" : 1559128904686,
-          "stop" : 1559128909312,
-          "duration" : 4626
+          "start" : 1560243681564,
+          "stop" : 1560243682763,
+          "duration" : 1199
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Null customer id",
+        "uid" : "2dc36884241f6d83",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243560680,
+          "stop" : 1560243561866,
+          "duration" : 1186
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Null first name last name ssn email verification type",
+        "uid" : "572ad9d4381bd268",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243559460,
+          "stop" : 1560243560676,
+          "duration" : 1216
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Valild AccountChek Flow with only mandatory parameters",
+        "uid" : "94e7a126fa896a3f",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243445247,
+          "stop" : 1560243515319,
+          "duration" : 70072
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Null Customer Id and Account Id",
+        "uid" : "451a740dee6593c3",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243646931,
+          "stop" : 1560243648121,
+          "duration" : 1190
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Null first name, last name, ssn",
+        "uid" : "b7b03fc3467726f2",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243650585,
+          "stop" : 1560243651811,
+          "duration" : 1226
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Null Zip Code",
-        "uid" : "a9a0af51d8887c50",
-        "parentUid" : "ac0ce119bcd5e3d71f98af702dba0f91",
+        "uid" : "823dc0a9b5154b00",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
         "status" : "passed",
         "time" : {
-          "start" : 1559128916208,
-          "stop" : 1559128998100,
-          "duration" : 81892
+          "start" : 1560243644464,
+          "stop" : 1560243645715,
+          "duration" : 1251
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Invalid Zip Code",
+        "uid" : "efceb6d078c8a4ef",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243667818,
+          "stop" : 1560243669034,
+          "duration" : 1216
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Null Last Name",
+        "uid" : "13fe213c06fbd394",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243641951,
+          "stop" : 1560243643164,
+          "duration" : 1213
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Null account id",
+        "uid" : "9da06e698b5cdb4d",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243637000,
+          "stop" : 1560243638225,
+          "duration" : 1225
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Invalid email address2",
+        "uid" : "4f7722c9361bc453",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243658009,
+          "stop" : 1560243659222,
+          "duration" : 1213
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Invalid verification_type",
+        "uid" : "ef7aae23718fd7c4",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243679068,
+          "stop" : 1560243680359,
+          "duration" : 1291
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Invalid Customer Id and Account Id",
+        "uid" : "ff0e617b079e4fc6",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243670403,
+          "stop" : 1560243671701,
+          "duration" : 1298
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Invalid email address5",
+        "uid" : "7f7e4621eafb603",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243656800,
+          "stop" : 1560243658005,
+          "duration" : 1205
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Null Zip Code",
+        "uid" : "f49ef89ad6efeda6",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243639469,
+          "stop" : 1560243640749,
+          "duration" : 1280
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Null First Name",
+        "uid" : "554a738570f6b19f",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243563073,
+          "stop" : 1560243564877,
+          "duration" : 1804
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Invalid customer id",
+        "uid" : "ed78a475845f1b57",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243666517,
+          "stop" : 1560243667815,
+          "duration" : 1298
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Invalid Customer Id",
+        "uid" : "a2665a65411b6e0d",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243671703,
+          "stop" : 1560243673004,
+          "duration" : 1301
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Invalid email address5",
+        "uid" : "39af2cfc7a110c0b",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243677845,
+          "stop" : 1560243679065,
+          "duration" : 1220
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Valild Plaid Flow with all parameters",
+        "uid" : "5e9b981582e1e9c0",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243515334,
+          "stop" : 1560243555014,
+          "duration" : 39680
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Valid scenario with all parameters",
+        "uid" : "c60e4bf7d4182e98",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243384988,
+          "stop" : 1560243445145,
+          "duration" : 60157
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "SSN greater than 9 digits",
+        "uid" : "41301a545ad02fd2",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243680362,
+          "stop" : 1560243681561,
+          "duration" : 1199
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "downloadReport",
+        "uid" : "de605ea4ec49f4c9",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1560243556434,
+          "stop" : 1560243556435,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Null Zip Code",
+        "uid" : "b96e45a3ad8a13ab",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243564880,
+          "stop" : 1560243633901,
+          "duration" : 69021
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "SSN greater than 9 digits",
+        "uid" : "a05daf279afee460",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243661683,
+          "stop" : 1560243662888,
+          "duration" : 1205
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Null verification type",
+        "uid" : "a254e64eb66f297",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243561871,
+          "stop" : 1560243563069,
+          "duration" : 1198
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Invalid Zip Code",
+        "uid" : "3bc7ddeedd8c9868",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243665297,
+          "stop" : 1560243666513,
+          "duration" : 1216
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Null Address line 1",
+        "uid" : "c393704ae80630fc",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243557648,
+          "stop" : 1560243559456,
+          "duration" : 1808
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Invalid email address4",
+        "uid" : "e82a90f8de3c8a9e",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243654316,
+          "stop" : 1560243655525,
+          "duration" : 1209
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Invalid email address3",
+        "uid" : "9e97e53104c792c",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243659226,
+          "stop" : 1560243660456,
+          "duration" : 1230
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Null Last Name",
+        "uid" : "19767a2aca94813a",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243633919,
+          "stop" : 1560243635681,
+          "duration" : 1762
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Invalid email address3",
+        "uid" : "491a51517c2eed31",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243675432,
+          "stop" : 1560243676645,
+          "duration" : 1213
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Null email address",
+        "uid" : "6a4c6acfc649a25a",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243649290,
+          "stop" : 1560243650583,
+          "duration" : 1293
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Null Account Id",
+        "uid" : "d7910a3244d2cc11",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243645719,
+          "stop" : 1560243646929,
+          "duration" : 1210
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Null Verification Type",
+        "uid" : "650ef9db0e8f1826",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243651814,
+          "stop" : 1560243653021,
+          "duration" : 1207
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Null SSN",
+        "uid" : "9c9dd1a90903c08d",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243635685,
+          "stop" : 1560243636994,
+          "duration" : 1309
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Invalid Account Id",
+        "uid" : "38c4f0d395e7163f",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243669037,
+          "stop" : 1560243670400,
+          "duration" : 1363
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Valild Plaid Flow with only mandatory parameters",
+        "uid" : "463de8144abcaecc",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243555079,
+          "stop" : 1560243556427,
+          "duration" : 1348
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Invalid email address4",
+        "uid" : "e6f67e16a4e8ad9d",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243676648,
+          "stop" : 1560243677843,
+          "duration" : 1195
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Invalid account id",
+        "uid" : "7e1e2d84ed05ade6",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243655529,
+          "stop" : 1560243656796,
+          "duration" : 1267
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Invalid email address1",
+        "uid" : "afea1931e840e8de",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243673007,
+          "stop" : 1560243674223,
+          "duration" : 1216
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Null First Name",
+        "uid" : "941c234a38bc35f6",
+        "parentUid" : "4fd734ca90346d3a67830e584864947d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1560243640751,
+          "stop" : 1560243641948,
+          "duration" : 1197
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "ac0ce119bcd5e3d71f98af702dba0f91"
-    }, {
-      "name" : "14916@KrishnaA-Desk.main(1)",
-      "children" : [ {
-        "name" : "testPlaid",
-        "uid" : "6fa0b9047c32dcb6",
-        "parentUid" : "cb358eae4b3183d6985c9b39c0094833",
-        "status" : "passed",
-        "time" : {
-          "start" : 1559126070951,
-          "stop" : 1559126104013,
-          "duration" : 33062
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "cb358eae4b3183d6985c9b39c0094833"
+      "uid" : "4fd734ca90346d3a67830e584864947d"
     } ],
     "uid" : "45270942a1bca64e668dfdc039672794"
   } ]

@@ -1,0 +1,100 @@
+{
+  "uid" : "d7910a3244d2cc11",
+  "name" : "Null Account Id",
+  "fullName" : "plaid.PlaidTests.Null_account_id",
+  "historyId" : "c31837df324a90ceb3b79b5f2f6ba006",
+  "time" : {
+    "start" : 1560243645719,
+    "stop" : 1560243646929,
+    "duration" : 1210
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getHostURL",
+    "time" : {
+      "start" : 1560243384057,
+      "stop" : 1560243384759,
+      "duration" : 702
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "getHostURL",
+    "time" : {
+      "start" : 1560243384759,
+      "stop" : 1560243384759,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "plaid.PlaidTests"
+  }, {
+    "name" : "testClass",
+    "value" : "plaid.PlaidTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "Null_account_id"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "plaid.PlaidTests"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "14556@KrishnaA-Desk.main(1)"
+  }, {
+    "name" : "epic",
+    "value" : "Plaid Regression"
+  }, {
+    "name" : "feature",
+    "value" : "Verify Plaid functionality"
+  }, {
+    "name" : "story",
+    "value" : "Plaid flow with Null Parameters"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d7910a3244d2cc11.json",
+  "parameterValues" : [ ]
+}

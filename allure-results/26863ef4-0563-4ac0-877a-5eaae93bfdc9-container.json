@@ -1,1 +1,0 @@
-{"uuid":"26863ef4-0563-4ac0-877a-5eaae93bfdc9","name":"RestAssuredMaven","start":1559105165207,"stop":1559105179345,"children":["baa7a943-22d8-4c4e-984b-c115a6e21d48"],"befores":[{"name":"getData","status":"passed","stage":"finished","description":"","start":1559105165227,"stop":1559105176416}]}

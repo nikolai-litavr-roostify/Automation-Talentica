@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "\nCannot inject @Test annotated Method [downloadReport] with [class java.lang.String].\nFor more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection",
+      "children" : [ {
+        "name" : "downloadReport",
+        "uid" : "de605ea4ec49f4c9",
+        "parentUid" : "163b6dd76809be3d03fe44faac1952e5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1560243556434,
+          "stop" : 1560243556435,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "163b6dd76809be3d03fe44faac1952e5"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }
