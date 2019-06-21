@@ -154,6 +154,16 @@ public class AccountCheckTests extends Base {
                         .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
         JsonPath js = ReusableMethods.rawToJson(res);
         String data = js.get("links[0].resource_data");
+        String srclink = ReusableMethods.getSrcLink(data);
+        System.out.println(srclink);
+        Base b = new Base();
+        WebDriver driver= b.initialzeDriver();
+        driver.navigate().to(srclink);
+        AccCheckPortalPage acp = new AccCheckPortalPage(driver);
+        acp.loginToChase(Scenarioname);
+        acp.waitForShareAccounts();
+        acp.clickShareAccounts();
+        acp.validateSuccessMessage();
 
 
     }
@@ -169,6 +179,16 @@ public class AccountCheckTests extends Base {
                         .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
         JsonPath js = ReusableMethods.rawToJson(res);
         String data = js.get("links[0].resource_data");
+        String srclink = ReusableMethods.getSrcLink(data);
+        System.out.println(srclink);
+        Base b = new Base();
+        WebDriver driver= b.initialzeDriver();
+        driver.navigate().to(srclink);
+        AccCheckPortalPage acp = new AccCheckPortalPage(driver);
+        acp.loginToWellsForgo(Scenarioname);
+        acp.waitForShareAccounts();
+        acp.clickShareAccounts();
+        acp.validateSuccessMessage();
 
     }
 

@@ -1,7 +1,6 @@
 package roostify.accCheck;
 
 import io.qameta.allure.Step;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,6 +22,11 @@ public class AccCheckPortalPage extends Base {
     String Password = "";
     String User2 = "";
     String Password2 = "";
+    String ChaseUser = "";
+    String ChasePassword = "";
+    String WellsForgoUser="";
+    String WellsForgoPassword="";
+
     Base b = new Base();
 
 
@@ -37,13 +41,22 @@ public class AccCheckPortalPage extends Base {
     @FindBy(xpath = "(//*[contains(text(),'DagBank')])[1]")
     WebElement lblDagBank;
 
+    @FindBy(xpath = "(//*[@class='institution-name'][contains(text(),'Chase')])[1]")
+    WebElement lblChaseBank;
+
+    @FindBy(xpath = "(//*[@class='institution-name'][contains(text(),'Wells Fargo')])[1]")
+    WebElement lblWellsForgo;
+
+    @FindBy(xpath = "//*[contains(text(),'Yes, Try Again →')]")
+    WebElement lnkTryAgain;
+
     @FindBy(xpath = "(//*[contains(text(),'Dag Site')])[1]")
     WebElement lblDagSiteBank;
 
-    @FindBy(xpath = "//*[@id='LOGIN']")
+    @FindBy(xpath = "(//*[@class='form-group'])[1]//input")
     WebElement username;
 
-    @FindBy(xpath = "(//*[@id='PASSWORD1'])|(//*[@id='PASSWORD'])")
+    @FindBy(xpath = "(//*[@id='PASSWORD1'])|(//*[@id='PASSWORD'])|((//*[@class='form-group'])[2]//input)")
     WebElement password;
 
     @FindBy(xpath = "//*[@class='btn btn-blue']")
@@ -78,6 +91,30 @@ public class AccCheckPortalPage extends Base {
         wait.until(ExpectedConditions.visibilityOf(lblDagBank));
         lblDagBank.click();
     }
+
+    @Step("Click Wells Forgo Bank ")
+    public void clickWellForgoBank(){
+        WebDriverWait wait=new WebDriverWait(driver, 120);
+        wait.until(ExpectedConditions.visibilityOf(lblWellsForgo));
+        lblWellsForgo.click();
+    }
+
+
+    @Step("Click link Yes Try Again")
+    public void clickTryAgain(){
+        WebDriverWait wait=new WebDriverWait(driver, 120);
+        wait.until(ExpectedConditions.visibilityOf(lnkTryAgain));
+        lnkTryAgain.click();
+    }
+
+    @Step("Click Chase Bank ")
+    public void clickChaseBankName(){
+        WebDriverWait wait=new WebDriverWait(driver, 120);
+        wait.until(ExpectedConditions.visibilityOf(lblChaseBank));
+        lblChaseBank.click();
+    }
+
+
     @Step("Click DagSite Bank ")
     public void clickDagSiteBankName(){
         WebDriverWait wait=new WebDriverWait(driver, 120);
@@ -147,9 +184,10 @@ public class AccCheckPortalPage extends Base {
 
     }
     public void waitForShareAccounts() {
-        WebDriverWait wait=new WebDriverWait(driver, 120);
+        WebDriverWait wait=new WebDriverWait(driver, 180);
         wait.until(ExpectedConditions.visibilityOf(btnShareAccounts));
     }
+
     @Step("Login to DagBank")
     public void loginToDagBank(String Scenarioname) throws IOException {
         sendTxtToSeachBox("DagBank");
@@ -161,6 +199,42 @@ public class AccCheckPortalPage extends Base {
         sendPassword(Password);
         clickSubmitButton();
     }
+    @Step("Login to Chase")
+    public void loginToChase(String Scenarioname) throws IOException {
+        sendTxtToSeachBox("Chase");
+        clickChaseBankName();
+        getLoginData(Scenarioname);
+        WebElement iframe = driver.findElement(By.xpath("//iframe"));
+        driver.switchTo().frame(iframe);
+        sendUsername(ChaseUser);
+        sendPassword(ChasePassword);
+        clickSubmitButton();
+       /* clickTryAgain();
+        driver.switchTo().frame(iframe);
+        sendUsername(ChaseUser);
+        sendPassword(ChasePassword);
+        clickSubmitButton();*/
+    }
+
+    @Step("Login to Wells Forgo")
+    public void loginToWellsForgo(String Scenarioname) throws IOException {
+        sendTxtToSeachBox("Wells Forgo");
+        clickWellForgoBank();
+        getLoginData(Scenarioname);
+        WebElement iframe = driver.findElement(By.xpath("//iframe"));
+        driver.switchTo().frame(iframe);
+        sendUsername(WellsForgoUser);
+        sendPassword(WellsForgoPassword);
+        clickSubmitButton();
+       /* clickTryAgain();
+        driver.switchTo().frame(iframe);
+        sendUsername(ChaseUser);
+        sendPassword(ChasePassword);
+        clickSubmitButton();*/
+    }
+
+
+
     @Step("Login to DagSite Bank")
     public void loginToDagSiteBank() throws IOException {
         sendTxtToSeachBox("Dagsite");
@@ -180,6 +254,10 @@ public class AccCheckPortalPage extends Base {
         Password=(String) data.get(20);
         User2=(String) data.get(21);
         Password2=(String) data.get(22);
+        ChaseUser=(String) data.get(23);
+        ChasePassword=(String) data.get(24);
+        WellsForgoUser=(String) data.get(25);
+        WellsForgoPassword=(String) data.get(26);
     }
 
     @Step("Uncheck First data")

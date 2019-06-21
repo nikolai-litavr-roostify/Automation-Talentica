@@ -62,17 +62,14 @@ public class ZillowTests extends Base{
         driver.navigate().to(srclink1);
         ZillowPortalPage zpp = new ZillowPortalPage(driver);
         zpp.sleep();
-      //  zpp.clickCloseButton();
         System.out.println(driver.getTitle());
         driver.navigate().to(srclink2);
         System.out.println(driver.getTitle());
         driver.navigate().to(srclink3);
         zpp.sleep();
-       // zpp.clickCloseButton();
         System.out.println(driver.getTitle());
         driver.navigate().to(srclink4);
         zpp.sleep();
-     //   zpp.clickCloseButton();
         System.out.println(driver.getTitle());
         driver.close();
     }
