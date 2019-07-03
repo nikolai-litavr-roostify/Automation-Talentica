@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="95a85f38-48a3-4b02-a5b4-4b1ff48934da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Configurations/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configurations/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestReport/Test-Automaton-Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/TestReport/Test-Automaton-Report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/TestData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/TestData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/roostify/accCheck/accCheckPortalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/roostify/accCheck/accCheckPortalPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/accCheck/AccountCheckTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/accCheck/AccountCheckTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/zillow/ZillowTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/zillow/ZillowTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,14 +28,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/roostify/accCheck/AccCheckPortalPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="219" column="33" selection-start-line="219" selection-start-column="33" selection-end-line="219" selection-end-column="33" />
+            <state relative-caret-position="395">
+              <caret line="238" column="39" selection-start-line="238" selection-start-column="39" selection-end-line="238" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#7426#7427#0" expanded="true" />
-                <element signature="e#7464#7465#0" expanded="true" />
-                <element signature="e#7543#7544#0" expanded="true" />
-                <element signature="e#7581#7582#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -48,8 +40,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/accCheck/AccountCheckTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="187" column="30" selection-start-line="187" selection-start-column="30" selection-end-line="187" selection-end-column="30" />
+            <state relative-caret-position="174">
+              <caret line="180" column="23" lean-forward="true" selection-start-line="183" selection-start-column="7" selection-end-line="190" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/zillow/ZillowTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -217,7 +221,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="finicity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RestAssuredMaven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RestAssuredMaven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rCore" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RestAssuredMaven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RestAssuredMaven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zillow" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -228,9 +248,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561114463468" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562045704330" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/roostify" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Downloads/Git-2.22.0-64-bit.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -266,24 +286,6 @@
     </option>
   </component>
   <component name="RunManager" selected="TestNG.AccountCheckTests.accCheck_Null_Last_Name">
-    <configuration name="AccountCheckTests.accCheck_Null_Address_line_1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssuredMaven" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="accCheck.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="accCheck" />
-      <option name="MAIN_CLASS_NAME" value="accCheck.AccountCheckTests" />
-      <option name="METHOD_NAME" value="accCheck_Null_Address_line_1" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AccountCheckTests.accCheck_Null_Last_Name (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredMaven" />
       <extension name="coverage">
@@ -321,6 +323,24 @@
       </method>
     </configuration>
     <configuration name="AccountCheckTests.accCheck_Null_Last_Name (3)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssuredMaven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="accCheck.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="accCheck" />
+      <option name="MAIN_CLASS_NAME" value="accCheck.AccountCheckTests" />
+      <option name="METHOD_NAME" value="accCheck_Null_Last_Name" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountCheckTests.accCheck_Null_Last_Name (4)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredMaven" />
       <extension name="coverage">
         <pattern>
@@ -377,10 +397,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.AccountCheckTests.accCheck_Null_Last_Name" />
+        <item itemvalue="TestNG.AccountCheckTests.accCheck_Null_Last_Name (1)" />
         <item itemvalue="TestNG.AccountCheckTests.accCheck_Null_Last_Name (3)" />
         <item itemvalue="TestNG.AccountCheckTests.accCheck_Null_Last_Name (2)" />
-        <item itemvalue="TestNG.AccountCheckTests.accCheck_Null_Last_Name (1)" />
-        <item itemvalue="TestNG.AccountCheckTests.accCheck_Null_Address_line_1" />
+        <item itemvalue="TestNG.AccountCheckTests.accCheck_Null_Last_Name (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -398,35 +418,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AccountCheckTests_accCheck_Null_Address_line_1_(1) - 2019.06.21 at 15h 32m 19s.xml">
-      <configuration name="AccountCheckTests.accCheck_Null_Address_line_1 (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AccountCheckTests_accCheck_Null_Address_line_1_(2) - 2019.06.21 at 15h 33m 00s.xml">
-      <configuration name="AccountCheckTests.accCheck_Null_Address_line_1 (2)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AccountCheckTests_accCheck_Null_Address_line_1_(1) - 2019.06.21 at 15h 34m 57s.xml">
-      <configuration name="AccountCheckTests.accCheck_Null_Address_line_1 (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AccountCheckTests_accCheck_Null_Address_line_1_(1) - 2019.06.21 at 15h 37m 35s.xml">
-      <configuration name="AccountCheckTests.accCheck_Null_Address_line_1 (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AccountCheckTests_accCheck_Null_Address_line_1 - 2019.06.21 at 15h 40m 37s.xml">
-      <configuration name="AccountCheckTests.accCheck_Null_Address_line_1" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AccountCheckTests_accCheck_Null_Last_Name - 2019.06.21 at 15h 41m 32s.xml">
-      <configuration name="AccountCheckTests.accCheck_Null_Last_Name" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AccountCheckTests_accCheck_Null_Address_line_1 - 2019.06.21 at 15h 54m 53s.xml">
-      <configuration name="AccountCheckTests.accCheck_Null_Address_line_1" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AccountCheckTests_accCheck_Null_Last_Name_(1) - 2019.06.21 at 16h 17m 15s.xml">
-      <configuration name="AccountCheckTests.accCheck_Null_Last_Name (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AccountCheckTests_accCheck_Null_Last_Name_(2) - 2019.06.21 at 16h 18m 28s.xml">
-      <configuration name="AccountCheckTests.accCheck_Null_Last_Name (2)" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="AccountCheckTests_accCheck_Null_Last_Name_(3) - 2019.06.21 at 16h 21m 17s.xml">
       <configuration name="AccountCheckTests.accCheck_Null_Last_Name (3)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AccountCheckTests_accCheck_Null_Last_Name - 2019.06.21 at 16h 27m 56s.xml">
+      <configuration name="AccountCheckTests.accCheck_Null_Last_Name" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ZillowTests - 2019.06.28 at 17h 35m 02s.xml">
+      <configuration name="ZillowTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AccountCheckTests_accCheck_Null_Last_Name_(4) - 2019.07.02 at 10h 21m 57s.xml">
+      <configuration name="AccountCheckTests.accCheck_Null_Last_Name (4)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AccountCheckTests_accCheck_Null_Last_Name_(1) - 2019.07.02 at 10h 25m 13s.xml">
+      <configuration name="AccountCheckTests.accCheck_Null_Last_Name (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AccountCheckTests_accCheck_Null_Last_Name_(2) - 2019.07.02 at 10h 43m 15s.xml">
+      <configuration name="AccountCheckTests.accCheck_Null_Last_Name (2)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AccountCheckTests_accCheck_Null_Last_Name_(3) - 2019.07.02 at 10h 53m 05s.xml">
+      <configuration name="AccountCheckTests.accCheck_Null_Last_Name (3)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AccountCheckTests_accCheck_Null_Last_Name_(1) - 2019.07.02 at 10h 57m 14s.xml">
+      <configuration name="AccountCheckTests.accCheck_Null_Last_Name (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AccountCheckTests_accCheck_Null_Last_Name_(1) - 2019.07.02 at 10h 58m 42s.xml">
+      <configuration name="AccountCheckTests.accCheck_Null_Last_Name (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AccountCheckTests_accCheck_Null_Last_Name - 2019.07.02 at 10h 59m 54s.xml">
+      <configuration name="AccountCheckTests.accCheck_Null_Last_Name" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -440,14 +460,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5009597" side_tool="true" weight="0.31796116" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.4990403" visible="true" weight="0.21278317" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.4990403" visible="true" weight="0.21601942" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.74433655" weight="0.32949308" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.17071198" side_tool="true" weight="0.39976957" />
@@ -574,36 +593,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Screenshots/Screenshot_2019_06_11_14_30_33.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Screenshots/Screenshot_2019_06_11_14_26_40.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Screenshots/Screenshot_2019_06_11_14_27_21.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Screenshots/Screenshot_2019_06_11_14_27_48.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Screenshots/Screenshot_2019_06_11_14_28_33.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Screenshots/Screenshot_2019_06_11_14_29_00.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Screenshots/Screenshot_2019_06_11_14_29_40.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Screenshots/Screenshot_2019_06_11_14_28_29.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Screenshots/Screenshot_2019_06_11_14_29_35.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Screenshots/Screenshot_2019_06_11_14_29_47.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Screenshots/Screenshot_2019_06_11_14_30_33.png" />
+    <entry file="file://$PROJECT_DIR$/Screenshots/Screenshot_2019_06_11_14_26_40.png" />
+    <entry file="file://$PROJECT_DIR$/Screenshots/Screenshot_2019_06_11_14_27_21.png" />
+    <entry file="file://$PROJECT_DIR$/Screenshots/Screenshot_2019_06_11_14_27_48.png" />
+    <entry file="file://$PROJECT_DIR$/Screenshots/Screenshot_2019_06_11_14_28_33.png" />
+    <entry file="file://$PROJECT_DIR$/Screenshots/Screenshot_2019_06_11_14_29_00.png" />
+    <entry file="file://$PROJECT_DIR$/Screenshots/Screenshot_2019_06_11_14_29_40.png" />
+    <entry file="file://$PROJECT_DIR$/Screenshots/Screenshot_2019_06_11_14_28_29.png" />
+    <entry file="file://$PROJECT_DIR$/Screenshots/Screenshot_2019_06_11_14_29_35.png" />
+    <entry file="file://$PROJECT_DIR$/Screenshots/Screenshot_2019_06_11_14_29_47.png" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -611,20 +610,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AppData/Local/Temp/Temp1_RestAssuredMaven (2).zip/RestAssuredMaven/src/test/java/accCheck/AccountCheckTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-867">
-          <caret selection-end-line="408" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AppData/Local/Temp/Temp1_RestAssuredMaven (2).zip/RestAssuredMaven/src/test/java/plaid/PlaidTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="64" column="39" lean-forward="true" selection-end-line="375" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppData/Local/Temp/Temp1_RestAssuredMaven (2).zip/RestAssuredMaven/src/test/java/accCheck/AccountCheckTests.java" />
+    <entry file="file://$PROJECT_DIR$/../AppData/Local/Temp/Temp1_RestAssuredMaven (2).zip/RestAssuredMaven/src/test/java/plaid/PlaidTests.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2.jar!/org/testng/internal/TestMethodWorker.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
@@ -741,16 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/zillow/ZillowTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Configurations/config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -806,24 +783,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/roostify/accCheck/AccCheckPortalPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/zillow/ZillowTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="219" column="33" selection-start-line="219" selection-start-column="33" selection-end-line="219" selection-end-column="33" />
+        <state relative-caret-position="17">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7426#7427#0" expanded="true" />
-            <element signature="e#7464#7465#0" expanded="true" />
-            <element signature="e#7543#7544#0" expanded="true" />
-            <element signature="e#7581#7582#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/roostify/accCheck/AccCheckPortalPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="238" column="39" selection-start-line="238" selection-start-column="39" selection-end-line="238" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/accCheck/AccountCheckTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="187" column="30" selection-start-line="187" selection-start-column="30" selection-end-line="187" selection-end-column="30" />
+        <state relative-caret-position="174">
+          <caret line="180" column="23" lean-forward="true" selection-start-line="183" selection-start-column="7" selection-end-line="190" selection-end-column="39" />
         </state>
       </provider>
     </entry>

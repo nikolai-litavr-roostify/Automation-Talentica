@@ -184,8 +184,13 @@ public class AccCheckPortalPage extends Base {
 
     }
     public void waitForShareAccounts() {
-        WebDriverWait wait=new WebDriverWait(driver, 180);
+        WebDriverWait wait=new WebDriverWait(driver, 300);
         wait.until(ExpectedConditions.visibilityOf(btnShareAccounts));
+    }
+
+    public void waitForLnkTryAgain() {
+        WebDriverWait wait=new WebDriverWait(driver, 180);
+        wait.until(ExpectedConditions.visibilityOf(lnkTryAgain));
     }
 
     @Step("Login to DagBank")
@@ -226,11 +231,13 @@ public class AccCheckPortalPage extends Base {
         sendUsername(WellsForgoUser);
         sendPassword(WellsForgoPassword);
         clickSubmitButton();
-       /* clickTryAgain();
-        driver.switchTo().frame(iframe);
-        sendUsername(ChaseUser);
-        sendPassword(ChasePassword);
-        clickSubmitButton();*/
+        waitForLnkTryAgain();
+        clickTryAgain();
+        WebElement iframe1 = driver.findElement(By.xpath("//iframe"));
+        driver.switchTo().frame(iframe1);
+        sendUsername(WellsForgoUser);
+        sendPassword(WellsForgoPassword);
+        clickSubmitButton();
     }
 
 

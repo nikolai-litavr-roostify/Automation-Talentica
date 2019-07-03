@@ -181,14 +181,14 @@ public class AccountCheckTests extends Base {
         String data = js.get("links[0].resource_data");
         String srclink = ReusableMethods.getSrcLink(data);
         System.out.println(srclink);
-        Base b = new Base();
+       /* Base b = new Base();
         WebDriver driver= b.initialzeDriver();
         driver.navigate().to(srclink);
         AccCheckPortalPage acp = new AccCheckPortalPage(driver);
         acp.loginToWellsForgo(Scenarioname);
         acp.waitForShareAccounts();
         acp.clickShareAccounts();
-        acp.validateSuccessMessage();
+        acp.validateSuccessMessage();*/
 
     }
 
