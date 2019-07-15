@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pangolin>
+    <!-- Pangolin Server URL -->
+    <pangolin_url>http://pangolinurl:9090</pangolin_url>
+    <!-- TestRail URL -->
+    <testrail_url>https://testrailurl:8080</testrail_url>
+    <!-- TestRail user name -->
+    <testrail_user>username@company.domain</testrail_user>
+    <!-- TestRail encrypted password: please use http://server_name:port/pangolin/password to encrypt your plain text password -->
+    <testrail_encrypted_password>encryptedPassword</testrail_encrypted_password>
+    <!-- TestRail project -->
+    <testrail_project>project name</testrail_project>
+    <!-- Whether the Pangolin is disabled or not. If this is omitted, Pangolin is enabled -->
+    <disabled>false</disabled>
+    <!-- Whether a run in TestRail should be closed or not. If this is omitted, Pangolin will not close runs -->
+    <close_run>true</close_run>
+</pangolin>
