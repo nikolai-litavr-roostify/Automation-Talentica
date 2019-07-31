@@ -10,13 +10,12 @@ import managers.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import pageObjects.*;
 import pageObjects.loanApplications.*;
-import runner.Runner;
 import utils.WaitUtility;
 
 public class AllSteps{
 
     LoginPage lp;
-    AddLoanManuallyPage alm;
+    AddLoanManuallyPreConPage alm;
     LoanSection ls;
     EmploymentSection es;
     IncomeSection is;
@@ -33,6 +32,13 @@ public class AllSteps{
     Coborrowerflowpage cob;
     ConnectionPage con;
     MessagesPage msg;
+    AddLoanManuallyPreFHAPage addLoanManuallyPreFHAPage;
+    AddLoanManuallyPreVaPage addLoanManuallyPreVaPage;
+    AddLoanManuallyPreUSDAPage addLoanManuallyPreUSDAPage;
+    AddLoanManuallyHomeConPage addLoanManuallyHomeConPage;
+    AddLoanManuallyRefinanceConPage addLoanManuallyRefinanceConPage;
+    AddLoanManuallyHelocPage addLoanManuallyHelocPage;
+
 
 //    Login Page Section
     @Given("^Admin is on the Roostify Core Login Page$")
@@ -43,7 +49,6 @@ public class AllSteps{
         driver = webDriverManager.getUrl();
         pageObjectManager = new PageObjectManager(driver);
         lp = pageObjectManager.getLoginPage();
-        WaitUtility.untilPageLoadComplete(driver);
 
     }
 
@@ -94,7 +99,6 @@ public class AllSteps{
     public void admin_enters_user_something(String firstName)
     {
         alm.enter_firstName(firstName);
-
     }
 
     @And("^Admin enters users \"([^\"]*)\"$")
@@ -137,6 +141,7 @@ public class AllSteps{
     @Then("^Admin enters primary details$")
     public void admin_enters_primary_details()
     {
+        ay.header_about_you();
         ay.primary_Details();
     }
     @Then("^Admin enters few more details$")
@@ -165,21 +170,25 @@ public class AllSteps{
     {
         ls.city_details();
     }
+
     @And("^Admin enters loan type$")
     public void admin_enters_loan_type()
     {
         ls.loan_Type();
     }
+
     @And("^Admin enters interest rate type$")
     public void admin_enters_interest_rate_type()
     {
         ls.interest_Rate_Type();
     }
+
     @And("^Admin enters property use$")
     public void admin_enters_property_use()
     {
         ls.property_Use();
     }
+
     @And("^Admin enters downpayment plan$")
     public void admin_enters_downpayment_plan()
     {
@@ -549,6 +558,223 @@ public class AllSteps{
         con.click_terms_conditions();
     }
 
+    @And("^Admin enters loan type as fha$")
+    public void adminEntersLoanTypeAsFha() {
+        pageObjectManager = new PageObjectManager(driver);
+        addLoanManuallyPreFHAPage = pageObjectManager.getAddLoanManuallyPreFHAPage();
+        addLoanManuallyPreFHAPage.fha_loan_type();
+    }
 
+    @And("^Admin enters interest rate type as arm$")
+    public void adminEntersInterestRateTypeAsArm() {
+        addLoanManuallyPreFHAPage.arm_type();
+    }
+
+    @And("^Admin enters number of years for loan to amortize for fha loan$")
+    public void adminEntersNumberOfYearsForLoanToAmortizeForFhaLoan()
+    {
+        addLoanManuallyPreFHAPage.arm_years();
+    }
+
+
+    @And("^Admin enters loan type as va$")
+    public void adminEntersLoanTypeAsVa()
+    {
+        pageObjectManager = new PageObjectManager(driver);
+        addLoanManuallyPreVaPage = pageObjectManager.getAddLoanManuallyPreVaPage();
+        addLoanManuallyPreVaPage.va_loan_type();
+    }
+
+    @And("^Admin enters loan type as usda$")
+    public void adminEntersLoanTypeAsUsda() {
+        pageObjectManager = new PageObjectManager(driver);
+        addLoanManuallyPreUSDAPage = pageObjectManager.getAddLoanManuallyPreUSDAPage();
+        addLoanManuallyPreUSDAPage.usda_loan_type();
+    }
+
+    @And("^Admin continue to next section$")
+    public void adminContinueToNextSection()
+    {
+        addLoanManuallyPreUSDAPage.click_continue();
+    }
+
+    @Given("^Admin selects loan purpose as Home Purchase$")
+    public void adminSelectsLoanPurposeAsHomePurchase()
+    {
+        pageObjectManager = new PageObjectManager(driver);
+        addLoanManuallyHomeConPage = pageObjectManager.getAddLoanManuallyHomeConPage();
+        addLoanManuallyHomeConPage.home_purchase();
+        addLoanManuallyHomeConPage.browsing_market();
+
+    }
+
+    @And("^Admin selects browsing market option$")
+    public void adminSelectsBrowsingMarketOption()
+    {
+        addLoanManuallyHomeConPage.browsing_market();
+    }
+
+    @And("^Admin enters location details$")
+    public void adminEntersLocationDetails()
+    {
+        addLoanManuallyHomeConPage.location_details();
+    }
+
+    @And("^User enters loan type$")
+    public void userEntersLoanType()
+    {
+        addLoanManuallyHomeConPage.loan_Type();
+    }
+
+
+    @And("^User enters interest rate type$")
+    public void userEntersInterestRateType()
+    {
+        addLoanManuallyHomeConPage.interest_Rate_Type();
+    }
+
+    @And("^User enters property use$")
+    public void userEntersPropertyUse()
+    {
+        addLoanManuallyHomeConPage.property_Use();
+    }
+
+
+    @And("^User enters downpayment plan$")
+    public void userEntersDownpaymentPlan()
+    {
+        addLoanManuallyHomeConPage.downpayment_Plan();
+    }
+
+
+    @And("^User enters number of years for loan to amortize$")
+    public void userEntersNumberOfYearsForLoanToAmortize()
+    {
+        addLoanManuallyHomeConPage.no_of_Years();
+    }
+
+    @Given("^Admin selects loan purpose as Refinance$")
+    public void adminSelectsLoanPurposeAsRefinance()
+    {
+        pageObjectManager = new PageObjectManager(driver);
+        addLoanManuallyRefinanceConPage = pageObjectManager.getAddLoanManuallyRefinanceConPage();
+        addLoanManuallyRefinanceConPage.refinance_loan();
+
+    }
+
+    @And("^Admin enter existing balance$")
+    public void adminEnterExistingBalance()
+    {
+        addLoanManuallyRefinanceConPage.existing_balance();
+    }
+
+    @And("^User selects loan type$")
+    public void userSelectsLoanType()
+    {
+        addLoanManuallyRefinanceConPage.loan_type();
+    }
+
+    @And("^User selects interest rate type$")
+    public void userSelectsInterestRateType()
+    {
+        addLoanManuallyRefinanceConPage.interest_Rate_Type();
+    }
+
+    @And("^User selects number of years for loan to amortize$")
+    public void userSelectsNumberOfYearsForLoanToAmortize()
+    {
+        addLoanManuallyRefinanceConPage.no_of_Years();
+    }
+
+    @And("^User selects property use$")
+    public void userSelectsPropertyUse()
+    {
+        addLoanManuallyRefinanceConPage.property_Use();
+    }
+
+    @And("^User selects downpayment plan$")
+    public void userSelectsDownpaymentPlan()
+    {
+        addLoanManuallyRefinanceConPage.downpayment_Plan();
+    }
+
+    @Given("^User navigates to the Assets and Liabilities Section of the page$")
+    public void userNavigatesToTheAssetsAndLiabilitiesSectionOfThePage()
+    {
+        pageObjectManager = new PageObjectManager(driver);
+        addLoanManuallyRefinanceConPage = pageObjectManager.getAddLoanManuallyRefinanceConPage();
+        addLoanManuallyRefinanceConPage.assets_Liabilities_Section();
+    }
+
+    @And("^User enters the Ownership stake response$")
+    public void userEntersTheOwnershipStakeResponse()
+    {
+        addLoanManuallyRefinanceConPage.ownership_Stake();
+    }
+
+    @And("^User enters Property Details for refinance$")
+    public void userEntersPropertyDetailsForRefinance()
+    {
+        addLoanManuallyRefinanceConPage.property_Details();
+    }
+
+
+    @And("^User enters current property ownership status$")
+    public void userEntersCurrentPropertyOwnershipStatus()
+    {
+        addLoanManuallyRefinanceConPage.current_Property_Ownership();
+    }
+
+    @And("^User enters the details about financial assets$")
+    public void userEntersTheDetailsAboutFinancialAssets()
+    {
+        addLoanManuallyRefinanceConPage.financial_assets_Details();
+    }
+
+    @Then("^User enters ongoing payments details and continues to next section$")
+    public void userEntersOngoingPaymentsDetailsAndContinuesToNextSection()
+    {
+        addLoanManuallyRefinanceConPage.ongoing_Payments();
+    }
+
+    @Given("^Admin selects loan purpose as HELOC$")
+    public void adminSelectsLoanPurposeAsHELOC()
+    {
+        pageObjectManager = new PageObjectManager(driver);
+        addLoanManuallyHelocPage = pageObjectManager.getAddLoanManuallyHelocPage();
+        addLoanManuallyHelocPage.heloc_loan();
+
+    }
+
+    @And("^Admin selects heloc loan use$")
+    public void adminSelectsHelocLoanUse()
+    {
+        addLoanManuallyHelocPage.heloc_loan_use();
+    }
+
+
+    @And("^Admin enters subject property details$")
+    public void adminEntersSubjectPropertyDetails()
+    {
+        addLoanManuallyHelocPage.property_details();
+    }
+
+    @And("^Admin enters property income$")
+    public void adminEntersPropertyIncome()
+    {
+        addLoanManuallyHelocPage.property_income();
+    }
+
+    @And("^Admin selects existing loan option$")
+    public void adminSelectsExistingLoanOption()
+    {
+        addLoanManuallyHelocPage.existing_loan();
+    }
+
+    @And("^Admin enters loan amount details$")
+    public void adminEntersLoanAmountDetails()
+    {
+        addLoanManuallyHelocPage.loan_amount();
+    }
 }
 

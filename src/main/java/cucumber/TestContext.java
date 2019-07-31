@@ -4,8 +4,8 @@ import managers.PageObjectManager;
 import managers.WebDriverManager;
 
 public class TestContext {
-    private static WebDriverManager webDriverManager;
-    private static PageObjectManager pageObjectManager;
+    private WebDriverManager webDriverManager;
+    private PageObjectManager pageObjectManager;
 
     public TestContext(){
         webDriverManager = new WebDriverManager();

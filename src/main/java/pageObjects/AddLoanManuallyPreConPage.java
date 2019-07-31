@@ -5,10 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 import java.util.Random;
 
-public class AddLoanManuallyPage {
+public class AddLoanManuallyPreConPage {
     WebDriver driver;
 
     public static void sleep()
@@ -19,7 +20,7 @@ public class AddLoanManuallyPage {
             System.out.println("got interrupted!");
         }
     }
-    public AddLoanManuallyPage(WebDriver driver)
+    public AddLoanManuallyPreConPage(WebDriver driver)
     {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -131,8 +132,8 @@ public class AddLoanManuallyPage {
 
     public void enter_firstName(String FirstName)
     {
-
         loan_first_name.sendKeys(FirstName);
+
     }
 
     public void enter_lastName(String LastName) {

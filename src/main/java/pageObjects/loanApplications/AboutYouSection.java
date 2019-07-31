@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -72,6 +73,15 @@ public class AboutYouSection
     @FindBy(xpath = "//div[@class='col-12 col-md-4 form-group']/button[@value='next']")
     private WebElement fix_later_continue;
 
+
+    @FindBy(xpath = "//h1[contains(text(),'How do we get in touch with you?')]")
+    private WebElement header_about_you;
+
+    public void header_about_you() {
+        String str = header_about_you.getText();
+        Assert.assertEquals("How do we get in touch with you?", str, "Verify About You header");
+    }
+
     public void admin_Continue()
     {
         sleep();
@@ -81,6 +91,7 @@ public class AboutYouSection
     public void admin_ABoutYou_Next()
     {
         about_you_next.click();
+
     }
     public void primary_Details()
     {
@@ -92,21 +103,6 @@ public class AboutYouSection
 
     public void few_more_Details()
     {
-//         dob_month.click();
-//         Select s = new Select(dob_month);
-//         s.selectByVisibleText("Apr");
-//         dob_month.click();
-//
-//         dob_day.click();
-//         Select s1 = new Select(dob_day);
-//         s.selectByValue("9");
-//         dob_day.click();
-//
-//
-//         dob_year.click();
-//         Select s2 = new Select(dob_year);
-//         s.selectByVisibleText("1994");
-//         dob_year.click();
 
         marital_status.click();
         age.sendKeys("25");
@@ -142,11 +138,6 @@ public class AboutYouSection
         next_button.click();
         sleep();
         fix_later_continue.click();
-        sleep();
-
-        Robot robot = null;
-        robot.keyPress(KeyEvent.VK_ESCAPE);
-        robot.keyRelease(KeyEvent.VK_ESCAPE);
         sleep();
 
     }

@@ -53,13 +53,12 @@ public class CopyReferalPage {
     public void referral_url() {
 
         WaitUtility.untilJqueryIsDone(driver, (long) 3000);
+        sleep();
         referral_url.click();
     }
 
     public void open_new_tab()
     {
-
-
         Robot robot = null;
         try {
             robot = new Robot();

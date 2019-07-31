@@ -72,11 +72,6 @@ public class DeclarationsSection {
     @FindBy(how = How.XPATH, using = "//button[text()='Fix later and continue']")
     private WebElement fix_later_continue_button;
 
-
-
-
-
-
     public void declarations_Section()
 {
     next_button.click();
@@ -92,7 +87,6 @@ public class DeclarationsSection {
     {
          lawsuit_no.click();
          judgements_no.click();
-         downpayment_no.click();
          note_debt_no.click();
          next_button.click();
     }
@@ -133,9 +127,6 @@ public class DeclarationsSection {
     public void continue_Section()
     {
         fix_later_continue_button.click();
-        next_button.click();
-        next_button.click();
-        next_button.click();
         sleep();
         sleep();
     }

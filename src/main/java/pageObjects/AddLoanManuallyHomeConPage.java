@@ -1,6 +1,5 @@
-package pageObjects.loanApplications;
+package pageObjects;
 
-import cucumber.api.java.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,12 +7,10 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class LoanSection{
+public class AddLoanManuallyHomeConPage
+{
+    WebDriver driver;
 
-    public LoanSection(WebDriver driver)
-    {
-        PageFactory.initElements(driver, this);
-    }
     public static void sleep()
     {
         try {
@@ -23,11 +20,23 @@ public class LoanSection{
         }
     }
 
-    @FindBy(how = How.XPATH, using = "//button[@class='js-btn-forward btn btn--block btn--ghost js-substep-nav']")
+    public AddLoanManuallyHomeConPage(WebDriver driver)
+    {
+        this.driver = driver;
+        PageFactory.initElements(driver,this);
+    }
+
+    @FindBy(id = "home_purchase_multi_select")
+    private WebElement home_purchase;
+
+    @FindBy(id = "loan_application_lead_stage_browsing")
+    private WebElement browsing_market;
+
+    @FindBy(xpath = "//button[@class='js-btn-forward btn btn--block btn--ghost js-substep-nav']")
     private WebElement next_button;
 
-    @FindBy(how = How.XPATH, using = "//input[@class='js-pre-approval-multi_select c-radio__input']")
-    private WebElement pre_approval;
+    @FindBy(xpath = "//button[@class='btn--block btn btn--primary js-step-nav']")
+    private WebElement continue_button;
 
     @FindBy(how = How.ID, using = "loan_application_subject_property_attributes_0_city")
     private WebElement city_names;
@@ -60,19 +69,23 @@ public class LoanSection{
     private WebElement no_of_years;
 
 
-    @FindBy(how = How.XPATH, using = "//button[@class='btn--block btn btn--primary js-step-nav']")
-    private WebElement continue_button;
-
-    public void loan_details()
-    {
+    public void home_purchase() {
         sleep();
         next_button.click();
-        pre_approval.click();
-        sleep();
+        home_purchase.click();
         next_button.click();
+        sleep();
     }
 
-    public void city_details()
+    public void browsing_market()
+    {
+        browsing_market.click();
+        sleep();
+        next_button.click();
+        sleep();
+    }
+
+    public void location_details()
     {
         sleep();
         city_names.sendKeys("New York");
@@ -90,7 +103,6 @@ public class LoanSection{
         next_button.click();
         down_payment.sendKeys("10");
         next_button.click();
-       // loan_type.click();
     }
 
     public void loan_Type()
@@ -107,21 +119,20 @@ public class LoanSection{
 
     public void property_Use()
     {
-       property_use.click();
-       next_button.click();
+        property_use.click();
+        next_button.click();
     }
     public void downpayment_Plan()
     {
-    downpayment_plan.click();
-    next_button.click();
+        downpayment_plan.click();
+        next_button.click();
     }
 
     public void no_of_Years()
     {
-    no_of_years.click();
-    next_button.click();
-    continue_button.click();
+        no_of_years.click();
+        next_button.click();
+        continue_button.click();
     }
-
 
 }

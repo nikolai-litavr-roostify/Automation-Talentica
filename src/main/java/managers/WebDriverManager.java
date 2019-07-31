@@ -10,7 +10,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import java.util.concurrent.TimeUnit;
 
 public class WebDriverManager {
-    private static WebDriver driver;
+    private WebDriver driver;
     private DriverType driverType;
     private EnvironmentType environmentType;
     private static final String CHROME_DRIVER_PROPERTY = "webdriver.chrome.driver";

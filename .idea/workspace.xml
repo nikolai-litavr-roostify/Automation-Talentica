@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7ce64c31-70d3-4a55-8d7e-07f8b455a0b8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/AddLoanManuallyHelocPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/AddLoanManuallyHomeConPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/AddLoanManuallyPreFHAPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/AddLoanManuallyPreUSDAPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/AddLoanManuallyPreVaPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/AddLoanManuallyRefinanceConPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/features/AddLoanManuallyHELOCLoans.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/features/AddLoanManuallyHomePurchaseLoans.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/features/AddLoanManuallyPreApprovalLoans.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/features/AddLoanManuallyRefinanceLoans.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/features/CopyReferalPreApprovalLoans.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/features/CopyReferalRefinanceLoans.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/features/InviteBorrowerHomePurchaseLoans.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/features/InviteBorrowerPreApprovalLoans.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/features/InviteBorrowerRefinanceLoans.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/steps/Hooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/enums/DriverType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/enums/EnvironmentType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/managers/FileReaderManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/Coborrowerflowpage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/ConnectionPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/MessagesPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/ApplicationRelease.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/AssetsLiabilitiesSection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/EmploymentSection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/IncomeSection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/SignUpPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/utils/ReadConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/utils/WaitUtility.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coreAutomationRoostify.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cucumber/TestContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cucumber/TestContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/managers/PageObjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/managers/PageObjectManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/managers/WebDriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/managers/WebDriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/AddLoanManuallyPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/AddLoanManuallyPreConPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/CopyReferalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/CopyReferalPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/AboutYouSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/AboutYouSection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/AssetsLiabilitiesSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/AssetsLiabilitiesSection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/DeclarationsSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/DeclarationsSection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/LoanSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/LoanSection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/configFiles/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configFiles/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/AddLoanManually.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/CopyReferalHomePurchaseLoans.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/CopyReferal.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/CopyReferalHELOCLoans.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/InviteBorrower.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/InviteBorrowerHELOCLoans.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/AllSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AllSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cucumber/TestContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cucumber/TestContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/managers/PageObjectManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/managers/PageObjectManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/managers/WebDriverManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/managers/WebDriverManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/AddLoanManuallyPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/CopyReferalPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/CopyReferalPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/AboutYouSection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/AboutYouSection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/DeclarationsSection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/DeclarationsSection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/LoanSection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/LoanSection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/Runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/AllSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/AllSteps.class" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProjectId" id="1OXQoJ3YeFJSz195vlZM3GXQ643" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/features" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\VivekW\Downloads\Automation-Talentica-CoreAutomation\Automation-Talentica-CoreAutomation\src\test\java\features" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pageObjects" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\VivekW\Downloads\Automation-Talentica-CoreAutomation\Automation-Talentica-CoreAutomation\src\test\java\features" />
+      <recent name="C:\Users\VivekW\Downloads\Automation-Talentica-CoreAutomation\Automation-Talentica-CoreAutomation\src\test\java\configFiles" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="coreAutomationRoostify" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.Runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Runner" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7ce64c31-70d3-4a55-8d7e-07f8b455a0b8" name="Default Changelist" comment="" />
+      <created>1564121634508</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1564121634508</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

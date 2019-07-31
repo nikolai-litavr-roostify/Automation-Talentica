@@ -1,14 +1,21 @@
-@CopyReferralURLTest
-Feature: Copy Referral URL Test
+@InviteBorrowerHELOCLoansTest
+Feature: Add Loan Manually Test
+  @InviteBorrowerHELOCTest
   Scenario Outline: Test Invite Borrower Functionality
     Given Admin is on the Roostify Core Login Page
     When Admin enters "<username>"
     And Admin enters also "<password>"
     And Admin clicks on Sign In Button.
-    And Admin clicks on Copy Referral Link and opens in new window
+    Then Admin navigates to Roostify Core Home Page.
+    Then Admin clicks on Invite Borrower link
+    Then Admin enters new user "<mailid>"
+    And Admin clicks on Invite button
+    And Admin clicks on Admin Console link
+    And Admin click on Messages section
+    And Admin clicks on Message link
+    And Admin clicks on Start Application link
     And User enters user "<firstname>"
     And User enters users "<lastname>"
-    Then User enters new users "<mailid>"
     And User enters also "<password>"
     And User clicks on Agree Terms and Conditions
     And User clicks on Start Application button
@@ -18,27 +25,30 @@ Feature: Copy Referral URL Test
     Then Admin enters few more details
     Then Admin enters Address page details
     Examples:
-    |username|password|firstname|lastname|mailid|password|
-    |roostify_admin@roostify.com|168Washu|Loan|App||Abcd1234|
+      |username|password|mailid|firstname|lastname|password|
+      |roostify_admin@roostify.com|168Washu||Loan|App|Abcd1234|
 
+  @InviteBorrowerHELOCTest
   Scenario: Loan Section
-    Given Admin selects loan purpose
-    And Admin enters city details
-    And Admin enters loan type
-    And Admin enters interest rate type
-    And Admin enters property use
-    And Admin enters downpayment plan
-    And Admin enters number of years for loan to amortize
+    Given Admin selects loan purpose as HELOC
+    And Admin selects heloc loan use
+    And Admin enters subject property details
+    And Admin enters property income
+    And Admin selects existing loan option
+    And Admin enters loan amount details
 
+  @InviteBorrowerHELOCTest
   Scenario: Employment Section
     Given Admin navigates to Employment Section of the page
     And Admin enters current employment status
     Then Admin enters employment details
 
+  @InviteBorrowerHELOCTest
   Scenario: Income Section
     Given Admin navigates to the Income section of the page
     Then Admin Enters Income Section
 
+  @InviteBorrowerHELOCTest
   Scenario: Assets and Liabilities Section
     Given Admin navigates to the Assets and Liabilities Section of the page
     And Admin enters the Ownership stake response
@@ -47,6 +57,7 @@ Feature: Copy Referral URL Test
     And Admin enters the details about financial assets
     Then Admin enters ongoing payments details and continues to next section
 
+  @InviteBorrowerHELOCTest
   Scenario: Declaration Section
     Given Admin navigates to Declarations Section
     And Admin enters if US Citizen or not
@@ -58,6 +69,6 @@ Feature: Copy Referral URL Test
     And Admin estimates his credit
     And Admin continues to next section
 
+  @InviteBorrowerHELOCTest
   Scenario: Application Release Section
     Given Admin navigates to Application release section and submits the application
-

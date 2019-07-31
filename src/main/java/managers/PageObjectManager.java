@@ -22,7 +22,7 @@ public class PageObjectManager {
 
     private LoginPage lp;
 
-    private AddLoanManuallyPage alm;
+    private AddLoanManuallyPreConPage alm;
 
     private InviteBorrowerPage ib;
     private AboutYouSection ay;
@@ -31,6 +31,12 @@ public class PageObjectManager {
     private Coborrowerflowpage cob;
     private ConnectionPage con;
     private MessagesPage msg;
+    private AddLoanManuallyPreFHAPage addLoanManuallyPreFHAPage;
+    private AddLoanManuallyPreVaPage addLoanManuallyPreVaPage;
+    private AddLoanManuallyPreUSDAPage addLoanManuallyPreUSDAPage;
+    private AddLoanManuallyHomeConPage addLoanManuallyHomeConPage;
+    private AddLoanManuallyRefinanceConPage addLoanManuallyRefinanceConPage;
+    private AddLoanManuallyHelocPage addLoanManuallyHelocPage;
 
     public PageObjectManager(WebDriver driver) {
 
@@ -44,9 +50,9 @@ public class PageObjectManager {
 
     }
 
-    public AddLoanManuallyPage getAddLoanManuallyPage() {
+    public AddLoanManuallyPreConPage getAddLoanManuallyPage() {
 
-        return (alm == null) ? alm = new AddLoanManuallyPage(driver) : alm;
+        return (alm == null) ? alm = new AddLoanManuallyPreConPage(driver) : alm;
 
     }
 
@@ -114,6 +120,36 @@ public class PageObjectManager {
     public MessagesPage getMessagePage()
     {
         return (msg == null) ? msg = new MessagesPage(driver) : msg;
+    }
+
+    public AddLoanManuallyPreFHAPage getAddLoanManuallyPreFHAPage()
+    {
+        return (addLoanManuallyPreFHAPage == null) ? addLoanManuallyPreFHAPage = new AddLoanManuallyPreFHAPage(driver) : addLoanManuallyPreFHAPage;
+    }
+
+    public AddLoanManuallyPreVaPage getAddLoanManuallyPreVaPage()
+    {
+        return (addLoanManuallyPreVaPage == null) ? addLoanManuallyPreVaPage = new AddLoanManuallyPreVaPage(driver) : addLoanManuallyPreVaPage;
+    }
+
+    public AddLoanManuallyPreUSDAPage getAddLoanManuallyPreUSDAPage()
+    {
+        return (addLoanManuallyPreUSDAPage == null) ? addLoanManuallyPreUSDAPage = new AddLoanManuallyPreUSDAPage(driver) : addLoanManuallyPreUSDAPage;
+    }
+
+    public AddLoanManuallyHomeConPage getAddLoanManuallyHomeConPage()
+    {
+        return (addLoanManuallyHomeConPage == null) ? addLoanManuallyHomeConPage = new AddLoanManuallyHomeConPage(driver) : addLoanManuallyHomeConPage;
+    }
+
+    public AddLoanManuallyRefinanceConPage getAddLoanManuallyRefinanceConPage()
+    {
+        return (addLoanManuallyRefinanceConPage == null) ? addLoanManuallyRefinanceConPage = new AddLoanManuallyRefinanceConPage(driver) : addLoanManuallyRefinanceConPage;
+    }
+
+    public AddLoanManuallyHelocPage getAddLoanManuallyHelocPage()
+    {
+        return (addLoanManuallyHelocPage == null) ? addLoanManuallyHelocPage = new AddLoanManuallyHelocPage(driver) : addLoanManuallyHelocPage;
     }
 
     public WebDriver getDriver() {
