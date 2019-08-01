@@ -28,13 +28,13 @@ Feature: Copy Referral URL Test
       |roostify_admin@roostify.com|168Washu|Loan|App||Abcd1234||
 
   Scenario: Loan Section
-    Given Admin selects loan purpose
-    And Admin enters city details
-    And Admin enters loan type
-    And Admin enters interest rate type
-    And Admin enters property use
-    And Admin enters downpayment plan
-    And Admin enters number of years for loan to amortize
+    Given Admin selects loan purpose as Home Purchase
+    And Admin enters location details
+    And User enters loan type
+    And User enters interest rate type
+    And User enters property use
+    And User enters downpayment plan
+    And User enters number of years for loan to amortize
 
   Scenario: Employment Section
     Given Admin navigates to Employment Section of the page

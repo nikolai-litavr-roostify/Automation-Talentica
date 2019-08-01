@@ -38,6 +38,8 @@ public class AllSteps{
     AddLoanManuallyHomeConPage addLoanManuallyHomeConPage;
     AddLoanManuallyRefinanceConPage addLoanManuallyRefinanceConPage;
     AddLoanManuallyHelocPage addLoanManuallyHelocPage;
+    TeamPage tp;
+    UserPage up;
 
 
 //    Login Page Section
@@ -775,6 +777,197 @@ public class AllSteps{
     public void adminEntersLoanAmountDetails()
     {
         addLoanManuallyHelocPage.loan_amount();
+    }
+
+    // Team steps:
+
+    @And("^Admin clicks on Team tab$")
+    public void AdminclicksonTeamtab()
+    {
+
+        pageObjectManager = new PageObjectManager(driver);
+        tp = pageObjectManager.getTeamPage();
+        tp.ClickOnTeamTab();
+        WaitUtility.untilPageLoadComplete(driver);
+    }
+
+    @And("^Admin clicks on Add team member$")
+    public void AdminclicksonAddteammember(){
+        tp.ClickOnAddTeamMember();
+    }
+
+    @Then("^Admin selects Person to Add$")
+    public void adminSelectsPersonToAdd() {
+        tp.SelectPersonToAdd();
+    }
+
+    @And("^Admin clicks on select box$")
+    public void Adminclicksonselectbox(){
+        tp.enterPersonTpAddValue();
+    }
+
+    @And("^Admin selects Role$")
+    public void AdminselectsRole(){
+        tp.SelectRoleAsUnderwriter();
+    }
+
+    @And("^Admin clicks on Add to Team$")
+    public void AdminclicksonAddtoTeam(){
+        tp.ClickOnAddToTeam();
+    }
+
+    //Assistant
+    @And("^Admin clicks on select box to select Assistant user$")
+    public void Adminclickson_selectbox(){
+        tp.enterPersonTpAddAsAssistantValue();
+    }
+
+    @And("^Admin selects Role to add Assistant$")
+    public void Admin_selectsRole(){
+        tp.SelectRoleAsAssistant();
+    }
+
+    //Processor
+    @And("^Admin clicks on select box to select Processor user$")
+    public void Admin_clickson_selectbox(){
+        tp.enterPersonTpAddAsProcessorValue();
+    }
+
+    @And("^Admin selects Role to add Processor$")
+    public void Admin_selects_Role(){
+        tp.SelectRoleAsProcessor();
+    }
+
+    // Delete Underwriter
+
+    @And("^Admin clicks on delete icon to delete underwriter$")
+    public void Adminclicksondeleteicontodeleteunderwriter(){
+        tp.DeleteTeamMember();
+    }
+
+    @And("^Admin clicks on 'Yes, remove' button$")
+    public void AdminclicksonYesremovebutton(){
+        tp.ClickOnYesRemoveButton();
+    }
+
+    // Negative testing - Add Non Existing User (or user from other account) To Team
+
+    @Then("^Admin selects non-existing Person to Add$")
+    public void Adminselectsnon_existingPersontoAdd(){
+        tp.selectNonExistingUser();
+    }
+
+
+    @And("^Admin clicks on select box to select user from another account$")
+    public void AdminclicksonselectboxtoselectAssistantuserfromanotheraccount(){
+        tp.enterNonExistingUser();
+    }
+
+    @Then("^Admin should see No results matched text$")
+    public void AdminshouldseeNoresultsmatchedtext(){
+        tp.verifyTextNoResultsMatched();
+    }
+
+    // Invite User as Member Steps:
+
+
+    @Then("^Admin user clicks on Admin Console link$")
+    public void admin_user_clicks_on_Admin_Console_link()
+    {
+        pageObjectManager = new PageObjectManager(driver);
+        up = pageObjectManager.getUserPage();
+        up.click_admin_console();
+    }
+
+
+
+    @Then("^Admin clicks on 'Users' tab$")
+    public void admin_clicks_on_Users_tab(){
+        up.clickOnUsersTab();
+    }
+
+    @Then("^Admin clicks on 'Invite a user' icon$")
+    public void admin_clicks_on_Invite_a_user_icon(){
+        up.clickOnInviteAUserIcon();
+    }
+
+    @Then("^Admin enters user email as \"([^\"]*)\"$")
+    public void Admin_enters_User_email(String email){
+        up.enterUserEmail(email);
+    }
+
+    @Then("^Admin enters user confirmation email as \"([^\"]*)\"$")
+    public void Admin_enters_user_confirm_email(String confirm_email){
+        up.enterUserConfirmEmail();
+    }
+
+    @Then("^Admin selects Role of the user$")
+    public void admin_selects_Role_of_the_user(){
+        up.selectRoleForUser();
+    }
+
+    @Then("^Admin selects Primary account for the user$")
+    public void Admin_selects_Primary_account_for_the_user(){
+        up.selectPrimaryAccountForUser();
+    }
+
+    @Then("^Admin selects Secondary account for the user$")
+    public void admin_selects_Secondary_account_for_the_user(){
+        up.selectSecondaryAccountForUser();
+        up.enterUserSecondaryAccount();
+    }
+
+    @Then("^Admin clicks on 'Send Invite' button$")
+    public void admin_clicks_on_Send_Invite_button(){
+        up.clickOnSendInvite();
+
+    }
+
+    // Invite User as Admin Steps:
+
+    @Then("^Admin selects Role of the user as Admin$")
+    public void admin_selects_Role_of_the_user_as_Admin(){
+        up.selectRoleForUserAsAdmin();
+    }
+
+    // Bulk Invite Users using csv
+
+    @Then("^Admin clicks on 'Bulk invite users' icon$")
+    public void admin_clicks_on_Bulk_invite_users_icon(){
+        up.clickOnBulkInviteIcon();
+    }
+
+    @Then("^Admin clicks on 'Add file' button$")
+    public void admin_clicks_on_Admin_Console_link_Add_file_button(){
+        up.clickOnAddFileButton();
+    }
+
+    @Then("^Admin clicks on 'Send Invitation' icon$")
+    public void admin_clicks_on_Send_Invitation_icon(){
+        up.clickOnSendInvitation();
+    }
+
+    @Then("^Admin clicks on 'Upload'$")
+    public void admin_clicks_on_Upload() {
+        up.clickOnUploadButton();
+    }
+
+    //  Search an user:
+
+    @Then("^Admin selects Account to search user$")
+    public void admin_selects_Account_to_search_user() {
+        up.clickOnUserSearchAccount();
+
+    }
+
+    @Then("^Admin clicks on 'Search' icon$")
+    public void admin_clicks_on_Search_icon() {
+        up.clickOnSearchIcon();
+    }
+
+    @Then("^Admin enters the name or email of an user$")
+    public void Admin_enters_the_name_or_email_of_an_user(){
+        up.clickOnSearchTextBox();
     }
 }
 

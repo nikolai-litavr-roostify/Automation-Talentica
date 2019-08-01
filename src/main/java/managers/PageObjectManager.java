@@ -37,6 +37,8 @@ public class PageObjectManager {
     private AddLoanManuallyHomeConPage addLoanManuallyHomeConPage;
     private AddLoanManuallyRefinanceConPage addLoanManuallyRefinanceConPage;
     private AddLoanManuallyHelocPage addLoanManuallyHelocPage;
+    private TeamPage teamPage;
+    private UserPage userPage;
 
     public PageObjectManager(WebDriver driver) {
 
@@ -151,6 +153,13 @@ public class PageObjectManager {
     {
         return (addLoanManuallyHelocPage == null) ? addLoanManuallyHelocPage = new AddLoanManuallyHelocPage(driver) : addLoanManuallyHelocPage;
     }
+
+    public TeamPage getTeamPage()
+    {
+        return (teamPage == null) ? teamPage = new TeamPage(driver) : teamPage;
+    }
+
+    public UserPage getUserPage(){return  (userPage == null) ? userPage = new UserPage(driver) : userPage; }
 
     public WebDriver getDriver() {
         return driver;
