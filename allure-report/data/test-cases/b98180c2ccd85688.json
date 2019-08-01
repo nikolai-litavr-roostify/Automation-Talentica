@@ -1,0 +1,94 @@
+{
+  "uid" : "b98180c2ccd85688",
+  "name" : "Null Zip code",
+  "fullName" : "finicity.FinicityTests.Null_Zip_code",
+  "historyId" : "a605b9fd150106c79ea30430eee7cfa5",
+  "time" : {
+    "start" : 1564644063323,
+    "stop" : 1564644064598,
+    "duration" : 1275
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getData",
+    "time" : {
+      "start" : 1564643785231,
+      "stop" : 1564643785231,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "checkStatus",
+    "time" : {
+      "start" : 1564644064600,
+      "stop" : 1564644064601,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "finicity.FinicityTests"
+  }, {
+    "name" : "testClass",
+    "value" : "finicity.FinicityTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "Null_Zip_code"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Finicity"
+  }, {
+    "name" : "subSuite",
+    "value" : "finicity.FinicityTests"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "8652@KrishnaA-Desk.main(1)"
+  }, {
+    "name" : "story",
+    "value" : "Finicity flow with Null Parameters"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b98180c2ccd85688.json",
+  "parameterValues" : [ ]
+}

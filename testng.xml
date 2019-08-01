@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="All Test Suite" configfailurepolicy="continue">
     <listeners>
         <listener class-name="resources.ExtentReporterNG"/>
         <listener class-name="listener.TestListener"/>
     </listeners>
-    <test verbose="2" preserve-order="true" name="Test">
+    <test verbose="2" preserve-order="true" name="AccountCheck" parallel="methods">
         <classes>
             <class name="accCheck.AccountCheckTests"></class>
+        </classes>
+    </test>
+
+    <test name="Finicity">
+        <classes>
+            <class name="finicity.FinicityTests"></class>
+        </classes>
+    </test>
+
+    <test name="Zillow">
+        <classes>
+            <class name="zillow.ZillowTests"></class>
+        </classes>
+    </test>
+
+    <test name="Plaid">
+        <classes>
             <class name="plaid.PlaidTests"></class>
         </classes>
     </test>
+
+    <test name="PPE_HELOC" parallel="methods">
+        <classes>
+            <class name="ppe.PPE_OB_Tests"></class>
+        </classes>
+    </test>
+
+    <test name="RcoreTest">
+        <classes>
+            <class name="rCore.RCoreTests"></class>
+        </classes>
+    </test>
+
+
 </suite>

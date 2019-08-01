@@ -1,0 +1,94 @@
+{
+  "uid" : "c3458e0d97f0fc01",
+  "name" : "Null Phone number",
+  "fullName" : "finicity.FinicityTests.Null_Phone_number",
+  "historyId" : "d1fcd13b5a67e29e242a5a75cdbef64",
+  "time" : {
+    "start" : 1564644054783,
+    "stop" : 1564644056010,
+    "duration" : 1227
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getData",
+    "time" : {
+      "start" : 1564643785231,
+      "stop" : 1564643785231,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "checkStatus",
+    "time" : {
+      "start" : 1564644056012,
+      "stop" : 1564644056012,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "finicity.FinicityTests"
+  }, {
+    "name" : "testClass",
+    "value" : "finicity.FinicityTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "Null_Phone_number"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Finicity"
+  }, {
+    "name" : "subSuite",
+    "value" : "finicity.FinicityTests"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "8652@KrishnaA-Desk.main(1)"
+  }, {
+    "name" : "story",
+    "value" : "Finicity flow with Null Parameters"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c3458e0d97f0fc01.json",
+  "parameterValues" : [ ]
+}

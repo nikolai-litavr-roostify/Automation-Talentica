@@ -1,6 +1,17 @@
 {
-  "total" : 2,
+  "total" : 33,
   "items" : [ {
+    "uid" : "02282f634016ad98207d0e476b951ac1",
+    "name" : "Finicity flow with valid scenario",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
     "uid" : "3c45c562357ae90494cf437ed16a5578",
     "name" : "Plaid Regression",
     "statistic" : {
@@ -12,8 +23,74 @@
       "total" : 1
     }
   }, {
+    "uid" : "6e9d1dfd80002c2a8041a1bdf4a02b1c",
+    "name" : "Finicity flow with Invalid Parameters",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 19,
+      "unknown" : 0,
+      "total" : 19
+    }
+  }, {
+    "uid" : "88d330a8b26ba4e0af9ea2c2ab789e3a",
+    "name" : "Finicity flow with Null Parameters",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 17,
+      "unknown" : 0,
+      "total" : 17
+    }
+  }, {
+    "uid" : "d75582c4661153135cf992b187ee0ed2",
+    "name" : "Zillow flow with Null Parameters",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 14,
+      "unknown" : 0,
+      "total" : 14
+    }
+  }, {
+    "uid" : "ca5885463d60e9c9e212ad07d1df11f7",
+    "name" : "Zillow flow with Invalid Parameters",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 10,
+      "unknown" : 0,
+      "total" : 10
+    }
+  }, {
+    "uid" : "957975c960de0f29b4cd6ad0d18c1fa4",
+    "name" : "Zillow flow with valid scenario",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 7
+    }
+  }, {
     "uid" : "fb7cc5ab86545c6775ad2a801dc77615",
     "name" : "Account Check Regression",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "4995f69fe78c73cdbaae841630eef429",
+    "name" : "PPE Regression",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

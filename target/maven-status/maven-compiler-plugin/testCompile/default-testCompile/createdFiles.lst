@@ -1,4 +1,6 @@
 rCore\RCoreTests.class
+ppe\PPE_OB_Tests.class
 finicity\FinicityTests.class
 plaid\PlaidTests.class
 accCheck\AccountCheckTests.class
+zillow\ZillowTests.class

@@ -1,1 +1,0 @@
-{"uuid":"c0936d2e-419a-4f32-9155-7c8ad853b61d","name":"accCheck.AccountCheckTests.checkStatus","description":"","start":1560489917617,"stop":1560489917869,"children":["786198ee-bd3a-4c61-beb7-315f55b2ef8c"],"afters":[{"name":"checkStatus","status":"passed","stage":"finished","description":"","start":1560489917618,"stop":1560489917869}]}

@@ -1,0 +1,100 @@
+{
+  "uid" : "4bf367fb6c49f06d",
+  "name" : "Invalid verification type",
+  "fullName" : "accCheck.AccountCheckTests.accCheck_Invalid_verification_type",
+  "historyId" : "4cd5a9d54d324831d4547709f08f8108",
+  "time" : {
+    "start" : 1564643782163,
+    "stop" : 1564643783502,
+    "duration" : 1339
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getHostURL",
+    "time" : {
+      "start" : 1564643770032,
+      "stop" : 1564643770636,
+      "duration" : 604
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "checkStatus",
+    "time" : {
+      "start" : 1564643783504,
+      "stop" : 1564643783504,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "accCheck.AccountCheckTests"
+  }, {
+    "name" : "testClass",
+    "value" : "accCheck.AccountCheckTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "accCheck_Invalid_verification_type"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "AccountCheck"
+  }, {
+    "name" : "subSuite",
+    "value" : "accCheck.AccountCheckTests"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "8652@KrishnaA-Desk.TestNG-test=AccountCheck-1(13)"
+  }, {
+    "name" : "epic",
+    "value" : "Account Check Regression"
+  }, {
+    "name" : "feature",
+    "value" : "Verify Account Check functionality"
+  }, {
+    "name" : "story",
+    "value" : "Account check flow with Invalid Scenarios"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4bf367fb6c49f06d.json",
+  "parameterValues" : [ ]
+}

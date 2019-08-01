@@ -1,0 +1,234 @@
+<html>
+<head>
+<title>TestNG:  Zillow</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Zillow</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>31/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Aug 01 12:51:41 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>69 seconds (69215 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='zillow.ZillowTests.Address_line_1_with_city_null_state()'><b>Address_line_1_with_city_null_state</b><br>Test class: zillow.ZillowTests<br>Test method: Address line 1 with city (null state)</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Address_line_1_with_city_with_empty_state_and_null_zip()'><b>Address_line_1_with_city_with_empty_state_and_null_zip</b><br>Test class: zillow.ZillowTests<br>Test method: Address line 1 with city (with empty state and null zip)</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Address_line_1_with_null_zip()'><b>Address_line_1_with_null_zip</b><br>Test class: zillow.ZillowTests<br>Test method: Address line 1 with null zip</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Address_line_1_with_state_null_city()'><b>Address_line_1_with_state_null_city</b><br>Test class: zillow.ZillowTests<br>Test method: Address line 1 with state (null city)</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Address_line_1_with_state_with_empty_city_and_null_zip()'><b>Address_line_1_with_state_with_empty_city_and_null_zip</b><br>Test class: zillow.ZillowTests<br>Test method: Address line 1 with state (with empty city and null zip)</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Invalid_Account_ID()'><b>Invalid_Account_ID</b><br>Test class: zillow.ZillowTests<br>Test method: Invalid Account ID</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Invalid_Address_Line1()'><b>Invalid_Address_Line1</b><br>Test class: zillow.ZillowTests<br>Test method: Invalid Address Line1</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Invalid_City()'><b>Invalid_City</b><br>Test class: zillow.ZillowTests<br>Test method: Invalid City</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Invalid_City_State_Combination_without_zip()'><b>Invalid_City_State_Combination_without_zip</b><br>Test class: zillow.ZillowTests<br>Test method: Invalid City + State Combination without zip</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Invalid_City_State_Zip_Combination()'><b>Invalid_City_State_Zip_Combination</b><br>Test class: zillow.ZillowTests<br>Test method: Invalid City + State + Zip Combination </td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Invalid_Customer_ID()'><b>Invalid_Customer_ID</b><br>Test class: zillow.ZillowTests<br>Test method: Invalid Customer ID</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Invalid_State()'><b>Invalid_State</b><br>Test class: zillow.ZillowTests<br>Test method: Invalid State</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Invalid_Verification_Type()'><b>Invalid_Verification_Type</b><br>Test class: zillow.ZillowTests<br>Test method: Invalid Verification Type</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Invalid_Zip()'><b>Invalid_Zip</b><br>Test class: zillow.ZillowTests<br>Test method: Invalid Zip</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Invalid_ac_id_cust_id()'><b>Invalid_ac_id_cust_id</b><br>Test class: zillow.ZillowTests<br>Test method: Invalid Account Id and Customer Id</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Null_Address_Line1()'><b>Null_Address_Line1</b><br>Test class: zillow.ZillowTests<br>Test method: Null Address Line1</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Null_account_id()'><b>Null_account_id</b><br>Test class: zillow.ZillowTests<br>Test method: Null Account Id</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Null_add_line_city_zip_code_state()'><b>Null_add_line_city_zip_code_state</b><br>Test class: zillow.ZillowTests<br>Test method: Null add line, city, zip code, state</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Null_cust_id_ac_id()'><b>Null_cust_id_ac_id</b><br>Test class: zillow.ZillowTests<br>Test method: Null Customer Id and Account Id</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Null_customer_id()'><b>Null_customer_id</b><br>Test class: zillow.ZillowTests<br>Test method: Null Customer Id</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Null_verification_type()'><b>Null_verification_type</b><br>Test class: zillow.ZillowTests<br>Test method: Null Verification Type</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Valid_Zillow_Flow_with_Address_Line_2_with_city_state_null()'><b>Valid_Zillow_Flow_with_Address_Line_2_with_city_state_null</b><br>Test class: zillow.ZillowTests<br>Test method: Valid Zillow Flow (with Address Line 2) with city+state null</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Valid_Zillow_Flow_with_Address_Line_2_with_zip_null()'><b>Valid_Zillow_Flow_with_Address_Line_2_with_zip_null</b><br>Test class: zillow.ZillowTests<br>Test method: Valid Zillow Flow (with Address Line 2) with zip null</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Valid_Zillow_Flow_with_City_State_Combination()'><b>Valid_Zillow_Flow_with_City_State_Combination</b><br>Test class: zillow.ZillowTests<br>Test method: Valid Zillow Flow (with City+State Combination)</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Valild_Zillow_Flow_with_City_State_Zip_Combination()'><b>Valild_Zillow_Flow_with_City_State_Zip_Combination</b><br>Test class: zillow.ZillowTests<br>Test method: Valild Zillow Flow (with City+State+Zip Combination)</td>
+<td></td>
+<td>27</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Valild_Zillow_Flow_with_City_State_Zip_Combination_Zip_code_starting_with_zero()'><b>Valild_Zillow_Flow_with_City_State_Zip_Combination_Zip_code_starting_with_zero</b><br>Test class: zillow.ZillowTests<br>Test method: Valild Zillow Flow (with City+State+Zip Combination) Zip code starting with zero</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Valild_Zillow_Flow_with_Zip()'><b>Valild_Zillow_Flow_with_Zip</b><br>Test class: zillow.ZillowTests<br>Test method: Valild Zillow Flow (with Zip)</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.Valild_Zillow_Flow_with_Zip_starting_with_zero()'><b>Valild_Zillow_Flow_with_Zip_starting_with_zero</b><br>Test class: zillow.ZillowTests<br>Test method: Valild Zillow Flow (with Zip starting with zero)</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.With_address_line_2_and_city_state()'><b>With_address_line_2_and_city_state</b><br>Test class: zillow.ZillowTests<br>Test method: With address line 2 and city+state (Null address line 1 and zip code)</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.With_address_line_2_and_zip()'><b>With_address_line_2_and_zip</b><br>Test class: zillow.ZillowTests<br>Test method: With address line 2 and zip (Null address line 1, city and state)</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+<tr>
+<td title='zillow.ZillowTests.With_only_address_line_1()'><b>With_only_address_line_1</b><br>Test class: zillow.ZillowTests<br>Test method: With only address line 1 (Null address line 2)</td>
+<td></td>
+<td>1</td>
+<td>zillow.ZillowTests@5dbe30be</td></tr>
+</table><p>
+</body>
+</html>

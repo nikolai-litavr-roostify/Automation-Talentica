@@ -4,7 +4,7 @@ import resources.DataDriven;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class PayLoad {
+public class payLoad {
 
 
     public static String  getPostData(String Scenarioname) throws IOException {

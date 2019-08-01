@@ -1,0 +1,94 @@
+{
+  "uid" : "b9daa1853e7ad355",
+  "name" : "Null Address Line1",
+  "fullName" : "zillow.ZillowTests.Null_Address_Line1",
+  "historyId" : "424f2480c58ca960d56853cbfce8fcac",
+  "time" : {
+    "start" : 1564644145444,
+    "stop" : 1564644146644,
+    "duration" : 1200
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getData",
+    "time" : {
+      "start" : 1564644101615,
+      "stop" : 1564644101615,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "checkStatus",
+    "time" : {
+      "start" : 1564644146646,
+      "stop" : 1564644146646,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "zillow.ZillowTests"
+  }, {
+    "name" : "testClass",
+    "value" : "zillow.ZillowTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "Null_Address_Line1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Zillow"
+  }, {
+    "name" : "subSuite",
+    "value" : "zillow.ZillowTests"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "8652@KrishnaA-Desk.main(1)"
+  }, {
+    "name" : "story",
+    "value" : "Zillow flow with Null Parameters"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b9daa1853e7ad355.json",
+  "parameterValues" : [ ]
+}

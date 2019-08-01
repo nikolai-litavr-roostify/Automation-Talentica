@@ -1,0 +1,72 @@
+{
+  "uid" : "19c8400011305a2",
+  "name" : "updateAccess_control_group",
+  "fullName" : "rCore.RCoreTests.updateAccess_control_group",
+  "historyId" : "c15ef2f30bb08391a98c7560e7917c13",
+  "time" : {
+    "start" : 1564644357865,
+    "stop" : 1564644359078,
+    "duration" : 1213
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getData",
+    "time" : {
+      "start" : 1564644318895,
+      "stop" : 1564644318898,
+      "duration" : 3
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "rCore.RCoreTests"
+  }, {
+    "name" : "testClass",
+    "value" : "rCore.RCoreTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "updateAccess_control_group"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "RcoreTest"
+  }, {
+    "name" : "subSuite",
+    "value" : "rCore.RCoreTests"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "8652@KrishnaA-Desk.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "19c8400011305a2.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,94 @@
+{
+  "uid" : "ff24617c731a85b5",
+  "name" : "Valild Zillow Flow (with City+State+Zip Combination) Zip code starting with zero",
+  "fullName" : "zillow.ZillowTests.Valild_Zillow_Flow_with_City_State_Zip_Combination_Zip_code_starting_with_zero",
+  "historyId" : "c7b7a74ef1c40b15dc619a71f1452d24",
+  "time" : {
+    "start" : 1564644134005,
+    "stop" : 1564644135569,
+    "duration" : 1564
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getData",
+    "time" : {
+      "start" : 1564644101615,
+      "stop" : 1564644101615,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "checkStatus",
+    "time" : {
+      "start" : 1564644135571,
+      "stop" : 1564644135571,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "zillow.ZillowTests"
+  }, {
+    "name" : "testClass",
+    "value" : "zillow.ZillowTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "Valild_Zillow_Flow_with_City_State_Zip_Combination_Zip_code_starting_with_zero"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Zillow"
+  }, {
+    "name" : "subSuite",
+    "value" : "zillow.ZillowTests"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "8652@KrishnaA-Desk.main(1)"
+  }, {
+    "name" : "story",
+    "value" : "Zillow flow with valid scenario"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ff24617c731a85b5.json",
+  "parameterValues" : [ ]
+}

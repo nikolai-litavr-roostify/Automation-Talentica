@@ -1,0 +1,94 @@
+{
+  "uid" : "48a73cd6cf305c07",
+  "name" : "Invalid email address1",
+  "fullName" : "finicity.FinicityTests.Invalid_email_address1",
+  "historyId" : "a0047a1984daf2492bfaf57dd47bcf9f",
+  "time" : {
+    "start" : 1564644088392,
+    "stop" : 1564644089555,
+    "duration" : 1163
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getData",
+    "time" : {
+      "start" : 1564643785231,
+      "stop" : 1564643785231,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "checkStatus",
+    "time" : {
+      "start" : 1564644089557,
+      "stop" : 1564644089557,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "finicity.FinicityTests"
+  }, {
+    "name" : "testClass",
+    "value" : "finicity.FinicityTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "Invalid_email_address1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Finicity"
+  }, {
+    "name" : "subSuite",
+    "value" : "finicity.FinicityTests"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "8652@KrishnaA-Desk.main(1)"
+  }, {
+    "name" : "story",
+    "value" : "Finicity flow with Invalid Parameters"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "48a73cd6cf305c07.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,72 @@
+{
+  "uid" : "a6deb5dff67d21b",
+  "name" : "retrieveUser_Lender",
+  "fullName" : "rCore.RCoreTests.retrieveUser_Lender",
+  "historyId" : "b87975d337a676c627814ba40b953dfc",
+  "time" : {
+    "start" : 1564644350227,
+    "stop" : 1564644351448,
+    "duration" : 1221
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getData",
+    "time" : {
+      "start" : 1564644318895,
+      "stop" : 1564644318898,
+      "duration" : 3
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "rCore.RCoreTests"
+  }, {
+    "name" : "testClass",
+    "value" : "rCore.RCoreTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "retrieveUser_Lender"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "RcoreTest"
+  }, {
+    "name" : "subSuite",
+    "value" : "rCore.RCoreTests"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "8652@KrishnaA-Desk.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a6deb5dff67d21b.json",
+  "parameterValues" : [ ]
+}

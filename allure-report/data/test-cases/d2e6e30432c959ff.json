@@ -1,0 +1,266 @@
+{
+  "uid" : "d2e6e30432c959ff",
+  "name" : "Valid Finicity flow for Asset Verification (With all parameters)",
+  "fullName" : "finicity.FinicityTests.Valid_Finicity_flow_for_Asset_Verification_With_all_parameters",
+  "historyId" : "53998fcdbbf9ee0ff1a74d5e36e601bf",
+  "time" : {
+    "start" : 1564643793043,
+    "stop" : 1564643916025,
+    "duration" : 122982
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getData",
+    "time" : {
+      "start" : 1564643785231,
+      "stop" : 1564643785231,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Login to Finicity",
+      "time" : {
+        "start" : 1564643809341,
+        "stop" : 1564643820962,
+        "duration" : 11621
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Click Term and Conditions Check box ",
+        "time" : {
+          "start" : 1564643809342,
+          "stop" : 1564643811637,
+          "duration" : 2295
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Click Continue Button ",
+        "time" : {
+          "start" : 1564643811638,
+          "stop" : 1564643811702,
+          "duration" : 64
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Sent name of Bank to SearchBox ",
+        "time" : {
+          "start" : 1564643811702,
+          "stop" : 1564643812853,
+          "duration" : 1151
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "search",
+          "value" : "FinBank Profiles - A"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Click FinBank Profiles - A ",
+        "time" : {
+          "start" : 1564643812853,
+          "stop" : 1564643813464,
+          "duration" : 611
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Login Step with Username",
+        "time" : {
+          "start" : 1564643816492,
+          "stop" : 1564643816563,
+          "duration" : 71
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "user",
+          "value" : "sjhdgh"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Login Step with Password",
+        "time" : {
+          "start" : 1564643816563,
+          "stop" : 1564643817232,
+          "duration" : 669
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "pass",
+          "value" : " profile-06"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Click Continue Next ",
+        "time" : {
+          "start" : 1564643817232,
+          "stop" : 1564643817282,
+          "duration" : 50
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Click Save and Continue Next ",
+        "time" : {
+          "start" : 1564643817282,
+          "stop" : 1564643820962,
+          "duration" : 3680
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "Scenarioname",
+        "value" : "Valid_Finicity_flow_for_Asset_Verification_With_all_parameters"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 8,
+      "hasContent" : true
+    }, {
+      "name" : "Click Save and Continue Next ",
+      "time" : {
+        "start" : 1564643823962,
+        "stop" : 1564643824013,
+        "duration" : 51
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 10,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "checkStatus",
+    "time" : {
+      "start" : 1564643916035,
+      "stop" : 1564643916035,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "finicity.FinicityTests"
+  }, {
+    "name" : "testClass",
+    "value" : "finicity.FinicityTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "Valid_Finicity_flow_for_Asset_Verification_With_all_parameters"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Finicity"
+  }, {
+    "name" : "subSuite",
+    "value" : "finicity.FinicityTests"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "8652@KrishnaA-Desk.main(1)"
+  }, {
+    "name" : "story",
+    "value" : "Finicity flow with valid scenario"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d2e6e30432c959ff.json",
+  "parameterValues" : [ ]
+}

@@ -1,1 +1,0 @@
-{"uuid":"f57fe485-6ed5-40b6-9115-d8b4ecfb9177","name":"plaid.PlaidTests.checkStatus","description":"","start":1560769088458,"stop":1560769088730,"children":["eefae568-7ab1-487f-a620-bd46a1e28737"],"afters":[{"name":"checkStatus","status":"passed","stage":"finished","description":"","start":1560769088459,"stop":1560769088729}]}

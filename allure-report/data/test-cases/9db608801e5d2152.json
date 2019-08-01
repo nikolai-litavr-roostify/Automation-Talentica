@@ -1,0 +1,94 @@
+{
+  "uid" : "9db608801e5d2152",
+  "name" : "Zip code less than 5 digits",
+  "fullName" : "finicity.FinicityTests.Zip_code_less_than_5_digits",
+  "historyId" : "332b5579605b910ba2173f2ba2cdbf00",
+  "time" : {
+    "start" : 1564644100203,
+    "stop" : 1564644101415,
+    "duration" : 1212
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getData",
+    "time" : {
+      "start" : 1564643785231,
+      "stop" : 1564643785231,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "checkStatus",
+    "time" : {
+      "start" : 1564644101418,
+      "stop" : 1564644101418,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "finicity.FinicityTests"
+  }, {
+    "name" : "testClass",
+    "value" : "finicity.FinicityTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "Zip_code_less_than_5_digits"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Finicity"
+  }, {
+    "name" : "subSuite",
+    "value" : "finicity.FinicityTests"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "8652@KrishnaA-Desk.main(1)"
+  }, {
+    "name" : "story",
+    "value" : "Finicity flow with Invalid Parameters"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9db608801e5d2152.json",
+  "parameterValues" : [ ]
+}

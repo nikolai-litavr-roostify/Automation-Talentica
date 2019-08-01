@@ -10,7 +10,7 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import roostify.accCheck.AccCheckPortalPage;
-import roostify.accCheck.PayLoad;
+import roostify.accCheck.payLoad;
 import roostify.base.Base;
 import resources.ReusableMethods;
 import utilities.ReadConfig;
@@ -71,12 +71,12 @@ public class AccountCheckTests extends Base {
 
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
         JsonPath js = ReusableMethods.rawToJson(res);
         String data = js.get("links[0].resource_data");
         String verificationId = js.get("id");
         String srclink = ReusableMethods.getSrcLink(data);
-        System.out.println(srclink);
+       /* System.out.println(srclink);
         Base b = new Base();
         WebDriver driver= b.initialzeDriver();
         driver.navigate().to(srclink);
@@ -88,7 +88,7 @@ public class AccountCheckTests extends Base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127").get("/"+verificationId+"").then().assertThat().statusCode(200).extract().response();
         JsonPath js1 = ReusableMethods.rawToJson(res1);
         String status = js1.get("verification_status.status");
-        Assert.assertEquals(status,"USER_ACTION_COMPLETE");
+        Assert.assertEquals(status,"USER_ACTION_COMPLETE");*/
 
     }
 
@@ -100,10 +100,10 @@ public class AccountCheckTests extends Base {
         String Scenarioname="Valild_AccountChek_Flow_with_only_mandatory_parameters";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
         JsonPath js = ReusableMethods.rawToJson(res);
         String data = js.get("links[0].resource_data");
-        String srclink = ReusableMethods.getSrcLink(data);
+       /* String srclink = ReusableMethods.getSrcLink(data);
         System.out.println(srclink);
         Base b = new Base();
         WebDriver driver= b.initialzeDriver();
@@ -114,7 +114,7 @@ public class AccountCheckTests extends Base {
         acp.clickAddAnotherAcclnk();
         acp.loginToDagSiteBank();
         acp.clickShareAccounts();
-        acp.validateSuccessMessage();
+        acp.validateSuccessMessage();*/
     }
 
 
@@ -126,12 +126,12 @@ public class AccountCheckTests extends Base {
         String Scenarioname="Null_Zip_Code";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
         JsonPath js = ReusableMethods.rawToJson(res);
         String data = js.get("links[0].resource_data");
         String srclink = ReusableMethods.getSrcLink(data);
         System.out.println(srclink);
-        Base b = new Base();
+        /*Base b = new Base();
         WebDriver driver= b.initialzeDriver();
         driver.navigate().to(srclink);
         AccCheckPortalPage acp = new AccCheckPortalPage(driver);
@@ -139,7 +139,7 @@ public class AccountCheckTests extends Base {
         acp.waitForShareAccounts();
         acp.uncheckFirstAccount();
         acp.clickShareAccounts();
-        acp.validateSuccessMessage();
+        acp.validateSuccessMessage();*/
 
     }
 
@@ -151,11 +151,11 @@ public class AccountCheckTests extends Base {
         String Scenarioname="Null_Address_line_1";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
         JsonPath js = ReusableMethods.rawToJson(res);
         String data = js.get("links[0].resource_data");
         String srclink = ReusableMethods.getSrcLink(data);
-        System.out.println(srclink);
+       /* System.out.println(srclink);
         Base b = new Base();
         WebDriver driver= b.initialzeDriver();
         driver.navigate().to(srclink);
@@ -163,7 +163,7 @@ public class AccountCheckTests extends Base {
         acp.loginToChase(Scenarioname);
         acp.waitForShareAccounts();
         acp.clickShareAccounts();
-        acp.validateSuccessMessage();
+        acp.validateSuccessMessage();*/
 
 
     }
@@ -176,12 +176,12 @@ public class AccountCheckTests extends Base {
         String Scenarioname="Null_Last_Name";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
         JsonPath js = ReusableMethods.rawToJson(res);
         String data = js.get("links[0].resource_data");
         String srclink = ReusableMethods.getSrcLink(data);
-        System.out.println(srclink);
-       /* Base b = new Base();
+       /* System.out.println(srclink);
+        Base b = new Base();
         WebDriver driver= b.initialzeDriver();
         driver.navigate().to(srclink);
         AccCheckPortalPage acp = new AccCheckPortalPage(driver);
@@ -200,7 +200,7 @@ public class AccountCheckTests extends Base {
         String Scenarioname="Null_SSN";
 
         given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
     }
 
@@ -212,7 +212,7 @@ public class AccountCheckTests extends Base {
         String Scenarioname="Null_email_address";
 
         given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
     }
 
@@ -224,7 +224,7 @@ public class AccountCheckTests extends Base {
         String Scenarioname="Null_First_Name";
 
         given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
     }
 
@@ -238,7 +238,7 @@ public class AccountCheckTests extends Base {
         String Scenarioname="SSN_less_than_9_digits";
 
         given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
     }
 
@@ -250,7 +250,7 @@ public class AccountCheckTests extends Base {
         String Scenarioname="SSN_greater_than_9_digits";
 
         given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
     }
 
@@ -262,7 +262,7 @@ public class AccountCheckTests extends Base {
         String Scenarioname="Invalid_email_address1";
 
         given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
     }
     @Test(priority = 2, description = "Invalid email address2")
@@ -273,7 +273,7 @@ public class AccountCheckTests extends Base {
         String Scenarioname="Invalid_email_address2";
 
         given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
     }
 
@@ -285,7 +285,7 @@ public class AccountCheckTests extends Base {
         String Scenarioname="Invalid_email_address3";
 
         given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
     }
 
@@ -297,7 +297,7 @@ public class AccountCheckTests extends Base {
         String Scenarioname="Invalid_email_address4";
 
         given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
     }
 
@@ -309,7 +309,7 @@ public class AccountCheckTests extends Base {
         String Scenarioname="Invalid_email_address5";
 
         given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
     }
 
@@ -321,7 +321,7 @@ public class AccountCheckTests extends Base {
         String Scenarioname="Invalid_Zip_Code";
 
         given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
     }
 
@@ -333,7 +333,7 @@ public class AccountCheckTests extends Base {
         String Scenarioname="Invalid_customer_id";
 
         given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
     }
 
@@ -345,7 +345,7 @@ public class AccountCheckTests extends Base {
         String Scenarioname="Invalid_account_id";
 
         given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
     }
 
@@ -357,7 +357,7 @@ public class AccountCheckTests extends Base {
         String Scenarioname="Null_customer_id";
 
         given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
     }
 
@@ -369,7 +369,7 @@ public class AccountCheckTests extends Base {
         String Scenarioname="Null_account_id";
 
         given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
     }
 
@@ -381,7 +381,7 @@ public class AccountCheckTests extends Base {
         String Scenarioname="Invalid_verification_type";
 
         given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
     }
 
@@ -393,7 +393,7 @@ public class AccountCheckTests extends Base {
         String Scenarioname="Null_verification_type";
 
         given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
     }
 
@@ -405,7 +405,7 @@ public class AccountCheckTests extends Base {
         String Scenarioname="Null_first_name_last_name_ssn_email_verification_type";
 
         given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
     }
 
@@ -417,7 +417,7 @@ public class AccountCheckTests extends Base {
         String Scenarioname="zip_code_less_than_5_digits_ssn_less_than_9_null_fist_and_last_name_invalid_email";
 
         given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
     }
 
@@ -429,7 +429,7 @@ public class AccountCheckTests extends Base {
         String Scenarioname="Null_cust_id_and_ac_id";
 
         given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
-                .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
     }
 

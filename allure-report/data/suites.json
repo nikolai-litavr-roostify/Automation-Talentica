@@ -4,693 +4,2276 @@
   "children" : [ {
     "name" : "All Test Suite",
     "children" : [ {
-      "name" : "Test",
+      "name" : "AccountCheck",
       "children" : [ {
         "name" : "accCheck.AccountCheckTests",
         "children" : [ {
-          "name" : "Valid scenario with all parameters",
-          "uid" : "c60e4bf7d4182e98",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
+          "name" : "Valid scenario with all parameters and sharing Accounts of single bank",
+          "uid" : "974d531b5b353394",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
           "status" : "passed",
           "time" : {
-            "start" : 1560243384988,
-            "stop" : 1560243445145,
-            "duration" : 60157
+            "start" : 1564643770859,
+            "stop" : 1564643776537,
+            "duration" : 5678
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
-          "name" : "Valild AccountChek Flow with only mandatory parameters",
-          "uid" : "94e7a126fa896a3f",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
+          "name" : "Valild Account Check Flow with only mandatory parameters and Sharing Accounts of two different banks",
+          "uid" : "7114719e3706bb3e",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
           "status" : "passed",
           "time" : {
-            "start" : 1560243445247,
-            "stop" : 1560243515319,
-            "duration" : 70072
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Null cust id and ac id",
-          "uid" : "3331bc8649180268",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243556448,
-            "stop" : 1560243557644,
-            "duration" : 1196
+            "start" : 1564643770865,
+            "stop" : 1564643776523,
+            "duration" : 5658
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Null Address line 1",
-          "uid" : "c393704ae80630fc",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
+          "uid" : "fc17bcdce821bd14",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
           "status" : "passed",
           "time" : {
-            "start" : 1560243557648,
-            "stop" : 1560243559456,
-            "duration" : 1808
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Null first name last name ssn email verification type",
-          "uid" : "572ad9d4381bd268",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243559460,
-            "stop" : 1560243560676,
-            "duration" : 1216
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Null customer id",
-          "uid" : "2dc36884241f6d83",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243560680,
-            "stop" : 1560243561866,
-            "duration" : 1186
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Null verification type",
-          "uid" : "a254e64eb66f297",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243561871,
-            "stop" : 1560243563069,
-            "duration" : 1198
+            "start" : 1564643776663,
+            "stop" : 1564643778738,
+            "duration" : 2075
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Null First Name",
-          "uid" : "554a738570f6b19f",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
+          "uid" : "79233f3455da67bb",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
           "status" : "passed",
           "time" : {
-            "start" : 1560243563073,
-            "stop" : 1560243564877,
-            "duration" : 1804
+            "start" : 1564643776669,
+            "stop" : 1564643778595,
+            "duration" : 1926
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
-          "name" : "Null Zip Code",
-          "uid" : "b96e45a3ad8a13ab",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
+          "name" : "Null Zip Code and Sharing only one of the two accounts of single bank",
+          "uid" : "71e765bce103e9a7",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
           "status" : "passed",
           "time" : {
-            "start" : 1560243564880,
-            "stop" : 1560243633901,
-            "duration" : 69021
+            "start" : 1564643776676,
+            "stop" : 1564643778683,
+            "duration" : 2007
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Null Last Name",
-          "uid" : "19767a2aca94813a",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
+          "uid" : "3522fb4922eedc24",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
           "status" : "passed",
           "time" : {
-            "start" : 1560243633919,
-            "stop" : 1560243635681,
-            "duration" : 1762
+            "start" : 1564643776762,
+            "stop" : 1564643778800,
+            "duration" : 2038
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Null SSN",
-          "uid" : "9c9dd1a90903c08d",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
+          "uid" : "a05918752f8a33de",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
           "status" : "passed",
           "time" : {
-            "start" : 1560243635685,
-            "stop" : 1560243636994,
-            "duration" : 1309
+            "start" : 1564643776783,
+            "stop" : 1564643778284,
+            "duration" : 1501
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Null account id",
-          "uid" : "9da06e698b5cdb4d",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
+          "uid" : "4fae41e1b1c69afd",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
           "status" : "passed",
           "time" : {
-            "start" : 1560243637000,
-            "stop" : 1560243638225,
-            "duration" : 1225
+            "start" : 1564643778289,
+            "stop" : 1564643779542,
+            "duration" : 1253
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null cust id and ac id",
+          "uid" : "ef57258648bc7484",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564643778602,
+            "stop" : 1564643779768,
+            "duration" : 1166
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null customer id",
+          "uid" : "d7d6ba07f2deaf8e",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564643778688,
+            "stop" : 1564643779858,
+            "duration" : 1170
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Null email address",
-          "uid" : "9edae6668469f0dd",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
+          "uid" : "c5e163905bbeb716",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
           "status" : "passed",
           "time" : {
-            "start" : 1560243638229,
-            "stop" : 1560243639461,
-            "duration" : 1232
+            "start" : 1564643778744,
+            "stop" : 1564643779943,
+            "duration" : 1199
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
-          "name" : "Invalid verification type",
-          "uid" : "11deddaca426d044",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
+          "name" : "Null first name last name ssn email verification type",
+          "uid" : "7f74d155bbb7f365",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
           "status" : "passed",
           "time" : {
-            "start" : 1560243653030,
-            "stop" : 1560243654313,
-            "duration" : 1283
+            "start" : 1564643778808,
+            "stop" : 1564643780022,
+            "duration" : 1214
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
-          "name" : "Invalid email address4",
-          "uid" : "e82a90f8de3c8a9e",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
+          "name" : "Null verification type",
+          "uid" : "af06f56f3b29e51d",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
           "status" : "passed",
           "time" : {
-            "start" : 1560243654316,
-            "stop" : 1560243655525,
-            "duration" : 1209
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Invalid account id",
-          "uid" : "7e1e2d84ed05ade6",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243655529,
-            "stop" : 1560243656796,
-            "duration" : 1267
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Invalid email address5",
-          "uid" : "7f7e4621eafb603",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243656800,
-            "stop" : 1560243658005,
-            "duration" : 1205
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Invalid email address2",
-          "uid" : "4f7722c9361bc453",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243658009,
-            "stop" : 1560243659222,
-            "duration" : 1213
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Invalid email address3",
-          "uid" : "9e97e53104c792c",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243659226,
-            "stop" : 1560243660456,
-            "duration" : 1230
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Invalid email address1",
-          "uid" : "780a8251cf7918cb",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243660460,
-            "stop" : 1560243661679,
-            "duration" : 1219
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "SSN greater than 9 digits",
-          "uid" : "a05daf279afee460",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243661683,
-            "stop" : 1560243662888,
-            "duration" : 1205
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "SSN less than 9 digits",
-          "uid" : "206d96794c4e2e21",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243662891,
-            "stop" : 1560243664124,
-            "duration" : 1233
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "zip code less than 5 digits ssn less than 9 null fist and last name invalid email",
-          "uid" : "164a8775b2beee82",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243664128,
-            "stop" : 1560243665293,
-            "duration" : 1165
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Invalid Zip Code",
-          "uid" : "3bc7ddeedd8c9868",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243665297,
-            "stop" : 1560243666513,
-            "duration" : 1216
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Invalid customer id",
-          "uid" : "ed78a475845f1b57",
-          "parentUid" : "7ff1c4bec34554c349b1db8888af5bd1",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243666517,
-            "stop" : 1560243667815,
-            "duration" : 1298
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        } ],
-        "uid" : "7ff1c4bec34554c349b1db8888af5bd1"
-      }, {
-        "name" : "plaid.PlaidTests",
-        "children" : [ {
-          "name" : "Valild Plaid Flow with all parameters",
-          "uid" : "5e9b981582e1e9c0",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243515334,
-            "stop" : 1560243555014,
-            "duration" : 39680
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Valild Plaid Flow with only mandatory parameters",
-          "uid" : "463de8144abcaecc",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243555079,
-            "stop" : 1560243556427,
-            "duration" : 1348
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "downloadReport",
-          "uid" : "de605ea4ec49f4c9",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
-          "status" : "broken",
-          "time" : {
-            "start" : 1560243556434,
-            "stop" : 1560243556435,
-            "duration" : 1
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Null Zip Code",
-          "uid" : "f49ef89ad6efeda6",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243639469,
-            "stop" : 1560243640749,
-            "duration" : 1280
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Null First Name",
-          "uid" : "941c234a38bc35f6",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243640751,
-            "stop" : 1560243641948,
-            "duration" : 1197
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Null Last Name",
-          "uid" : "13fe213c06fbd394",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243641951,
-            "stop" : 1560243643164,
-            "duration" : 1213
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Null SSN",
-          "uid" : "eedea20024e1b385",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243643167,
-            "stop" : 1560243644461,
-            "duration" : 1294
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Null Zip Code",
-          "uid" : "823dc0a9b5154b00",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243644464,
-            "stop" : 1560243645715,
-            "duration" : 1251
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Null Account Id",
-          "uid" : "d7910a3244d2cc11",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243645719,
-            "stop" : 1560243646929,
-            "duration" : 1210
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Null Customer Id and Account Id",
-          "uid" : "451a740dee6593c3",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243646931,
-            "stop" : 1560243648121,
-            "duration" : 1190
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Null Customer Id",
-          "uid" : "9b14cfbd9e94ce5a",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243648124,
-            "stop" : 1560243649287,
-            "duration" : 1163
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Null email address",
-          "uid" : "6a4c6acfc649a25a",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243649290,
-            "stop" : 1560243650583,
-            "duration" : 1293
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Null first name, last name, ssn",
-          "uid" : "b7b03fc3467726f2",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243650585,
-            "stop" : 1560243651811,
-            "duration" : 1226
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Null Verification Type",
-          "uid" : "650ef9db0e8f1826",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243651814,
-            "stop" : 1560243653021,
-            "duration" : 1207
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Invalid Zip Code",
-          "uid" : "efceb6d078c8a4ef",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243667818,
-            "stop" : 1560243669034,
-            "duration" : 1216
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Invalid Account Id",
-          "uid" : "38c4f0d395e7163f",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243669037,
-            "stop" : 1560243670400,
-            "duration" : 1363
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Invalid Customer Id and Account Id",
-          "uid" : "ff0e617b079e4fc6",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243670403,
-            "stop" : 1560243671701,
-            "duration" : 1298
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Invalid Customer Id",
-          "uid" : "a2665a65411b6e0d",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243671703,
-            "stop" : 1560243673004,
-            "duration" : 1301
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Invalid email address1",
-          "uid" : "afea1931e840e8de",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243673007,
-            "stop" : 1560243674223,
-            "duration" : 1216
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "Invalid email address2",
-          "uid" : "31f40de0f5cb799c",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
-          "status" : "passed",
-          "time" : {
-            "start" : 1560243674226,
-            "stop" : 1560243675428,
+            "start" : 1564643779547,
+            "stop" : 1564643780749,
             "duration" : 1202
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
-          "name" : "Invalid email address3",
-          "uid" : "491a51517c2eed31",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
+          "name" : "Invalid customer id",
+          "uid" : "6794d33676eeccdc",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
           "status" : "passed",
           "time" : {
-            "start" : 1560243675432,
-            "stop" : 1560243676645,
-            "duration" : 1213
+            "start" : 1564643780755,
+            "stop" : 1564643782067,
+            "duration" : 1312
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
-          "name" : "Invalid email address4",
-          "uid" : "e6f67e16a4e8ad9d",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
+          "name" : "Invalid account id",
+          "uid" : "51436978dd25acf8",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
           "status" : "passed",
           "time" : {
-            "start" : 1560243676648,
-            "stop" : 1560243677843,
-            "duration" : 1195
+            "start" : 1564643780755,
+            "stop" : 1564643782137,
+            "duration" : 1382
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid email address1",
+          "uid" : "fae054743664bbba",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564643780755,
+            "stop" : 1564643782011,
+            "duration" : 1256
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid Zip Code",
+          "uid" : "a0250711e4f8a8cc",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564643780756,
+            "stop" : 1564643781973,
+            "duration" : 1217
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid email address2",
+          "uid" : "5476ea021ce2d986",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564643780758,
+            "stop" : 1564643782103,
+            "duration" : 1345
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid email address3",
+          "uid" : "1a16c62fa86dcbc1",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564643782145,
+            "stop" : 1564643783385,
+            "duration" : 1240
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Invalid email address5",
-          "uid" : "39af2cfc7a110c0b",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
+          "uid" : "7d41b21bb759745f",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
           "status" : "passed",
           "time" : {
-            "start" : 1560243677845,
-            "stop" : 1560243679065,
-            "duration" : 1220
+            "start" : 1564643782146,
+            "stop" : 1564643783452,
+            "duration" : 1306
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
-          "name" : "Invalid verification_type",
-          "uid" : "ef7aae23718fd7c4",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
+          "name" : "Invalid email address4",
+          "uid" : "686cb2472cd80788",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
           "status" : "passed",
           "time" : {
-            "start" : 1560243679068,
-            "stop" : 1560243680359,
-            "duration" : 1291
+            "start" : 1564643782160,
+            "stop" : 1564643783419,
+            "duration" : 1259
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid verification type",
+          "uid" : "4bf367fb6c49f06d",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564643782163,
+            "stop" : 1564643783502,
+            "duration" : 1339
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "SSN greater than 9 digits",
-          "uid" : "41301a545ad02fd2",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
+          "uid" : "6f942a9869e25fda",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
           "status" : "passed",
           "time" : {
-            "start" : 1560243680362,
-            "stop" : 1560243681561,
-            "duration" : 1199
+            "start" : 1564643782227,
+            "stop" : 1564643783512,
+            "duration" : 1285
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "SSN less than 9 digits",
-          "uid" : "4d15a3e2b7b3e17f",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
+          "uid" : "706bf3dd346c74",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
           "status" : "passed",
           "time" : {
-            "start" : 1560243681564,
-            "stop" : 1560243682763,
-            "duration" : 1199
+            "start" : 1564643783390,
+            "stop" : 1564643784552,
+            "duration" : 1162
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "zip code less than 5 digits ssn less than 9 null fist and last name invalid email",
+          "uid" : "d4d534183796c3bb",
+          "parentUid" : "e5d46c4b2845a8269ba477a18d562019",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564643783443,
+            "stop" : 1564643784634,
+            "duration" : 1191
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e5d46c4b2845a8269ba477a18d562019"
+      } ],
+      "uid" : "26be1faa4dbc3592ca17743dec05513a"
+    }, {
+      "name" : "Finicity",
+      "children" : [ {
+        "name" : "finicity.FinicityTests",
+        "children" : [ {
+          "name" : "Valid Finicity flow for Asset_Income Verification  (With all parameters)",
+          "uid" : "862f485d844365a5",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "failed",
+          "time" : {
+            "start" : 1564643785241,
+            "stop" : 1564643786690,
+            "duration" : 1449
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Valid Finicity flow for Asset_Income Verification  (With only mandatory parameters)",
+          "uid" : "5ac4afc1d353cc5d",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564643786703,
+            "stop" : 1564643793038,
+            "duration" : 6335
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Valid Finicity flow for Asset Verification (With all parameters)",
+          "uid" : "d2e6e30432c959ff",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564643793043,
+            "stop" : 1564643916025,
+            "duration" : 122982
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Valid Finicity flow for Asset Verification (With only mandatory parameters)",
+          "uid" : "9c6dc709dbbe67fd",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564643916040,
+            "stop" : 1564643922037,
+            "duration" : 5997
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Valid Finicity flow for Income Verification (With all parameters)",
+          "uid" : "800da9513dc8aa6",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564643922042,
+            "stop" : 1564644040285,
+            "duration" : 118243
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Valid Finicity flow for Income Verification (With only mandatory parameters)",
+          "uid" : "1050b3d9d3d023db",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644040292,
+            "stop" : 1564644049907,
+            "duration" : 9615
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null Account ID",
+          "uid" : "5476e0d7d9cf01b3",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644049917,
+            "stop" : 1564644051112,
+            "duration" : 1195
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null City",
+          "uid" : "ce915d965bafc53",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644051117,
+            "stop" : 1564644052404,
+            "duration" : 1287
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null First Name",
+          "uid" : "94d629f6076b1919",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644052408,
+            "stop" : 1564644053594,
+            "duration" : 1186
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null Last Name",
+          "uid" : "a930141c00700e8d",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644053599,
+            "stop" : 1564644054779,
+            "duration" : 1180
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null Phone number",
+          "uid" : "c3458e0d97f0fc01",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644054783,
+            "stop" : 1564644056010,
+            "duration" : 1227
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null SSN",
+          "uid" : "2b6eb39fa17a9e64",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644056015,
+            "stop" : 1564644057293,
+            "duration" : 1278
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null State",
+          "uid" : "36f253c4d730c9c8",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644057297,
+            "stop" : 1564644058536,
+            "duration" : 1239
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null Username",
+          "uid" : "bb73ef55e8c24702",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644058541,
+            "stop" : 1564644062092,
+            "duration" : 3551
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null Verification Type",
+          "uid" : "903f25363db61651",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644062101,
+            "stop" : 1564644063315,
+            "duration" : 1214
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null Zip code",
+          "uid" : "b98180c2ccd85688",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644063323,
+            "stop" : 1564644064598,
+            "duration" : 1275
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null both address lines",
+          "uid" : "7ed4fab3a0aec440",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644064604,
+            "stop" : 1564644065874,
+            "duration" : 1270
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null Customer ID and Account ID",
+          "uid" : "cde87e0bc3212a11",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644065879,
+            "stop" : 1564644067068,
+            "duration" : 1189
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null DOB",
+          "uid" : "5f85ddc4149b6310",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644067072,
+            "stop" : 1564644068353,
+            "duration" : 1281
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null first , last, ssn, dob, both add lines, city, state, zip, phone",
+          "uid" : "5b01a9963093d625",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644068358,
+            "stop" : 1564644069497,
+            "duration" : 1139
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "With Address line 1 only (Null Address line 2)",
+          "uid" : "1ba6ec611ba5d210",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644069501,
+            "stop" : 1564644073045,
+            "duration" : 3544
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "With Address line 2 only (Null Address line 1)",
+          "uid" : "c3ce9a6f8e6c84a2",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644073050,
+            "stop" : 1564644077594,
+            "duration" : 4544
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null Email Address",
+          "uid" : "70ea7e238bd82be6",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644077600,
+            "stop" : 1564644078885,
+            "duration" : 1285
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid Account ID",
+          "uid" : "df57a6c73b67dc63",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644078891,
+            "stop" : 1564644080158,
+            "duration" : 1267
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid Customer ID",
+          "uid" : "c96572661945c22d",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644080162,
+            "stop" : 1564644081362,
+            "duration" : 1200
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid Cuatomer ID and Account ID",
+          "uid" : "b0aa20a477913435",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644081367,
+            "stop" : 1564644082567,
+            "duration" : 1200
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid dob (DD/MM/YY)",
+          "uid" : "e794a41843126c31",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644082571,
+            "stop" : 1564644083707,
+            "duration" : 1136
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid dob (DD/MM/YYYY)",
+          "uid" : "ed8eba46d07bff79",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644083712,
+            "stop" : 1564644084908,
+            "duration" : 1196
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid dob (MM/YYYY/DD)",
+          "uid" : "c4ff331297ef3397",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644084912,
+            "stop" : 1564644086101,
+            "duration" : 1189
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid dob (YYYY/DD/MM)",
+          "uid" : "767025d2c5853a12",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644086105,
+            "stop" : 1564644087246,
+            "duration" : 1141
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid dob, both add lines, null city, state, zip code less than 5, ssn less than 9",
+          "uid" : "71d82e2990b636f5",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644087251,
+            "stop" : 1564644088387,
+            "duration" : 1136
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid email address1",
+          "uid" : "48a73cd6cf305c07",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644088392,
+            "stop" : 1564644089555,
+            "duration" : 1163
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid email address2",
+          "uid" : "3ecfd41a0cae55b0",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644089559,
+            "stop" : 1564644090740,
+            "duration" : 1181
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid email address3",
+          "uid" : "1236bea78c40fed9",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644090745,
+            "stop" : 1564644091922,
+            "duration" : 1177
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid email address4",
+          "uid" : "d30b5844b8441713",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644091926,
+            "stop" : 1564644093063,
+            "duration" : 1137
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid email address5",
+          "uid" : "fd56ba6f8f181b04",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644093067,
+            "stop" : 1564644094267,
+            "duration" : 1200
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalild Verification Type",
+          "uid" : "fcac906dd5c90852",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644094271,
+            "stop" : 1564644095488,
+            "duration" : 1217
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "SSN greater than 9 digits",
+          "uid" : "dd5c1526afbead0e",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644095492,
+            "stop" : 1564644096671,
+            "duration" : 1179
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "SSN less than 9 digits",
+          "uid" : "7b71de58cb6bd22d",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644096676,
+            "stop" : 1564644097829,
+            "duration" : 1153
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Username less than 6 characters",
+          "uid" : "8e34e34bbc5d45d7",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644097834,
+            "stop" : 1564644099057,
+            "duration" : 1223
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Zip code greater than 5 digits",
+          "uid" : "944282c87fc124c4",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644099061,
+            "stop" : 1564644100199,
+            "duration" : 1138
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Zip code less than 5 digits",
+          "uid" : "9db608801e5d2152",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644100203,
+            "stop" : 1564644101415,
+            "duration" : 1212
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Download the report",
+          "uid" : "fd5ee27019074fc0",
+          "parentUid" : "80f8a0f80b8ff00821c4d0a79b01ddbb",
+          "status" : "broken",
+          "time" : {
+            "start" : 1564644101424,
+            "stop" : 1564644101424,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "80f8a0f80b8ff00821c4d0a79b01ddbb"
+      } ],
+      "uid" : "40dbabd7a195fccdcda3b22e6f19565a"
+    }, {
+      "name" : "Zillow",
+      "children" : [ {
+        "name" : "zillow.ZillowTests",
+        "children" : [ {
+          "name" : "Valid Zillow Flow (with Address Line 2) with city+state null",
+          "uid" : "678f934f9853a9fe",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644101616,
+            "stop" : 1564644103155,
+            "duration" : 1539
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Valid Zillow Flow (with Address Line 2) with zip null",
+          "uid" : "3736c75ee393db48",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644103160,
+            "stop" : 1564644104643,
+            "duration" : 1483
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Valid Zillow Flow (with City+State Combination)",
+          "uid" : "8e607af57866029f",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644104647,
+            "stop" : 1564644106160,
+            "duration" : 1513
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Valild Zillow Flow (with City+State+Zip Combination)",
+          "uid" : "dcab55a1f646b6da",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644106164,
+            "stop" : 1564644133998,
+            "duration" : 27834
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Valild Zillow Flow (with City+State+Zip Combination) Zip code starting with zero",
+          "uid" : "ff24617c731a85b5",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644134005,
+            "stop" : 1564644135569,
+            "duration" : 1564
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Valild Zillow Flow (with Zip)",
+          "uid" : "4cb7062130b389d3",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644135573,
+            "stop" : 1564644137090,
+            "duration" : 1517
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Valild Zillow Flow (with Zip starting with zero)",
+          "uid" : "28de578ebcc154ca",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644137095,
+            "stop" : 1564644138596,
+            "duration" : 1501
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Address line 1 with city (null state)",
+          "uid" : "73b4f22b55dfe93c",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644138601,
+            "stop" : 1564644139858,
+            "duration" : 1257
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Address line 1 with city (with empty state and null zip)",
+          "uid" : "bc4a524c5a3a583d",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644139862,
+            "stop" : 1564644141426,
+            "duration" : 1564
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Address line 1 with null zip",
+          "uid" : "3a5b88714e22e444",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644141430,
+            "stop" : 1564644142671,
+            "duration" : 1241
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Address line 1 with state (null city)",
+          "uid" : "667f895f56cebc52",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644142675,
+            "stop" : 1564644143920,
+            "duration" : 1245
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Address line 1 with state (with empty city and null zip)",
+          "uid" : "e50d281add844269",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644143924,
+            "stop" : 1564644145439,
+            "duration" : 1515
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null Address Line1",
+          "uid" : "b9daa1853e7ad355",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644145444,
+            "stop" : 1564644146644,
+            "duration" : 1200
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null Account Id",
+          "uid" : "e830a5698796fe4f",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644146649,
+            "stop" : 1564644147791,
+            "duration" : 1142
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null add line, city, zip code, state",
+          "uid" : "f13f0dbd3bf79d06",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644147795,
+            "stop" : 1564644149048,
+            "duration" : 1253
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null Customer Id and Account Id",
+          "uid" : "2dca8f8b58a62251",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644149053,
+            "stop" : 1564644150192,
+            "duration" : 1139
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null Customer Id",
+          "uid" : "2bec96856d50f3fa",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644150197,
+            "stop" : 1564644151373,
+            "duration" : 1176
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null Verification Type",
+          "uid" : "6ad34dbaa82f6a",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644151378,
+            "stop" : 1564644152511,
+            "duration" : 1133
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "With address line 2 and city+state (Null address line 1 and zip code)",
+          "uid" : "6991cbbe30b0cdda",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644152515,
+            "stop" : 1564644153782,
+            "duration" : 1267
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "With address line 2 and zip (Null address line 1, city and state)",
+          "uid" : "dd4719aff75f9c9f",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644153787,
+            "stop" : 1564644155033,
+            "duration" : 1246
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "With only address line 1 (Null address line 2)",
+          "uid" : "3815c2fc4186946",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644155037,
+            "stop" : 1564644156286,
+            "duration" : 1249
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid Account ID",
+          "uid" : "39effb38c61e660c",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644156291,
+            "stop" : 1564644157555,
+            "duration" : 1264
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid Address Line1",
+          "uid" : "570e525684a3ee17",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644157561,
+            "stop" : 1564644159159,
+            "duration" : 1598
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid City",
+          "uid" : "355cc17a8ac78658",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644159163,
+            "stop" : 1564644160745,
+            "duration" : 1582
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid City + State Combination without zip",
+          "uid" : "ddeadb1c797b0b11",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644160748,
+            "stop" : 1564644162358,
+            "duration" : 1610
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid City + State + Zip Combination ",
+          "uid" : "7f92815d5bb655c1",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644162362,
+            "stop" : 1564644163991,
+            "duration" : 1629
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid Customer ID",
+          "uid" : "c491fb427f8b5099",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644163996,
+            "stop" : 1564644165196,
+            "duration" : 1200
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid State",
+          "uid" : "e90804618d14b109",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644165200,
+            "stop" : 1564644166637,
+            "duration" : 1437
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid Verification Type",
+          "uid" : "b235caac2e13fe5e",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644166659,
+            "stop" : 1564644167902,
+            "duration" : 1243
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid Zip",
+          "uid" : "256a1f8d683efc2b",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644167906,
+            "stop" : 1564644169624,
+            "duration" : 1718
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid Account Id and Customer Id",
+          "uid" : "e6caf90a3e97a528",
+          "parentUid" : "c35ebd649dc65dc5c6bf16086ed49d9b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644169629,
+            "stop" : 1564644170826,
+            "duration" : 1197
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "c35ebd649dc65dc5c6bf16086ed49d9b"
+      } ],
+      "uid" : "2afb2852b3f8a740fb74ea255ca66c70"
+    }, {
+      "name" : "Plaid",
+      "children" : [ {
+        "name" : "plaid.PlaidTests",
+        "children" : [ {
+          "name" : "Valild Plaid Flow with all parameters and submitting accounts from single bank",
+          "uid" : "2bff5a0786ac2e10",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644170913,
+            "stop" : 1564644217619,
+            "duration" : 46706
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Valild Plaid Flow with only mandatory parameters and submitting accounts from multiple banks",
+          "uid" : "c49e100310134a55",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644217628,
+            "stop" : 1564644280129,
+            "duration" : 62501
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "downloadReport",
+          "uid" : "b5239650334a0411",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "broken",
+          "time" : {
+            "start" : 1564644280136,
+            "stop" : 1564644280136,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null Zip Code",
+          "uid" : "7ef2db03e3f97e73",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644280139,
+            "stop" : 1564644281434,
+            "duration" : 1295
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null First Name",
+          "uid" : "73ea5d2d53ae0243",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644281439,
+            "stop" : 1564644282613,
+            "duration" : 1174
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null Last Name",
+          "uid" : "235e2f6f4c39be88",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644282618,
+            "stop" : 1564644283801,
+            "duration" : 1183
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null SSN",
+          "uid" : "d9c64c13d79223ab",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644283805,
+            "stop" : 1564644285022,
+            "duration" : 1217
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null Zip Code",
+          "uid" : "eb9e5857f8a81da5",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644285026,
+            "stop" : 1564644286329,
+            "duration" : 1303
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null Account Id",
+          "uid" : "3197afebdba4b15a",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644286334,
+            "stop" : 1564644287510,
+            "duration" : 1176
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null Customer Id and Account Id",
+          "uid" : "e591da4544e35bcf",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644287516,
+            "stop" : 1564644288718,
+            "duration" : 1202
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null Customer Id",
+          "uid" : "e4b87ec9f84db45a",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644288722,
+            "stop" : 1564644289898,
+            "duration" : 1176
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null email address",
+          "uid" : "4d015b08526a2239",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644289902,
+            "stop" : 1564644291197,
+            "duration" : 1295
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null first name, last name, ssn",
+          "uid" : "c1e6a000d9df04d4",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644291202,
+            "stop" : 1564644292376,
+            "duration" : 1174
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Null Verification Type",
+          "uid" : "7a827cce809c266b",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644292380,
+            "stop" : 1564644293515,
+            "duration" : 1135
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid Zip Code",
+          "uid" : "b4bf6e3bdce2b06c",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644293519,
+            "stop" : 1564644294697,
+            "duration" : 1178
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid Account Id",
+          "uid" : "8f94a4e66d94f386",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644294701,
+            "stop" : 1564644295975,
+            "duration" : 1274
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid Customer Id and Account Id",
+          "uid" : "a00003638648f50",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644295980,
+            "stop" : 1564644297232,
+            "duration" : 1252
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid Customer Id",
+          "uid" : "85b93ee25ec25227",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644297236,
+            "stop" : 1564644298495,
+            "duration" : 1259
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid email address1",
+          "uid" : "f3d9fd3f411d0569",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644298500,
+            "stop" : 1564644299688,
+            "duration" : 1188
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid email address2",
+          "uid" : "2696e6dbda04430e",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644299692,
+            "stop" : 1564644300829,
+            "duration" : 1137
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid email address3",
+          "uid" : "f68aac1c2751065e",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644300833,
+            "stop" : 1564644301977,
+            "duration" : 1144
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid email address4",
+          "uid" : "13891497d4f31454",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644301981,
+            "stop" : 1564644303227,
+            "duration" : 1246
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid email address5",
+          "uid" : "53bfef29940d961f",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644303232,
+            "stop" : 1564644304409,
+            "duration" : 1177
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid verification_type",
+          "uid" : "401e7bd299435ee0",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644304413,
+            "stop" : 1564644305675,
+            "duration" : 1262
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "SSN greater than 9 digits",
+          "uid" : "5a9e2bc80c284357",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644305679,
+            "stop" : 1564644306895,
+            "duration" : 1216
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "SSN less than 9 digits",
+          "uid" : "67f6ef7176677955",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644306900,
+            "stop" : 1564644308097,
+            "duration" : 1197
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "Invalid Zip Code, SSN, Email, Null first and last name",
-          "uid" : "22580b002eba4ac0",
-          "parentUid" : "eb8af931ee15c03ef2daabff1054487f",
+          "uid" : "a9c7dbcef9e279f7",
+          "parentUid" : "9798e8061b1347eb92db3ae8c1036c44",
           "status" : "passed",
           "time" : {
-            "start" : 1560243682765,
-            "stop" : 1560243683920,
-            "duration" : 1155
+            "start" : 1564644308101,
+            "stop" : 1564644309340,
+            "duration" : 1239
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         } ],
-        "uid" : "eb8af931ee15c03ef2daabff1054487f"
+        "uid" : "9798e8061b1347eb92db3ae8c1036c44"
       } ],
-      "uid" : "bd53831b5ace2c17ef425c18d179c22b"
+      "uid" : "8e52ebb4cc0ce7db165f01ebee03b1d4"
+    }, {
+      "name" : "PPE_HELOC",
+      "children" : [ {
+        "name" : "ppe.PPE_OB_Tests",
+        "children" : [ {
+          "name" : "FHA_Investment_house_good_fico_of_15_Variable_for_Half_Duplex",
+          "uid" : "c2c6e2aadc532934",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644309528,
+            "stop" : 1564644311804,
+            "duration" : 2276
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "FHA_Primary_house_excellent_fico_of_15_Fixed_for_Parking_Stall",
+          "uid" : "16d87ae9fe54acd3",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644309528,
+            "stop" : 1564644311858,
+            "duration" : 2330
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "FHA_Primary_house_fair_fico_of_30_Fixed_for_Detached_Condominium",
+          "uid" : "e82e0e109d7f5034",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644309531,
+            "stop" : 1564644311911,
+            "duration" : 2380
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "FHA_Primary_house_good_fico_of_15_30_Fixed_Variable_for_Single_family",
+          "uid" : "f52fa5ff3756c17e",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644309542,
+            "stop" : 1564644311815,
+            "duration" : 2273
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "FHA_Primary_house_good_fico_of_30_Fixed_for_Duplex_Up_And_Down",
+          "uid" : "1156b7491dbcc286",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644309565,
+            "stop" : 1564644311846,
+            "duration" : 2281
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "FHA_Primary_house_good_fico_of_30_Variable_for_Duplex_Side_By_Side",
+          "uid" : "e728179a24d4543c",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644311807,
+            "stop" : 1564644313846,
+            "duration" : 2039
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "FHA_Secondary_house_good_fico_of_15_30_Fixed_Variable_for_Townhouse",
+          "uid" : "4fbda3178c5fe7b6",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644311818,
+            "stop" : 1564644313872,
+            "duration" : 2054
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "FHA_Empty_Mortgage_Balance",
+          "uid" : "df3857898a8d97d",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644313875,
+            "stop" : 1564644315280,
+            "duration" : 1405
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Cash_Amount_less_than_25000",
+          "uid" : "1b78457bc165c021",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644313875,
+            "stop" : 1564644315923,
+            "duration" : 2048
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Equal_Cash_and_Mortgage_Amount",
+          "uid" : "cbfefb6595248dd4",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644313876,
+            "stop" : 1564644315907,
+            "duration" : 2031
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid_Adjustable_Rate_Terms",
+          "uid" : "79ea1f3bc6c22825",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644313880,
+            "stop" : 1564644315321,
+            "duration" : 1441
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid_Account_Id",
+          "uid" : "bace967ca3298d77",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644313916,
+            "stop" : 1564644315321,
+            "duration" : 1405
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid_Current_Property_Value",
+          "uid" : "f7b317c234406143",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644315283,
+            "stop" : 1564644316638,
+            "duration" : 1355
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid_Customer_Id",
+          "uid" : "6b860706ec33a7c6",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644315324,
+            "stop" : 1564644316819,
+            "duration" : 1495
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid_Fico_Score",
+          "uid" : "2a3a71a52a2771ce",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644315325,
+            "stop" : 1564644316716,
+            "duration" : 1391
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid_Loan_Amortization",
+          "uid" : "e02d1ad64e898b2d",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644315909,
+            "stop" : 1564644317322,
+            "duration" : 1413
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid_Loan_Types",
+          "uid" : "bf54c8500d72d7d8",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644315925,
+            "stop" : 1564644317394,
+            "duration" : 1469
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid_Mortgage_balance",
+          "uid" : "581383a6738994ab",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644316641,
+            "stop" : 1564644318593,
+            "duration" : 1952
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid_Property_Type",
+          "uid" : "e952fa6300326d0c",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644316719,
+            "stop" : 1564644318143,
+            "duration" : 1424
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid_Zip_Code",
+          "uid" : "8ffd02030e59047d",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644316821,
+            "stop" : 1564644318184,
+            "duration" : 1363
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Invalid_loan_purpose",
+          "uid" : "83b3a74ce0c6ba4d",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644317325,
+            "stop" : 1564644318679,
+            "duration" : 1354
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Property_Value_Less_Than_Cash_Amount",
+          "uid" : "ad4bfc7c5dddace",
+          "parentUid" : "2d764a4da685ebd6918232ae226c4afb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644317396,
+            "stop" : 1564644318750,
+            "duration" : 1354
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "2d764a4da685ebd6918232ae226c4afb"
+      } ],
+      "uid" : "7f0547ca9ab97192eccad3f974c1a33b"
+    }, {
+      "name" : "RcoreTest",
+      "children" : [ {
+        "name" : "rCore.RCoreTests",
+        "children" : [ {
+          "name" : "createLoanApplication",
+          "uid" : "8930754f2cd75e7b",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644318899,
+            "stop" : 1564644323075,
+            "duration" : 4176
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "createTask",
+          "uid" : "e0ccbef48f5fbc7d",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644323078,
+            "stop" : 1564644324484,
+            "duration" : 1406
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getLoanDetails",
+          "uid" : "fe67796207586c23",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644324486,
+            "stop" : 1564644325839,
+            "duration" : 1353
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getTaskList",
+          "uid" : "6675005fc0516cc9",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644325842,
+            "stop" : 1564644327104,
+            "duration" : 1262
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "retrieveTask",
+          "uid" : "d41b02265f65ad17",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644327107,
+            "stop" : 1564644328354,
+            "duration" : 1247
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "updateTask",
+          "uid" : "ad96bd06229d4823",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644328357,
+            "stop" : 1564644329607,
+            "duration" : 1250
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "uploadDocument",
+          "uid" : "e24ca914ce0cccdc",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644329610,
+            "stop" : 1564644335392,
+            "duration" : 5782
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "retrieveDocument",
+          "uid" : "b07f3bbfff9055ea",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644335395,
+            "stop" : 1564644336686,
+            "duration" : 1291
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "downloadDocument",
+          "uid" : "3c41bf48638e8a96",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644336689,
+            "stop" : 1564644339626,
+            "duration" : 2937
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "createMessage",
+          "uid" : "fe203c0e468cfb2f",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644339628,
+            "stop" : 1564644340924,
+            "duration" : 1296
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getMessageList",
+          "uid" : "3590f4b91d40867a",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644340927,
+            "stop" : 1564644342822,
+            "duration" : 1895
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getAccountList",
+          "uid" : "6ebcb7ececb9e4a",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644342825,
+            "stop" : 1564644344244,
+            "duration" : 1419
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "retrieveAccount",
+          "uid" : "6efb20bb332fdbfa",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644344246,
+            "stop" : 1564644345490,
+            "duration" : 1244
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "retrieveService",
+          "uid" : "e015448b3597f481",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644345493,
+            "stop" : 1564644346698,
+            "duration" : 1205
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "createUser_Lender",
+          "uid" : "ea0a3027a46321b",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644346701,
+            "stop" : 1564644348199,
+            "duration" : 1498
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "getUserList",
+          "uid" : "10ea0387c0c07d75",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644348201,
+            "stop" : 1564644350225,
+            "duration" : 2024
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "retrieveUser_Lender",
+          "uid" : "a6deb5dff67d21b",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644350227,
+            "stop" : 1564644351448,
+            "duration" : 1221
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "deactivate_User",
+          "uid" : "b3be5c1b2c6ff69",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644351451,
+            "stop" : 1564644352679,
+            "duration" : 1228
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "activate_User",
+          "uid" : "ff87a6bf213d4557",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644352682,
+            "stop" : 1564644353915,
+            "duration" : 1233
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "updateUser_Lender",
+          "uid" : "cd5b6e41ff8435ac",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644353917,
+            "stop" : 1564644355281,
+            "duration" : 1364
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "update_User_Secondary_Accounts",
+          "uid" : "b1033bba70cc3f30",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644355283,
+            "stop" : 1564644356628,
+            "duration" : 1345
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "createAccess_control_group",
+          "uid" : "bcfe122536494a59",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644356630,
+            "stop" : 1564644357862,
+            "duration" : 1232
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "updateAccess_control_group",
+          "uid" : "19c8400011305a2",
+          "parentUid" : "b3c7296daabbc86b4a2215871f35244b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1564644357865,
+            "stop" : 1564644359078,
+            "duration" : 1213
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "b3c7296daabbc86b4a2215871f35244b"
+      } ],
+      "uid" : "3f80d45d4a14fc4fe35305f760e6e839"
     } ],
     "uid" : "7d0421919ebcae780c955830177c9415"
   } ]

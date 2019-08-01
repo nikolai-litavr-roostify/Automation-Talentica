@@ -1,0 +1,94 @@
+{
+  "uid" : "f13f0dbd3bf79d06",
+  "name" : "Null add line, city, zip code, state",
+  "fullName" : "zillow.ZillowTests.Null_add_line_city_zip_code_state",
+  "historyId" : "1ceace8506ef9e726039e4bee03125b",
+  "time" : {
+    "start" : 1564644147795,
+    "stop" : 1564644149048,
+    "duration" : 1253
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getData",
+    "time" : {
+      "start" : 1564644101615,
+      "stop" : 1564644101615,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "checkStatus",
+    "time" : {
+      "start" : 1564644149050,
+      "stop" : 1564644149050,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "zillow.ZillowTests"
+  }, {
+    "name" : "testClass",
+    "value" : "zillow.ZillowTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "Null_add_line_city_zip_code_state"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Zillow"
+  }, {
+    "name" : "subSuite",
+    "value" : "zillow.ZillowTests"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "8652@KrishnaA-Desk.main(1)"
+  }, {
+    "name" : "story",
+    "value" : "Zillow flow with Null Parameters"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f13f0dbd3bf79d06.json",
+  "parameterValues" : [ ]
+}

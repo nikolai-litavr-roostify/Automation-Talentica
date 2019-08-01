@@ -1,0 +1,94 @@
+{
+  "uid" : "355cc17a8ac78658",
+  "name" : "Invalid City",
+  "fullName" : "zillow.ZillowTests.Invalid_City",
+  "historyId" : "c9afd01f9eca339dd9e6d6cbe67fc1fd",
+  "time" : {
+    "start" : 1564644159163,
+    "stop" : 1564644160745,
+    "duration" : 1582
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getData",
+    "time" : {
+      "start" : 1564644101615,
+      "stop" : 1564644101615,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "checkStatus",
+    "time" : {
+      "start" : 1564644160746,
+      "stop" : 1564644160746,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "zillow.ZillowTests"
+  }, {
+    "name" : "testClass",
+    "value" : "zillow.ZillowTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "Invalid_City"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Zillow"
+  }, {
+    "name" : "subSuite",
+    "value" : "zillow.ZillowTests"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "8652@KrishnaA-Desk.main(1)"
+  }, {
+    "name" : "story",
+    "value" : "Zillow flow with Invalid Parameters"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "355cc17a8ac78658.json",
+  "parameterValues" : [ ]
+}

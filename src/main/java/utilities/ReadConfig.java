@@ -70,4 +70,16 @@ public class ReadConfig {
         String RCoreHost = pro.getProperty("RCoreHost");
         return  RCoreHost;
     }
+
+    public static String getLenderMailId()
+    {
+        String LenderEmail = pro.getProperty("LenderId");
+        return  LenderEmail;
+    }
+
+    public static String getRoostidyAccId()
+    {
+        String RoostidyAccId = pro.getProperty("RoostifyAccountId");
+        return  RoostidyAccId;
+    }
 }

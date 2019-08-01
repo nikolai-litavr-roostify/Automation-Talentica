@@ -1,520 +1,1710 @@
 [ {
-  "uid" : "13fe213c06fbd394",
-  "name" : "Null Last Name",
-  "time" : {
-    "start" : 1560243641951,
-    "stop" : 1560243643164,
-    "duration" : 1213
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "6a4c6acfc649a25a",
-  "name" : "Null email address",
-  "time" : {
-    "start" : 1560243649290,
-    "stop" : 1560243650583,
-    "duration" : 1293
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3bc7ddeedd8c9868",
-  "name" : "Invalid Zip Code",
-  "time" : {
-    "start" : 1560243665297,
-    "stop" : 1560243666513,
-    "duration" : 1216
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c60e4bf7d4182e98",
-  "name" : "Valid scenario with all parameters",
-  "time" : {
-    "start" : 1560243384988,
-    "stop" : 1560243445145,
-    "duration" : 60157
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "41301a545ad02fd2",
-  "name" : "SSN greater than 9 digits",
-  "time" : {
-    "start" : 1560243680362,
-    "stop" : 1560243681561,
-    "duration" : 1199
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "451a740dee6593c3",
+  "uid" : "2dca8f8b58a62251",
   "name" : "Null Customer Id and Account Id",
   "time" : {
-    "start" : 1560243646931,
-    "stop" : 1560243648121,
-    "duration" : 1190
+    "start" : 1564644149053,
+    "stop" : 1564644150192,
+    "duration" : 1139
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "5e9b981582e1e9c0",
-  "name" : "Valild Plaid Flow with all parameters",
+  "uid" : "401e7bd299435ee0",
+  "name" : "Invalid verification_type",
   "time" : {
-    "start" : 1560243515334,
-    "stop" : 1560243555014,
-    "duration" : 39680
+    "start" : 1564644304413,
+    "stop" : 1564644305675,
+    "duration" : 1262
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7114719e3706bb3e",
+  "name" : "Valild Account Check Flow with only mandatory parameters and Sharing Accounts of two different banks",
+  "time" : {
+    "start" : 1564643770865,
+    "stop" : 1564643776523,
+    "duration" : 5658
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "94e7a126fa896a3f",
-  "name" : "Valild AccountChek Flow with only mandatory parameters",
+  "uid" : "73ea5d2d53ae0243",
+  "name" : "Null First Name",
   "time" : {
-    "start" : 1560243445247,
-    "stop" : 1560243515319,
-    "duration" : 70072
+    "start" : 1564644281439,
+    "stop" : 1564644282613,
+    "duration" : 1174
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6b860706ec33a7c6",
+  "name" : "Invalid_Customer_Id",
+  "time" : {
+    "start" : 1564644315324,
+    "stop" : 1564644316819,
+    "duration" : 1495
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6ad34dbaa82f6a",
+  "name" : "Null Verification Type",
+  "time" : {
+    "start" : 1564644151378,
+    "stop" : 1564644152511,
+    "duration" : 1133
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3a5b88714e22e444",
+  "name" : "Address line 1 with null zip",
+  "time" : {
+    "start" : 1564644141430,
+    "stop" : 1564644142671,
+    "duration" : 1241
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6ebcb7ececb9e4a",
+  "name" : "getAccountList",
+  "time" : {
+    "start" : 1564644342825,
+    "stop" : 1564644344244,
+    "duration" : 1419
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c2c6e2aadc532934",
+  "name" : "FHA_Investment_house_good_fico_of_15_Variable_for_Half_Duplex",
+  "time" : {
+    "start" : 1564644309528,
+    "stop" : 1564644311804,
+    "duration" : 2276
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fc17bcdce821bd14",
+  "name" : "Null Address line 1",
+  "time" : {
+    "start" : 1564643776663,
+    "stop" : 1564643778738,
+    "duration" : 2075
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5ac4afc1d353cc5d",
+  "name" : "Valid Finicity flow for Asset_Income Verification  (With only mandatory parameters)",
+  "time" : {
+    "start" : 1564643786703,
+    "stop" : 1564643793038,
+    "duration" : 6335
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "4f7722c9361bc453",
-  "name" : "Invalid email address2",
+  "uid" : "f52fa5ff3756c17e",
+  "name" : "FHA_Primary_house_good_fico_of_15_30_Fixed_Variable_for_Single_family",
   "time" : {
-    "start" : 1560243658009,
-    "stop" : 1560243659222,
-    "duration" : 1213
+    "start" : 1564644309542,
+    "stop" : 1564644311815,
+    "duration" : 2273
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e82a90f8de3c8a9e",
-  "name" : "Invalid email address4",
+  "uid" : "eb9e5857f8a81da5",
+  "name" : "Null Zip Code",
   "time" : {
-    "start" : 1560243654316,
-    "stop" : 1560243655525,
-    "duration" : 1209
+    "start" : 1564644285026,
+    "stop" : 1564644286329,
+    "duration" : 1303
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ed78a475845f1b57",
-  "name" : "Invalid customer id",
+  "uid" : "53bfef29940d961f",
+  "name" : "Invalid email address5",
   "time" : {
-    "start" : 1560243666517,
-    "stop" : 1560243667815,
-    "duration" : 1298
+    "start" : 1564644303232,
+    "stop" : 1564644304409,
+    "duration" : 1177
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "38c4f0d395e7163f",
-  "name" : "Invalid Account Id",
+  "uid" : "7d41b21bb759745f",
+  "name" : "Invalid email address5",
   "time" : {
-    "start" : 1560243669037,
-    "stop" : 1560243670400,
+    "start" : 1564643782146,
+    "stop" : 1564643783452,
+    "duration" : 1306
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ad4bfc7c5dddace",
+  "name" : "Property_Value_Less_Than_Cash_Amount",
+  "time" : {
+    "start" : 1564644317396,
+    "stop" : 1564644318750,
+    "duration" : 1354
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c3458e0d97f0fc01",
+  "name" : "Null Phone number",
+  "time" : {
+    "start" : 1564644054783,
+    "stop" : 1564644056010,
+    "duration" : 1227
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a827cce809c266b",
+  "name" : "Null Verification Type",
+  "time" : {
+    "start" : 1564644292380,
+    "stop" : 1564644293515,
+    "duration" : 1135
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ef57258648bc7484",
+  "name" : "Null cust id and ac id",
+  "time" : {
+    "start" : 1564643778602,
+    "stop" : 1564643779768,
+    "duration" : 1166
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8ffd02030e59047d",
+  "name" : "Invalid_Zip_Code",
+  "time" : {
+    "start" : 1564644316821,
+    "stop" : 1564644318184,
     "duration" : 1363
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e6f67e16a4e8ad9d",
-  "name" : "Invalid email address4",
+  "uid" : "ff24617c731a85b5",
+  "name" : "Valild Zillow Flow (with City+State+Zip Combination) Zip code starting with zero",
   "time" : {
-    "start" : 1560243676648,
-    "stop" : 1560243677843,
-    "duration" : 1195
+    "start" : 1564644134005,
+    "stop" : 1564644135569,
+    "duration" : 1564
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ef7aae23718fd7c4",
-  "name" : "Invalid verification_type",
+  "uid" : "8930754f2cd75e7b",
+  "name" : "createLoanApplication",
   "time" : {
-    "start" : 1560243679068,
-    "stop" : 1560243680359,
-    "duration" : 1291
+    "start" : 1564644318899,
+    "stop" : 1564644323075,
+    "duration" : 4176
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "554a738570f6b19f",
-  "name" : "Null First Name",
+  "uid" : "6794d33676eeccdc",
+  "name" : "Invalid customer id",
   "time" : {
-    "start" : 1560243563073,
-    "stop" : 1560243564877,
-    "duration" : 1804
+    "start" : 1564643780755,
+    "stop" : 1564643782067,
+    "duration" : 1312
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "a254e64eb66f297",
-  "name" : "Null verification type",
+  "uid" : "ff87a6bf213d4557",
+  "name" : "activate_User",
   "time" : {
-    "start" : 1560243561871,
-    "stop" : 1560243563069,
-    "duration" : 1198
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9c9dd1a90903c08d",
-  "name" : "Null SSN",
-  "time" : {
-    "start" : 1560243635685,
-    "stop" : 1560243636994,
-    "duration" : 1309
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "31f40de0f5cb799c",
-  "name" : "Invalid email address2",
-  "time" : {
-    "start" : 1560243674226,
-    "stop" : 1560243675428,
-    "duration" : 1202
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "11deddaca426d044",
-  "name" : "Invalid verification type",
-  "time" : {
-    "start" : 1560243653030,
-    "stop" : 1560243654313,
-    "duration" : 1283
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2dc36884241f6d83",
-  "name" : "Null customer id",
-  "time" : {
-    "start" : 1560243560680,
-    "stop" : 1560243561866,
-    "duration" : 1186
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9edae6668469f0dd",
-  "name" : "Null email address",
-  "time" : {
-    "start" : 1560243638229,
-    "stop" : 1560243639461,
-    "duration" : 1232
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b96e45a3ad8a13ab",
-  "name" : "Null Zip Code",
-  "time" : {
-    "start" : 1560243564880,
-    "stop" : 1560243633901,
-    "duration" : 69021
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4d15a3e2b7b3e17f",
-  "name" : "SSN less than 9 digits",
-  "time" : {
-    "start" : 1560243681564,
-    "stop" : 1560243682763,
-    "duration" : 1199
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7f7e4621eafb603",
-  "name" : "Invalid email address5",
-  "time" : {
-    "start" : 1560243656800,
-    "stop" : 1560243658005,
-    "duration" : 1205
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a05daf279afee460",
-  "name" : "SSN greater than 9 digits",
-  "time" : {
-    "start" : 1560243661683,
-    "stop" : 1560243662888,
-    "duration" : 1205
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "572ad9d4381bd268",
-  "name" : "Null first name last name ssn email verification type",
-  "time" : {
-    "start" : 1560243559460,
-    "stop" : 1560243560676,
-    "duration" : 1216
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "efceb6d078c8a4ef",
-  "name" : "Invalid Zip Code",
-  "time" : {
-    "start" : 1560243667818,
-    "stop" : 1560243669034,
-    "duration" : 1216
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "ff0e617b079e4fc6",
-  "name" : "Invalid Customer Id and Account Id",
-  "time" : {
-    "start" : 1560243670403,
-    "stop" : 1560243671701,
-    "duration" : 1298
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "650ef9db0e8f1826",
-  "name" : "Null Verification Type",
-  "time" : {
-    "start" : 1560243651814,
-    "stop" : 1560243653021,
-    "duration" : 1207
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b7b03fc3467726f2",
-  "name" : "Null first name, last name, ssn",
-  "time" : {
-    "start" : 1560243650585,
-    "stop" : 1560243651811,
-    "duration" : 1226
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c393704ae80630fc",
-  "name" : "Null Address line 1",
-  "time" : {
-    "start" : 1560243557648,
-    "stop" : 1560243559456,
-    "duration" : 1808
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d7910a3244d2cc11",
-  "name" : "Null Account Id",
-  "time" : {
-    "start" : 1560243645719,
-    "stop" : 1560243646929,
-    "duration" : 1210
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "19767a2aca94813a",
-  "name" : "Null Last Name",
-  "time" : {
-    "start" : 1560243633919,
-    "stop" : 1560243635681,
-    "duration" : 1762
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9e97e53104c792c",
-  "name" : "Invalid email address3",
-  "time" : {
-    "start" : 1560243659226,
-    "stop" : 1560243660456,
-    "duration" : 1230
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "206d96794c4e2e21",
-  "name" : "SSN less than 9 digits",
-  "time" : {
-    "start" : 1560243662891,
-    "stop" : 1560243664124,
+    "start" : 1564644352682,
+    "stop" : 1564644353915,
     "duration" : 1233
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "3331bc8649180268",
-  "name" : "Null cust id and ac id",
+  "uid" : "b07f3bbfff9055ea",
+  "name" : "retrieveDocument",
   "time" : {
-    "start" : 1560243556448,
-    "stop" : 1560243557644,
-    "duration" : 1196
+    "start" : 1564644335395,
+    "stop" : 1564644336686,
+    "duration" : 1291
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "780a8251cf7918cb",
-  "name" : "Invalid email address1",
+  "uid" : "3522fb4922eedc24",
+  "name" : "Null Last Name",
   "time" : {
-    "start" : 1560243660460,
-    "stop" : 1560243661679,
-    "duration" : 1219
+    "start" : 1564643776762,
+    "stop" : 1564643778800,
+    "duration" : 2038
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9da06e698b5cdb4d",
-  "name" : "Null account id",
+  "uid" : "71d82e2990b636f5",
+  "name" : "Invalid dob, both add lines, null city, state, zip code less than 5, ssn less than 9",
   "time" : {
-    "start" : 1560243637000,
-    "stop" : 1560243638225,
-    "duration" : 1225
+    "start" : 1564644087251,
+    "stop" : 1564644088387,
+    "duration" : 1136
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "7e1e2d84ed05ade6",
-  "name" : "Invalid account id",
+  "uid" : "5a9e2bc80c284357",
+  "name" : "SSN greater than 9 digits",
   "time" : {
-    "start" : 1560243655529,
-    "stop" : 1560243656796,
-    "duration" : 1267
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "afea1931e840e8de",
-  "name" : "Invalid email address1",
-  "time" : {
-    "start" : 1560243673007,
-    "stop" : 1560243674223,
+    "start" : 1564644305679,
+    "stop" : 1564644306895,
     "duration" : 1216
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "463de8144abcaecc",
-  "name" : "Valild Plaid Flow with only mandatory parameters",
+  "uid" : "fe67796207586c23",
+  "name" : "getLoanDetails",
   "time" : {
-    "start" : 1560243555079,
-    "stop" : 1560243556427,
-    "duration" : 1348
+    "start" : 1564644324486,
+    "stop" : 1564644325839,
+    "duration" : 1353
   },
   "status" : "passed",
-  "severity" : "blocker"
+  "severity" : "normal"
 }, {
-  "uid" : "941c234a38bc35f6",
-  "name" : "Null First Name",
+  "uid" : "667f895f56cebc52",
+  "name" : "Address line 1 with state (null city)",
   "time" : {
-    "start" : 1560243640751,
-    "stop" : 1560243641948,
+    "start" : 1564644142675,
+    "stop" : 1564644143920,
+    "duration" : 1245
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "10ea0387c0c07d75",
+  "name" : "getUserList",
+  "time" : {
+    "start" : 1564644348201,
+    "stop" : 1564644350225,
+    "duration" : 2024
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "85b93ee25ec25227",
+  "name" : "Invalid Customer Id",
+  "time" : {
+    "start" : 1564644297236,
+    "stop" : 1564644298495,
+    "duration" : 1259
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3590f4b91d40867a",
+  "name" : "getMessageList",
+  "time" : {
+    "start" : 1564644340927,
+    "stop" : 1564644342822,
+    "duration" : 1895
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bf54c8500d72d7d8",
+  "name" : "Invalid_Loan_Types",
+  "time" : {
+    "start" : 1564644315925,
+    "stop" : 1564644317394,
+    "duration" : 1469
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "83b3a74ce0c6ba4d",
+  "name" : "Invalid_loan_purpose",
+  "time" : {
+    "start" : 1564644317325,
+    "stop" : 1564644318679,
+    "duration" : 1354
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7ed4fab3a0aec440",
+  "name" : "Null both address lines",
+  "time" : {
+    "start" : 1564644064604,
+    "stop" : 1564644065874,
+    "duration" : 1270
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "581383a6738994ab",
+  "name" : "Invalid_Mortgage_balance",
+  "time" : {
+    "start" : 1564644316641,
+    "stop" : 1564644318593,
+    "duration" : 1952
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6f942a9869e25fda",
+  "name" : "SSN greater than 9 digits",
+  "time" : {
+    "start" : 1564643782227,
+    "stop" : 1564643783512,
+    "duration" : 1285
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4fae41e1b1c69afd",
+  "name" : "Null account id",
+  "time" : {
+    "start" : 1564643778289,
+    "stop" : 1564643779542,
+    "duration" : 1253
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "70ea7e238bd82be6",
+  "name" : "Null Email Address",
+  "time" : {
+    "start" : 1564644077600,
+    "stop" : 1564644078885,
+    "duration" : 1285
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e02d1ad64e898b2d",
+  "name" : "Invalid_Loan_Amortization",
+  "time" : {
+    "start" : 1564644315909,
+    "stop" : 1564644317322,
+    "duration" : 1413
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "df57a6c73b67dc63",
+  "name" : "Invalid Account ID",
+  "time" : {
+    "start" : 1564644078891,
+    "stop" : 1564644080158,
+    "duration" : 1267
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1b78457bc165c021",
+  "name" : "Cash_Amount_less_than_25000",
+  "time" : {
+    "start" : 1564644313875,
+    "stop" : 1564644315923,
+    "duration" : 2048
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "73b4f22b55dfe93c",
+  "name" : "Address line 1 with city (null state)",
+  "time" : {
+    "start" : 1564644138601,
+    "stop" : 1564644139858,
+    "duration" : 1257
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9db608801e5d2152",
+  "name" : "Zip code less than 5 digits",
+  "time" : {
+    "start" : 1564644100203,
+    "stop" : 1564644101415,
+    "duration" : 1212
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "51436978dd25acf8",
+  "name" : "Invalid account id",
+  "time" : {
+    "start" : 1564643780755,
+    "stop" : 1564643782137,
+    "duration" : 1382
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe203c0e468cfb2f",
+  "name" : "createMessage",
+  "time" : {
+    "start" : 1564644339628,
+    "stop" : 1564644340924,
+    "duration" : 1296
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b4bf6e3bdce2b06c",
+  "name" : "Invalid Zip Code",
+  "time" : {
+    "start" : 1564644293519,
+    "stop" : 1564644294697,
+    "duration" : 1178
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b0aa20a477913435",
+  "name" : "Invalid Cuatomer ID and Account ID",
+  "time" : {
+    "start" : 1564644081367,
+    "stop" : 1564644082567,
+    "duration" : 1200
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fae054743664bbba",
+  "name" : "Invalid email address1",
+  "time" : {
+    "start" : 1564643780755,
+    "stop" : 1564643782011,
+    "duration" : 1256
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a05918752f8a33de",
+  "name" : "Null SSN",
+  "time" : {
+    "start" : 1564643776783,
+    "stop" : 1564643778284,
+    "duration" : 1501
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "67f6ef7176677955",
+  "name" : "SSN less than 9 digits",
+  "time" : {
+    "start" : 1564644306900,
+    "stop" : 1564644308097,
     "duration" : 1197
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "a2665a65411b6e0d",
-  "name" : "Invalid Customer Id",
+  "uid" : "706bf3dd346c74",
+  "name" : "SSN less than 9 digits",
   "time" : {
-    "start" : 1560243671703,
-    "stop" : 1560243673004,
-    "duration" : 1301
+    "start" : 1564643783390,
+    "stop" : 1564643784552,
+    "duration" : 1162
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "39af2cfc7a110c0b",
+  "uid" : "e015448b3597f481",
+  "name" : "retrieveService",
+  "time" : {
+    "start" : 1564644345493,
+    "stop" : 1564644346698,
+    "duration" : 1205
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f7b317c234406143",
+  "name" : "Invalid_Current_Property_Value",
+  "time" : {
+    "start" : 1564644315283,
+    "stop" : 1564644316638,
+    "duration" : 1355
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2bec96856d50f3fa",
+  "name" : "Null Customer Id",
+  "time" : {
+    "start" : 1564644150197,
+    "stop" : 1564644151373,
+    "duration" : 1176
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "13891497d4f31454",
+  "name" : "Invalid email address4",
+  "time" : {
+    "start" : 1564644301981,
+    "stop" : 1564644303227,
+    "duration" : 1246
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dcab55a1f646b6da",
+  "name" : "Valild Zillow Flow (with City+State+Zip Combination)",
+  "time" : {
+    "start" : 1564644106164,
+    "stop" : 1564644133998,
+    "duration" : 27834
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "4cb7062130b389d3",
+  "name" : "Valild Zillow Flow (with Zip)",
+  "time" : {
+    "start" : 1564644135573,
+    "stop" : 1564644137090,
+    "duration" : 1517
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "df3857898a8d97d",
+  "name" : "FHA_Empty_Mortgage_Balance",
+  "time" : {
+    "start" : 1564644313875,
+    "stop" : 1564644315280,
+    "duration" : 1405
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4fbda3178c5fe7b6",
+  "name" : "FHA_Secondary_house_good_fico_of_15_30_Fixed_Variable_for_Townhouse",
+  "time" : {
+    "start" : 1564644311818,
+    "stop" : 1564644313872,
+    "duration" : 2054
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d30b5844b8441713",
+  "name" : "Invalid email address4",
+  "time" : {
+    "start" : 1564644091926,
+    "stop" : 1564644093063,
+    "duration" : 1137
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "36f253c4d730c9c8",
+  "name" : "Null State",
+  "time" : {
+    "start" : 1564644057297,
+    "stop" : 1564644058536,
+    "duration" : 1239
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6675005fc0516cc9",
+  "name" : "getTaskList",
+  "time" : {
+    "start" : 1564644325842,
+    "stop" : 1564644327104,
+    "duration" : 1262
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "94d629f6076b1919",
+  "name" : "Null First Name",
+  "time" : {
+    "start" : 1564644052408,
+    "stop" : 1564644053594,
+    "duration" : 1186
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1a16c62fa86dcbc1",
+  "name" : "Invalid email address3",
+  "time" : {
+    "start" : 1564643782145,
+    "stop" : 1564643783385,
+    "duration" : 1240
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5b01a9963093d625",
+  "name" : "Null first , last, ssn, dob, both add lines, city, state, zip, phone",
+  "time" : {
+    "start" : 1564644068358,
+    "stop" : 1564644069497,
+    "duration" : 1139
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "39effb38c61e660c",
+  "name" : "Invalid Account ID",
+  "time" : {
+    "start" : 1564644156291,
+    "stop" : 1564644157555,
+    "duration" : 1264
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d015b08526a2239",
+  "name" : "Null email address",
+  "time" : {
+    "start" : 1564644289902,
+    "stop" : 1564644291197,
+    "duration" : 1295
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e50d281add844269",
+  "name" : "Address line 1 with state (with empty city and null zip)",
+  "time" : {
+    "start" : 1564644143924,
+    "stop" : 1564644145439,
+    "duration" : 1515
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d2e6e30432c959ff",
+  "name" : "Valid Finicity flow for Asset Verification (With all parameters)",
+  "time" : {
+    "start" : 1564643793043,
+    "stop" : 1564643916025,
+    "duration" : 122982
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "ddeadb1c797b0b11",
+  "name" : "Invalid City + State Combination without zip",
+  "time" : {
+    "start" : 1564644160748,
+    "stop" : 1564644162358,
+    "duration" : 1610
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dd5c1526afbead0e",
+  "name" : "SSN greater than 9 digits",
+  "time" : {
+    "start" : 1564644095492,
+    "stop" : 1564644096671,
+    "duration" : 1179
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ed8eba46d07bff79",
+  "name" : "Invalid dob (DD/MM/YYYY)",
+  "time" : {
+    "start" : 1564644083712,
+    "stop" : 1564644084908,
+    "duration" : 1196
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4b87ec9f84db45a",
+  "name" : "Null Customer Id",
+  "time" : {
+    "start" : 1564644288722,
+    "stop" : 1564644289898,
+    "duration" : 1176
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3c41bf48638e8a96",
+  "name" : "downloadDocument",
+  "time" : {
+    "start" : 1564644336689,
+    "stop" : 1564644339626,
+    "duration" : 2937
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6991cbbe30b0cdda",
+  "name" : "With address line 2 and city+state (Null address line 1 and zip code)",
+  "time" : {
+    "start" : 1564644152515,
+    "stop" : 1564644153782,
+    "duration" : 1267
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fd56ba6f8f181b04",
   "name" : "Invalid email address5",
   "time" : {
-    "start" : 1560243677845,
-    "stop" : 1560243679065,
-    "duration" : 1220
+    "start" : 1564644093067,
+    "stop" : 1564644094267,
+    "duration" : 1200
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "de605ea4ec49f4c9",
+  "uid" : "862f485d844365a5",
+  "name" : "Valid Finicity flow for Asset_Income Verification  (With all parameters)",
+  "time" : {
+    "start" : 1564643785241,
+    "stop" : 1564643786690,
+    "duration" : 1449
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "79233f3455da67bb",
+  "name" : "Null First Name",
+  "time" : {
+    "start" : 1564643776669,
+    "stop" : 1564643778595,
+    "duration" : 1926
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c6dc709dbbe67fd",
+  "name" : "Valid Finicity flow for Asset Verification (With only mandatory parameters)",
+  "time" : {
+    "start" : 1564643916040,
+    "stop" : 1564643922037,
+    "duration" : 5997
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "af06f56f3b29e51d",
+  "name" : "Null verification type",
+  "time" : {
+    "start" : 1564643779547,
+    "stop" : 1564643780749,
+    "duration" : 1202
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3736c75ee393db48",
+  "name" : "Valid Zillow Flow (with Address Line 2) with zip null",
+  "time" : {
+    "start" : 1564644103160,
+    "stop" : 1564644104643,
+    "duration" : 1483
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c4ff331297ef3397",
+  "name" : "Invalid dob (MM/YYYY/DD)",
+  "time" : {
+    "start" : 1564644084912,
+    "stop" : 1564644086101,
+    "duration" : 1189
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a00003638648f50",
+  "name" : "Invalid Customer Id and Account Id",
+  "time" : {
+    "start" : 1564644295980,
+    "stop" : 1564644297232,
+    "duration" : 1252
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1050b3d9d3d023db",
+  "name" : "Valid Finicity flow for Income Verification (With only mandatory parameters)",
+  "time" : {
+    "start" : 1564644040292,
+    "stop" : 1564644049907,
+    "duration" : 9615
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "7f74d155bbb7f365",
+  "name" : "Null first name last name ssn email verification type",
+  "time" : {
+    "start" : 1564643778808,
+    "stop" : 1564643780022,
+    "duration" : 1214
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "944282c87fc124c4",
+  "name" : "Zip code greater than 5 digits",
+  "time" : {
+    "start" : 1564644099061,
+    "stop" : 1564644100199,
+    "duration" : 1138
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f13f0dbd3bf79d06",
+  "name" : "Null add line, city, zip code, state",
+  "time" : {
+    "start" : 1564644147795,
+    "stop" : 1564644149048,
+    "duration" : 1253
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2a3a71a52a2771ce",
+  "name" : "Invalid_Fico_Score",
+  "time" : {
+    "start" : 1564644315325,
+    "stop" : 1564644316716,
+    "duration" : 1391
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "570e525684a3ee17",
+  "name" : "Invalid Address Line1",
+  "time" : {
+    "start" : 1564644157561,
+    "stop" : 1564644159159,
+    "duration" : 1598
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bcfe122536494a59",
+  "name" : "createAccess_control_group",
+  "time" : {
+    "start" : 1564644356630,
+    "stop" : 1564644357862,
+    "duration" : 1232
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e6caf90a3e97a528",
+  "name" : "Invalid Account Id and Customer Id",
+  "time" : {
+    "start" : 1564644169629,
+    "stop" : 1564644170826,
+    "duration" : 1197
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "16d87ae9fe54acd3",
+  "name" : "FHA_Primary_house_excellent_fico_of_15_Fixed_for_Parking_Stall",
+  "time" : {
+    "start" : 1564644309528,
+    "stop" : 1564644311858,
+    "duration" : 2330
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1156b7491dbcc286",
+  "name" : "FHA_Primary_house_good_fico_of_30_Fixed_for_Duplex_Up_And_Down",
+  "time" : {
+    "start" : 1564644309565,
+    "stop" : 1564644311846,
+    "duration" : 2281
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dd4719aff75f9c9f",
+  "name" : "With address line 2 and zip (Null address line 1, city and state)",
+  "time" : {
+    "start" : 1564644153787,
+    "stop" : 1564644155033,
+    "duration" : 1246
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ea0a3027a46321b",
+  "name" : "createUser_Lender",
+  "time" : {
+    "start" : 1564644346701,
+    "stop" : 1564644348199,
+    "duration" : 1498
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0250711e4f8a8cc",
+  "name" : "Invalid Zip Code",
+  "time" : {
+    "start" : 1564643780756,
+    "stop" : 1564643781973,
+    "duration" : 1217
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bace967ca3298d77",
+  "name" : "Invalid_Account_Id",
+  "time" : {
+    "start" : 1564644313916,
+    "stop" : 1564644315321,
+    "duration" : 1405
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ce915d965bafc53",
+  "name" : "Null City",
+  "time" : {
+    "start" : 1564644051117,
+    "stop" : 1564644052404,
+    "duration" : 1287
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fcac906dd5c90852",
+  "name" : "Invalild Verification Type",
+  "time" : {
+    "start" : 1564644094271,
+    "stop" : 1564644095488,
+    "duration" : 1217
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7f92815d5bb655c1",
+  "name" : "Invalid City + State + Zip Combination ",
+  "time" : {
+    "start" : 1564644162362,
+    "stop" : 1564644163991,
+    "duration" : 1629
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f3d9fd3f411d0569",
+  "name" : "Invalid email address1",
+  "time" : {
+    "start" : 1564644298500,
+    "stop" : 1564644299688,
+    "duration" : 1188
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b1033bba70cc3f30",
+  "name" : "update_User_Secondary_Accounts",
+  "time" : {
+    "start" : 1564644355283,
+    "stop" : 1564644356628,
+    "duration" : 1345
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7ef2db03e3f97e73",
+  "name" : "Null Zip Code",
+  "time" : {
+    "start" : 1564644280139,
+    "stop" : 1564644281434,
+    "duration" : 1295
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cbfefb6595248dd4",
+  "name" : "Equal_Cash_and_Mortgage_Amount",
+  "time" : {
+    "start" : 1564644313876,
+    "stop" : 1564644315907,
+    "duration" : 2031
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4bf367fb6c49f06d",
+  "name" : "Invalid verification type",
+  "time" : {
+    "start" : 1564643782163,
+    "stop" : 1564643783502,
+    "duration" : 1339
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a6deb5dff67d21b",
+  "name" : "retrieveUser_Lender",
+  "time" : {
+    "start" : 1564644350227,
+    "stop" : 1564644351448,
+    "duration" : 1221
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "355cc17a8ac78658",
+  "name" : "Invalid City",
+  "time" : {
+    "start" : 1564644159163,
+    "stop" : 1564644160745,
+    "duration" : 1582
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b5239650334a0411",
   "name" : "downloadReport",
   "time" : {
-    "start" : 1560243556434,
-    "stop" : 1560243556435,
-    "duration" : 1
+    "start" : 1564644280136,
+    "stop" : 1564644280136,
+    "duration" : 0
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "f49ef89ad6efeda6",
-  "name" : "Null Zip Code",
+  "uid" : "800da9513dc8aa6",
+  "name" : "Valid Finicity flow for Income Verification (With all parameters)",
   "time" : {
-    "start" : 1560243639469,
-    "stop" : 1560243640749,
-    "duration" : 1280
+    "start" : 1564643922042,
+    "stop" : 1564644040285,
+    "duration" : 118243
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "2bff5a0786ac2e10",
+  "name" : "Valild Plaid Flow with all parameters and submitting accounts from single bank",
+  "time" : {
+    "start" : 1564644170913,
+    "stop" : 1564644217619,
+    "duration" : 46706
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "e82e0e109d7f5034",
+  "name" : "FHA_Primary_house_fair_fico_of_30_Fixed_for_Detached_Condominium",
+  "time" : {
+    "start" : 1564644309531,
+    "stop" : 1564644311911,
+    "duration" : 2380
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "22580b002eba4ac0",
+  "uid" : "2696e6dbda04430e",
+  "name" : "Invalid email address2",
+  "time" : {
+    "start" : 1564644299692,
+    "stop" : 1564644300829,
+    "duration" : 1137
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c3ce9a6f8e6c84a2",
+  "name" : "With Address line 2 only (Null Address line 1)",
+  "time" : {
+    "start" : 1564644073050,
+    "stop" : 1564644077594,
+    "duration" : 4544
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f68aac1c2751065e",
+  "name" : "Invalid email address3",
+  "time" : {
+    "start" : 1564644300833,
+    "stop" : 1564644301977,
+    "duration" : 1144
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1ba6ec611ba5d210",
+  "name" : "With Address line 1 only (Null Address line 2)",
+  "time" : {
+    "start" : 1564644069501,
+    "stop" : 1564644073045,
+    "duration" : 3544
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b235caac2e13fe5e",
+  "name" : "Invalid Verification Type",
+  "time" : {
+    "start" : 1564644166659,
+    "stop" : 1564644167902,
+    "duration" : 1243
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5f85ddc4149b6310",
+  "name" : "Null DOB",
+  "time" : {
+    "start" : 1564644067072,
+    "stop" : 1564644068353,
+    "duration" : 1281
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e24ca914ce0cccdc",
+  "name" : "uploadDocument",
+  "time" : {
+    "start" : 1564644329610,
+    "stop" : 1564644335392,
+    "duration" : 5782
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b9daa1853e7ad355",
+  "name" : "Null Address Line1",
+  "time" : {
+    "start" : 1564644145444,
+    "stop" : 1564644146644,
+    "duration" : 1200
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1236bea78c40fed9",
+  "name" : "Invalid email address3",
+  "time" : {
+    "start" : 1564644090745,
+    "stop" : 1564644091922,
+    "duration" : 1177
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a9c7dbcef9e279f7",
   "name" : "Invalid Zip Code, SSN, Email, Null first and last name",
   "time" : {
-    "start" : 1560243682765,
-    "stop" : 1560243683920,
-    "duration" : 1155
+    "start" : 1564644308101,
+    "stop" : 1564644309340,
+    "duration" : 1239
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9b14cfbd9e94ce5a",
-  "name" : "Null Customer Id",
+  "uid" : "bc4a524c5a3a583d",
+  "name" : "Address line 1 with city (with empty state and null zip)",
   "time" : {
-    "start" : 1560243648124,
-    "stop" : 1560243649287,
+    "start" : 1564644139862,
+    "stop" : 1564644141426,
+    "duration" : 1564
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d41b02265f65ad17",
+  "name" : "retrieveTask",
+  "time" : {
+    "start" : 1564644327107,
+    "stop" : 1564644328354,
+    "duration" : 1247
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ad96bd06229d4823",
+  "name" : "updateTask",
+  "time" : {
+    "start" : 1564644328357,
+    "stop" : 1564644329607,
+    "duration" : 1250
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "48a73cd6cf305c07",
+  "name" : "Invalid email address1",
+  "time" : {
+    "start" : 1564644088392,
+    "stop" : 1564644089555,
     "duration" : 1163
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "491a51517c2eed31",
-  "name" : "Invalid email address3",
+  "uid" : "bb73ef55e8c24702",
+  "name" : "Null Username",
   "time" : {
-    "start" : 1560243675432,
-    "stop" : 1560243676645,
+    "start" : 1564644058541,
+    "stop" : 1564644062092,
+    "duration" : 3551
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a930141c00700e8d",
+  "name" : "Null Last Name",
+  "time" : {
+    "start" : 1564644053599,
+    "stop" : 1564644054779,
+    "duration" : 1180
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e591da4544e35bcf",
+  "name" : "Null Customer Id and Account Id",
+  "time" : {
+    "start" : 1564644287516,
+    "stop" : 1564644288718,
+    "duration" : 1202
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e794a41843126c31",
+  "name" : "Invalid dob (DD/MM/YY)",
+  "time" : {
+    "start" : 1564644082571,
+    "stop" : 1564644083707,
+    "duration" : 1136
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e90804618d14b109",
+  "name" : "Invalid State",
+  "time" : {
+    "start" : 1564644165200,
+    "stop" : 1564644166637,
+    "duration" : 1437
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3815c2fc4186946",
+  "name" : "With only address line 1 (Null address line 2)",
+  "time" : {
+    "start" : 1564644155037,
+    "stop" : 1564644156286,
+    "duration" : 1249
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3197afebdba4b15a",
+  "name" : "Null Account Id",
+  "time" : {
+    "start" : 1564644286334,
+    "stop" : 1564644287510,
+    "duration" : 1176
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c491fb427f8b5099",
+  "name" : "Invalid Customer ID",
+  "time" : {
+    "start" : 1564644163996,
+    "stop" : 1564644165196,
+    "duration" : 1200
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "28de578ebcc154ca",
+  "name" : "Valild Zillow Flow (with Zip starting with zero)",
+  "time" : {
+    "start" : 1564644137095,
+    "stop" : 1564644138596,
+    "duration" : 1501
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "903f25363db61651",
+  "name" : "Null Verification Type",
+  "time" : {
+    "start" : 1564644062101,
+    "stop" : 1564644063315,
+    "duration" : 1214
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d7d6ba07f2deaf8e",
+  "name" : "Null customer id",
+  "time" : {
+    "start" : 1564643778688,
+    "stop" : 1564643779858,
+    "duration" : 1170
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c5e163905bbeb716",
+  "name" : "Null email address",
+  "time" : {
+    "start" : 1564643778744,
+    "stop" : 1564643779943,
+    "duration" : 1199
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8f94a4e66d94f386",
+  "name" : "Invalid Account Id",
+  "time" : {
+    "start" : 1564644294701,
+    "stop" : 1564644295975,
+    "duration" : 1274
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d4d534183796c3bb",
+  "name" : "zip code less than 5 digits ssn less than 9 null fist and last name invalid email",
+  "time" : {
+    "start" : 1564643783443,
+    "stop" : 1564643784634,
+    "duration" : 1191
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b3be5c1b2c6ff69",
+  "name" : "deactivate_User",
+  "time" : {
+    "start" : 1564644351451,
+    "stop" : 1564644352679,
+    "duration" : 1228
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e830a5698796fe4f",
+  "name" : "Null Account Id",
+  "time" : {
+    "start" : 1564644146649,
+    "stop" : 1564644147791,
+    "duration" : 1142
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8e34e34bbc5d45d7",
+  "name" : "Username less than 6 characters",
+  "time" : {
+    "start" : 1564644097834,
+    "stop" : 1564644099057,
+    "duration" : 1223
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cde87e0bc3212a11",
+  "name" : "Null Customer ID and Account ID",
+  "time" : {
+    "start" : 1564644065879,
+    "stop" : 1564644067068,
+    "duration" : 1189
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "235e2f6f4c39be88",
+  "name" : "Null Last Name",
+  "time" : {
+    "start" : 1564644282618,
+    "stop" : 1564644283801,
+    "duration" : 1183
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "79ea1f3bc6c22825",
+  "name" : "Invalid_Adjustable_Rate_Terms",
+  "time" : {
+    "start" : 1564644313880,
+    "stop" : 1564644315321,
+    "duration" : 1441
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8e607af57866029f",
+  "name" : "Valid Zillow Flow (with City+State Combination)",
+  "time" : {
+    "start" : 1564644104647,
+    "stop" : 1564644106160,
+    "duration" : 1513
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "19c8400011305a2",
+  "name" : "updateAccess_control_group",
+  "time" : {
+    "start" : 1564644357865,
+    "stop" : 1564644359078,
     "duration" : 1213
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "164a8775b2beee82",
-  "name" : "zip code less than 5 digits ssn less than 9 null fist and last name invalid email",
-  "time" : {
-    "start" : 1560243664128,
-    "stop" : 1560243665293,
-    "duration" : 1165
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "823dc0a9b5154b00",
-  "name" : "Null Zip Code",
-  "time" : {
-    "start" : 1560243644464,
-    "stop" : 1560243645715,
-    "duration" : 1251
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "eedea20024e1b385",
+  "uid" : "d9c64c13d79223ab",
   "name" : "Null SSN",
   "time" : {
-    "start" : 1560243643167,
-    "stop" : 1560243644461,
-    "duration" : 1294
+    "start" : 1564644283805,
+    "stop" : 1564644285022,
+    "duration" : 1217
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cd5b6e41ff8435ac",
+  "name" : "updateUser_Lender",
+  "time" : {
+    "start" : 1564644353917,
+    "stop" : 1564644355281,
+    "duration" : 1364
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b98180c2ccd85688",
+  "name" : "Null Zip code",
+  "time" : {
+    "start" : 1564644063323,
+    "stop" : 1564644064598,
+    "duration" : 1275
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c1e6a000d9df04d4",
+  "name" : "Null first name, last name, ssn",
+  "time" : {
+    "start" : 1564644291202,
+    "stop" : 1564644292376,
+    "duration" : 1174
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6efb20bb332fdbfa",
+  "name" : "retrieveAccount",
+  "time" : {
+    "start" : 1564644344246,
+    "stop" : 1564644345490,
+    "duration" : 1244
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "974d531b5b353394",
+  "name" : "Valid scenario with all parameters and sharing Accounts of single bank",
+  "time" : {
+    "start" : 1564643770859,
+    "stop" : 1564643776537,
+    "duration" : 5678
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "c49e100310134a55",
+  "name" : "Valild Plaid Flow with only mandatory parameters and submitting accounts from multiple banks",
+  "time" : {
+    "start" : 1564644217628,
+    "stop" : 1564644280129,
+    "duration" : 62501
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "71e765bce103e9a7",
+  "name" : "Null Zip Code and Sharing only one of the two accounts of single bank",
+  "time" : {
+    "start" : 1564643776676,
+    "stop" : 1564643778683,
+    "duration" : 2007
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5476e0d7d9cf01b3",
+  "name" : "Null Account ID",
+  "time" : {
+    "start" : 1564644049917,
+    "stop" : 1564644051112,
+    "duration" : 1195
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "256a1f8d683efc2b",
+  "name" : "Invalid Zip",
+  "time" : {
+    "start" : 1564644167906,
+    "stop" : 1564644169624,
+    "duration" : 1718
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fd5ee27019074fc0",
+  "name" : "Download the report",
+  "time" : {
+    "start" : 1564644101424,
+    "stop" : 1564644101424,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "7b71de58cb6bd22d",
+  "name" : "SSN less than 9 digits",
+  "time" : {
+    "start" : 1564644096676,
+    "stop" : 1564644097829,
+    "duration" : 1153
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5476ea021ce2d986",
+  "name" : "Invalid email address2",
+  "time" : {
+    "start" : 1564643780758,
+    "stop" : 1564643782103,
+    "duration" : 1345
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "678f934f9853a9fe",
+  "name" : "Valid Zillow Flow (with Address Line 2) with city+state null",
+  "time" : {
+    "start" : 1564644101616,
+    "stop" : 1564644103155,
+    "duration" : 1539
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e952fa6300326d0c",
+  "name" : "Invalid_Property_Type",
+  "time" : {
+    "start" : 1564644316719,
+    "stop" : 1564644318143,
+    "duration" : 1424
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3ecfd41a0cae55b0",
+  "name" : "Invalid email address2",
+  "time" : {
+    "start" : 1564644089559,
+    "stop" : 1564644090740,
+    "duration" : 1181
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e0ccbef48f5fbc7d",
+  "name" : "createTask",
+  "time" : {
+    "start" : 1564644323078,
+    "stop" : 1564644324484,
+    "duration" : 1406
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "686cb2472cd80788",
+  "name" : "Invalid email address4",
+  "time" : {
+    "start" : 1564643782160,
+    "stop" : 1564643783419,
+    "duration" : 1259
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c96572661945c22d",
+  "name" : "Invalid Customer ID",
+  "time" : {
+    "start" : 1564644080162,
+    "stop" : 1564644081362,
+    "duration" : 1200
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2b6eb39fa17a9e64",
+  "name" : "Null SSN",
+  "time" : {
+    "start" : 1564644056015,
+    "stop" : 1564644057293,
+    "duration" : 1278
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "767025d2c5853a12",
+  "name" : "Invalid dob (YYYY/DD/MM)",
+  "time" : {
+    "start" : 1564644086105,
+    "stop" : 1564644087246,
+    "duration" : 1141
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e728179a24d4543c",
+  "name" : "FHA_Primary_house_good_fico_of_30_Variable_for_Duplex_Side_By_Side",
+  "time" : {
+    "start" : 1564644311807,
+    "stop" : 1564644313846,
+    "duration" : 2039
   },
   "status" : "passed",
   "severity" : "normal"

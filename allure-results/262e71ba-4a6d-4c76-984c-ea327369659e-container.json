@@ -1,0 +1,1 @@
+{"uuid":"262e71ba-4a6d-4c76-984c-ea327369659e","name":"finicity.FinicityTests.checkStatus","description":"","start":1564644087248,"stop":1564644087248,"children":["c75d694d-8f77-436b-aa79-b4936a346021"],"afters":[{"name":"checkStatus","status":"passed","stage":"finished","description":"","start":1564644087248,"stop":1564644087248}]}

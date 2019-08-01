@@ -7,13 +7,12 @@ import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import roostify.base.Base;
-import roostify.zillow.PayLoad;
+import roostify.zillow.payLoad;
 import resources.ReusableMethods;
 import roostify.zillow.ZillowPortalPage;
 import utilities.ReadConfig;
@@ -45,7 +44,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Valild_Zillow_Flow_with_City_State_Zip_Combination";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
         JsonPath js = ReusableMethods.rawToJson(res);
         String verificationId=js.get("id");
@@ -83,7 +82,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Valid_Zillow_Flow_with_City_State_Combination";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 0, description = "Valild Zillow Flow (with Zip)")
@@ -93,7 +92,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Valild_Zillow_Flow_with_Zip";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 0, description = "Valid Zillow Flow (with Address Line 2) with zip null")
@@ -103,7 +102,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Valid_Zillow_Flow_with_Address_Line_2_with_zip_null";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 0, description = "Valid Zillow Flow (with Address Line 2) with city+state null")
@@ -113,7 +112,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Valid_Zillow_Flow_with_Address_Line_2_with_city_state_null";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 0, description = "Valild Zillow Flow (with City+State+Zip Combination) Zip code starting with zero")
@@ -123,7 +122,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Valild_Zillow_Flow_with_City_State_Zip_Combination_Zip_code_starting_with_zero";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 0, description = "Valild Zillow Flow (with Zip starting with zero)")
@@ -133,7 +132,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Valild_Zillow_Flow_with_Zip_starting_with_zero";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
 
@@ -145,7 +144,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Address_line_1_with_city_null_state";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Address line 1 with state (null city)")
@@ -155,7 +154,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Address_line_1_with_state_null_city";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Null Address Line1")
@@ -165,7 +164,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Null_Address_Line1";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Address line 1 with null zip")
@@ -175,7 +174,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Address_line_1_with_null_zip";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "With only address line 1 (Null address line 2)")
@@ -185,7 +184,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "With_only_address_line_1";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Address line 1 with city (with empty state and null zip)")
@@ -195,7 +194,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Address_line_1_with_city_with_empty_state_and_null_zip";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
 
@@ -206,7 +205,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Address_line_1_with_city_with_empty_state_and_null_zip";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "With address line 2 and city+state (Null address line 1 and zip code)")
@@ -216,7 +215,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "With_address_line_2_and_city_state";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "With address line 2 and zip (Null address line 1, city and state)")
@@ -226,7 +225,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "With_address_line_2_and_zip";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
 
@@ -239,7 +238,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Null_customer_id";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Null Account Id")
@@ -249,7 +248,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Null_account_id";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Null Verification Type")
@@ -259,7 +258,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Null_verification_type";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Null add line, city, zip code, state")
@@ -269,7 +268,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Null_add_line_city_zip_code_state";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Null Customer Id and Account Id")
@@ -279,7 +278,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Null_cust_id_ac_id";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Invalid Account ID")
@@ -289,7 +288,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Invalid_Account_ID";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Invalid Customer ID")
@@ -299,7 +298,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Invalid_Customer_ID";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Invalid Verification Type")
@@ -309,7 +308,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Invalid_Verification_Type";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Invalid Address Line1")
@@ -319,7 +318,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Invalid_Address_Line1";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Invalid State")
@@ -329,7 +328,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Invalid_State";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
 
@@ -340,7 +339,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Invalid_Zip";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
 
@@ -351,7 +350,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Invalid_City";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
 
@@ -362,7 +361,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Invalid_City_State_Combination_without_zip";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
 
@@ -373,7 +372,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Invalid_City_State_Zip_Combination";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Invalid Account Id and Customer Id")
@@ -383,7 +382,7 @@ public class ZillowTests extends Base{
         String Scenarioname = "Invalid_ac_id_cust_id";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
 

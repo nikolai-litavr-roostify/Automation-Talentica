@@ -1,0 +1,100 @@
+{
+  "uid" : "3522fb4922eedc24",
+  "name" : "Null Last Name",
+  "fullName" : "accCheck.AccountCheckTests.accCheck_Null_Last_Name",
+  "historyId" : "da9d62480d24d92a5081828045f2072c",
+  "time" : {
+    "start" : 1564643776762,
+    "stop" : 1564643778800,
+    "duration" : 2038
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getHostURL",
+    "time" : {
+      "start" : 1564643770032,
+      "stop" : 1564643770636,
+      "duration" : 604
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "checkStatus",
+    "time" : {
+      "start" : 1564643778802,
+      "stop" : 1564643778802,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "accCheck.AccountCheckTests"
+  }, {
+    "name" : "testClass",
+    "value" : "accCheck.AccountCheckTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "accCheck_Null_Last_Name"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "AccountCheck"
+  }, {
+    "name" : "subSuite",
+    "value" : "accCheck.AccountCheckTests"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "8652@KrishnaA-Desk.TestNG-test=AccountCheck-5(17)"
+  }, {
+    "name" : "epic",
+    "value" : "Account Check Regression"
+  }, {
+    "name" : "feature",
+    "value" : "Verify Account Check functionality"
+  }, {
+    "name" : "story",
+    "value" : "Account check flow with Null Parameters"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3522fb4922eedc24.json",
+  "parameterValues" : [ ]
+}

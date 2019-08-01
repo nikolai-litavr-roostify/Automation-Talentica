@@ -6,13 +6,12 @@ import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import roostify.base.Base;
-import roostify.finicity.PayLoad;
+import roostify.finicity.payLoad;
 import resources.ReusableMethods;
 import roostify.finicity.FinicityPortalPage;
 import utilities.ReadConfig;
@@ -39,7 +38,7 @@ public class FinicityTests extends Base{
 
     }
 
-    @Test
+    @Test(priority = 3, description = "Download the report")
     public void downloadReport(String verificationId)
     {
         FinicityPortalPage fpp = new FinicityPortalPage(driver);
@@ -77,7 +76,7 @@ public class FinicityTests extends Base{
         String Scenarioname="Valid_Finicity_flow_for_Asset_Verification_With_all_parameters";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
         JsonPath js = ReusableMethods.rawToJson(res);
         String verificationId=js.get("id");
         String srclink = js.get("links[0].resource_location");
@@ -98,7 +97,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Valid_Finicity_flow_for_Income_Verification_With_all_parameters";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
         JsonPath js = ReusableMethods.rawToJson(res);
         String srclink = js.get("links[0].resource_location");
         String verificationId=js.get("id");
@@ -120,7 +119,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Valid_Finicity_flow_for_Asset_Income_Verification_With_all_parameters";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
         JsonPath js = ReusableMethods.rawToJson(res);
     }
 
@@ -131,7 +130,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Valid_Finicity_flow_for_Asset_Verification_With_only_mandatory_parameters";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 0, description = "Valid Finicity flow for Income Verification (With only mandatory parameters)")
@@ -141,7 +140,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Valid_Finicity_flow_for_Income_Verification_With_only_mandatory_parameters";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 0, description = "Valid Finicity flow for Asset_Income Verification  (With only mandatory parameters)")
@@ -151,7 +150,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Valid_Finicity_flow_for_Asset_Income_Verification_With_only_mandatory_parameters";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "With Address line 2 only (Null Address line 1)")
@@ -161,7 +160,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "With_Address_line_2_only_Null_Address_line_1";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "With Address line 1 only (Null Address line 2)")
@@ -171,7 +170,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "With_Address_line_1_only_Null_Address_line_2";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Null both address lines")
@@ -181,7 +180,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Null_both_address_lines";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Null City")
@@ -191,7 +190,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Null_City";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Null State")
@@ -201,7 +200,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Null_State";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Null SSN")
@@ -211,7 +210,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Null_SSN";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Null Username")
@@ -221,7 +220,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Null_Username";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Null Phone number")
@@ -231,7 +230,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Null_Phone_number";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Null DOB")
@@ -241,7 +240,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Null_dob";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Null Email Address")
@@ -251,7 +250,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "null_email_address";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Null Verification Type")
@@ -261,7 +260,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Null_Verification_Type";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Null Last Name")
@@ -271,7 +270,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Null_Last_Name";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Null First Name")
@@ -281,7 +280,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Null_First_Name";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Null Zip code")
@@ -291,7 +290,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Null_Zip_code";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Null Account ID")
@@ -301,7 +300,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Null_Account_ID";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Null first , last, ssn, dob, both add lines, city, state, zip, phone")
@@ -311,7 +310,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Null_first_last_ssn_dob_both_add_lines_city_state_zip_phone";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 1, description = "Null Customer ID and Account ID")
@@ -321,7 +320,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Null_cust_id_and_ac_id";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "SSN less than 9 digits")
@@ -331,7 +330,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "SSN_less_than_9_digits";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "SSN greater than 9 digits")
@@ -341,7 +340,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "SSN_greater_than_9_digits";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Invalid dob (DD/MM/YYYY)")
@@ -351,7 +350,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Invalid_dob_DD_MM_YYYY";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Invalid dob (MM/YYYY/DD)")
@@ -361,7 +360,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Invalid_dob_MM_YYYY_DD";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Invalid dob (YYYY/DD/MM)")
@@ -371,7 +370,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Invalid_dob_YYYY_DD_MM";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Invalid dob (DD/MM/YY)")
@@ -381,7 +380,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Invalid_dob_DD_MM_YY";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Username less than 6 characters")
@@ -391,7 +390,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Username_less_than_6_characters";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Invalid email address1")
@@ -401,7 +400,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Invalid_email_address1";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Invalid email address2")
@@ -411,7 +410,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Invalid_email_address2";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Invalid email address3")
@@ -421,7 +420,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Invalid_email_address3";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Invalid email address4")
@@ -431,7 +430,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Invalid_email_address4";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Invalid email address5")
@@ -441,7 +440,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Invalid_email_address5";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Invalild Verification Type")
@@ -451,7 +450,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Invalild_Verification_Type";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Zip code less than 5 digits")
@@ -461,7 +460,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Zip_code_less_than_5_digits";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Zip code greater than 5 digits")
@@ -471,7 +470,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Zip_code_greater_than_5_digits";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Invalid Account ID")
@@ -481,7 +480,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Invalid_Account_ID";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Invalid Customer ID")
@@ -491,7 +490,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Invalid_Customer_ID";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Invalid dob, both add lines, null city, state, zip code less than 5, ssn less than 9")
@@ -501,7 +500,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Invalid_dob_both_add_lines_null_city_state_zip_code_less_than_5_ssn_less_than_9";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
     @Test(priority = 2, description = "Invalid Cuatomer ID and Account ID")
@@ -511,7 +510,7 @@ public class FinicityTests extends Base{
         String Scenarioname = "Invalid_cust_id_ac_id";
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
-                        .body(PayLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(PayLoad.getExpected(Scenarioname)).extract().response();
+                        .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
     }
 
 }

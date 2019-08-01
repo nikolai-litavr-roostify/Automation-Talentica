@@ -1,0 +1,84 @@
+{
+  "uid" : "e82e0e109d7f5034",
+  "name" : "FHA_Primary_house_fair_fico_of_30_Fixed_for_Detached_Condominium",
+  "fullName" : "ppe.PPE_OB_Tests.FHA_Primary_house_fair_fico_of_30_Fixed_for_Detached_Condominium",
+  "historyId" : "e5b2d305d7c950e39573148a2e3b2148",
+  "time" : {
+    "start" : 1564644309531,
+    "stop" : 1564644311911,
+    "duration" : 2380
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getHostURL",
+    "time" : {
+      "start" : 1564644309524,
+      "stop" : 1564644309525,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "ppe.PPE_OB_Tests"
+  }, {
+    "name" : "testClass",
+    "value" : "ppe.PPE_OB_Tests"
+  }, {
+    "name" : "testMethod",
+    "value" : "FHA_Primary_house_fair_fico_of_30_Fixed_for_Detached_Condominium"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "PPE_HELOC"
+  }, {
+    "name" : "subSuite",
+    "value" : "ppe.PPE_OB_Tests"
+  }, {
+    "name" : "host",
+    "value" : "KrishnaA-Desk"
+  }, {
+    "name" : "thread",
+    "value" : "8652@KrishnaA-Desk.TestNG-test=PPE_HELOC-3(46)"
+  }, {
+    "name" : "epic",
+    "value" : "PPE Regression"
+  }, {
+    "name" : "feature",
+    "value" : "Verify PPE functionality"
+  }, {
+    "name" : "story",
+    "value" : "PPE_Heloc Flow with valid Parameters"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e82e0e109d7f5034.json",
+  "parameterValues" : [ ]
+}

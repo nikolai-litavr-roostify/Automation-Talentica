@@ -1,1 +1,0 @@
-{"uuid":"9c906fa2-63cb-46ec-be73-b5591df565f0","name":"zillow.ZillowTests.checkStatus","description":"","start":1560925475994,"stop":1560925475994,"children":["4d045f0e-3fe5-4c2e-8498-65ed4bdceeb2"],"afters":[{"name":"checkStatus","status":"passed","stage":"finished","description":"","start":1560925475994,"stop":1560925475994}]}
