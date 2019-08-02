@@ -5,13 +5,10 @@ import io.qameta.allure.*;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-import roostify.accCheck.AccCheckPortalPage;
 import roostify.accCheck.payLoad;
-import roostify.base.Base;
+import roostify.base.base;
 import resources.ReusableMethods;
 import utilities.ReadConfig;
 import java.io.IOException;
@@ -22,7 +19,7 @@ import static io.restassured.RestAssured.given;
 @Listeners({TestListener.class})
 @Epic("Account Check Regression")
 @Feature("Verify Account Check functionality")
-public class AccountCheckTests extends Base {
+public class AccountCheckTests extends base {
 
     private Properties prop = new Properties();
 

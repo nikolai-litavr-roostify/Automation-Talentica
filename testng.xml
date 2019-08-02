@@ -11,6 +11,7 @@
         </classes>
     </test>
 
+
     <test name="Finicity">
         <classes>
             <class name="finicity.FinicityTests"></class>

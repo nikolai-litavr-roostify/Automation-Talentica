@@ -1,27 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 172, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 612.854 s <<< FAILURE! - in TestSuite
-Valid_Finicity_flow_for_Asset_Income_Verification_With_all_parameters(finicity.FinicityTests)  Time elapsed: 1.396 s  <<< FAILURE!
-java.lang.AssertionError: 
-1 expectation failed.
-Expected status code <200> but was <500>.
-
-	at finicity.FinicityTests.Valid_Finicity_flow_for_Asset_Income_Verification_With_all_parameters(FinicityTests.java:122)
-
-checkStatus(finicity.FinicityTests)  Time elapsed: 1.396 s  <<< FAILURE!
-java.lang.NullPointerException
-	at finicity.FinicityTests.checkStatus(FinicityTests.java:36)
-
-downloadReport(finicity.FinicityTests)  Time elapsed: 1.269 s  <<< FAILURE!
-org.testng.TestNGException: 
-
-Cannot inject @Test annotated Method [downloadReport] with [class java.lang.String].
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-
-downloadReport(plaid.PlaidTests)  Time elapsed: 62.691 s  <<< FAILURE!
-org.testng.TestNGException: 
-
-Cannot inject @Test annotated Method [downloadReport] with [class java.lang.String].
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.895 s - in TestSuite

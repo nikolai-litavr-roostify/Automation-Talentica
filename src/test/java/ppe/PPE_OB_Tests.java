@@ -7,14 +7,12 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import listener.TestListener;
 import org.testng.Assert;
-import org.testng.ITestResult;
 import org.testng.annotations.*;
 import resources.ReusableMethods;
-import roostify.base.Base;
+import roostify.base.base;
 import roostify.ppe.payLoad;
-import utilities.ReadConfig;
+
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -23,7 +21,7 @@ import static io.restassured.RestAssured.given;
 @Listeners({TestListener.class})
 @Epic("PPE Regression")
 @Feature("Verify PPE functionality")
-public class PPE_OB_Tests extends Base {
+public class PPE_OB_Tests extends base {
 
     Properties prop = new Properties();
 

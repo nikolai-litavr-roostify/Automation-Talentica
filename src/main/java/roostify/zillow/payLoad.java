@@ -1,6 +1,6 @@
 package roostify.zillow;
 
-import resources.DataDriven;
+import resources.dataDriven;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -8,7 +8,7 @@ public class payLoad {
 
     public static String getPostData(String Scenarioname) throws IOException {
 
-        DataDriven d = new DataDriven();
+        dataDriven d = new dataDriven();
         String Sheetname = "Zillow";
         ArrayList data = d.getData(Sheetname, Scenarioname);
 
@@ -35,7 +35,7 @@ public class payLoad {
     }
 
     public static int getExpected(String Scenarioname) throws IOException {
-        DataDriven d=new DataDriven();
+        dataDriven d=new dataDriven();
         String Sheetname = "Zillow";
         ArrayList data=d.getData(Sheetname,Scenarioname);
         Object expected = data.get(10);

@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class DataDriven {
+public class dataDriven {
 
     public ArrayList<String> getData(String sheetName,String testcaseName)throws IOException
     {
@@ -50,7 +50,7 @@ public class DataDriven {
                         Iterator<Cell> cv = r.cellIterator();
                         while (cv.hasNext()) {
                             Cell c = cv.next();
-                            System.out.println(c);
+                           // System.out.println(c);
                             if (c.getCellTypeEnum() == CellType.STRING) {
                                 al.add(c.getStringCellValue());
                             } else {

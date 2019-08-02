@@ -4,7 +4,6 @@ import io.restassured.RestAssured;
 import io.restassured.authentication.PreemptiveBasicAuthScheme;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import resources.ReusableMethods;
@@ -45,7 +44,7 @@ public class RCoreTests {
     public void createLoanApplication() throws IOException {
         Response res =
                 given().header("Content-Type", "application/json")
-                        .body(LoanCreation.getLoancreationData()).when().post("loan_applications").then().assertThat().statusCode(200).extract().response();
+                        .body(loanCreation.getLoancreationData()).when().post("loan_applications").then().assertThat().statusCode(200).extract().response();
         JsonPath js = ReusableMethods.rawToJson(res);
          loanId = js.get("id");
         System.out.println("Loan Application Id :-"+loanId);
@@ -77,7 +76,7 @@ public class RCoreTests {
     {
         Response res =
                 given().header("Content-Type", "application/json")
-                        .body(Tasks.getTaskCreationData(loanId)).when().post("tasks").then().assertThat().statusCode(200).extract().response();
+                        .body(tasks.getTaskCreationData(loanId)).when().post("tasks").then().assertThat().statusCode(200).extract().response();
         JsonPath js = ReusableMethods.rawToJson(res);
         taskId= js.get("id");
         System.out.println("Task Id :-"+taskId);
@@ -96,7 +95,7 @@ public class RCoreTests {
     public void updateTask()
     {
         Response res =
-                given().header("Content-Type", "application/json").body(Tasks.updateTaskData()).when().put("tasks/"+taskId+"").then().assertThat().statusCode(200).extract().response();
+                given().header("Content-Type", "application/json").body(tasks.updateTaskData()).when().put("tasks/"+taskId+"").then().assertThat().statusCode(200).extract().response();
 
     }
 

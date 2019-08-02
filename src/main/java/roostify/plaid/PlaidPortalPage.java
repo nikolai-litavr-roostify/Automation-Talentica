@@ -9,13 +9,13 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import resources.DataDriven;
-import roostify.base.Base;
+import resources.dataDriven;
+import roostify.base.base;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class PlaidPortalPage extends Base {
+public class PlaidPortalPage extends base {
 
 
     public WebDriver driver;
@@ -23,7 +23,7 @@ public class PlaidPortalPage extends Base {
     String Password = "";
     String User2 = "";
     String Password2 = "";
-    Base b = new Base();
+    base b = new base();
 
 
     public PlaidPortalPage(WebDriver driver) {
@@ -251,7 +251,7 @@ public class PlaidPortalPage extends Base {
     }
 
     public void getLoginData(String Scenarioname) throws IOException {
-        DataDriven d=new DataDriven();
+        dataDriven d=new dataDriven();
         String Sheetname = "Plaid";
         ArrayList data=d.getData(Sheetname,Scenarioname);
         User= (String) data.get(16);

@@ -4,9 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import roostify.base.Base;
+import roostify.base.base;
 
-public class ScenarioBuilderPage extends Base {
+public class ScenarioBuilderPage extends base {
 
     public ScenarioBuilderPage(WebDriver driver) {
         this.driver=driver;

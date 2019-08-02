@@ -11,7 +11,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import roostify.base.Base;
+import roostify.base.base;
 import roostify.zillow.payLoad;
 import resources.ReusableMethods;
 import roostify.zillow.ZillowPortalPage;
@@ -20,7 +20,7 @@ import java.io.IOException;
 import static io.restassured.RestAssured.given;
 
 
-public class ZillowTests extends Base{
+public class ZillowTests extends base {
 
     @BeforeTest
     public void getData(){
@@ -56,7 +56,7 @@ public class ZillowTests extends Base{
         System.out.println(srclink3);
         String srclink4 = js.get("links[3].resource_location");
         System.out.println(srclink4);
-        Base b = new Base();
+        base b = new base();
         WebDriver driver= b.initialzeDriver();
         driver.navigate().to(srclink1);
         ZillowPortalPage zpp = new ZillowPortalPage(driver);

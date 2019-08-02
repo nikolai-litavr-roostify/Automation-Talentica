@@ -10,7 +10,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import roostify.base.Base;
+import roostify.base.base;
 import roostify.plaid.payLoad;
 import resources.ReusableMethods;
 import roostify.plaid.PlaidPortalPage;
@@ -22,7 +22,7 @@ import static io.restassured.RestAssured.given;
 @Listeners({TestListener.class})
 @Epic("Plaid Regression")
 @Feature("Verify Plaid functionality")
-public class PlaidTests extends Base {
+public class PlaidTests extends base {
 
     @BeforeTest
     public void  getHostURL(){
@@ -83,7 +83,7 @@ public class PlaidTests extends Base {
         JsonPath js = ReusableMethods.rawToJson(res);
         String verificationId=js.get("id");
         String srclink = js.get("links[0].resource_location");
-        Base b = new Base();
+        base b = new base();
         WebDriver driver= b.initialzeDriver();
         driver.navigate().to(srclink);
         PlaidPortalPage ppp = new PlaidPortalPage(driver);
@@ -105,7 +105,7 @@ public class PlaidTests extends Base {
         JsonPath js = ReusableMethods.rawToJson(res);
         String srclink = js.get("links[0].resource_location");
         String verificationId=js.get("id");
-        Base b = new Base();
+        base b = new base();
         WebDriver driver= b.initialzeDriver();
         driver.navigate().to(srclink);
         PlaidPortalPage ppp = new PlaidPortalPage(driver);

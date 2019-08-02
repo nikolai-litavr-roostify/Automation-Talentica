@@ -14,7 +14,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-public class Base {
+public class base {
     public static WebDriver driver;
     public String filePath="";
     ReadConfig rc = new ReadConfig();

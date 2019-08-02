@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.Random;
 
-public class LoanCreation {
+public class loanCreation {
 
     public static String getLoancreationData() throws IOException {
         Properties prop = new Properties();

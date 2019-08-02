@@ -9,13 +9,13 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import resources.DataDriven;
+import resources.dataDriven;
 import roostify.base.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class AccCheckPortalPage extends Base {
+public class accCheckPortalPage extends base {
   //  private static Logger log = LogManager.getLogger(Demo.class.getName());
     public WebDriver driver;
     String User = "";
@@ -27,10 +27,10 @@ public class AccCheckPortalPage extends Base {
     String WellsForgoUser="";
     String WellsForgoPassword="";
 
-    Base b = new Base();
+    base b = new base();
 
 
-    public AccCheckPortalPage(WebDriver driver) {
+    public accCheckPortalPage(WebDriver driver) {
         this.driver=driver;
         PageFactory.initElements(driver, this);
     }
@@ -254,7 +254,7 @@ public class AccCheckPortalPage extends Base {
     }
 
     public void getLoginData(String Scenarioname) throws IOException {
-        DataDriven d=new DataDriven();
+        dataDriven d=new dataDriven();
         String Sheetname = "AccountCheck";
         ArrayList data=d.getData(Sheetname,Scenarioname);
         User= (String) data.get(19);

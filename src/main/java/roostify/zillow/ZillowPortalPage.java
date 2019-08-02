@@ -4,13 +4,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import roostify.base.Base;
+import roostify.base.base;
 
-public class ZillowPortalPage extends Base {
+public class ZillowPortalPage extends base {
 
     public WebDriver driver;
 
-    Base b = new Base();
+    base b = new base();
 
 
     public ZillowPortalPage(WebDriver driver) {

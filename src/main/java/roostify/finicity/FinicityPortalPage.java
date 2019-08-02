@@ -1,25 +1,24 @@
 package roostify.finicity;
 
 import io.qameta.allure.Step;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import resources.DataDriven;
-import roostify.base.Base;
+import resources.dataDriven;
+import roostify.base.base;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class FinicityPortalPage extends Base {
+public class FinicityPortalPage extends base {
 
     public WebDriver driver;
     String User = "";
     String Password = "";
     String User2 = "";
     String Password2 = "";
-    Base b = new Base();
+    base b = new base();
 
     public FinicityPortalPage(WebDriver driver) {
         this.driver=driver;
@@ -175,7 +174,7 @@ public class FinicityPortalPage extends Base {
 
 
     public void getLoginData(String Scenarioname) throws IOException {
-        DataDriven d=new DataDriven();
+        dataDriven d=new dataDriven();
         String Sheetname = "Finicity";
         ArrayList data=d.getData(Sheetname,Scenarioname);
         User= (String) data.get(19);
