@@ -1,12 +1,12 @@
 package roostify.rCore.payLoad;
 
-import resources.ReusableMethods;
+import resources.reusableMethods;
 
-public class AccessControlGroup {
+public class accessControlGroup {
 
     public static String getACGData(){
 
-        String system_Name = ReusableMethods.getSaltString();
+        String system_Name = reusableMethods.getSaltString();
 
         String data="{\n" +
                 "  \"name\": \"My Acg Group\",\n" +

@@ -8,7 +8,7 @@ import java.io.*;
 import java.util.Base64;
 import java.util.Random;
 
-public class ReusableMethods {
+public class reusableMethods {
 
     public static JsonPath rawToJson(Response r)
     {

@@ -6,14 +6,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import roostify.base.base;
 
-public class ZillowPortalPage extends base {
+public class zillowPortalPage extends base {
 
     public WebDriver driver;
 
     base b = new base();
 
 
-    public ZillowPortalPage(WebDriver driver) {
+    public zillowPortalPage(WebDriver driver) {
         this.driver=driver;
         PageFactory.initElements(driver, this);
     }

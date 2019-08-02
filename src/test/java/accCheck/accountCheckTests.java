@@ -9,7 +9,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 import roostify.accCheck.payLoad;
 import roostify.base.base;
-import resources.ReusableMethods;
+import resources.reusableMethods;
 import utilities.ReadConfig;
 import java.io.IOException;
 import java.util.Properties;
@@ -19,7 +19,7 @@ import static io.restassured.RestAssured.given;
 @Listeners({TestListener.class})
 @Epic("Account Check Regression")
 @Feature("Verify Account Check functionality")
-public class AccountCheckTests extends base {
+public class accountCheckTests extends base {
 
     private Properties prop = new Properties();
 
@@ -69,10 +69,10 @@ public class AccountCheckTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
         String data = js.get("links[0].resource_data");
         String verificationId = js.get("id");
-        String srclink = ReusableMethods.getSrcLink(data);
+        String srclink = reusableMethods.getSrcLink(data);
        /* System.out.println(srclink);
         Base b = new Base();
         WebDriver driver= b.initialzeDriver();
@@ -98,7 +98,7 @@ public class AccountCheckTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
         String data = js.get("links[0].resource_data");
        /* String srclink = ReusableMethods.getSrcLink(data);
         System.out.println(srclink);
@@ -124,9 +124,9 @@ public class AccountCheckTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
         String data = js.get("links[0].resource_data");
-        String srclink = ReusableMethods.getSrcLink(data);
+        String srclink = reusableMethods.getSrcLink(data);
         System.out.println(srclink);
         /*Base b = new Base();
         WebDriver driver= b.initialzeDriver();
@@ -149,9 +149,9 @@ public class AccountCheckTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
         String data = js.get("links[0].resource_data");
-        String srclink = ReusableMethods.getSrcLink(data);
+        String srclink = reusableMethods.getSrcLink(data);
        /* System.out.println(srclink);
         Base b = new Base();
         WebDriver driver= b.initialzeDriver();
@@ -174,9 +174,9 @@ public class AccountCheckTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1129")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
         String data = js.get("links[0].resource_data");
-        String srclink = ReusableMethods.getSrcLink(data);
+        String srclink = reusableMethods.getSrcLink(data);
        /* System.out.println(srclink);
         Base b = new Base();
         WebDriver driver= b.initialzeDriver();

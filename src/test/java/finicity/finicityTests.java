@@ -12,14 +12,14 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import roostify.base.base;
 import roostify.finicity.payLoad;
-import resources.ReusableMethods;
-import roostify.finicity.FinicityPortalPage;
+import resources.reusableMethods;
+import roostify.finicity.finicityPortalPage;
 import utilities.ReadConfig;
 import java.io.IOException;
 import static io.restassured.RestAssured.given;
 
 
-public class FinicityTests extends base {
+public class finicityTests extends base {
 
 
     @BeforeTest
@@ -41,7 +41,7 @@ public class FinicityTests extends base {
     @Test(priority = 3, description = "Download the report")
     public void downloadReport(String verificationId)
     {
-        FinicityPortalPage fpp = new FinicityPortalPage(driver);
+        finicityPortalPage fpp = new finicityPortalPage(driver);
         String status= "";
         Object doclink=null;
         String expected="SUCCESS";
@@ -50,7 +50,7 @@ public class FinicityTests extends base {
         do{
             Response res1 =
                     given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127").get("/"+verificationId+"").then().assertThat().statusCode(200).extract().response();
-            JsonPath js1 = ReusableMethods.rawToJson(res1);
+            JsonPath js1 = reusableMethods.rawToJson(res1);
 
              status = js1.get("verification_status.status");
             doclink=js1.get("verification_status.documents[0]");
@@ -77,14 +77,14 @@ public class FinicityTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
         String verificationId=js.get("id");
         String srclink = js.get("links[0].resource_location");
         System.out.println(srclink);
         base b = new base();
         WebDriver driver= b.initialzeDriver();
         driver.navigate().to(srclink);
-        FinicityPortalPage fpp = new FinicityPortalPage(driver);
+        finicityPortalPage fpp = new finicityPortalPage(driver);
         fpp.loginToFinicity(Scenarioname);
         fpp.submitAccounts();
         downloadReport(verificationId);
@@ -98,14 +98,14 @@ public class FinicityTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
         String srclink = js.get("links[0].resource_location");
         String verificationId=js.get("id");
         System.out.println(srclink);
         base b = new base();
         WebDriver driver= b.initialzeDriver();
         driver.navigate().to(srclink);
-        FinicityPortalPage fpp = new FinicityPortalPage(driver);
+        finicityPortalPage fpp = new finicityPortalPage(driver);
         fpp.loginToFinicity(Scenarioname);
         fpp.logintoAnotherBank();
         fpp.submitAccounts();
@@ -120,7 +120,7 @@ public class FinicityTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
     }
 
     @Test(priority = 0, description = "Valid Finicity flow for Asset Verification (With only mandatory parameters)")

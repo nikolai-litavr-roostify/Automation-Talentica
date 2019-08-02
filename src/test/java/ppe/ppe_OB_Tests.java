@@ -8,7 +8,7 @@ import io.restassured.response.Response;
 import listener.TestListener;
 import org.testng.Assert;
 import org.testng.annotations.*;
-import resources.ReusableMethods;
+import resources.reusableMethods;
 import roostify.base.base;
 import roostify.ppe.payLoad;
 
@@ -21,7 +21,7 @@ import static io.restassured.RestAssured.given;
 @Listeners({TestListener.class})
 @Epic("PPE Regression")
 @Feature("Verify PPE functionality")
-public class PPE_OB_Tests extends base {
+public class ppe_OB_Tests extends base {
 
     Properties prop = new Properties();
 
@@ -46,7 +46,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
         int productsTotal=js.get("product_total");
         for(int i=0;i<productsTotal;i++)
         {
@@ -66,7 +66,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
         int productsTotal=js.get("product_total");
 
         for(int i=0;i<productsTotal;i++)
@@ -86,7 +86,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
         int productsTotal=js.get("product_total");
 
         for(int i=0;i<productsTotal;i++)
@@ -106,7 +106,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
         int productsTotal=js.get("product_total");
 
         for(int i=0;i<productsTotal;i++)
@@ -126,7 +126,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
         int productsTotal=js.get("product_total");
 
         for(int i=0;i<productsTotal;i++)
@@ -146,7 +146,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
         int productsTotal=js.get("product_total");
 
         for(int i=0;i<productsTotal;i++)
@@ -166,7 +166,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
         int productsTotal=js.get("product_total");
 
         for(int i=0;i<productsTotal;i++)
@@ -187,7 +187,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -201,7 +201,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
         int productsTotal=js.get("product_total");
         Assert.assertEquals(productsTotal,0);
 
@@ -217,7 +217,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
         int productsTotal=js.get("product_total");
         Assert.assertEquals(productsTotal,0);
     }
@@ -232,7 +232,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
     }
 
     @Test(priority = 1, description = "Invalid_Zip_Code")
@@ -245,7 +245,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
     }
 
     @Test(priority = 1, description = "Invalid_Mortgage_balance")
@@ -258,7 +258,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
     }
 
     @Test(priority = 1, description = "Invalid_Current_Property_Value")
@@ -271,7 +271,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
     }
 
     @Test(priority = 1, description = "Invalid_Customer_Id")
@@ -284,7 +284,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
     }
 
     @Test(priority = 1, description = "Invalid_Account_Id")
@@ -297,7 +297,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
     }
 
     @Test(priority = 1, description = "Invalid_Loan_Types")
@@ -310,7 +310,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
     }
 
     @Test(priority = 1, description = "Invalid_Property_Type")
@@ -323,7 +323,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
     }
 
     @Test(priority = 1, description = "Invalid_Loan_Amortization")
@@ -336,7 +336,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
     }
 
     @Test(priority = 1, description = "Invalid_Fico_Score")
@@ -349,7 +349,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
     }
 
     @Test(priority = 1, description = "Invalid_Adjustable_Rate_Terms")
@@ -362,7 +362,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
     }
 
     @Test(priority = 1, description = "Invalid_loan_purpose")
@@ -375,7 +375,7 @@ public class PPE_OB_Tests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1257").header("Authorization","asfa").
                         header("Accept","application/json")
                         .body(payLoad.getPostData(Scenarioname)).when().post("products").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
     }
 
 }

@@ -1,12 +1,12 @@
 package roostify.rCore.payLoad;
 
-import resources.ReusableMethods;
+import resources.reusableMethods;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.Random;
 
-public class User_Management {
+public class user_Management {
 
 
     private static Properties prop;
@@ -14,7 +14,7 @@ public class User_Management {
     private static  String SecondaryAcc1;
     private static  String SecondaryAcc2;
 
-    public User_Management() throws IOException {
+    public user_Management() throws IOException {
          prop = new Properties();
         FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//Configurations//config.properties");
         prop.load(fis);
@@ -30,7 +30,7 @@ public class User_Management {
         FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//Configurations//config.properties");
         prop.load(fis);
        String  AccountId= prop.getProperty("RoostifyAccountId");
-       String sso_reference = ReusableMethods.getSaltString();
+       String sso_reference = reusableMethods.getSaltString();
        Random r = new Random();
        int i= r.nextInt();
 

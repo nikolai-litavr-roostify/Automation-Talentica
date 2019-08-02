@@ -12,8 +12,8 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import roostify.base.base;
 import roostify.plaid.payLoad;
-import resources.ReusableMethods;
-import roostify.plaid.PlaidPortalPage;
+import resources.reusableMethods;
+import roostify.plaid.plaidPortalPage;
 import utilities.ReadConfig;
 import java.io.IOException;
 import static io.restassured.RestAssured.given;
@@ -22,7 +22,7 @@ import static io.restassured.RestAssured.given;
 @Listeners({TestListener.class})
 @Epic("Plaid Regression")
 @Feature("Verify Plaid functionality")
-public class PlaidTests extends base {
+public class plaidTests extends base {
 
     @BeforeTest
     public void  getHostURL(){
@@ -44,7 +44,7 @@ public class PlaidTests extends base {
     @Test
     public void downloadReport(String verificationId)
     {
-        PlaidPortalPage ppp = new PlaidPortalPage(driver);
+        plaidPortalPage ppp = new plaidPortalPage(driver);
         String status= "";
         Object doclink=null;
         String expected="SUCCESS";
@@ -53,7 +53,7 @@ public class PlaidTests extends base {
         do{
             Response res1 =
                     given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127").get("/"+verificationId+"").then().assertThat().statusCode(200).extract().response();
-            JsonPath js1 = ReusableMethods.rawToJson(res1);
+            JsonPath js1 = reusableMethods.rawToJson(res1);
 
             status = js1.get("verification_status.status");
             doclink=js1.get("verification_status.documents[0]");
@@ -80,13 +80,13 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
         String verificationId=js.get("id");
         String srclink = js.get("links[0].resource_location");
         base b = new base();
         WebDriver driver= b.initialzeDriver();
         driver.navigate().to(srclink);
-        PlaidPortalPage ppp = new PlaidPortalPage(driver);
+        plaidPortalPage ppp = new plaidPortalPage(driver);
         ppp.loginToCitiBank(Scenarioname);
         ppp.validateSuccessMessage();
         downloadReport(verificationId);
@@ -102,13 +102,13 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
         String srclink = js.get("links[0].resource_location");
         String verificationId=js.get("id");
         base b = new base();
         WebDriver driver= b.initialzeDriver();
         driver.navigate().to(srclink);
-        PlaidPortalPage ppp = new PlaidPortalPage(driver);
+        plaidPortalPage ppp = new plaidPortalPage(driver);
         ppp.loginToCitiBank(Scenarioname);
         ppp.loginToChase();
         ppp.validateSuccessMessage();
@@ -123,7 +123,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -135,7 +135,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -147,7 +147,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -159,7 +159,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -171,7 +171,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -183,7 +183,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -196,7 +196,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -208,7 +208,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -220,7 +220,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -232,7 +232,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -245,7 +245,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -257,7 +257,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -269,7 +269,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -281,7 +281,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -293,7 +293,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -305,7 +305,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -317,7 +317,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -329,7 +329,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -341,7 +341,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -353,7 +353,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -365,7 +365,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -377,7 +377,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -389,7 +389,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 
@@ -402,7 +402,7 @@ public class PlaidTests extends base {
         Response res =
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1127")
                         .body(payLoad.getPostData(Scenarioname)).when().post().then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
 
     }
 

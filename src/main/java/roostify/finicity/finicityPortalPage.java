@@ -11,7 +11,7 @@ import roostify.base.base;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class FinicityPortalPage extends base {
+public class finicityPortalPage extends base {
 
     public WebDriver driver;
     String User = "";
@@ -20,7 +20,7 @@ public class FinicityPortalPage extends base {
     String Password2 = "";
     base b = new base();
 
-    public FinicityPortalPage(WebDriver driver) {
+    public finicityPortalPage(WebDriver driver) {
         this.driver=driver;
         PageFactory.initElements(driver, this);
     }

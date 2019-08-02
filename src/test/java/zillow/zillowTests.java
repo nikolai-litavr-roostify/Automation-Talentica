@@ -13,14 +13,14 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import roostify.base.base;
 import roostify.zillow.payLoad;
-import resources.ReusableMethods;
-import roostify.zillow.ZillowPortalPage;
+import resources.reusableMethods;
+import roostify.zillow.zillowPortalPage;
 import utilities.ReadConfig;
 import java.io.IOException;
 import static io.restassured.RestAssured.given;
 
 
-public class ZillowTests extends base {
+public class zillowTests extends base {
 
     @BeforeTest
     public void getData(){
@@ -46,7 +46,7 @@ public class ZillowTests extends base {
                 given().header("Content-Type", "application/json").header("X-CORRELATION-ID", "1130")
                         .body(payLoad.getPostData(Scenarioname)).when().post("/properties/estimates").then().assertThat().statusCode(payLoad.getExpected(Scenarioname)).extract().response();
 
-        JsonPath js = ReusableMethods.rawToJson(res);
+        JsonPath js = reusableMethods.rawToJson(res);
         String verificationId=js.get("id");
         String srclink1 = js.get("links[0].resource_location");
         System.out.println(srclink1);
@@ -59,7 +59,7 @@ public class ZillowTests extends base {
         base b = new base();
         WebDriver driver= b.initialzeDriver();
         driver.navigate().to(srclink1);
-        ZillowPortalPage zpp = new ZillowPortalPage(driver);
+        zillowPortalPage zpp = new zillowPortalPage(driver);
         zpp.sleep();
         System.out.println(driver.getTitle());
         driver.navigate().to(srclink2);

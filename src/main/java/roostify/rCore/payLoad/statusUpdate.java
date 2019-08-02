@@ -2,7 +2,7 @@ package roostify.rCore.payLoad;
 
 import java.io.IOException;
 
-public class StatusUpdate {
+public class statusUpdate {
     public static String getStatusUpdateData(String loanId) throws IOException {
 
         String data = "  \"loan_application_id\": \"6865676134895908\",\n" +

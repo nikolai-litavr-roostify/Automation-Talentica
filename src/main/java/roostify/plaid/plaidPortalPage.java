@@ -15,7 +15,7 @@ import roostify.base.base;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class PlaidPortalPage extends base {
+public class plaidPortalPage extends base {
 
 
     public WebDriver driver;
@@ -26,7 +26,7 @@ public class PlaidPortalPage extends base {
     base b = new base();
 
 
-    public PlaidPortalPage(WebDriver driver) {
+    public plaidPortalPage(WebDriver driver) {
         this.driver=driver;
         PageFactory.initElements(driver, this);
     }

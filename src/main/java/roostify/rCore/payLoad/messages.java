@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-public class Messages {
+public class messages {
 
     public static String getCreateMessageData(String loanId) throws IOException {
         Properties prop = new Properties();

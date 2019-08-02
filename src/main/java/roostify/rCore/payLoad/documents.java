@@ -1,12 +1,12 @@
 package roostify.rCore.payLoad;
 
-import resources.ReusableMethods;
+import resources.reusableMethods;
 
 
-public class Documents {
+public class documents {
 
     public static String getUploadDocumentData(String loanId, String taskId){
-        String encodedFile = ReusableMethods.encoder(System.getProperty("user.dir")+"//resources//sample.pdf");
+        String encodedFile = reusableMethods.encoder(System.getProperty("user.dir")+"//resources//sample.pdf");
 
        String data="{\n" +
                "  \"name\": \"Disneyland\",\n" +
