@@ -21,7 +21,7 @@ Feature: Add Loan Manually Test
     Then Admin enters Address page details
     Examples:
       |username|password|email|firstname|lastname|account|
-      |roostify_admin@roostify.com|168Washu||Vivek|Wagh|Roostify (Roostify)|
+      ||||Vivek|Wagh|Roostify (Roostify)|
 
   @AddLoanManuallyHELOCTest
   Scenario: Loan Section

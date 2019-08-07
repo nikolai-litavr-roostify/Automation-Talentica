@@ -26,7 +26,7 @@ Feature: Invite Borrower Functionality
   Then Admin enters Address page details
     Examples:
       |username|password|mailid|firstname|lastname|password|
-      |roostify_admin@roostify.com|168Washu||Loan|App|Abcd1234|
+      ||||Loan|App|Abcd1234|
 
   @InviteBorrowerPreConTest
   Scenario: Loan Section
@@ -100,7 +100,7 @@ Feature: Invite Borrower Functionality
     Then Admin enters Address page details
     Examples:
       |username|password|mailid|firstname|lastname|password|
-      |roostify_admin@roostify.com|168Washu||Loan|App|Abcd1234|
+      ||||Loan|App|Abcd1234|
 
   @InviteBorrowerPreFHATest
   Scenario: Loan Section
@@ -174,7 +174,7 @@ Feature: Invite Borrower Functionality
     Then Admin enters Address page details
     Examples:
       |username|password|mailid|firstname|lastname|password|
-      |roostify_admin@roostify.com|168Washu||Loan|App|Abcd1234|
+      ||||Loan|App|Abcd1234|
 
   @InviteBorrowerPreVaTest
   Scenario: Loan Section
@@ -248,7 +248,7 @@ Feature: Invite Borrower Functionality
     Then Admin enters Address page details
     Examples:
       |username|password|mailid|firstname|lastname|password|
-      |roostify_admin@roostify.com|168Washu||Loan|App|Abcd1234|
+      ||||Loan|App|Abcd1234|
 
   @InviteBorrowerPreUSDATest
   Scenario: Loan Section

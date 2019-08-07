@@ -7,8 +7,8 @@ Feature: Test Login Functionality
     And Admin clicks on Sign In Button.
     Then Admin navigates to Roostify Core Home Page.
     Examples:
-    |username|password|
-    |roostify_admin@roostify.com|168Washu|
+      |username|password|
+      |||
 
 
 

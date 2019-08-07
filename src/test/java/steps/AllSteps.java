@@ -5,6 +5,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import managers.FileReaderManager;
 import managers.PageObjectManager;
 import managers.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +16,6 @@ import utils.WaitUtility;
 public class AllSteps{
 
     LoginPage lp;
-    AddLoanManuallyPreConPage alm;
     LoanSection ls;
     EmploymentSection es;
     IncomeSection is;
@@ -32,6 +32,7 @@ public class AllSteps{
     Coborrowerflowpage cob;
     ConnectionPage con;
     MessagesPage msg;
+    AddLoanManuallyPreConPage alm;
     AddLoanManuallyPreFHAPage addLoanManuallyPreFHAPage;
     AddLoanManuallyPreVaPage addLoanManuallyPreVaPage;
     AddLoanManuallyPreUSDAPage addLoanManuallyPreUSDAPage;
@@ -40,7 +41,6 @@ public class AllSteps{
     AddLoanManuallyHelocPage addLoanManuallyHelocPage;
     TeamPage tp;
     UserPage up;
-
 
 //    Login Page Section
     @Given("^Admin is on the Roostify Core Login Page$")
@@ -58,14 +58,14 @@ public class AllSteps{
     public void adminEnters(String username)
     {
 
-        lp.enter_userMail(username);
+        lp.enter_userMail(FileReaderManager.getInstance().getConfigReader().getUsername());
 
     }
 
     @And("^Admin enters also \"([^\"]*)\"$")
     public void adminEntersAlso(String password)
     {
-        lp.enter_password(password);
+        lp.enter_password(FileReaderManager.getInstance().getConfigReader().getPassword());
     }
 
     @And("^Admin clicks on Sign In Button\\.$")
@@ -556,6 +556,7 @@ public class AllSteps{
 
     @And("^User clicks on Agree Terms and Conditions for connection$")
     public void userClicksOnAgreeTermsAndConditionsForConnection()
+
     {
         con.click_terms_conditions();
     }
@@ -968,6 +969,37 @@ public class AllSteps{
     @Then("^Admin enters the name or email of an user$")
     public void Admin_enters_the_name_or_email_of_an_user(){
         up.clickOnSearchTextBox();
+    }
+
+    @Given("^Admin selects loan purpose as pre-approval$")
+    public void adminSelectsLoanPurposeAsPreApproval()
+    {
+        pageObjectManager = new PageObjectManager(driver);
+        cob = pageObjectManager.getCoborrowerPage();
+        cob.loan_details();
+    }
+
+    @And("^Admin enters city details for coborrower flow$")
+    public void adminEntersCityDetailsForCoborrowerFlow()
+    {
+        cob.city_details();
+    }
+
+    @And("^Admin enters loan type as conventional$")
+    public void adminEntersLoanTypeAsConventional()
+    {
+        cob.loan_Type();
+    }
+
+    @And("^Admin enters interest rate type for coborrower flow$")
+    public void adminEntersInterestRateTypeForCoborrowerFlow() {
+        cob.interest_Rate_Type();
+    }
+
+    @Then("^Admin clicks on loan application$")
+    public void adminClicksOnLoanApplication()
+    {
+
     }
 }
 

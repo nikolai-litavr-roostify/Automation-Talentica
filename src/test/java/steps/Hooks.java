@@ -12,13 +12,8 @@
 //
 //public class Hooks {
 //
-//    TestContext testContext;
+//
 //    public static WebDriver driver;
-////
-//    public Hooks(TestContext context) {
-//        testContext = context;
-//    }
-//    ExtentTest extentTest;
 //
 //    @Before
 //    public void BeforeSteps()

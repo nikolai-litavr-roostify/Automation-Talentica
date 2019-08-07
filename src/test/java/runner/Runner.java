@@ -19,7 +19,7 @@ import java.io.File;
 @CucumberOptions(
         features = "src/test/java/features/"
         ,glue={"steps"}
-        ,tags= {"@TeamFunctionalityTest"}
+        ,tags= {"@LoginTest"}
         ,plugin={"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"}
         )
 

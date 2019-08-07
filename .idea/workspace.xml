@@ -2,16 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ce64c31-70d3-4a55-8d7e-07f8b455a0b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/TeamPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/UserPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/features/Team.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/features/User.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/managers/PageObjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/managers/PageObjectManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/Coborrowerflowpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/Coborrowerflowpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/configFiles/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configFiles/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/AddLoanManuallyHELOCLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/AddLoanManuallyHELOCLoans.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/AddLoanManuallyHomePurchaseLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/AddLoanManuallyHomePurchaseLoans.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/AddLoanManuallyPreApprovalLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/AddLoanManuallyPreApprovalLoans.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/AddLoanManuallyRefinanceLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/AddLoanManuallyRefinanceLoans.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/features/CoborrowerFlow.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/CoborrowerFlow.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/Connection.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/Connection.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/CopyReferalHELOCLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/CopyReferalHELOCLoans.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/CopyReferalHomePurchaseLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/CopyReferalHomePurchaseLoans.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/CopyReferalPreApprovalLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/CopyReferalPreApprovalLoans.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/CopyReferalRefinanceLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/CopyReferalRefinanceLoans.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/InviteBorrowerHELOCLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/InviteBorrowerHELOCLoans.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/InviteBorrowerHomePurchaseLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/InviteBorrowerHomePurchaseLoans.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/InviteBorrowerPreApprovalLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/InviteBorrowerPreApprovalLoans.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/InviteBorrowerRefinanceLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/InviteBorrowerRefinanceLoans.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/Team.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/Team.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/User.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/User.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/AllSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AllSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/managers/PageObjectManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/managers/PageObjectManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/Coborrowerflowpage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/Coborrowerflowpage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/runner/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/Runner.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/steps/AllSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/AllSteps.class" afterDir="false" />
@@ -40,7 +54,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -106,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564590145835</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Team and User Functionality">
+      <created>1564650586883</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1564650586883</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,6 +145,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added various loan types." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added various loan types." />
+    <MESSAGE value="Added Team and User Functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Team and User Functionality" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/LoanSection.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/LoanSection.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

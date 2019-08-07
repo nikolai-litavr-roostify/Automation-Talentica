@@ -20,7 +20,7 @@ Feature: Copy Referral URL Test
     Then Admin enters Address page details
     Examples:
     |username|password|firstname|lastname|mailid|password|
-    |roostify_admin@roostify.com|168Washu|Loan|App||Abcd1234|
+    |||Loan|App||Abcd1234|
 
   @CopyReferalPreConTest
   Scenario: Loan Section
@@ -88,7 +88,7 @@ Feature: Copy Referral URL Test
     Then Admin enters Address page details
     Examples:
       |username|password|firstname|lastname|mailid|password|
-      |roostify_admin@roostify.com|168Washu|Loan|App||Abcd1234|
+      |||Loan|App||Abcd1234|
 
   @CopyReferalPreFHATest
   Scenario: Loan Section
@@ -156,7 +156,7 @@ Feature: Copy Referral URL Test
     Then Admin enters Address page details
     Examples:
       |username|password|firstname|lastname|mailid|password|
-      |roostify_admin@roostify.com|168Washu|Loan|App||Abcd1234|
+      |||Loan|App||Abcd1234|
 
   @CopyReferalPreVaTest
   Scenario: Loan Section
@@ -224,7 +224,7 @@ Feature: Copy Referral URL Test
     Then Admin enters Address page details
     Examples:
       |username|password|firstname|lastname|mailid|password|
-      |roostify_admin@roostify.com|168Washu|Loan|App||Abcd1234|
+      |||Loan|App||Abcd1234|
 
   @CopyReferalPreUSDATest
   Scenario: Loan Section

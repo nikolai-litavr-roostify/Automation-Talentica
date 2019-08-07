@@ -15,7 +15,7 @@ Feature: Test Team functionality by Admin
     And Admin clicks on Add to Team
     Examples:
       |username|password|
-      |roostify_admin@roostify.com|168Washu|
+      |||
 
   Scenario Outline: Add team member as Assistant
     Given Admin is on the Roostify Core Login Page
@@ -31,7 +31,7 @@ Feature: Test Team functionality by Admin
     And Admin clicks on Add to Team
     Examples:
       |username|password|
-      |roostify_admin@roostify.com|168Washu|
+      |||
 
   Scenario Outline: Add team member as Processor
     Given Admin is on the Roostify Core Login Page
@@ -47,7 +47,7 @@ Feature: Test Team functionality by Admin
     And Admin clicks on Add to Team
     Examples:
       |username|password|
-      |roostify_admin@roostify.com|168Washu|
+      |||
 
   @DeleteTeamMemberTest
   Scenario Outline: Delete Underwriter
@@ -61,7 +61,7 @@ Feature: Test Team functionality by Admin
     And Admin clicks on 'Yes, remove' button
     Examples:
       |username|password|
-      |roostify_admin@roostify.com|168Washu|
+      |||
 
   @AddTeamMemberNegativeTest
   Scenario Outline: To verify that admin cannot add user from other account as a team member
@@ -77,4 +77,4 @@ Feature: Test Team functionality by Admin
     Then Admin should see No results matched text
     Examples:
       |username|password|
-      |roostify_admin@roostify.com|168Washu|
+      |||

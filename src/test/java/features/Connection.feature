@@ -21,4 +21,4 @@
       And Admin clicks on complete registration link
       Examples:
         |username|password|email|password|
-        |roostify_admin@roostify.com|168Washu||Abcd1234|
+        ||||Abcd1234|

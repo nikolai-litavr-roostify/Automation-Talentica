@@ -18,7 +18,7 @@ Feature: Test User invite functionality
     And Admin clicks on 'Send Invite' button
     Examples:
       |username|password|user_email|user_email|
-      |roostify_admin@roostify.com|168Washu|||
+      |||||
 
   @InviteUserAsAdminTest
   Scenario Outline: Invite a single user as an Admin
@@ -38,7 +38,7 @@ Feature: Test User invite functionality
     And Admin clicks on 'Send Invite' button
     Examples:
       |username|password|user_email|user_email|
-      |roostify_admin@roostify.com|168Washu|||
+      |||||
 
     @BulkInviteUsersUsingCSVFileTest
     Scenario Outline: Bulk invite users using CSV file upload
@@ -56,7 +56,7 @@ Feature: Test User invite functionality
 
       Examples:
         |username|password|
-        |roostify_admin@roostify.com|168Washu|
+        |||
 
       @SearchUser
       Scenario Outline: search user by name or email
@@ -73,6 +73,6 @@ Feature: Test User invite functionality
 
       Examples:
         |username|password|
-        |roostify_admin@roostify.com|168Washu|
+        |||
 
 

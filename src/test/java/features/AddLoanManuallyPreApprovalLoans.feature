@@ -21,7 +21,7 @@ Feature: Add Loan Manually Test
     Then Admin enters Address page details
     Examples:
     |username|password|email|firstname|lastname|account|
-    |roostify_admin@roostify.com|168Washu||Vivek|Wagh|Roostify (Roostify)|
+    ||||Vivek|Wagh|Roostify (Roostify)|
 
    @AddLoanManuallyPreConTest
     Scenario: Loan Section
@@ -90,7 +90,7 @@ Feature: Add Loan Manually Test
     Then Admin enters Address page details
     Examples:
       |username|password|email|firstname|lastname|account|
-      |roostify_admin@roostify.com|168Washu||Vivek|Wagh|Roostify (Roostify)|
+      ||||Vivek|Wagh|Roostify (Roostify)|
 
    @AddLoanManuallyPreFHATest
    Scenario: Loan Section
@@ -159,7 +159,7 @@ Feature: Add Loan Manually Test
     Then Admin enters Address page details
     Examples:
       |username|password|email|firstname|lastname|account|
-      |roostify_admin@roostify.com|168Washu||Vivek|Wagh|Roostify (Roostify)|
+      ||||Vivek|Wagh|Roostify (Roostify)|
 
   @AddLoanManuallyPreVaTest
   Scenario: Loan Section
@@ -228,7 +228,7 @@ Feature: Add Loan Manually Test
     Then Admin enters Address page details
     Examples:
       |username|password|email|firstname|lastname|account|
-      |roostify_admin@roostify.com|168Washu||Vivek|Wagh|Roostify (Roostify)|
+      ||||Vivek|Wagh|Roostify (Roostify)|
 
   @AddLoanManuallyPreUSDATest
   Scenario: Loan Section

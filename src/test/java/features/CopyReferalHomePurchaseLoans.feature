@@ -20,7 +20,7 @@ Feature: Add Loan Manually Test
     Then Admin enters Address page details
     Examples:
       |username|password|firstname|lastname|mailid|password|
-      |roostify_admin@roostify.com|168Washu|Loan|App||Abcd1234|
+      |||Loan|App||Abcd1234|
 
   @CopyReferalHomeConTest
   Scenario: Loan Section
@@ -88,7 +88,7 @@ Feature: Add Loan Manually Test
     Then Admin enters Address page details
     Examples:
       |username|password|firstname|lastname|mailid|password|
-      |roostify_admin@roostify.com|168Washu|Loan|App||Abcd1234|
+      |||Loan|App||Abcd1234|
 
 
   @CopyReferalHomeFHATest
@@ -157,7 +157,7 @@ Feature: Add Loan Manually Test
     Then Admin enters Address page details
     Examples:
       |username|password|firstname|lastname|mailid|password|
-      |roostify_admin@roostify.com|168Washu|Loan|App||Abcd1234|
+      |||Loan|App||Abcd1234|
 
 
   @CopyReferalHomeVaTest
@@ -226,7 +226,7 @@ Feature: Add Loan Manually Test
     Then Admin enters Address page details
     Examples:
       |username|password|firstname|lastname|mailid|password|
-      |roostify_admin@roostify.com|168Washu|Loan|App||Abcd1234|
+      |||Loan|App||Abcd1234|
 
 
   @CopyReferalHomeUSDATest
