@@ -24,6 +24,7 @@ Feature: Co-borrower Flow Test
     Then Admin enters coborrower lname
     Then Admin enters coborrower "<coborrower_email>"
     Then Admin enters coborrower phone number and clicks next
+    Then Admin includes coborrower
     Then Admin selcts no to armed services
     Examples:
       |username|password|email|firstname|lastname|account|coborrower_email|
@@ -67,7 +68,6 @@ Feature: Co-borrower Flow Test
     And Admin enters details in HMDA Section
     And Admin enters Social Security Number
     And Admin enters whether he authorizes Roostify to pull the credit
-    And Admin estimates his credit
     And Admin continues to next section
     Given User enters coborrower address
     And User navigates to Applcation Release Section

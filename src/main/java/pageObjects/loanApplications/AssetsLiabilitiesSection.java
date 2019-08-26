@@ -92,6 +92,21 @@ public class AssetsLiabilitiesSection {
     @FindBy(how = How.XPATH, using = "//button[@class='btn--block btn btn--primary js-step-nav']")
     private WebElement continue_button;
 
+    @FindBy(xpath = "//button[contains(.,'Fix later and continue')]")
+    private WebElement btn_fix_later_and_continue;
+
+    public void no_assets_LiabilitiesDetails()
+    {
+        next_button.click();
+        next_button.click();
+        next_button.click();
+        next_button.click();
+        next_button.click();
+        btn_fix_later_and_continue.click();
+    }
+
+
+
     public void assets_Liabilities_Section()
     {
        next_button.click();

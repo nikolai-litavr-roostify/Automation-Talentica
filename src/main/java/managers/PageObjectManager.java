@@ -28,7 +28,6 @@ public class PageObjectManager {
     private AboutYouSection ay;
     private CopyReferalPage cr;
     private SignUpPage su;
-    private Coborrowerflowpage cob;
     private ConnectionPage con;
     private MessagesPage msg;
     private AddLoanManuallyPreFHAPage addLoanManuallyPreFHAPage;
@@ -39,12 +38,46 @@ public class PageObjectManager {
     private AddLoanManuallyHelocPage addLoanManuallyHelocPage;
     private TeamPage teamPage;
     private UserPage userPage;
+    private UnassignedAppPage up;
+
+    private OverviewPage op;
+    private ProfilePage profilePage;
+    private SecurityPage securityPage;
+    private ReviewPage rp;
+
+    private LoanApplicationWithNewLO loanApplicationWithNewLOPage;
 
     public PageObjectManager(WebDriver driver) {
 
         this.driver = driver;
 
     }
+
+    public ReviewPage getReviewPage()
+    {
+        return (rp == null) ? rp = new ReviewPage(driver) : rp;
+    }
+
+    public SecurityPage getSecurityPage()
+    {
+        return (securityPage == null) ? securityPage = new SecurityPage(driver) : securityPage;
+    }
+
+    public UnassignedAppPage getUnassignedAppPage()
+    {
+        return (up == null) ? up = new UnassignedAppPage(driver) : up;
+    }
+
+    public ProfilePage getProfilePage()
+    {
+        return (profilePage == null) ? profilePage = new ProfilePage(driver) : profilePage;
+    }
+
+    public OverviewPage getOverviewPage()
+    {
+        return (op == null) ? op = new OverviewPage(driver) : op;
+    }
+
 
     public LoginPage getLoginPage(){
 
@@ -109,11 +142,6 @@ public class PageObjectManager {
         return (su == null) ? su = new SignUpPage(driver) : su;
     }
 
-    public Coborrowerflowpage getCoborrowerPage()
-    {
-        return (cob == null) ? cob = new Coborrowerflowpage(driver) : cob;
-    }
-
     public ConnectionPage getConnectionPage()
     {
         return (con == null) ? con = new ConnectionPage(driver) : con;
@@ -161,7 +189,16 @@ public class PageObjectManager {
 
     public UserPage getUserPage(){return  (userPage == null) ? userPage = new UserPage(driver) : userPage; }
 
+
+    public LoanApplicationWithNewLO getBorrowerUIPage()
+    {
+
+        return (loanApplicationWithNewLOPage == null) ? loanApplicationWithNewLOPage = new LoanApplicationWithNewLO(driver) : loanApplicationWithNewLOPage;
+
+    }
+
     public WebDriver getDriver() {
         return driver;
     }
+
 }

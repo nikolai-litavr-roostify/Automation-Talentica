@@ -26,10 +26,16 @@ public class AllSteps{
     AboutYouSection ay;
     CopyReferalPage cr;
     SignUpPage su;
+    LoanApplicationWithNewLO bui;
+    IncomeSection ins;
+    AssetsLiabilitiesSection als;
+    DeclarationsSection ds;
+    ApplicationRelease ar;
+
+
     public static WebDriver driver;
     PageObjectManager pageObjectManager;
     WebDriverManager webDriverManager;
-    Coborrowerflowpage cob;
     ConnectionPage con;
     MessagesPage msg;
     AddLoanManuallyPreConPage alm;
@@ -41,6 +47,12 @@ public class AllSteps{
     AddLoanManuallyHelocPage addLoanManuallyHelocPage;
     TeamPage tp;
     UserPage up;
+    UnassignedAppPage uap;
+//    LoanApplicationWithNewLOPage bui;
+    OverviewPage op;
+    ProfilePage profilePage;
+    SecurityPage securityPage;
+    ReviewPage rp;
 
 //    Login Page Section
     @Given("^Admin is on the Roostify Core Login Page$")
@@ -72,7 +84,7 @@ public class AllSteps{
     public void admin_clicks_on_Sign_In_Button()
     {
 
-        lp.click_SignIn();
+        lp.clickSignIn();
     }
 
     @Then("^Admin navigates to Roostify Core Home Page\\.$")
@@ -396,6 +408,12 @@ public class AllSteps{
         su.enter_signup_password(password);
     }
 
+//    @And("^User enters also password$")
+//    public void userEntersAlsoPassword()
+//    {
+//        su.enter_signup_password();
+//    }
+
     @Then("^User enters new users \"([^\"]*)\"$")
     public void user_enters_new_users_something(String mailid)  {
         su.enter_signup_mail(mailid);
@@ -428,67 +446,54 @@ public class AllSteps{
     @Then("^Admin enters Address$")
     public void adminEntersAddress()
     {
-        pageObjectManager = new PageObjectManager(driver);
-        cob = pageObjectManager.getCoborrowerPage();
-        cob.address_Details();
+        ay.address_Details1();
 
     }
 
     @Then("^Admin selects include coborrower$")
     public void adminSelectsIncludeCoborrower()
     {
-        cob.add_coborrower();
+        ay.add_coborrower();
     }
 
 
     @Then("^Admin enters coborrower fname$")
     public void adminEntersCoborrowerFname()
     {
-        cob.co_fname();
+        ay.co_fname();
     }
 
     @Then("^Admin enters coborrower lname$")
     public void adminEntersCoborrowerLname()
     {
-        cob.co_lname();
+        ay.co_lname();
     }
 
     @Then("^Admin enters coborrower \"([^\"]*)\"$")
     public void adminEntersCoborrower(String email)
     {
-        cob.co_email(email);
+        ay.co_email(email);
 
     }
 
     @Then("^Admin enters coborrower phone number and clicks next$")
     public void adminEntersCoborrowerPhoneNumberAndClicksNext()
     {
-        cob.co_phone();
+        ay.co_phone();
     }
 
     @Then("^Admin selcts no to armed services$")
     public void adminSelctsNoToArmedServices()
     {
-        cob.armed_services();
+        ay.armed_services();
     }
 
     @Given("^User enters coborrower address$")
     public void userEntersCoborrowerAddress()
     {
-        cob.coborrower_address();
+        ay.coborrower_address();
     }
 
-    @And("^User navigates to Applcation Release Section$")
-    public void userNavigatesToApplcationReleaseSection()
-    {
-        cob.application_release();
-    }
-
-    @And("^Admin goes to Application Release section$")
-    public void adminGoesToApplicationReleaseSection()
-    {
-        cob.application_release();
-    }
 
 //    Connection
 
@@ -971,35 +976,714 @@ public class AllSteps{
         up.clickOnSearchTextBox();
     }
 
-    @Given("^Admin selects loan purpose as pre-approval$")
-    public void adminSelectsLoanPurposeAsPreApproval()
+
+    @Then("^Admin includes coborrower$")
+    public void adminIncludesCoborrower() {
+        ay.include_coborrower();
+    }
+
+//    UnassignedApps
+
+    @When("^Admin clicks Unassigned Apps tab from left panel$")
+    public void admin_clicks_Unassigned_Apps_tab_from_left_panel()
     {
         pageObjectManager = new PageObjectManager(driver);
-        cob = pageObjectManager.getCoborrowerPage();
-        cob.loan_details();
+        uap = pageObjectManager.getUnassignedAppPage();
+        uap.clickOnUnassignedAppTab();
     }
 
-    @And("^Admin enters city details for coborrower flow$")
-    public void adminEntersCityDetailsForCoborrowerFlow()
+    @Then("^Admin should navigate to Unassigned Apps page$")
+    public void admin_should_navigate_to_Unassigned_Apps_page()
     {
-        cob.city_details();
+        uap.verifyAdminIsOnUnassignedAppsPage();
     }
 
-    @And("^Admin enters loan type as conventional$")
-    public void adminEntersLoanTypeAsConventional()
+    @Then("^Admin verify unassigned loan application is present$")
+    public void admin_verify_unassigned_loan_application_is_present() throws Throwable
     {
-        cob.loan_Type();
+        uap.verifyUnassigneAppsPresent();
     }
 
-    @And("^Admin enters interest rate type for coborrower flow$")
-    public void adminEntersInterestRateTypeForCoborrowerFlow() {
-        cob.interest_Rate_Type();
+    @Then("^Admin click on review button for submitted loan application$")
+    public void admin_click_on_review_button_for_submitted_loan_application() throws Exception
+    {
+        uap.clickOnReviewButton(driver);
     }
 
-    @Then("^Admin clicks on loan application$")
-    public void adminClicksOnLoanApplication()
+    @Then("^Admin click on Archive button present under status tab$")
+    public void admin_click_on_Archive_button_present_under_status_tab()
+    {
+        uap.clickOnArchiveButton();
+    }
+
+
+    @Then("^Admin again navigates to Unassigned app page$")
+    public void admin_again_navigates_to_Unassigned_app_page()
+    {
+        uap.clickOnUnassignedAppTab();
+    }
+
+    @Then("^Admin click on Show archived link$")
+    public void admin_click_on_Show_archived_link()
+    {
+        uap.clickOnShowArchivedLink();
+    }
+
+    @And("^Admin click on Review button of archived loan application$")
+    public void admin_click_on_review_button_of_loan_application() throws Exception
+    {
+        uap.clickOnReviewButton(driver);
+    }
+
+    @Then("^Admin click on UnArchive button$")
+    public void admin_click_on_UnArchive_button()
+    {
+        uap.clickOnUnarchiveButton();
+    }
+
+    @Given("^Admin is on Unassigned app page$")
+    public void admin_is_on_Unassigned_app_page()
+    {
+        pageObjectManager = new PageObjectManager(driver);
+        uap = pageObjectManager.getUnassignedAppPage();
+        uap.clickOnUnassignedAppTab();
+    }
+
+    @When("^Admin click on Review button of loan application$")
+    public void admin_click_on_Review_button_of_loan_application() throws Exception
+    {
+        uap.clickOnReviewButton(driver);
+    }
+
+    @Then("^Admin admin click on Assign button of loan application$")
+    public void admin_admin_click_on_Assign_button_of_loan_application()
+    {
+        uap.clickOnAssignButton();
+    }
+
+    @Then("^window popup will display to assign loan app$")
+    public void window_popup_will_display_to_assign_loan_app()
+    {
+    }
+
+    @Then("^admin enters \"([^\\\"]*)\" to assign loan app and selects \"([^\\\"]*)\" from list$")
+    public void admin_enters_username_to_assign_loan_app(String usrname, String expectedUsername)
+    {
+        uap.selectUserToAssignLoanApp(usrname, expectedUsername, driver);
+    }
+
+    @Then("^admin click on Grant access button$")
+    public void admin_click_on_Grant_access_button()
+    {
+        uap.clickOnGrantAccessButton();
+    }
+
+    @Given("^Admin is on unassigned app page$")
+    public void admin_is_on_unassigned_app_page()
+    {
+        pageObjectManager = new PageObjectManager(driver);
+        uap = pageObjectManager.getUnassignedAppPage();
+        uap.clickOnUnassignedAppTab();
+    }
+
+    @When("^admin click on continue in behalf of borrower link$")
+    public void admin_click_on_continue_in_behalf_of_borrower_link()
+    {
+        uap.clickOnContinueBehalfOfBorrowerLink(driver);
+    }
+
+    @Given("^Admin is on Roostify Core Home Page$")
+    public void adminIsOnRoostifyCoreHomePage() {
+    }
+
+    @Then("^Submit loan application$")
+    public void submit_loan_application() throws Exception
+    {
+        uap.clickOnApplicationReleasePage();
+        uap.clickOnEscapeButton();
+    }
+
+    @Then("^Click on UnAssigned app tab from left panel$")
+    public void click_on_UnAssigned_app_tab_from_left_panel()
+    {
+        uap.clickOnUnassignedAppTab();
+    }
+
+    @Then("^Admin should able to view loan application$")
+    public void admin_should_able_to_view_loan_application()
+    {
+        uap.verifyAdminAbleToReviewLoanApp();
+    }
+
+    @Then("^Admin navigates to Borrower view$")
+    public void admin_navigates_to_Borrower_view()
+    {
+        pageObjectManager = new PageObjectManager(driver);
+        ay = pageObjectManager.getAboutYouPage();
+        ay.admin_Continue();
+        ay.admin_ABoutYou_Next();
+    }
+
+    @Then("^Admin enters necessary fields$")
+    public void admin_enters_necessary_fields() throws Exception
+    {
+        ay.primary_Details();
+        ay.few_more_Details();
+        ay.address_Details();
+
+    }
+
+//    Overview section
+
+@Then("^Admin check whether Overview Stats label is present or not$")
+public void admin_check_whether_Overview_Stats_label_is_present_or_not() {
+    op.verifyOverviwStatsLabel();
+}
+
+
+    @Given("^Admin is able to see Select Account Dropdown$")
+    public void admin_is_able_to_see_select_account_dropdown()
+    {
+        op.verifyAccountsDropDown();
+    }
+
+    @When("^Admin selects account from drop down$")
+    public void admin_selects_account_from_drop_down() {
+        op.selectAccount();
+    }
+
+    @Then("^Admin should be navigated to Accounts Page$")
+    public void admin_should_be_navigated_to_accounts_page()
+    {
+        op.verifyLabelRoostify();
+    }
+
+    @And("^Admin verify all the lables present on overview stats page$")
+    public void adminVerifyAllTheLablesPresentOnOverviewStatsPage()
+    {
+        pageObjectManager = new PageObjectManager(driver);
+        op = pageObjectManager.getOverviewPage();
+        op.verifyAlltheLabelsDisplayed();
+    }
+
+    @And("^Admin check whether all quick filters are present or not$")
+    public void adminCheckWhetherAllQuickFiltersArePresentOrNot()
+    {
+        pageObjectManager = new PageObjectManager(driver);
+        op = pageObjectManager.getOverviewPage();
+        op.verifyQuickFilters();
+    }
+
+    @Then("^Admin click on Month Filter$")
+    public void admin_click_on_month_filter() {
+        op.clickMonthFilter();
+    }
+
+    @And("^Admin Click on Application Started Folder$")
+    public void admin_click_on_application_started_folder() {
+        op.clickApplicationStarted();
+    }
+
+    @And("^Admin verifies whether Pagination is present or not$")
+    public void admin_verifies_whether_pagination_is_present_or_not() {
+        op.verifyPaginationClassPresence();
+    }
+
+    @Then("^Admin clicks on clear button$")
+    public void admin_clicks_on_clear_button() {
+        op.clickClearButton();
+    }
+
+    @And("^Admin verifies clear button functionality$")
+    public void admin_verifies_clear_button_functionality() {
+        op.verifyClearButtonFunctionality();
+    }
+
+    @And("^Admin user clicks on Overview link$")
+    public void adminUserClicksOnOverviewLink()
+    {
+        pageObjectManager = new PageObjectManager(driver);
+        op = pageObjectManager.getOverviewPage();
+        op.overviewtab_click();
+    }
+
+    //Profile Section :
+
+    @Then("^Admin user clicks on Settings link$")
+    public void adminUserClicksOnSettingsLink() {
+
+        pageObjectManager = new PageObjectManager(driver);
+        profilePage = pageObjectManager.getProfilePage();
+        profilePage.clickOnSettingsTab();
+
+    }
+
+    @Then("^Admin clicks on 'Profile' tab$")
+    public void adminClicksOnProfileTab()
+    {
+        profilePage.clickOnProfileTab();
+    }
+
+    @Then("^Validate the UI Elements visible in Profile Tab for Admin\\.$")
+    public void validateTheUIElementsVisibleInProfileTabForAdmin() {
+        profilePage.verifyAllProfilePageLabelsDisplayed();
+    }
+
+    @Then("^Admin Update First Name$")
+    public void adminUpdateFirstName() {
+        profilePage.updateFirstName();
+    }
+
+    @Then("^Admin Update Last Name$")
+    public void adminUpdateLastName() {
+        profilePage.updateLastName();
+    }
+
+    @Then("^Admin Update Email$")
+    public void adminUpdateEmail() {
+        profilePage.updateEmail();
+    }
+
+    @Then("^Admin Update Referral Token$")
+    public void adminUpdateReferralToken() {
+        profilePage.updateReferralToken();
+    }
+
+    @Then("^Admin Update NMLS Number$")
+    public void adminUpdateNMLSNumber() {
+        profilePage.adminUpdateNMLSNumber();
+    }
+
+    @Then("^Admin Update Mobile Phone$")
+    public void adminUpdateMobilePhone()
+    {
+        profilePage.adminUpdateMobilePhone();
+
+    }
+
+    @Then("^Admin Update Office Phone$")
+    public void adminUpdateOfficePhone()
+    {
+        profilePage.adminUpdateOfficePhone();
+
+    }
+
+    // Security Section :
+
+    @Then("^Admin clicks on 'Security' tab$")
+    public void adminClicksOnSecurityTab() {
+        pageObjectManager = new PageObjectManager(driver);
+        securityPage = pageObjectManager.getSecurityPage();
+        securityPage.clickOnSecurityTab();
+    }
+
+    @Then("^Validate the UI Elements visible in Security Tab for Admin\\.$")
+    public void validateTheUIElementsVisibleInSecurityTabForAdmin() {
+        securityPage.verifyAllSecurityPageLabelsDisplayed();
+    }
+
+    @Then("^Admin enter Incorrect Current Password\\.$")
+    public void adminEnterIncorrectCurrentPassword() {
+        securityPage.InsertIncorrectCurrentPassword();
+    }
+
+    @Then("^Admin updates New Password\\.$")
+    public void adminUpdatesNewPassword() {
+        securityPage.InsertNewPassword();
+    }
+
+    @Then("^Admin clicks on Save\\.$")
+    public void adminClicksOnSave() {
+        securityPage.saveClick();
+    }
+
+    @Then("^Error Message Incorrect Current Password is displayed\\.$")
+    public void errorMessageIncorrectCurrentPasswordIsDisplayed() {
+        securityPage.InsertCurrentPasswordErrorMessage();
+    }
+
+    @Then("^Admin enter Correct Current Password\\.$")
+    public void adminEnterCorrectCurrentPassword() {
+        securityPage.InsertCorrectCurrentPassword();
+
+    }
+
+    @Then("^Admin updates New Password with less Alpha Letter\\.$")
+    public void adminUpdatesNewPasswordWithLessAlphaLetter() {
+        securityPage.InsertNewPasswordwithLessLetterCount();
+    }
+
+    @Then("^Error Message for Letter less than required is displayed\\.$")
+    public void errorMessageForLetterLessThanRequiredIsDisplayed() {
+        securityPage.validateErrorMessageForLessLetterCount();
+    }
+
+    @Then("^Admin updates New Password with required format\\.$")
+    public void adminUpdatesNewPasswordWithRequiredFormat() {
+        securityPage.InsertCorrectNewPassordFormat();
+    }
+
+    @Then("^Validate the success message for Password Reset\\.$")
+    public void validateTheSuccessMessageForPasswordReset() {
+        securityPage.validatePassowordUpdateSuccessMessage();
+    }
+
+    // ReviewPage Flow
+
+    @Then("^Admin clicks on review button for a loan application$")
+    public void admin_clicks_on_review_button_for_a_loan_application()  {
+        pageObjectManager = new PageObjectManager(driver);
+        rp = pageObjectManager.getReviewPage();
+        rp.click_Review();
+    }
+
+    @Then("^Admin Verifies if summary of the loan application is displayed$")
+    public void admin_verifies_if_summary_of_the_loan_application_is_displayed()  {
+        rp.review_Summary();
+    }
+    @Then("^Admin Verifies if the Review Page consists expected Sections$")
+    public void admin_verifies_if_the_review_page_consists_expected_sections() {
+        rp.page_Sections();
+        rp.handling_Msg();
+    }
+
+
+// Tasks Functionality
+
+    @Then("^Admin User clicks on Tasks$")
+    public void admin_user_clicks_on_tasks() {
+        rp.task_Test();
+    }
+    @Then("^Admin Creates New Task$")
+    public void admin_creates_new_task() {
+        rp.new_Task();
+    }
+    @Then("^User clicks on to the created task$")
+    public void user_clicks_on_to_the_created_task()
+    {
+        rp.task_Operations();
+
+    }
+    @Then("^Admin clicks on Add File Button$")
+    public void admin_clicks_on_add_file_button()  {
+        rp.add_File();
+    }
+    @Then("^Admin checks if the uploaded document can be downloaded$")
+    public void admin_checks_if_the_uploaded_document_can_be_downloaded()  {
+        rp.doc_Download();
+    }
+
+    @Then("^Admin checks if the uploaded document can be deleted$")
+    public void admin_checks_if_the_uploaded_document_can_be_deleted()  {
+        rp.doc_Delete();
+    }
+    @Then("^Admin marks the task as complete$")
+    public void admin_marks_the_task_as_complete()  {
+        rp.task_mark_Complete();
+    }
+
+
+    // Stream Functionality
+
+    @Then("^Admin user clicks on Stream Tab$")
+    public void admin_user_clicks_on_stream_tab() {
+        rp.stream_Tab();
+    }
+    @Then("^Admin verifies if recent activity is displayed$")
+    public void admin_verifies_if_recent_activity_is_displayed() {
+        rp.recent_Activity();
+    }
+    @Then("^Admin enters status update$")
+    public void admin_enters_status_update()  {
+        rp.status_Update();
+    }
+
+    @Then("^Admin clicks on Post Button$")
+    public void admin_clicks_on_post_button()  {
+        rp.click_Post();
+    }
+
+    @Then("^Admin verifies if the status update is displayed$")
+    public void admin_verifies_if_the_status_update_is_displayed()  {
+        rp.status_Displayed();
+    }
+
+    @Then("^Admin adds a comment in the comment section$")
+    public void admin_adds_a_comment_in_the_comment_section() {
+        // rp.comments_Click_reply();
+    }
+
+    //Notes Functionality
+
+    @Then("^Admin clicks on Notes tab$")
+    public void admin_clicks_on_notes_tab()
+    {
+        rp.add_Notes();
+    }
+
+    @Then("^Admin enters note content$")
+    public void admin_enters_note_content()
+    {
+        rp.note_Content();
+    }
+    @Then("^Admin clicks on Add note button$")
+    public void admin_clicks_on_add_note_button()
+    {
+        rp.add_note_Button();
+
+    }
+
+    //Warnings Tab
+
+    @Then("^Admin clicks on Warnings Tab$")
+    public void admin_clicks_on_warnings_tab()  {
+        rp.warnings_Tab();
+    }
+
+    @Then("^Admin verifies warnings under Borrower$")
+    public void admin_verifies_warnings_under_borrower()  {
+        rp.warnings_Verify();
+    }
+
+    //Activity Tab
+
+    @Then("^Admin clicks on Activity Tab$")
+    public void admin_clicks_on_activity_tab()  {
+        rp.activity_Click();
+    }
+
+    //Assets Tab
+    @Then("^Admin clicks on Assets Tab$")
+    public void admin_clicks_on_assets_tab() {
+        rp.assets_Click();
+    }
+
+    //Findings Tab
+    @Then("^Admin clicks on Findings Tab$")
+    public void admin_clicks_on_findings_tab()  {
+        rp.findings_Click();
+    }
+
+
+    @Then("^Admin clicks on New Findings button$")
+    public void admin_clicks_on_new_findings_button()  {
+        rp.findings_Report();
+    }
+
+
+    //Rates Tab
+
+    @Then("^Admin clicks on Rates Tab$")
+    public void admin_clicks_on_rates_tab()  {
+        rp.rates_Click();
+    }
+
+    //Credit Report Tab
+
+    @Then("^Admin clicks on Credit Reports Tab$")
+    public void admin_clicks_on_credit_reports_tab() {
+        rp.credit_Report_Click();
+    }
+
+    @Then("^Admin clicks on new Credit report$")
+    public void admin_clicks_on_new_credit_report()  {
+        rp.new_credit_Report();
+    }
+
+    @Then("^Admin enters SSN$")
+    public void admin_enters_ssn()  {
+        rp.ssn_Enter();
+    }
+
+    @Then("^Admin authorizes credit pull check$")
+    public void admin_authorizes_credit_pull_check()  {
+        rp.auth_Check();
+    }
+
+    @Then("^Admin pulls credit$")
+    public void admin_pulls_credit()  {
+        rp.pull_Credit();
+    }
+
+
+    //Messages Tab
+
+    @Then("^Admin clicks on Messages Tab$")
+    public void admin_clicks_on_messages_tab()  {
+        rp.messages_Click();
+    }
+
+    //Loan Application Archive Functionality
+
+    @Then("^Admin clicks on Archive Button on the review page$")
+    public void admin_clicks_on_archive_button_on_the_review_page()
+    {
+        rp.archive_Loans();
+    }
+
+    @Then("^Admin clicks Unarchive button on the review page$")
+    public void admin_clicks_unarchive_button_on_the_review_page()  {
+        rp.unarchive_Loans();
+    }
+
+    //Borrower View Button Functionality
+
+    @Then("^Admin clicks on the Borrower View Button$")
+    public void admin_clicks_on_the_borrower_view_button()  {
+        rp.borrower_View();
+    }
+
+
+    //Loan application with new LO steps
+
+    @Given("^Borrower is on the Roostify login page$")
+    public void borrower_is_on_the_Roostify_login_page()
+    {
+        webDriverManager = new WebDriverManager();
+        driver = webDriverManager.getDriver();
+        driver = webDriverManager.getUrl();
+        pageObjectManager = new PageObjectManager(driver);
+        lp = pageObjectManager.getLoginPage();
+        WaitUtility.untilPageLoadComplete(driver);
+    }
+
+
+    @When("^Borrower enters \"([^\"]*)\"$")
+    public void borrower_enters(String username)
+    {
+        lp.enter_userMail(username);
+    }
+
+    @And("^Borrower enters also \"([^\"]*)\"$")
+    public void borrower_enters_also(String password)
+    {
+        lp.enter_password(password);
+    }
+
+    @And("^Borrower clicks on Sign In Button\\.$")
+    public void borrower_clicks_on_Sign_In_Button()
+    {
+        lp.clickSignIn();
+    }
+
+    @Then("^Borrower navigates to Roostify Core Home Page\\.$")
+    public void borrower_navigates_to_Roostify_Core_Home_Page() throws Exception
+    {
+    }
+
+    @Given("^Borrower is on Roostify HomePage$")
+    public void borrower_is_on_Roostify_HomePage() throws Throwable
+    {
+        pageObjectManager = new PageObjectManager(driver);
+        bui = pageObjectManager.getBorrowerUIPage();
+        bui.clickOnESCButton();
+    }
+
+    @When("^Borrower click on Hamburger icon$")
+    public void borrower_click_on_Hamburger_icon() throws Exception
     {
 
+        bui.clickOnHamBurgerIcon();
     }
+
+    @Then("^click on My Transactions menu$")
+    public void click_on_My_Transactions_menu() throws Throwable
+    {
+        bui.clickOnMyTransactions();
+        // bui.acceptWindowsAlert(driver);
+    }
+
+    @Then("^borrower selects New LO from dropdown$")
+    public void borrower_selects_New_LO_from_dropdown()
+    {
+        bui.selectLoanOfficer();
+    }
+
+    @Then("^borrower click on Start a new applciation page button$")
+    public void borrower_click_on_Start_a_new_applciation_page_button()
+    {
+        bui.clickOnStartNewLoanApplication();
+    }
+
+    @Then("^Borrower starts the flow$")
+    public void borrower_starts_the_flow()
+    {
+        pageObjectManager = new PageObjectManager(driver);
+        ay = pageObjectManager.getAboutYouPage();
+        ay.admin_Continue();
+        ay.admin_ABoutYou_Next();
+    }
+
+    @Then("^Borrower enters necessary details$")
+    public void borrower_enters_necessary_details() throws Exception
+    {
+        ay.primary_Details();
+        ay.few_more_Details();
+        ay.address_Details();
+    }
+
+
+    @Then("^Borrower enters Loan details$")
+    public void borrower_enters_loan_details() throws Exception
+    {
+        pageObjectManager = new PageObjectManager(driver);
+        ls = pageObjectManager.getLoanSectionPage();
+        ls.no_Loan_Details();
+    }
+
+    @Then("^Borrower enters Employment details$")
+    public void borrower_enters_Employment_details() throws Exception
+    {
+        pageObjectManager = new PageObjectManager(driver);
+        es = pageObjectManager.getEmploymentSectionPage();
+        es.no_Emp_Details();
+    }
+
+
+    @Then("^Borrower enters Income details$")
+    public void borrower_enters_income_details() throws Exception
+    {
+        pageObjectManager = new PageObjectManager(driver);
+        ins = pageObjectManager.getIncomeSectionPage();
+        ins.No_income_details();
+    }
+
+
+    @Then("^Borrower enters Assets&Liabilities details$")
+    public void borrower_enters_assets_details() throws Exception
+    {
+        pageObjectManager = new PageObjectManager(driver);
+        als = pageObjectManager.getAssetsLiabilitiesSectionPage();
+        als.no_assets_LiabilitiesDetails();
+    }
+
+
+    @Then("^Borrower enters Declaration details$")
+    public void borrower_enters_declaration_details() throws Exception
+    {
+        pageObjectManager = new PageObjectManager(driver);
+        ds = pageObjectManager.getDeclarationsSectionPage();
+        ds.no_declaration_details();
+
+    }
+
+    @Then("^Borrower navigates to Application release section and submits the application$")
+    public void borrower_navigates_to_Application_release_section_and_submits_the_application() throws Exception
+    {
+        pageObjectManager = new PageObjectManager(driver);
+        ar = pageObjectManager.getApplicationReleasePage();
+        ar.skip_Warnings_Submit();
+        bui.clickOnESCButton();
+    }
+
+    @Then("^Borrower accepts E-sign Disclosure$")
+    public void borrower_accepts_esign_disclosure() throws Exception
+    {
+        bui.acceptEsignDisclosure();
+
+        bui.clickOnESCButton();
+    }
+
+
 }
 

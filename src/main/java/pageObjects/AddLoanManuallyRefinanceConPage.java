@@ -134,6 +134,7 @@ public class AddLoanManuallyRefinanceConPage
         sleep();
         next_button.click();
         refinace_loan.click();
+        sleep();
         next_button.click();
         sleep();
     }
@@ -154,6 +155,7 @@ public class AddLoanManuallyRefinanceConPage
     public void loan_type()
     {
         loan_type.click();
+        sleep();
         next_button.click();
         sleep();
     }

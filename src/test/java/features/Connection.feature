@@ -21,4 +21,4 @@
       And Admin clicks on complete registration link
       Examples:
         |username|password|email|password|
-        ||||Abcd1234|
+        |||||

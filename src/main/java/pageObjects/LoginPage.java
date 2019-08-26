@@ -33,7 +33,7 @@ public class LoginPage {
         password.sendKeys(Password);
     }
 
-    public void click_SignIn() {
+    public void clickSignIn() {
         click_sign_in.click();
     }
 

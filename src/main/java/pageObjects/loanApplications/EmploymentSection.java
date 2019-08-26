@@ -22,6 +22,7 @@ public class EmploymentSection {
         }
     }
 
+
     @FindBy(how = How.XPATH, using = "//button[@class='js-btn-forward btn btn--block btn--ghost js-substep-nav']")
     private WebElement next_button;
 
@@ -64,8 +65,20 @@ public class EmploymentSection {
     @FindBy(how = How.ID, using = "loan_application_b_employment_attributes_0_zip")
     private WebElement zip_code;
 
+
     @FindBy(how = How.XPATH, using = "//button[text()='Fix later and continue']")
     private WebElement fix_continue;
+
+    @FindBy(xpath = "(//i[@class='c-radio__icon'])[2]")
+    private WebElement current_emp_no;
+
+    public void no_Emp_Details()
+    {
+        next_button.click();
+        next_button.click();
+        fix_continue.click();
+    }
+
 
     public void employment_Section()
     {

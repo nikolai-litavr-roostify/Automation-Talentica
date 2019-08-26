@@ -63,6 +63,21 @@ public class LoanSection{
     @FindBy(how = How.XPATH, using = "//button[@class='btn--block btn btn--primary js-step-nav']")
     private WebElement continue_button;
 
+
+    @FindBy(xpath = "//button[contains(.,'Fix later and continue')]")
+    private WebElement fix_later_continue_btn;
+
+    public void no_Loan_Details()
+    {
+        next_button.click();
+        next_button.click();
+        next_button.click();
+        next_button.click();
+
+        fix_later_continue_btn.click();
+
+    }
+
     public void loan_details()
     {
         sleep();

@@ -1,4 +1,4 @@
-@AddLoanManually
+@AddLoanManuallyRefinanceLoansTest
 Feature: Add Loan Manually Test
   @AddLoanManuallyRefinanceConTest
   Scenario Outline: Test Add Loan Manually for Admin
@@ -61,7 +61,6 @@ Feature: Add Loan Manually Test
     And Admin enters details in HMDA Section
     And Admin enters Social Security Number
     And Admin enters whether he authorizes Roostify to pull the credit
-    And Admin estimates his credit
     And Admin continues to next section
 
   @AddLoanManuallyRefinanceConTest
@@ -128,7 +127,6 @@ Feature: Add Loan Manually Test
     And Admin enters details in HMDA Section
     And Admin enters Social Security Number
     And Admin enters whether he authorizes Roostify to pull the credit
-    And Admin estimates his credit
     And Admin continues to next section
 
   @AddLoanManuallyRefinanceFHATest
@@ -195,7 +193,6 @@ Feature: Add Loan Manually Test
     And Admin enters details in HMDA Section
     And Admin enters Social Security Number
     And Admin enters whether he authorizes Roostify to pull the credit
-    And Admin estimates his credit
     And Admin continues to next section
 
   @AddLoanManuallyRefinanceVaTest
@@ -261,7 +258,6 @@ Feature: Add Loan Manually Test
     And Admin enters details in HMDA Section
     And Admin enters Social Security Number
     And Admin enters whether he authorizes Roostify to pull the credit
-    And Admin estimates his credit
     And Admin continues to next section
 
   @AddLoanManuallyRefinanceUSDATest

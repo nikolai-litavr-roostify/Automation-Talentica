@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.Random;
 
 public class SignUpPage {
+    WebDriver driver;
 
     public static void sleep()
     {
@@ -20,6 +21,7 @@ public class SignUpPage {
     public SignUpPage(WebDriver driver)
     {
         PageFactory.initElements(driver, this);
+        this.driver = driver;
 
     }
 
@@ -45,16 +47,21 @@ public class SignUpPage {
     {
         sleep();
         enter_first_name.sendKeys(firstName);
+        sleep();
     }
 
     public void enter_last_name(String lastName)
     {
+        sleep();
         enter_last_name.sendKeys(lastName);
+        sleep();
     }
 
     public void enter_signup_password(String password)
     {
-        signup_password.sendKeys(password);
+        sleep();
+        signup_password.sendKeys("Abcd1234");
+        sleep();
     }
 
     public String getSaltString() {
@@ -80,7 +87,9 @@ public class SignUpPage {
 
     public void click_terms_conditions()
     {
+        sleep();
         click_terms_conditions.click();
+        sleep();
     }
 
     public void start_application()

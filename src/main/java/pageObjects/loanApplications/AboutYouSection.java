@@ -9,6 +9,7 @@ import org.testng.Assert;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.util.Random;
 
 public class AboutYouSection
 {
@@ -73,9 +74,39 @@ public class AboutYouSection
     @FindBy(xpath = "//div[@class='col-12 col-md-4 form-group']/button[@value='next']")
     private WebElement fix_later_continue;
 
-
     @FindBy(xpath = "//h1[contains(text(),'How do we get in touch with you?')]")
     private WebElement header_about_you;
+
+    @FindBy(xpath = "//span[text()='Yes, this application will include a co-borrower']")
+    private WebElement add_coborrower;
+
+    @FindBy(css = "#loan_application_applicants_attributes_0_first_name")
+    private WebElement co_fname;
+
+    @FindBy(css = "#loan_application_applicants_attributes_0_last_name")
+    private WebElement co_lname;
+
+    @FindBy(css = "#loan_application_applicants_attributes_0_email")
+    private WebElement co_email;
+
+    @FindBy(css = "#loan_application_applicants_attributes_0_phone")
+    private WebElement co_phone;
+
+    @FindBy(id = "applicant_address_attributes_0_address1")
+    private WebElement coborrower_address_1;
+
+    @FindBy(id = "applicant_address_attributes_0_city")
+    private WebElement coborrower_city;
+
+    @FindBy(id = "applicant_address_attributes_0_state")
+    private WebElement coborrower_state;
+
+    @FindBy(id = "applicant_address_attributes_0_zip")
+    private WebElement coborrower_zip;
+
+    @FindBy(xpath = "//*[@id='loan_application_form']/div[2]/div/div[5]/fieldset/div[2]/label")
+    private WebElement include_coborrower;
+
 
     public void header_about_you() {
         String str = header_about_you.getText();
@@ -141,5 +172,100 @@ public class AboutYouSection
         sleep();
 
     }
+    public void address_Details1() {
+        address_1.sendKeys("463 7th Avenue");
+        sleep();
+        city.sendKeys("San Francisco");
+
+        state.click();
+        Select s4 = new Select(state);
+        s4.selectByVisibleText("CA");
+        state.click();
+        zip.sendKeys("94118");
+        next_button.click();
+        next_button.click();
+        sleep();
+    }
+
+
+    public void add_coborrower()
+    {
+        add_coborrower.click();
+        next_button.click();
+    }
+
+    public void co_fname()
+    {
+        co_fname.sendKeys("Cofname");
+        sleep();
+    }
+
+    public void co_lname()
+    {
+        co_lname.sendKeys("Colname");
+        sleep();
+    }
+
+    public String getSaltString() {
+        String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+        StringBuilder salt = new StringBuilder();
+        Random rnd = new Random();
+        while (salt.length() < 10) { // length of the random string.
+            int index = (int) (rnd.nextFloat() * SALTCHARS.length());
+            salt.append(SALTCHARS.charAt(index));
+        }
+        String saltStr = salt.toString();
+        return saltStr;
+
+    }
+
+    public void co_email(String email)
+    {
+        sleep();
+        email = "vwagh+"+getSaltString()+"@roostify.com";
+        co_email.sendKeys(email);
+    }
+
+    public void co_phone()
+    {
+        sleep();
+        co_phone.sendKeys("1234567890");
+        sleep();
+        next_button.click();
+
+    }
+
+    public void include_coborrower()
+    {
+        sleep();
+        include_coborrower.click();
+        next_button.click();
+    }
+
+    public void armed_services() {
+        sleep();
+        armed_services_no.click();
+        next_button.click();
+        fix_later_continue.click();
+        sleep();
+        next_button.click();
+    }
+
+    public void coborrower_address()
+    {
+
+        coborrower_address_1.sendKeys("463 7th Avenue");
+        sleep();
+        coborrower_city.sendKeys("San Francisco");
+
+        coborrower_state.click();
+        Select s4 = new Select(coborrower_state);
+        s4.selectByVisibleText("CA");
+        coborrower_state.click();
+        coborrower_zip.sendKeys("94118");
+        //  property_yes.click();
+        next_button.click();
+    }
+
 
 }

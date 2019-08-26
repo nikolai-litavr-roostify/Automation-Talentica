@@ -20,7 +20,7 @@ Feature: Add Loan Manually Test
     Then Admin enters Address page details
     Examples:
       |username|password|firstname|lastname|mailid|password|
-      |||Loan|App||Abcd1234|
+      |||Loan|App|||
 
   @CopyReferalRefinanceConTest
   Scenario: Loan Section
@@ -60,7 +60,6 @@ Feature: Add Loan Manually Test
     And Admin enters details in HMDA Section
     And Admin enters Social Security Number
     And Admin enters whether he authorizes Roostify to pull the credit
-    And Admin estimates his credit
     And Admin continues to next section
 
   @CopyReferalRefinanceConTest
@@ -126,7 +125,6 @@ Feature: Add Loan Manually Test
     And Admin enters details in HMDA Section
     And Admin enters Social Security Number
     And Admin enters whether he authorizes Roostify to pull the credit
-    And Admin estimates his credit
     And Admin continues to next section
 
   @CopyReferalRefinanceFHATest
@@ -192,7 +190,6 @@ Feature: Add Loan Manually Test
     And Admin enters details in HMDA Section
     And Admin enters Social Security Number
     And Admin enters whether he authorizes Roostify to pull the credit
-    And Admin estimates his credit
     And Admin continues to next section
 
   @CopyReferalRefinanceVaTest
@@ -257,7 +254,6 @@ Feature: Add Loan Manually Test
     And Admin enters details in HMDA Section
     And Admin enters Social Security Number
     And Admin enters whether he authorizes Roostify to pull the credit
-    And Admin estimates his credit
     And Admin continues to next section
 
   @CopyReferalRefinanceUSDATest

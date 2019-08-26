@@ -26,16 +26,43 @@ public class TeamPage {
 
     }
 
-    @FindBy(xpath = "((//*[@class='c-nav__link-text' and contains(text(),'Team')])[2]) | (//*[@id=\"dashboard_content\"]/div/div[1]/nav/ul/li[3]/a)")
+    @FindBy(xpath = "//*[@id=\"dashboard_content\"]/div/div[1]/nav/ul/li[4]/a")
     private WebElement tab_Team;
+
+    @FindBy(xpath = "//*[@name='button']")
+    private WebElement btn_Add_team_member;
+
+    @FindBy(xpath = "//button[@class='btn dropdown-toggle btn-light']")
+    private WebElement drpdwn_Person_to_add;
+
+    @FindBy(xpath = "//div[@class=\"bs-searchbox\"]/input")
+    private WebElement txt_SearchBox;
+
+    @FindBy(xpath = "//select[@name='role']")
+    private WebElement drpdwn_Role;
+
+    @FindBy(xpath = "//*[@class='btn btn--primary float-right']")
+    private WebElement btn_Add_to_Team;
+
+    @FindBy(xpath = "(//*[@class='tt-anchor btn btn--circle btn--disguised btn--xsm'])[1]")
+    private WebElement deleteMember;
+
+    @FindBy(xpath = "(//*[@class='btn btn--danger float-right' and contains (text(), 'Yes, remove')])[1]")
+    private WebElement removeMember;
+
+    @FindBy (xpath = "//button[@class='btn dropdown-toggle btn-light']")
+    private WebElement drpdwn_non_existing_Person_to_add;
+
+    @FindBy(xpath = "//div[@class=\"bs-searchbox\"]/input")
+    private WebElement txt_search_box;
+
+    @FindBy(xpath = "//*[@class='no-results' and contains(text(),'No results matched')]")
+    private WebElement txt_noresultsmatched;
 
     public void ClickOnTeamTab() {
         sleep();
         tab_Team.click();
     }
-
-    @FindBy(xpath = "//*[@name='button']")
-    private WebElement btn_Add_team_member;
 
     public void ClickOnAddTeamMember() {
         sleep();
@@ -43,25 +70,16 @@ public class TeamPage {
         sleep();
     }
 
-    @FindBy(xpath = "//button[@class='btn dropdown-toggle btn-light']")
-    private WebElement drpdwn_Person_to_add;
-
     public void SelectPersonToAdd() {
         drpdwn_Person_to_add.click();
     }
 
     // Add Underwriter
 
-    @FindBy(xpath = "//div[@class=\"bs-searchbox\"]/input")
-    private WebElement txt_SearchBox;
-
     public void enterPersonTpAddValue() {
         txt_SearchBox.sendKeys("pujapatil+underwriter@roostify.com", Keys.ENTER);
 
     }
-
-    @FindBy(xpath = "//select[@name='role']")
-    private WebElement drpdwn_Role;
 
     public void SelectRoleAsUnderwriter() {
         drpdwn_Role.click();
@@ -70,9 +88,6 @@ public class TeamPage {
 
         droprole.selectByVisibleText("Underwriter");
     }
-
-    @FindBy(xpath = "//*[@class='btn btn--primary float-right']")
-    private WebElement btn_Add_to_Team;
 
     public void ClickOnAddToTeam() {
         btn_Add_to_Team.click();
@@ -107,16 +122,10 @@ public class TeamPage {
 
     // Delete Team Member
 
-    @FindBy(xpath = "(//*[@class='tt-anchor btn btn--circle btn--disguised btn--xsm'])[1]")
-    private WebElement deleteMember;
-
     public void DeleteTeamMember() {
         deleteMember.click();
 
     }
-
-    @FindBy(xpath = "(//*[@class='btn btn--danger float-right' and contains (text(), 'Yes, remove')])[1]")
-    private WebElement removeMember;
 
     public void ClickOnYesRemoveButton() {
         removeMember.click();
@@ -124,23 +133,13 @@ public class TeamPage {
 
     // Negative testing - Add Non Existing User (or user from other account) To Team
 
-    @FindBy (xpath = "//button[@class='btn dropdown-toggle btn-light']")
-    private WebElement drpdwn_non_existing_Person_to_add;
-
     public void selectNonExistingUser(){
         drpdwn_non_existing_Person_to_add.click();
     }
 
-
-    @FindBy(xpath = "//div[@class=\"bs-searchbox\"]/input")
-    private WebElement txt_search_box;
-
     public void enterNonExistingUser() {
         txt_SearchBox.sendKeys("Callifornia Admin", Keys.ENTER);
     }
-
-    @FindBy(xpath = "//*[@class='no-results' and contains(text(),'No results matched')]")
-    private WebElement txt_noresultsmatched;
 
     public void verifyTextNoResultsMatched() {
         String verifyString = txt_noresultsmatched.getText();

@@ -121,7 +121,7 @@ public class ConnectionPage {
 
     public void enter_signup_password(String password)
     {
-        signup_password.sendKeys(password);
+        signup_password.sendKeys("Abcd1234");
     }
 
     public void click_terms_conditions()

@@ -20,7 +20,7 @@ Feature: Copy Referral URL Test
     Then Admin enters Address page details
     Examples:
     |username|password|firstname|lastname|mailid|password|
-    |||Loan|App||Abcd1234|
+    |||Loan|App|||
 
   @CopyReferalPreConTest
   Scenario: Loan Section
@@ -61,7 +61,6 @@ Feature: Copy Referral URL Test
     And Admin enters details in HMDA Section
     And Admin enters Social Security Number
     And Admin enters whether he authorizes Roostify to pull the credit
-    And Admin estimates his credit
     And Admin continues to next section
 
   @CopyReferalPreConTest
@@ -129,7 +128,6 @@ Feature: Copy Referral URL Test
     And Admin enters details in HMDA Section
     And Admin enters Social Security Number
     And Admin enters whether he authorizes Roostify to pull the credit
-    And Admin estimates his credit
     And Admin continues to next section
 
   @CopyReferalPreFHATest
@@ -197,7 +195,6 @@ Feature: Copy Referral URL Test
     And Admin enters details in HMDA Section
     And Admin enters Social Security Number
     And Admin enters whether he authorizes Roostify to pull the credit
-    And Admin estimates his credit
     And Admin continues to next section
 
   @CopyReferalPreVaTest
@@ -264,7 +261,6 @@ Feature: Copy Referral URL Test
     And Admin enters details in HMDA Section
     And Admin enters Social Security Number
     And Admin enters whether he authorizes Roostify to pull the credit
-    And Admin estimates his credit
     And Admin continues to next section
 
   @CopyReferalPreUSDATest

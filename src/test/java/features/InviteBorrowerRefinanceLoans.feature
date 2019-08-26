@@ -26,7 +26,7 @@ Feature: Invite Borrower Functionality
     Then Admin enters Address page details
     Examples:
       |username|password|mailid|firstname|lastname|password|
-      ||||Loan|App|Abcd1234|
+      ||||Loan|App||
 
   @InviteBorrowerRefinanceConTest
   Scenario: Loan Section
@@ -66,7 +66,6 @@ Feature: Invite Borrower Functionality
     And Admin enters details in HMDA Section
     And Admin enters Social Security Number
     And Admin enters whether he authorizes Roostify to pull the credit
-    And Admin estimates his credit
     And Admin continues to next section
 
   @InviteBorrowerRefinanceConTest
@@ -138,7 +137,6 @@ Feature: Invite Borrower Functionality
     And Admin enters details in HMDA Section
     And Admin enters Social Security Number
     And Admin enters whether he authorizes Roostify to pull the credit
-    And Admin estimates his credit
     And Admin continues to next section
 
   @InviteBorrowerRefinanceFHATest
@@ -210,7 +208,6 @@ Feature: Invite Borrower Functionality
     And Admin enters details in HMDA Section
     And Admin enters Social Security Number
     And Admin enters whether he authorizes Roostify to pull the credit
-    And Admin estimates his credit
     And Admin continues to next section
 
   @InviteBorrowerRefinanceVaTest
@@ -281,7 +278,6 @@ Feature: Invite Borrower Functionality
     And Admin enters details in HMDA Section
     And Admin enters Social Security Number
     And Admin enters whether he authorizes Roostify to pull the credit
-    And Admin estimates his credit
     And Admin continues to next section
 
   @InviteBorrowerRefinanceUSDATest

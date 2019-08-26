@@ -21,6 +21,7 @@ public class DeclarationsSection {
         }
     }
 
+
     @FindBy(how = How.XPATH, using = "//button[@class='js-btn-forward btn btn--block btn--ghost js-substep-nav']")
     private WebElement next_button;
 
@@ -63,7 +64,7 @@ public class DeclarationsSection {
     @FindBy(how = How.XPATH, using = "//input[@id='b_ssn']")
     private WebElement ssn;
 
-    @FindBy(how = How.XPATH, using = "//input[@id='allow_credit_no']")
+    @FindBy(how = How.XPATH, using = "//input[@id='allow_credit_yes']")
     private WebElement allow_credit;
 
     @FindBy(how = How.XPATH, using = "//input[@id='loan_application_b_estimated_credit_fair']")
@@ -71,6 +72,23 @@ public class DeclarationsSection {
 
     @FindBy(how = How.XPATH, using = "//button[text()='Fix later and continue']")
     private WebElement fix_later_continue_button;
+
+
+    public void no_declaration_details()
+    {
+        next_button.click();
+        next_button.click();
+        next_button.click();
+        next_button.click();
+        next_button.click();
+        next_button.click();
+        next_button.click();
+        next_button.click();
+        fix_later_continue_button.click();
+    }
+
+
+
 
     public void declarations_Section()
 {
@@ -110,7 +128,7 @@ public class DeclarationsSection {
 
     public void ssn_Details()
     {
-        ssn.sendKeys("123456789");
+        ssn.sendKeys("991919991");
         next_button.click();
     }
 
