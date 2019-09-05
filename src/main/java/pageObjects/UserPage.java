@@ -36,7 +36,7 @@ public class UserPage
 
     // Invite user as Member
 
-    @FindBy(id = "js-admin-console-link")
+    @FindBy(id = "js-admin-console-link-left_pane-5")
     private WebElement click_admin_console;
 
     @FindBy (xpath = "(//*[@class='c-nav__link-text' and contains(text(),'Users')])[2]")

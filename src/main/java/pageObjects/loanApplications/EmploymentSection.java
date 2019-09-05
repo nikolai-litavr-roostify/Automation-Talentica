@@ -65,7 +65,6 @@ public class EmploymentSection {
     @FindBy(how = How.ID, using = "loan_application_b_employment_attributes_0_zip")
     private WebElement zip_code;
 
-
     @FindBy(how = How.XPATH, using = "//button[text()='Fix later and continue']")
     private WebElement fix_continue;
 
@@ -109,19 +108,11 @@ public class EmploymentSection {
     phone_no.sendKeys("1010101010");
     address.sendKeys("Test_Address");
     city.sendKeys("New York");
-
-//    state.click();
-//    Select s7 = new Select(state);
-//    s6.selectByVisibleText("AR");
-//    state.click();
-
     zip_code.sendKeys("AE3456");
     next_button.click();
     fix_continue.click();
 
-
-
-}
+    }
 
 
 }

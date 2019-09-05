@@ -60,7 +60,6 @@ public class ConnectionPage {
         connection_link.click();
     }
 
-
     public void add_connection()
     {
         sleep();

@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class LoginPage {
     WebDriver driver;
@@ -25,15 +26,36 @@ public class LoginPage {
     @FindBy(css = "button[form='sign-in-form']")
     private WebElement click_sign_in;
 
-    public void enter_userMail(String UserMail) {
+    public static void sleep() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            System.out.println("got interrupted!");
+        }
+    }
+
+    public void verify_login_labels()
+    {
+        Assert.assertTrue(user_mail.isDisplayed());
+        Assert.assertTrue(password.isDisplayed());
+        Assert.assertTrue(click_sign_in.isDisplayed());
+    }
+
+    public void enter_userMail(String UserMail)
+    {
+        sleep();
         user_mail.sendKeys(UserMail);
+        sleep();
     }
 
-    public void enter_password(String Password) {
+    public void enter_password(String Password)
+    {
         password.sendKeys(Password);
+        sleep();
     }
 
-    public void clickSignIn() {
+    public void clickSignIn()
+    {
         click_sign_in.click();
     }
 

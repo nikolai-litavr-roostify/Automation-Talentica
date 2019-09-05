@@ -73,6 +73,8 @@ public class DeclarationsSection {
     @FindBy(how = How.XPATH, using = "//button[text()='Fix later and continue']")
     private WebElement fix_later_continue_button;
 
+    @FindBy(xpath = "//button[@class='btn--block btn btn--primary js-step-nav']")
+    private WebElement continue_button;
 
     public void no_declaration_details()
     {
@@ -87,13 +89,10 @@ public class DeclarationsSection {
         fix_later_continue_button.click();
     }
 
-
-
-
     public void declarations_Section()
-{
-    next_button.click();
-}
+    {
+        next_button.click();
+    }
 
     public void us_Citizen()
     {
@@ -144,7 +143,7 @@ public class DeclarationsSection {
      }
     public void continue_Section()
     {
-        fix_later_continue_button.click();
+        continue_button.click();
         sleep();
         sleep();
     }

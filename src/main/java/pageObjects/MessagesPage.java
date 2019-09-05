@@ -23,10 +23,10 @@ public class MessagesPage
 
     }
 
-    @FindBy(xpath = "//*[@id='js-admin-console-left_pane-6']//a[@data-content='Messages']")
+    @FindBy(xpath = "//*[@id='js-admin-console-left_pane-5']/li[5]/a/div")
     private WebElement click_messages;
 
-    @FindBy(id = "js-admin-console-link-left_pane-6")
+    @FindBy(id = "js-admin-console-link-left_pane-5")
     private WebElement click_admin_console;
 
     @FindBy(xpath = "//*[@id='index_table']/div[2]/table/tbody/tr[1]/td[1]/div/a")

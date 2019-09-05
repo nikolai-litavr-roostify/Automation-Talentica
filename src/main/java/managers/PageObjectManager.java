@@ -39,14 +39,11 @@ public class PageObjectManager {
     private TeamPage teamPage;
     private UserPage userPage;
     private UnassignedAppPage up;
-
     private OverviewPage op;
     private ProfilePage profilePage;
     private SecurityPage securityPage;
     private ReviewPage rp;
-
     private LoanApplicationWithNewLO loanApplicationWithNewLOPage;
-
     public PageObjectManager(WebDriver driver) {
 
         this.driver = driver;

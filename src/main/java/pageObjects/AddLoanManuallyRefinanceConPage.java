@@ -26,7 +26,6 @@ public class AddLoanManuallyRefinanceConPage
         PageFactory.initElements(driver,this);
     }
 
-
     @FindBy(id = "refinancing_multi_select")
     private WebElement refinace_loan;
 

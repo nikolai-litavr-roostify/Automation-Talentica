@@ -89,7 +89,8 @@ public class AddLoanManuallyHelocPage
     @FindBy(xpath = "//div[@class='col-12 col-md-2 form-group']/button[@value='next']")
     private WebElement fix_later_continue;
 
-    public void heloc_loan() {
+    public void heloc_loan()
+    {
         next_button.click();
         sleep();
         heloc_loan.click();

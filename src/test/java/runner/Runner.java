@@ -19,7 +19,7 @@ import java.io.File;
 @CucumberOptions(
         features = "src/test/java/features/"
         ,glue={"steps"}
-        ,tags= {"@UnassignedAppFlowTest"}
+        ,tags= {"@OverviewFunctionalityTest"}
 //        "@AddLoanManuallyPreApprovalLoansTest, @AddLoanManuallyHomePurchaseLoansTest, @AddLoanManuallyRefinanceLoansTest, @AddLoanManuallyHelocLoansTest, @CopyReferralPreApprovalLoansTest, @CopyReferalHomePurchaseLoansTest, @CopyReferalRefinanceLoanTest, @CopyReferalHELOCLoansTest, @InviteBorrowerPreApprovalLoansTest, @InviteBorrowerHomePurchaseLoansTest, @InviteBorrowerRefinanceLoansTest, @InviteBorrowerHELOCLoansTest, @ConnectionTest, @LoginTest, @OverviewFunctionalityTest, @TeamFunctionalityTest, @InviteUserTest"}
         ,plugin={"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"}
         )

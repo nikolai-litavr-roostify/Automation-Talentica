@@ -447,7 +447,7 @@ public class ReviewPage {
     public void warnings_Tab()
     {
         handling_Msg();
-      warnings_tab.click();
+        warnings_tab.click();
     }
 
     public void warnings_Verify()
@@ -534,7 +534,5 @@ public class ReviewPage {
         borrower_view.click();
     }
 
-
-
-    }
+}
 

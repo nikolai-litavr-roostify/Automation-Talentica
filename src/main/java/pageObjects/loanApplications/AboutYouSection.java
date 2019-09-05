@@ -1,5 +1,6 @@
 package pageObjects.loanApplications;
 
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,6 +27,21 @@ public class AboutYouSection
         }
     }
 
+    @FindBy(xpath = "(//div[@class='c-nav__link-text'][contains(.,'About You')])[2]")
+    private WebElement tab_AboutYou;
+
+    @FindBy (xpath = "//label[contains(.,'First Name')]")
+    private WebElement label_FirstName;
+
+    @FindBy (xpath = "//label[contains(.,'Middle Initial')]")
+    private WebElement label_MiddleInitial;
+
+    @FindBy (xpath = "//label[@for='loan_application_b_last_name'][contains(.,'Last Name')]")
+    private WebElement label_LastName;
+
+    @FindBy (xpath = "//input[@type='email'][contains(@id,'email')]")
+    private WebElement email;
+
     @FindBy(xpath = "//button[@class='btn btn--block btn--primary js-step-nav']")
     private WebElement admin_continue;
 
@@ -40,6 +56,9 @@ public class AboutYouSection
 
     @FindBy(id = "loan_application_b_phone")
     private WebElement primary_phone;
+
+    @FindBy (xpath = "//button[@type='button'][contains(.,'Back')]")
+    private WebElement back_button;
 
     @FindBy(xpath = "//button[@class='js-btn-forward btn btn--block btn--ghost js-substep-nav']")
     private WebElement next_button;
@@ -64,9 +83,6 @@ public class AboutYouSection
 
     @FindBy(id = "loan_application_b_address_attributes_0_zip")
     private WebElement zip;
-
-//    @FindBy(how = How.CSS, using = "//label[@class='btn active']")
-//    private WebElement property_yes;
 
     @FindBy(xpath = "//span[text()='No']")
     private WebElement armed_services_no;
@@ -107,6 +123,24 @@ public class AboutYouSection
     @FindBy(xpath = "//*[@id='loan_application_form']/div[2]/div/div[5]/fieldset/div[2]/label")
     private WebElement include_coborrower;
 
+    @FindBy (xpath = "//h1[contains(.,'A few more details about you.')]")
+    private WebElement header_AFewMoreDetailsAboutYouPage;
+
+    public void verify_AboutYouSectionLabels()
+    {
+       // String expectedheader_AFewMoreDetailsAboutYouPage = header_AFewMoreDetailsAboutYouPage.getText();
+        Assert.assertTrue(tab_AboutYou.isDisplayed());
+        Assert.assertTrue(label_FirstName.isDisplayed());
+        Assert.assertTrue(label_MiddleInitial.isDisplayed());
+        Assert.assertTrue(label_LastName.isDisplayed());
+        Assert.assertTrue(suffix.isDisplayed());
+        Assert.assertTrue(email.isDisplayed());
+        Assert.assertTrue(primary_phone.isDisplayed());
+        Assert.assertTrue(back_button.isDisplayed());
+        Assert.assertTrue(next_button.isDisplayed());
+        //Assert.assertEquals("A few more details about you", expectedheader_AFewMoreDetailsAboutYouPage);
+
+    }
 
     public void header_about_you() {
         String str = header_about_you.getText();
@@ -134,10 +168,13 @@ public class AboutYouSection
 
     public void few_more_Details()
     {
-
+        Assert.assertTrue(marital_status.isDisplayed());
         marital_status.click();
+
+        Assert.assertTrue(age.isDisplayed());
         age.sendKeys("25");
 
+        Assert.assertTrue(education.isDisplayed());
         education.click();
         Select s3 = new Select(education);
         s3.selectByVisibleText("Associates Degree");
@@ -149,16 +186,22 @@ public class AboutYouSection
 
     public void address_Details()
     {
+        Assert.assertTrue(address_1.isDisplayed());
         address_1.sendKeys("463 7th Avenue");
         sleep();
+
+        Assert.assertTrue(city.isDisplayed());
         city.sendKeys("San Francisco");
 
+        Assert.assertTrue(state.isDisplayed());
         state.click();
         Select s4 = new Select(state);
         s4.selectByVisibleText("CA");
         state.click();
+
+        Assert.assertTrue(zip.isDisplayed());
         zip.sendKeys("94118");
-        //  property_yes.click();
+
         next_button.click();
         sleep();
         next_button.click();
@@ -263,7 +306,6 @@ public class AboutYouSection
         s4.selectByVisibleText("CA");
         coborrower_state.click();
         coborrower_zip.sendKeys("94118");
-        //  property_yes.click();
         next_button.click();
     }
 

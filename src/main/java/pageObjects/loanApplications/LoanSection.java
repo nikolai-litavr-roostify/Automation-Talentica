@@ -59,10 +59,8 @@ public class LoanSection{
     @FindBy(how = How.ID, using = "15_years")
     private WebElement no_of_years;
 
-
     @FindBy(how = How.XPATH, using = "//button[@class='btn--block btn btn--primary js-step-nav']")
     private WebElement continue_button;
-
 
     @FindBy(xpath = "//button[contains(.,'Fix later and continue')]")
     private WebElement fix_later_continue_btn;

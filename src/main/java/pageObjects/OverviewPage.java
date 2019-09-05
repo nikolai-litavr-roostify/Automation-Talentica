@@ -28,35 +28,11 @@ public class OverviewPage {
     @FindBy (xpath = "//*[contains(text(),'Overview Stats')]")
     WebElement lblOverviewStats;
 
-    public void verifyOverviwStatsLabel()
-    {
-
-        Assert.assertTrue(lblOverviewStats.isDisplayed());
-    }
-
     @FindBy (xpath = "//*[@id='account_filter']")
     WebElement accountsDropDown;
 
-    public void selectAccount()
-    {
-        Select acc_dropdown = new Select(accountsDropDown);
-        acc_dropdown.selectByVisibleText("Roostify");
-        sleep();
-    }
-
     @FindBy(xpath = "//*[@class='strong' and contains(text(),'Roostify')]")
     WebElement lblRoostify;
-
-    public void verifyLabelRoostify()
-    {
-        sleep();
-        Assert.assertTrue(lblRoostify.isDisplayed());
-    }
-
-    public void verifyAccountsDropDown()
-    {
-        Assert.assertTrue(accountsDropDown.isDisplayed());
-    }
 
     @FindBy(xpath = "//*[@class='c-tile-button__label' and contains(text(),'Lenders')]")
     WebElement lblLenders;
@@ -79,17 +55,6 @@ public class OverviewPage {
     @FindBy(xpath = "//*[@class='c-tile-button__label' and contains(text(),'Timelines')]")
     WebElement lblTimelines;
 
-    public void verifyAlltheLabelsDisplayed()
-    {
-        Assert.assertTrue(lblLenders.isDisplayed());
-        Assert.assertTrue(lblBorrowers.isDisplayed());
-        Assert.assertTrue(lblApplicationsStarted.isDisplayed());
-        Assert.assertTrue(lblApplicationsSubmitted.isDisplayed());
-        Assert.assertTrue(lblExports.isDisplayed());
-        Assert.assertTrue(lblDocumentsUploaded.isDisplayed());
-        Assert.assertTrue(lblTimelines.isDisplayed());
-    }
-
     @FindBy(xpath = "//*[@id='quick_filters']")
     WebElement quickFilters;
 
@@ -101,6 +66,44 @@ public class OverviewPage {
 
     @FindBy(xpath = "//*[@class='c-overview__date-filter-row btn btn--sm btn--ghost']")
     WebElement btnClear;
+
+    @FindBy(xpath = "//*[@id='js-admin-console-left_pane-5']//a[@data-content='Overview']")
+    private WebElement overviewtab;
+
+    public void verifyOverviwStatsLabel()
+    {
+
+        Assert.assertTrue(lblOverviewStats.isDisplayed());
+    }
+
+    public void selectAccount()
+    {
+        Select acc_dropdown = new Select(accountsDropDown);
+        acc_dropdown.selectByVisibleText("Roostify");
+        sleep();
+    }
+
+    public void verifyLabelRoostify()
+    {
+        sleep();
+        Assert.assertTrue(lblRoostify.isDisplayed());
+    }
+
+    public void verifyAccountsDropDown()
+    {
+        Assert.assertTrue(accountsDropDown.isDisplayed());
+    }
+
+    public void verifyAlltheLabelsDisplayed()
+    {
+        Assert.assertTrue(lblLenders.isDisplayed());
+        Assert.assertTrue(lblBorrowers.isDisplayed());
+        Assert.assertTrue(lblApplicationsStarted.isDisplayed());
+        Assert.assertTrue(lblApplicationsSubmitted.isDisplayed());
+        Assert.assertTrue(lblExports.isDisplayed());
+        Assert.assertTrue(lblDocumentsUploaded.isDisplayed());
+        Assert.assertTrue(lblTimelines.isDisplayed());
+    }
 
     public void verifyQuickFilters()
     {
@@ -140,9 +143,6 @@ public class OverviewPage {
         }
 
     }
-
-    @FindBy(xpath = "//*[@id='js-admin-console-left_pane-6']//a[@data-content='Overview']")
-    private WebElement overviewtab;
 
     public void overviewtab_click()
     {

@@ -97,6 +97,8 @@ public class UnassignedAppPage
 	
 	public void clickOnUnassignedAppTab()
 	{
+		String labelUnassignedApps = tab_UnassignedApp.getText();
+		Assert.assertEquals("Unassigned Apps", labelUnassignedApps);
 		tab_UnassignedApp.click();
 	}
 	
@@ -145,17 +147,20 @@ public class UnassignedAppPage
 		r.keyPress(KeyEvent.VK_ESCAPE);
 	}
 	public void clickOnAssignButton()
-	{ 
+	{
+		Assert.assertTrue(btn_Assign.isDisplayed());
 		btn_Assign.click();
 	}
 	
 	public void clickOnArchiveButton()
 	{
+		Assert.assertTrue(btn_Archive.isDisplayed());
 		btn_Archive.click();
 	}
 	
 	public void clickOnShowArchivedLink()
 	{
+		Assert.assertTrue(link_ShowArchived.isDisplayed());
 		link_ShowArchived.click();
 	}
 	
@@ -168,6 +173,7 @@ public class UnassignedAppPage
 	
 	public void clickOnUnarchiveButton()
 	{
+		Assert.assertTrue(btn_Unarchive.isDisplayed());
 		btn_Unarchive.click();
 	}
 	
@@ -199,6 +205,7 @@ public class UnassignedAppPage
 	
 	public void clickOnGrantAccessButton()
 	{
+		Assert.assertTrue(btnGrantAccess.isDisplayed());
 		btnGrantAccess.click();
 	}
 	
@@ -231,6 +238,7 @@ public class UnassignedAppPage
 	
 	public void verifyAdminAbleToReviewLoanApp()
 	{
+		Assert.assertTrue(link_Dashboard.isDisplayed());
 		link_Dashboard.click();
 	}
 	

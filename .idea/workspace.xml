@@ -2,65 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ce64c31-70d3-4a55-8d7e-07f8b455a0b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/LoanApplicationWithNewLO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/OverviewPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ProfilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ReviewPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/SecurityPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/UnassignedAppPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/features/LoanApplicationWithNewLO.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/features/Overview.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/features/Profile.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/features/ReviewPage.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/features/Security.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/features/UnassignedApp.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/managers/PageObjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/managers/PageObjectManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/AddLoanManuallyHelocPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/AddLoanManuallyHelocPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/AddLoanManuallyPreConPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/AddLoanManuallyPreConPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/AddLoanManuallyRefinanceConPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/AddLoanManuallyRefinanceConPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/Coborrowerflowpage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/ConnectionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ConnectionPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/MessagesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/MessagesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/TeamPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/TeamPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/OverviewPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/OverviewPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/ReviewPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ReviewPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/UnassignedAppPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/UnassignedAppPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/UserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/UserPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/AboutYouSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/AboutYouSection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/AssetsLiabilitiesSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/AssetsLiabilitiesSection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/DeclarationsSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/DeclarationsSection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/EmploymentSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/EmploymentSection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/IncomeSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/IncomeSection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/LoanSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/LoanSection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/loanApplications/SignUpPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/configFiles/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configFiles/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/AddLoanManuallyHELOCLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/AddLoanManuallyHELOCLoans.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/AddLoanManuallyHomePurchaseLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/AddLoanManuallyHomePurchaseLoans.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/AddLoanManuallyPreApprovalLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/AddLoanManuallyPreApprovalLoans.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/AddLoanManuallyRefinanceLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/AddLoanManuallyRefinanceLoans.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/CoborrowerFlow.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/CoborrowerFlow.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/Connection.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/Connection.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/CopyReferalHELOCLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/CopyReferalHELOCLoans.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/CopyReferalHomePurchaseLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/CopyReferalHomePurchaseLoans.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/CopyReferalPreApprovalLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/CopyReferalPreApprovalLoans.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/CopyReferalRefinanceLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/CopyReferalRefinanceLoans.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/InviteBorrowerHELOCLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/InviteBorrowerHELOCLoans.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/InviteBorrowerHomePurchaseLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/InviteBorrowerHomePurchaseLoans.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/InviteBorrowerPreApprovalLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/InviteBorrowerPreApprovalLoans.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/features/InviteBorrowerRefinanceLoans.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/InviteBorrowerRefinanceLoans.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/AllSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AllSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/Hooks.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/managers/PageObjectManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/managers/PageObjectManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/Coborrowerflowpage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/ConnectionPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/ConnectionPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/LoginPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/MessagesPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/MessagesPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/AboutYouSection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/AboutYouSection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/AssetsLiabilitiesSection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/AssetsLiabilitiesSection.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/DeclarationsSection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/DeclarationsSection.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/EmploymentSection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/EmploymentSection.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/IncomeSection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/IncomeSection.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/LoanSection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/LoanSection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/SignUpPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/loanApplications/SignUpPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/runner/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/Runner.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/steps/AllSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/AllSteps.class" afterDir="false" />
@@ -176,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565181242082</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added All Invite borrower Flows,Copy Referral Link Flows, Profile,Security,Overview Tab,Unassigned Apps and Loan Review Functionality.">
+      <created>1566817443360</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1566817443360</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,38 +173,8 @@
     <MESSAGE value="Added various loan types." />
     <MESSAGE value="Added Team and User Functionality" />
     <MESSAGE value="Username and Password will be taken from config file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Username and Password will be taken from config file." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pageObjects/AddLoanManuallyRefinanceConPage.java</url>
-          <line>164</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pageObjects/AddLoanManuallyRefinanceConPage.java</url>
-          <line>165</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pageObjects/AddLoanManuallyRefinanceConPage.java</url>
-          <line>171</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pageObjects/AddLoanManuallyRefinanceConPage.java</url>
-          <line>172</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pageObjects/AddLoanManuallyRefinanceConPage.java</url>
-          <line>159</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added All Invite borrower Flows,Copy Referral Link Flows, Profile,Security,Overview Tab,Unassigned Apps and Loan Review Functionality." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added All Invite borrower Flows,Copy Referral Link Flows, Profile,Security,Overview Tab,Unassigned Apps and Loan Review Functionality." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/coreAutomationRoostify$Runner.ic" NAME="Runner Coverage Results" MODIFIED="1565247666254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

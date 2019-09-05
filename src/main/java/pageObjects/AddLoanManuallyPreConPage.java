@@ -63,15 +63,6 @@ public class AddLoanManuallyPreConPage {
     @FindBy(id = "loan_application_b_phone")
     private WebElement primary_phone;
 
-//    @FindBy(how = How.ID, using = "loan_application_b_dob_2i")
-//    private WebElement dob_month;
-//
-//    @FindBy(how = How.XPATH, using = "//select[@class='c-select-exclude-icon__menu js-date-select js-day']")
-//    private WebElement dob_day;
-//
-//    @FindBy(how = How.ID, using = "loan_application_b_dob_1i")
-//    private WebElement dob_year;
-
     @FindBy(id = "loan_application_b_marital_status_1")
     private WebElement marital_status;
 
@@ -96,14 +87,22 @@ public class AddLoanManuallyPreConPage {
     @FindBy(id = "loan_application_b_address_attributes_0_zip")
     private WebElement zip;
 
-//    @FindBy(how = How.CSS, using = "//label[@class='btn active']")
-//    private WebElement property_yes;
-
     @FindBy(xpath = "//span[text()='No']")
     private WebElement armed_services_no;
 
     @FindBy(xpath = "//div[@class='col-12 col-md-4 form-group']/button[@value='next']")
     private WebElement fix_later_continue;
+
+    public void verify_AddLoanManuallyLabels()
+    {
+        Assert.assertTrue(add_loan_man.isDisplayed());
+        Assert.assertTrue(loan_email.isDisplayed());
+        Assert.assertTrue(loan_first_name.isDisplayed());
+        Assert.assertTrue(loan_last_name.isDisplayed());
+        Assert.assertTrue(click_SelectAccount.isDisplayed());
+        Assert.assertTrue(click_create_button.isDisplayed());
+        Assert.assertTrue(admin_flow.isDisplayed());
+    }
 
     public void click_Link()
     {
@@ -192,22 +191,6 @@ public class AddLoanManuallyPreConPage {
 
     public void few_more_Details()
     {
-//         dob_month.click();
-//         Select s = new Select(dob_month);
-//         s.selectByVisibleText("Apr");
-//         dob_month.click();
-//
-//         dob_day.click();
-//         Select s1 = new Select(dob_day);
-//         s.selectByValue("9");
-//         dob_day.click();
-//
-//
-//         dob_year.click();
-//         Select s2 = new Select(dob_year);
-//         s.selectByVisibleText("1994");
-//         dob_year.click();
-
         marital_status.click();
         age.sendKeys("25");
 
@@ -231,7 +214,6 @@ public class AddLoanManuallyPreConPage {
         s4.selectByVisibleText("CA");
         state.click();
         zip.sendKeys("94118");
-        //  property_yes.click();
         next_button.click();
         sleep();
         next_button.click();

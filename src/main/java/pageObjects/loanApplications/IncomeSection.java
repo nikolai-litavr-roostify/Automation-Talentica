@@ -39,10 +39,8 @@ public class IncomeSection {
     @FindBy(how = How.ID, using = "loan_application_b_incomes_attributes_0_source")
     private WebElement source;
 
-
     @FindBy(how = How.XPATH, using = "//button[@class='btn--block btn btn--primary js-step-nav']")
     private WebElement continue_button;
-
 
     public void No_income_details()
     {
@@ -50,8 +48,6 @@ public class IncomeSection {
         next_button.click();
         continue_button.click();
     }
-
-
 
     public void income_Section()
     {

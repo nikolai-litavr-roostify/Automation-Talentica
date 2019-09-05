@@ -71,6 +71,7 @@ public class AllSteps{
     {
 
         lp.enter_userMail(FileReaderManager.getInstance().getConfigReader().getUsername());
+        lp.verify_login_labels();
 
     }
 
@@ -100,6 +101,7 @@ public class AllSteps{
         pageObjectManager = new PageObjectManager(driver);
         alm = pageObjectManager.getAddLoanManuallyPage();
         alm.click_Link();
+        alm.verify_AddLoanManuallyLabels();
         WaitUtility.untilPageLoadComplete(driver);
     }
 
