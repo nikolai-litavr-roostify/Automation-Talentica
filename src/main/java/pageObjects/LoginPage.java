@@ -41,10 +41,9 @@ public class LoginPage extends BaseLogin {
           super.enter_User_Email(UserMail);
     }
 
-    public void enter_password(String Password)
+    public void enter_User_Password(String UserMail)
     {
-        password.sendKeys(Password);
-        sleep();
+        super.enter_User_Password(Password);
     }
 
     public void clickSignIn()
