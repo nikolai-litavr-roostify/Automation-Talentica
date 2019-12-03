@@ -31,19 +31,19 @@ public class LoginPage extends BaseLogin {
 
     public void verify_login_labels()
     {
-        Assert.assertTrue(user_mail.isDisplayed());
-        Assert.assertTrue(password.isDisplayed());
+        Assert.assertTrue(super.get_User_Email().isDisplayed());
+        Assert.assertTrue(super.get_User_Password().isDisplayed());
         Assert.assertTrue(click_sign_in.isDisplayed());
     }
 
-    public void enter_User_Email(String UserMail)
+    public void enter_User_Email(String user_Email)
     {
-          super.enter_User_Email(UserMail);
+          super.enter_User_Email(user_Email);
     }
 
-    public void enter_User_Password(String UserMail)
+    public void enter_User_Password(String user_Password)
     {
-        super.enter_User_Password(Password);
+        super.enter_User_Password(user_Password);
     }
 
     public void clickSignIn()
@@ -53,8 +53,8 @@ public class LoginPage extends BaseLogin {
 
     public void login_details()
     {
-        enter_userMail("");
-        enter_password("");
+        enter_User_Email("");
+        enter_User_Password("");
     }
 }
 
