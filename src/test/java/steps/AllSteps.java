@@ -70,7 +70,7 @@ public class AllSteps{
     public void adminEnters(String username)
     {
 
-        lp.enter_userMail(FileReaderManager.getInstance().getConfigReader().getUsername());
+        lp.enter_User_Email(FileReaderManager.getInstance().getConfigReader().getUsername());
         lp.verify_login_labels();
 
     }
@@ -78,7 +78,7 @@ public class AllSteps{
     @And("^Admin enters also \"([^\"]*)\"$")
     public void adminEntersAlso(String password)
     {
-        lp.enter_password(FileReaderManager.getInstance().getConfigReader().getPassword());
+        lp.enter_User_Password(FileReaderManager.getInstance().getConfigReader().getPassword());
     }
 
     @And("^Admin clicks on Sign In Button\\.$")
@@ -1553,13 +1553,13 @@ public void admin_check_whether_Overview_Stats_label_is_present_or_not() {
     @When("^Borrower enters \"([^\"]*)\"$")
     public void borrower_enters(String username)
     {
-        lp.enter_userMail(username);
+        lp.enter_User_Email(username);
     }
 
     @And("^Borrower enters also \"([^\"]*)\"$")
     public void borrower_enters_also(String password)
     {
-        lp.enter_password(password);
+        lp.enter_User_Password(password);
     }
 
     @And("^Borrower clicks on Sign In Button\\.$")
