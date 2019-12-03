@@ -14,11 +14,8 @@ public class LoginPage extends BaseLogin {
         super.BaseLogin(driver);
     }
 
-    @FindBy(id = "user_password")
-    private WebElement password;
-
     @FindBy(id = "loan_first_name")
-    private WebElement loan_first_name;
+    private WebElement loan_First_Name;
 
     @FindBy(css = "button[form='sign-in-form']")
     private WebElement clck_Sign_In;
