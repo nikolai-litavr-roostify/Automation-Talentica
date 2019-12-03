@@ -6,16 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class LoginPage {
+public class LoginPage extends BaseLogin {
     WebDriver driver;
-    public LoginPage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+    public LoginPage(WebDriver driver)  {
+        super.BaseLogin(driver);
     }
-
-
-    @FindBy(id = "user_email")
-    private WebElement user_mail;
 
     @FindBy(id = "user_password")
     private WebElement password;
@@ -41,11 +36,9 @@ public class LoginPage {
         Assert.assertTrue(click_sign_in.isDisplayed());
     }
 
-    public void enter_userMail(String UserMail)
+    public void enter_User_Email(String UserMail)
     {
-        sleep();
-        user_mail.sendKeys(UserMail);
-        sleep();
+          super.enter_User_Email(UserMail);
     }
 
     public void enter_password(String Password)
