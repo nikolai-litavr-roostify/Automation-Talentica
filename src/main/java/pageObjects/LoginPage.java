@@ -7,7 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 public class LoginPage extends BaseLogin {
+
     WebDriver driver;
+
     public LoginPage(WebDriver driver)  {
         super.BaseLogin(driver);
     }
@@ -19,21 +21,13 @@ public class LoginPage extends BaseLogin {
     private WebElement loan_first_name;
 
     @FindBy(css = "button[form='sign-in-form']")
-    private WebElement click_sign_in;
+    private WebElement clck_Sign_In;
 
-    public static void sleep() {
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            System.out.println("got interrupted!");
-        }
-    }
-
-    public void verify_login_labels()
+    public void verify_Login_Labels()
     {
-        Assert.assertTrue(super.get_User_Email().isDisplayed());
-        Assert.assertTrue(super.get_User_Password().isDisplayed());
-        Assert.assertTrue(click_sign_in.isDisplayed());
+        Assert.assertTrue(super.get_User_Email_Element().isDisplayed());
+        Assert.assertTrue(super.get_User_Password_Element().isDisplayed());
+        Assert.assertTrue(get_Click_Sign_In_Element().isDisplayed());
     }
 
     public void enter_User_Email(String user_Email)
@@ -46,12 +40,12 @@ public class LoginPage extends BaseLogin {
         super.enter_User_Password(user_Password);
     }
 
-    public void clickSignIn()
+    public WebElement get_Click_Sign_In_Element()
     {
-        click_sign_in.click();
+        return clck_Sign_In;
     }
 
-    public void login_details()
+    public void login_Details()
     {
         enter_User_Email("");
         enter_User_Password("");
